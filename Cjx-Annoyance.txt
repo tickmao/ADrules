@@ -1,17 +1,18 @@
 [Adblock Plus 2.0]
-! Version: 202003012105
+! Version: 202203221128
 ! Title: CJX's Annoyance List
-! Last modified: 2020/03/01 21:05 +0800
+! Last modified: 2022/03/22 11:28 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
-! License: http://creativecommons.org/licenses/by/3.0/
+! License: https://github.com/cjx82630/cjxlist/blob/master/LICENSE
 ! Supplement for "EasyList China+EasyList" & "EasyPrivacy"
 ! Removed Annoyances, Self-promotion & Privacy Protection on Chinese Websites
 ! Email (cjxlist@gmail.com)
 !#include cjx-ublock.txt
 !--------------------------General blocking filters---------------------------!
 /wiseatom/banner/pack_
+/template/bingfeng/statics/js/pingbi.js
 -bobo_recommend_
 /3dmgamegzh.png
 =mumumoniqi-piaochuang-
@@ -57,22 +58,25 @@
 ||5etv.com^$third-party
 ||bobo.com^$third-party
 ||cir-smart.baidu.com^
+||bjmantis.net^
 ||crs.baidu.com^
 ||goutong.baidu.com^
-||knet.cn^$third-party
 ||kuaishang.cn^$third-party
 ||live800.com^$third-party
 ||looyu.com^$third-party
 ||lxbjs.baidu.com^$third-party
 ||meiqia.com^$third-party
+||miduoke.net^$third-party
 ||mylikechat.com^$third-party
-||ntalker.com^
 ||pop800.com^$third-party
 ||soperson.com^$third-party
+||tawk.to^$third-party
 ||tui.cnzz.net^$third-party
 ||wpa.b.qq.com/cgi/wpa.php?
 ||zoosnet.net^$third-party
 ||zoossoft.cn^$third-party
+||easyliao.com^$third-party
+||outbrain.com^$third-party
 !---------------------------Popups--------------------------------------------!
 !--------------------------Specific blocking filters--------------------------!
 ||025yimei.com/templets/default/js/swt.js
@@ -128,7 +132,7 @@
 ||chinatimes.com/ads/
 ||cndns.com/incs/js/website_mobile.js
 ||con-article.hjapi.com/v1/txs/
-||cpu.baidu.com^
+||cpu.baidu.com^$third-party
 ||ctfile.com/img/*ssp
 ||daf-rs.com/imageViewer/wpAd
 ||dahe.cn/indiboy/ads/
@@ -161,7 +165,6 @@
 ||gtimg.com/pingjs/ext2020/dc2017/dist/m_tips/tips.js
 ||gz-chengkao.com/js/duo.js
 ||hahamx.cn/images/banner/
-||hanjutv.com/public/js/layer/layer.js
 ||hao123img.com/v4/MB/xU/jy/VY/YX/MBxUjyVYYX.js
 ||heiguang.com/_r/2015/js/hrBottomBar.
 ||hexun.com/2016/pc/618.swf
@@ -336,11 +339,9 @@
 ||appledaily.hk/banners/subscription/
 ||bilibili.com/x/web-interface/archive/special/recommend?aid=
 ||lancdn.com/tmp3/GG_Notice.png
-||chinaacc.com/upload/*zhongjizhicheng
 ||zhangzishi.cc/cdn-cgi/apps/
 ||macx.cn/js/blockadblock.js
 ||bestqikan.com/static/js/swt.js
-||book118.com/Public/book118/js/side-customer/customer.js
 ||51cto.com/js/activity_pop.js
 ||kuakao.com/index.php?m=content&c=index&a=show_ad
 ||qinxue100.com/qinxue/pc/js/add_js.js
@@ -351,7 +352,6 @@
 ||sinaimg.cn/cj/finance/forex/res/searchCallup.js
 ||tsdm.live/weibo.html
 ||28.com/public/js/w3c_float.js
-||chinaacc.com/upload/js/cia_mjy_pf/
 ||kmf.com/da/do
 ||daiyanbao.com/flash/md
 ||banzou.name/qq/qq2.js
@@ -363,7 +363,6 @@
 ||chinalawedu.com/js/weixin/weixin.js
 ||chinalawedu.com/js/zxkf.js
 ||baidu.com/xpage/form/getform?id=wk_pc_skin
-||bdimg.com^*/popOperationView_*.js
 ||aixifan.com/static/*/appGuide/
 ||icourse163.org/dwr/call/plaincall/CommonBean.obtain.dwr
 ||3158.cn/min/webim.
@@ -374,7 +373,332 @@
 ||meiju22.com/new/Public/gg.js
 ||heibaizhibo.com/_nuxt/87a5efd04908651591f7.js
 ||ymlykj.com/nuxt/static/liveBanner.jpg
+||jin10.com/assets/img/sites/index/vip_ad
+||jin10.com/news_service/static/config/details.config.
+||jmw.com.cn/m_v2/js/active.js
+||dyhjw.com/Public/v3/appdown/images/AppEntrance.png
+||chazidian.com/statics/images/wangke.jpg
+||sinaimg.cn/sports/20214c6d/20181128/880_110.png
+||cifnews.com/common/js/d/d/tea.js
+||cifnews.com/yuguo3.0/live_dynamic/js/live_dynamic.js
+||cifnews.com/ajax/adrequest/
+||7k7k.com/api/position/
+||7k7k.com/js/bg-img.js
+||6080.tv/public/js/m/uaredirectformobile.js
+||gliacloud.com/player/adgeek_teep
+||365xuet.com/assets/web/js/main.jsr_
+||17house.com/zt/style/pc/js/zt_
+||y3600.cc/20
+||zupulu.com/scripts/app/app.js
+||yunzhan365.com/resourceFiles/js/weixin-share.js
+||127.net/m/*/promPic.jpg
+||xyj321.com/static/xyj/js/foot_slide_bar_
+||xyj321.com/static/zx/js/zx-con-jsq_
+||sinaimg.cn/wap/project/blog_to_news_banner/
+||zikao365.com/upload/js/pfgg/
+||gaosan.com/js/b.js
+||igo99.cn/js/freetest.js
+||huobaowang.com/meeting/js/hbchat.
+||chinaacc.com/upload/*_mjy_
+||music.163.com^$domain=mvcat.com
+||offcn.com/index.php?m=dbsource&c=call&a=get&id=77
+||yizhibo.com/special/h5corner.html
+||feedou.com/nzq/style/pc/js/zt_bottom.js
+||66zhuang.com/public_2017/js/count-gou.js
+||xuexila.com^*-xxl.js
+||sogoucdn.com/translate/ssr/static/img/banner-
+||cls.cn/v2/web/ad?
+||aisixiang.com/images/*-20
+||yiihuu.com/assets/common/yh/js/yh.ad.
+||guokr.com/apis/flowingboard/item/guokrapp_
+||csdnimg.cn/common/redpack/redpack.js
+||w3cschool.cn/index/*Advert
+||sinaimg.cn/news/diversion/index2/static/js/index.
+||sinaimg.cn^*/pushDiversion*.js
+||msstatic.com/huya/main3/widget/DiyActLayer/DiyActLayer_*.js
+||iviewui.com/v1/*?name=
+||sinaimg.cn/news/article/article_qcode
+||niuacc.com/static/common/js/145.js
+||yyetss.com/static/modal.js
+||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
+||thepaper.cn/bottomBanner_
+||iiikefu.com/wp-content/plugins/halfdata-green-popups/js/lepopup.js
+||51cto.com/home/web/js/new_login/iframe.js
+||sinaimg.cn/large/007drMcOly1gfnqzv8a7ij30xc02nwfr.jpg
+||mydrivers.com/2021/www/nianhuojie.png
+||sinaimg.cn^*/yyy_pop
+||tiexue.net/pic/tx_1220.jpg
+||gushiwen.org/getTicket.aspx
+||51cto.com/edu/center/js/interaction_iframe.js
+||360doc.com/js/showarticle.js
+||jishulink.com/images/content/visitor-footer-
+||jishulink.com/images/activity/invite_
+||codenong.com/c1.js
+||zhenbuka*/statics/js/toastr/jquery.toast.js
+||olevod.*/template/conch/asset/js/hlhtml.js
+||iqiyi.com/js/common/mars_v.js
+||jsdelivr.net/gh/huang545/huang1111@1.0/bottom.png
+||pstatp.com/origin/137370002e7fbe11b296a
+||qcjycg.com/template/conch/asset/js/hl
+/\/data\/cache\/(?!(common\.|common_extra\.|forum\.|forum_viewthread\.js|home\.|portal\.|seditor|smilies))[a-z_]+\.js/$script,domain=pcbeta.com
+||above.tw/blog/wp-content/plugins/popups/public/assets/js/public.js
+||zhihu.com/sku/km_resource?token=feed-right-banner
+||sinaimg.cn/finance/stock/hq/src/popuptoapp.js
+||to8to.com/to8to_pc/common/modules/bottom_up_slide/
+||pconline.com.cn/global/footer/index.html
+||ali213.net/news/kx/ali213-kx-data.js
+||cnki.com.cn/cnki/js/adimgdetail.js
+||cnki.com.cn/cnki/js/adrightdetail.js
+||mydrivers.com^*/xianshitehui.png
+||mydrivers.com/m/images/v1/kkjapp_down.gif
+||ydstatic.com/fanyi/fanyi-ad-place/
+||feedou.com/nzq/style/pc/js/popbig.js
+||feedou.com/nzq/style/pc/js/zt_bottom.js
+||nxhh.net/gw/gw.js
+||kuaishang.com.cn^
+||docer.org/static/utils/jquery.min.js
+||terrynow.com^$csp=script-src 'self' * 'unsafe-eval'
+||kf.qingwk.com^
+||ypojie.com/wp-content/uploads/*.js
+||yxdm.*/js/ddetector.js
+||eng24.com/js_new/copyright_float.
+||gedu.org/js/meiqia_pc_groupmarket.
+||guozh.net/wp-content/plugins/eazy-ad-unblocker/
+||gdmm.com/api.php?mod=js&bid=2188
+||jlwz.cn/js/xf*.js
 !------------------------Specific element hiding rules------------------------!
+qianzhan.com##.qqonline
+qianzhan.com##.kfonline2
+csdn.net##.el-dialog__wrapper + .activity
+aiqicha.baidu.com##.float-banner
+qingwk.com##.c-footer-banner
+jingyan.baidu.com##.task-panel-entrance
+jingyan.baidu.com##.wgt-cms-banner
+jingyan.baidu.com##.activity-entrance
+luogu.com.cn##.side > div:last-child
+sonkwo.hk##.store-ad-waist
+360kuai.com###task__modal__container
+360kuai.com##.taskbar
+bjd.com.cn##.screenad
+sina.com.cn##A[href="https://touzi.sina.com.cn/"]
+weimob.com###active-entrance
+pconline.com.cn##.fixLeftQRcode
+cheetahfun.com##.guide
+mydrivers.com##.ab
+mydrivers.com##.bb
+meijumi.net##.couplet_app
+cnki.com.cn##.adList
+cnki.com.cn##.ad-right-default
+cnki.com.cn##.mainboxconbanner
+edrawsoft.cn##.publicity-entrance
+edrawsoft.cn##.new-year__cn__master
+9game.cn##.guide-app-fix
+csdn.net##.passport-login-mark
+edrawsoft.cn###bottom-banner-activity-md
+baidu.com##.bottom-right-dsp-ad-wrap
+epinv.com##A[href="http://www.epinv.com/post/10450.html"]
+sina.com.cn##.side-btns-game2021
+ssuip.com###mask
+baidu.com##.school-promotion-pop-wrap
+zuoyebang.com##div[class*="moreDialog_"]
+zuoyebang.com##div[class^="answerAnalyzeAd_"]
+zuoyebang.com##img[class^="bottomBanner_"]
+zuoyebang.com##DIV[class^="questionQRCodeWrap_"]
+zuoyebang.com##div[class^="adCard_"]
+baidu.com##.app-side-banner
+sg169.com##.Mappdiv
+sg169.com##.jy-pos-3
+jianshu.com##.aside > div[aria-label="3rd-ad"] + div:last-child
+tuliu.com###red-envelope
+tuliu.com###siderbar-join-form
+tuliu.com###vFloat
+tuliu.com##.info-recommend
+zhangxinxu.com#?#:-abp-properties(display: block;*width: 336px;)
+baidu.com##.experience-card-bar-wrap
+ifeng.com###qrCode
+juejin.cn##.recommend-box
+juejin.cn##.activity-recommend
+csdn.net##.toolbar-redpack-advert
+360kan.com##.eb-mini
+66law.cn##.consult-bottom-fixed
+ifeng.com,~mall.ifeng.com##A[href*="mall.ifeng.com"]
+tgbus.com###guide-download
+pcbaby.com.cn###jpopWinBottom
+zhideqiang.com##A[href*="quan.zhideqiang.com"]
+5ykj.com##.ls-b-large-margin
+pptjia.com##.alert2_wrap
+jishulink.com##.invite-code-dialog
+zhenbuka.com##.jq-toast-wrap
+fx361.com###k_s_ol_chatWin
+fx361.com###k_s_ol_chatWinSm
+fanyi.sogou.com##.img-banner
+fanyi.sogou.com##.survey
+huaban.com##.hb-ad
+ifsp.tv##.video-page-right
+meijumi.me###app_left
+baidu.com##.opening-season-dialog
+iqihang.com##.xf_right
+qianlima.com###bg
+qianlima.com##.seo400
+to8to.com##.layer-red-box
+tvbs.com.tw##.smart_banner
+wenku.baidu.com##.header-wrapper > .fixed-activity-bar
+faayoo.com###footer_fd
+faayoo.com##.qr_code
+gebi1.com###fwin_dialog
+gebi1.com###fwin_dialog_cover
+gebi1.com##.offical-account
+infoq.cn##.live-fixed-bar
+infoq.cn##.widget-slide-weekly
+sina.cn##.js-voice-yyy
+sina.cn##.module-finance-client3
+sina.com.cn##.f_app_screen_wrap
+sina.com.cn###commonSideBar
+sina.com.cn##.yyy-wrap-2021
+sina.com.cn##.cj_app_left
+banjiajia.com##.register-ten
+banjiajia.com##.register-box
+ke.qq.com##.bottom-bar
+699pic.com###landlord
+699pic.com##.springtime-floatLink
+699pic.com##.springtime-pop
+699pic.com##.winpopbg
+tuchong.com##.float
+baidu.com##.desktop-guide
+bilibili.com##.video-page-game-card
+bilibili.com##.video-page-game-card-small
+ldmnq.com##.dialog-game
+hupu.com###game-center-entrance-container
+hupu.com##DIV[class^="game-center-"]
+sina.cn###j_toTop ~ .fl_suspension_template
+sina.cn##.zhidi
+sina.cn###j_gotop ~ .fl_suspension_template
+sina.cn##.sw_c0.fix_top
+niuacc.com##.masks
+niuacc.com##.yure
+niuacc.com##.botLm-container
+sina.com.cn##.fl_feedFous
+sina.com.cn##.tab_related_app_imglink
+nipic.com##.vip_show
+nipic.com##.vip_homeshow
+baidu.com##.guide-to-univer-app-root
+baidu.com##.pop-manager-view-containter
+wendu.com##.foot_adv
+wendu.com##.head-banner
+baidu.com##.search-box-wrapper + .pager-container
+baidu.com##.fufei-activity-bar
+360doc.com##.floatqrcode
+xueqiu.com##.widget__download-app
+123.com.cn##.bottom-ylink
+123.com.cn##.fixed-top
+douyu.com##.index-common-1-rrh
+chsi.com.cn##.zx-axvert
+xdf.cn##.popup-wrap
+sina.com.cn##.redPacketCont
+offcn.com###offcn_yx
+3dmgame.com##.modAD
+csdn.net##.passport-login-container
+csdn.net###passportbox
+csdn.net##.login-mark
+21ic.com##.appxb
+csdn.net##.toolbar-advert
+cnitpm.com##.erweima
+iviewui.com##.ivu-alert
+sogou.com##.aside-qcode
+sogou.com##.trans-side-banner
+gas.goodlife.tw###widgets
+mati.hk##.banner_middle
+720yun.com##DIV[class^="Ads_ads_"]
+baidu.com###copyright + .banner
+whcykj.cn###BDBridgeInviteWrap
+whcykj.cn###InviteContainerl
+whcykj.cn##.swt_bottom
+qiaobutang.com##.fixed-footer-wrap
+fanyi.baidu.com###app-read
+pan.baidu.com##.phone-banner
+epubee.com##.reader-to-vip
+news.163.com##.mod_netes_origina
+news.163.com##.mod_pageh5
+egame.qq.com##.lurk-dialog
+egame.qq.com##.pop-widget
+16rd.com###diy_bbs_list_right IMG
+16rd.com###quick_pub_form
+16rd.com##.c1c2_b1b2_adbx
+16rd.com###diy_ad_article_right IMG
+ifeng.com##.slideImg-lGG7Uta-
+yizhibo.com###J_reg_guide
+poedb.tw#?#div[id]:-abp-contains(ad blocker)
+qq.com##.notice[class^="jsx-"]
+qq.com##.elevator[class^="jsx-"]
+qq.com##.wrap[class^="jsx-"]
+php.cn##.layui-show > UL > .top-img
+offcn.com##.jlstc
+chinakaoyan.com##.side-wx
+neets.cc#?#div[class]:-abp-has(> div > .home_p)
+51zhishang.com###kyzb_layer
+51zhishang.com##.zhezhao
+mafengwo.cn###banner-con-gloable
+douyu.com##.ActPayDialog
+baidu.com##.reader-pop-manager-view-containter
+jingyingjiajiao.com##.bdgg
+jingyingjiajiao.com##DIV[style="width:auto;border: 1px solid #aaaaaa; position:fixed; bottom:1px; right:1px;z-index:2000"]
+baidu.com##.app-side-ad
+kanman.com###\5f _acgn-virtual-coin__
+ifeng.com##a[class^="bookrack-"]
+ifeng.com##section[class^="fixSlide-"]
+ifeng.com##div[class^="silde_box-"]
+yun.cn##div[class*="ad-block"]
+pcccp.cn##DIV[id^="xydl"]
+douyu.com##.PrivilegeGiftModalDialog
+igo99.cn##.adBG
+danzhaowang.com##.qxzx_scho
+redocn.com##.big_vip_gg
+redocn.com##.small_vip_gg
+yutu.cn###botfocus-res
+edutt.com##.foot-fixed
+bjx.com.cn##.layer_right2
+dyhjw.com##.index_luckdraw
+rrys2020.com###indexNav1
+rrys2020.com##.corner > LI > A[href*="yyets."]
+acfun.cn##.pause-display
+examw.com###kefu_in
+examw.com##.acitvieLeftBox
+examw.com##.activeBottomBox
+dailiantong.com##.appDwn
+kankan.com###adv_box
+kankan.com###modal-adv
+kankan.com##.tuiguang_position
+xyj321.com##.foot_alert_wrap
+doc88.com##.dk-side-gif
+ltn.com.tw##.evt.e22
+epubee.com##.vipNoteBar
+58cam.com###append_parent
+58cam.com###huyou_nologin
+ximalaya.com##.dl-pc
+4399.com##BODY[bottommargin="22"] > TABLE[width="100%"]:first-child
+taptap.com###bottomBanner
+laohu8.com##.top-recommend
+laohu8.com##.app-button
+365xuet.com##.cd-items
+911cha.com##.adbox
+911cha.com##.sideqr
+911cha.com##.sideqr_left
+911cha.com##DIV[style^="width:200px;overflow:visiable;position:fixed;"]
+igo.cn###NewigoBox
+igo.cn##DIV[class^="leyuBg"]
+weather.com.cn##A[style="position:fixed;top:220px;left:50%;margin-left: -625px"]
+dapengjiaoyu.com##.toUnfold
+dapengjiaoyu.com##.upload-app
+tongzhuo100.com###gold_banner
+coolpc.com.tw##TD[onclick="cancelBubble()"]
+360game.360.cn##.advertising
+360game.360.cn##[class*="banner"]
+tobosu.com##.tbs-bottom-order
+tobosu.com###alert_order
+dyhjw.com##.guessEntranceOpen
+jmw.com.cn##.coupon
+3d66.com##.botfocus
+jiagle.com##.bannergroup
 zybang.com##.question-below-text
 zybang.com##.related-question-below-text
 baidu.com##.ts-qrcode
@@ -395,7 +719,6 @@ znds.com###diy_mobanbus_view_right2
 meijuxingqiu.com##.fixed-bottom-bar
 iqiyi.com##.m-hotWords-bottom
 3dmgame.com##A[href^="http://web.3dmgame.com/h5/game?"]
-hanjutv.com###widget-weixin
 ifeng.com##DIV[class^="enquiry_bottom"]
 ifeng.com##div[class^="bottom_box"]
 ifeng.com##div[class^="bottomSlide"]
@@ -435,7 +758,6 @@ baidu.com##.bottom-guide
 tianya.cn##.barcode-float
 imooc.com##.redrain-bg-shade
 weather.com.cn##A[href*=".tmall.com"]
-juejin.im##.activity-recommend
 ruten.com.tw##.act-promo
 pconline.com.cn##.twentieth
 100bt.com##.aolasidebar__ad1
@@ -516,7 +838,6 @@ epwk.com##.head_banner
 jd.com###m_common_tip
 taobao.com##.J_smartBanner
 appledaily.com###ebBannerTopDiv + A[href^="http://bit.ly/"]
-360kan.com###js-eb-bottomad
 tianyancha.com###banner_web
 vdianying.cc##div[style^="display:block !important;"]
 kuaibao.qq.com##.slider-box
@@ -543,7 +864,7 @@ zuowen.com##.dialogP
 mcmod.cn###McmodDonate
 pupudy.com##.asst-post_header
 pupudy.com##.sidebar
-view.inews.qq.com##DIV[class^="_"][style="bottom: 0px;"][data-action-id="1"]
+view.inews.qq.com#?#div[class^="_"]:-abp-has(>div[data-action-id]>div>.react-swipeable-view-container)
 douyu.com###js-room-activity
 gdmm.com##a[href="http://www.gdmm.com/appdown/"]
 kingkong.com.tw##.public-activity
@@ -744,7 +1065,6 @@ neihanshequ.com###pageletBottomBanner
 neihanshequ.com###pageletTopBanner
 1111.baidu.com,jump.bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com###pagelet_frs-aside\/pagelet\/hottopic
 kaopu001.com###pokemon
-meituan.com###pop
 52wmb.com###popContent
 wbiao.cn###popupImgCorner
 acfun.cn###prompt-box
@@ -767,7 +1087,6 @@ cskaoyan.com###scanWxQrCode
 wasu.cn###scan_qrcode
 po.baidu.com###shareBoxBlank
 xcar.com.cn###show_car
-hao.360.com###sidebar
 hao123.com###slidetoolbarContainer
 suning.com###sn-sidebar-change-code
 haosou.com###so_feb
@@ -935,7 +1254,6 @@ nen.com.cn##.for3gagzy
 tmall.com##.fp-lazyload-con[data-path*="/floor-ad-"]
 it168.com##.fu1020_box
 eastmoney.com##.fund-pop
-hanjutv.com##.ggw_fr
 55haitao.com##.global-dialog
 1kkk.com,dm5.com##.guide
 baixing.com##.guide-video-app
@@ -1028,12 +1346,10 @@ tianya.cn##.qhb-Box
 focus.cn##.qhb-fixed
 wasu.cn##.qp
 kuwo.cn##.qr_wrapper
-qihoo.com##.qrcode
 163.com##.quickmark
 to8to.com##.quoted-outside
 m.youku.com##.recommend
 news.baidu.com##.recommend-animate
-juejin.im##.recommend-box
 m.babytree.com##.recommend-brand
 m.babytree.com##.recommend-img-box
 news.baidu.com##.recommend-mask
@@ -1118,7 +1434,7 @@ m.56.com##a[data-statkey="newad_banner"]
 loldk.com##a[href$=".html?from=video_right"]
 ifeng.com##a[href*=".app"]
 163.com##a[href*=".kaola.com"]:first-child:last-child
-sina.com.cn##a[href="https://finance.sina.com.cn/mobile/comfinanceweb.shtml"]
+sina.com.cn##A[href*="/comfinanceweb."]
 crsky.com##a[href^="http://count."][href$=".exe"]
 ~laifeng.youku.com,youku.com##a[href^="http://cps.laifeng.com/"]
 ~laifeng.youku.com,youku.com##a[href^="http://cps.laifeng.com/"] + .bg + img
@@ -1148,7 +1464,7 @@ m.babytree.com##script + a[class]
 @@||th7.cn/sanda2015/css/ads.js
 @@||lancdn.com/landian/public/js/ads.js
 @@||qbox.me/static/js/ads.js$domain=linux.cn
-@@/adview_pic_$domain=doutula.com|fastadmin.net|xclient.info
+@@/adview_pic_$domain=doutula.com|fastadmin.net|toolfk.com|xclient.info
 @@||fm.ipinyou.$domain=ipinyou.com.cn
 @@||fm.p0y.cn^$domain=ipinyou.com.cn
 !--------------------------------Tracking Systems-----------------------------!
@@ -1166,6 +1482,18 @@ m.babytree.com##script + a[class]
 /v.gif?logtype=
 /yesky/js/counter/*
 /zcool-analytics.js
+||video.qq.com/checktime?
+||cdn-data-cloud.com/history/
+||s.ssl.qhres2.com/ssl/
+||pstatp.com^*/push.js
+||pv.cheshi.com^
+||tracking.kdnet.net^
+||lnd.com.cn/sys/real_calc.js
+||sogou.com/dr/p1.gif
+||stat.jc001.cn^
+||ip.tianqiapi.com^
+||count.nuanyuehanxing.com^
+||pconline.com.cn/ipJson.
 ||develenv.com^$third-party
 ||syzjxz2018.cn^
 ||gog.cn/sys/online_calc.js
@@ -1275,7 +1603,6 @@ m.babytree.com##script + a[class]
 ||gridsumdissector.cn/gs.gif?
 ||guahao.cn/blank.gif?
 ||hao123img.com/res/js/track.js
-||haostat.qihoo.com^
 ||hc360.com/js/module/common/logrecordservice.
 ||hd.sohu.com.cn^$object-subrequest
 ||hdslb.com/js/bfd.js
@@ -1416,77 +1743,4 @@ m.babytree.com##script + a[class]
 ||zdw.w8.com.cn/p.ht?
 ||zhulang.com/zlpv.php
 ||zol.com.cn/cgimp/zc.js
-! EasyPrivacy
-/__utm.gif
-/gen_204?$image,script
-/log.gif?
-/track.gif?
-||beacon.sina.com.cn^
-||cnzz.com^$third-party
-||duba.com/proxy/tj/
-||google-analytics.com/analytics.js
-||google.*/gen_204?$~xmlhttprequest
-||googletagmanager.com/gtm.js?$third-party
-||hm.baidu.com^$third-party
-||msg.71.am^
-||rs.sinajs.cn^
-||s.360.cn^
-||sinajs.cn/open/analytics/
-||stadig.ifeng.com^
-||wrating.com^$third-party
-!---------------------------------微博首页------------------------------------!
-!---首页顶部:提示【微博热点：神最右，爆料，找节操...总有一款适合你，点击使用！】
-weibo.com###v6_pl_content_hometip
-!---首页右侧:【好友关注动态】
-weibo.com###v6_pl_rightmod_attfeed
-!---首页左侧好友圈>>【公告栏】
-weibo.com###v6_pl_rightmod_noticeboard
-!---首页右侧:【会员专区/明星势力】
-weibo.com###v6_trustPagelet_recom_member
-!---首页右侧用户名下的【亚洲新歌榜】
-weibo.com###v6_pl_rightmod_rank
-!---首页顶部【游戏】
-weibo.com##.S_txt1[nm="game"]
-!---首页底部之【微博精彩等】
-weibo.com##.WB_footer > .footer_link
-!---首页底部之【备案】
-weibo.com##.WB_footer > .other_link
-!---首页中上:微博发布框上的【有什么新鲜事告诉大家?】
-weibo.com##.send_weibo > .title_area
-!---首页中上:微博发布框上的【热门微博】和随机出现的热门话题
-weibo.com##div[node-type="recommendTopic"]
-!---首页中下:提示【被不想看到的微博刷屏了，开通微博会员可设置关键词来屏蔽相关微博内容】
-weibo.com##.W_tips.tips_warn
-!---首页右下:【新闻"快讯】
-weibo.com##.WBIM_news
-!---首页右侧用户名下的【新版微博使用指南】
-weibo.com###v6_pl_rightmod_updatev6
-!---首页右侧下拉时的卡片
-weibo.com##.WB_main_r > div[style^="position: fixed;"]
-!--首页左侧【抢红包】
-weibo.com##.PCD_event_red2014
-!--首页右侧【红包】
-weibo.com###v6_pl_rightmod_hongbaoentrance
-!-------------------------------微博二级页面----------------------------------!
-!---首页左侧我的消息>>【微博意见反馈】
-weibo.com###v6_pl_rightmod_feedback
-!---首页左侧我的消息>>【消息箱-使用小帮助】
-weibo.com###v6_pl_rightmod_helpat
-!---首页左侧我的消息>>评论>>【消息箱-使用小帮助】
-weibo.com###v6_pl_rightmod_helpcomment
-!---首页左侧我的消息>>赞>>【消息箱-使用小帮助】
-weibo.com###v6_pl_rightmod_helplike
-!---首页左侧我的消息>>未关注人私信>>【消息箱-使用小帮助】
-weibo.com###v6_pl_rightmod_helpnotebox
-!---首页左侧我的消息>>群通知>>【群使用使用小帮助】
-weibo.com###v6_pl_rightmod_helpgroupchatnotice
-!---首页左侧收藏>>【导出收藏夹至有道云笔记】
-weibo.com###v6_pl_rightmod_favyoudao
-!---首页左侧收藏>>【收藏使用小帮助】
-weibo.com###v6_pl_rightmod_helpfav
-!---首页顶部发现>>右侧【微博发现】
-weibo.com###Pl_Core_P7MultiPicPlay__7
-!-------------------------------微博评论页面----------------------------------!
-!---【相关推荐】
-weibo.com##.apps_PCD_reco_detail_right
 !----------------------------------The End------------------------------------!
