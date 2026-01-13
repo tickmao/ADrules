@@ -1,0 +1,98 @@
+rules:
+  # 国际通用规则
+  - name: "EasyList"
+    category: "international"
+    url: "https://easylist.to/easylist/easylist.txt"
+    filename: "Easylist.txt"
+    update_frequency: "4 days"
+    priority: 5
+    description: "最主流的国际广告过滤规则"
+    homepage: "https://easylist.to/"
+    license: "GPL-3.0 / CC BY-SA 3.0"
+
+  - name: "EasyPrivacy"
+    category: "international"
+    url: "https://easylist.to/easylist/easyprivacy.txt"
+    filename: "EasyPrivacy.txt"
+    update_frequency: "4 days"
+    priority: 5
+    description: "隐私保护和反跟踪规则"
+    homepage: "https://easylist.to/"
+    license: "GPL-3.0 / CC BY-SA 3.0"
+
+  # 中国特化规则
+  - name: "EasyList China"
+    category: "china"
+    url: "https://easylist-downloads.adblockplus.org/easylistchina.txt"
+    filename: "EasyListChina.txt"
+    update_frequency: "4 days"
+    priority: 5
+    description: "EasyList 中国补充规则"
+    homepage: "https://github.com/easylist/easylistchina/"
+    license: "GPL-3.0 / CC BY-SA 3.0"
+
+  - name: "anti-AD"
+    category: "china"
+    url: "https://anti-ad.net/easylist.txt"
+    filename: "anti-AD.txt"
+    update_frequency: "1 day"
+    priority: 5
+    description: "国内流行的反广告规则"
+    homepage: "https://anti-ad.net/"
+    license: "CC BY-NC-SA 4.0"
+
+  - name: "乘风规则"
+    category: "china"
+    url: "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt"
+    filename: "ChengFeng.txt"
+    update_frequency: "2 days"
+    priority: 4
+    description: "卡饭论坛维护的广告过滤规则"
+    homepage: "https://github.com/xinggsf/Adblock-Plus-Rule"
+    license: "CC BY-NC-SA 4.0"
+
+  # 功能性规则
+  - name: "I don't care about cookies"
+    category: "functional"
+    url: "https://www.i-dont-care-about-cookies.eu/abp/"
+    filename: "I-Dont-Care-About-Cookies.txt"
+    update_frequency: "3 days"
+    priority: 4
+    description: "自动处理 Cookie 同意提示"
+    homepage: "https://www.i-dont-care-about-cookies.eu/"
+    license: "GPL-3.0"
+
+  - name: "CJX's Annoyance"
+    category: "functional"
+    url: "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+    filename: "Cjx-Annoyance.txt"
+    update_frequency: "4 days"
+    priority: 4
+    description: "去除页面干扰元素"
+    homepage: "https://github.com/cjx82630/cjxlist"
+    license: "GPL-3.0"
+
+  # 综合规则
+  - name: "HalfLife"
+    category: "comprehensive"
+    url: "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt"
+    filename: "HalfLife.txt"
+    update_frequency: "12 hours"
+    priority: 4
+    description: "综合性广告过滤规则集"
+    homepage: "https://github.com/o0HalfLife0o/list"
+    license: "GPL-3.0"
+
+# 更新策略
+update_strategy:
+  check_version: true
+  verify_format: true
+  min_lines: 100
+  max_size_mb: 50
+
+# GitHub Actions 配置
+github_actions:
+  schedule: "0 */6 * * *"
+  commit_message: "chore: auto-update rules"
+  commit_author: "ADrules Bot"
+  commit_email: "bot@adrules.local"

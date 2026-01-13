@@ -1,0 +1,35 @@
+name: Auto Update Rules
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 每 6 小时运行一次
+  workflow_dispatch:        # 支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Update rules
+        run: |
+          python scripts/update.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "ADrules Bot"
+          git config user.email "bot@adrules.local"
+          git add .
+          git diff --staged --quiet || git commit -m "chore: auto-update rules [skip ci]"
+          git push
