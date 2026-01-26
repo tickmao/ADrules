@@ -40,7 +40,7 @@
 
 | 规则名称 | 订阅链接 | 更新频率 | 说明 |
 |---------|---------|---------|------|
-| **HalfLife** | [订阅](https://raw.githubusercontent.com/tickmao/ADrules/master/HalfLife.txt) | 12 小时 | 综合性广告过滤规则集 |
+| **HalfLife** | [订阅](https://raw.githubusercontent.com/tickmao/ADrules/master/HalfLife.txt) | 1 周 | 综合性广告过滤规则集（移动端优化） |
 
 ## 推荐组合
 

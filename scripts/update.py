@@ -93,10 +93,10 @@ class RuleUpdater:
 
         return True
 
-    def _download_rule(self, url: str) -> Optional[str]:
+    def _download_rule(self, url: str, timeout: int = 60) -> Optional[str]:
         """下载规则文件"""
         try:
-            response = requests.get(url, timeout=30)
+            response = requests.get(url, timeout=timeout)
             response.raise_for_status()
             return response.text
         except requests.RequestException as e:
@@ -118,8 +118,9 @@ class RuleUpdater:
         print(f"\n→ {name}")
         print(f"  URL: {url}")
 
-        # 下载规则
-        content = self._download_rule(url)
+        # 下载规则（使用配置的超时时间，默认 60 秒）
+        timeout = rule_config.get('timeout', 60)
+        content = self._download_rule(url, timeout)
         if not content:
             return 'failed'
 
@@ -180,8 +181,8 @@ class RuleUpdater:
         print(f"✗ 失败: {self.failed_count}")
         print(f"总计: {total}")
 
-        # 如果有失败的，返回非零退出码
-        if self.failed_count > 0:
+        # 仅当所有规则都失败时才返回非零退出码
+        if self.failed_count > 0 and (self.updated_count + self.skipped_count) == 0:
             sys.exit(1)
 
 
