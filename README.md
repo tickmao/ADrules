@@ -27,6 +27,7 @@
 |---------|---------|---------|------|
 | **EasyList China** | [订阅](https://raw.githubusercontent.com/tickmao/ADrules/master/EasyListChina.txt) | 4 天 | EasyList 中国补充规则 |
 | **anti-AD** | [订阅](https://raw.githubusercontent.com/tickmao/ADrules/master/anti-AD.txt) | 1 天 | 国内流行的反广告规则 |
+| **AdRules** | [订阅](https://raw.githubusercontent.com/tickmao/ADrules/master/AdRules.txt) | 1 天 | 中国地区广告拦截规则，覆盖广告、追踪器、恶意软件 |
 | **乘风规则** | [订阅](https://raw.githubusercontent.com/tickmao/ADrules/master/ChengFeng.txt) | 2 天 | 卡饭论坛维护的广告过滤规则 |
 
 ### 功能性规则
@@ -112,6 +113,7 @@
 - [EasyList](https://easylist.to/) - GPL-3.0 / CC BY-SA 3.0
 - [EasyList China](https://github.com/easylist/easylistchina/) - GPL-3.0 / CC BY-SA 3.0
 - [anti-AD](https://anti-ad.net/) - CC BY-NC-SA 4.0
+- [AdRules](https://github.com/Cats-Team/AdRules) - WTFPL
 - [乘风规则](https://github.com/xinggsf/Adblock-Plus-Rule) - CC BY-NC-SA 4.0
 - [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/) - GPL-3.0
 - [CJX's Annoyance List](https://github.com/cjx82630/cjxlist) - GPL-3.0

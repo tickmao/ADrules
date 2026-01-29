@@ -54,6 +54,17 @@ rules:
     homepage: "https://github.com/xinggsf/Adblock-Plus-Rule"
     license: "CC BY-NC-SA 4.0"
 
+  - name: "AdRules"
+    category: "china"
+    url: "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt"
+    filename: "AdRules.txt"
+    update_frequency: "1 day"
+    priority: 5
+    timeout: 120
+    description: "中国地区广告拦截规则，覆盖广告、追踪器、恶意软件"
+    homepage: "https://github.com/Cats-Team/AdRules"
+    license: "WTFPL"
+
   # 功能性规则
   - name: "I don't care about cookies"
     category: "functional"
