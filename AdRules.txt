@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-01-30 14:14:18(GMT+8)
-! Total count: 173483
+! ! Version: 2026-01-30 20:08:15(GMT+8)
+! Total count: 173482
  
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
@@ -2890,6 +2890,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /create-lead.js
 /criteo.$domain=~criteo.blotout.io|~criteo.github.io|~criteo.investorroom.com
 /criteoRTA.js
+/crm/tag/call.tracker.js
 /crypta.js
 /csi?v=*&action=
 /csi?v=2&s=
@@ -57562,6 +57563,9 @@ mc.pldthome.com$image
 mca468ab.view-qa1.sfmc-marketingqa.com$image
 mca46a39.view-qa1.sfmc-marketingqa.com$image
 mcmod.cn###McmodDonate
+mcortechnologies.com#$#abort-current-inline-script jQuery open
+mcortechnologies.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+mcortechnologies.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 md4u.ru###pagecontent > div[style*="background-color"]
 mdpr.jp#?#.p-articleList__heading:has(+ div#taboola-below-article-thumbnails-desktop)
 me360.com##.footer-booking-open
@@ -60645,9 +60649,6 @@ rutab.net##div[class^="ggmodale"]
 ruten.com.tw##.act-promo
 rutor.org#$#abort-on-property-read Light.Popup
 rutube.ru#$#override-property-read Object.prototype.advert undefined
-ruwenzori.net#$#abort-current-inline-script jQuery open
-ruwenzori.net#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-ruwenzori.net#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 rwvtest.hippinopages.com$image
 rychlost.cz###cpcbsd9z1
 s-pt.jp%2Fmail%2Finfo%2F*%2Fimg%2F_.gif$image
@@ -85819,7 +85820,6 @@ zybang.com##.top_download
 ||crm-analytics.imweb.ru^$third-party
 ||crm-vwg.com/tracker/
 ||crm.a1.by/bitrix/js/crm/tracking/
-||crm.a1.by/upload/crm/tag/call.tracker.js
 ||crm.agency^$third-party
 ||crm.casabaca.com^
 ||crm.childrens.com^
@@ -96670,7 +96670,6 @@ zybang.com##.top_download
 ||fculcz.joann.com^
 ||fcvnd.apothekenaratgeber.com^
 ||fd.bawag.at^
-||fd.cleantalk.org^
 ||fd.ivoclar.com^
 ||fd.nl/pixel/
 ||fdbhv.knix.com^
