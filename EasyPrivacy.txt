@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202602030106
+! Version: 202602030622
 ! Title: EasyPrivacy
-! Last modified: 03 Feb 2026 01:06 UTC
+! Last modified: 03 Feb 2026 06:22 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 0102ee01d4f5c277a2129d9976e15359bc378c3e
+! Commit: 3caf7d3120df77e84ab6da920727d44f17e7f391
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -2234,7 +2234,7 @@
 /stats-js.cgi?
 /stats-listener.js
 /stats-tracking.js
-/stats.*/event
+/stats.*/event$domain=~stats.prisamedia.cl
 /stats.*/hits/*
 /stats.*/tracker.
 /stats.asp?id
@@ -10048,6 +10048,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.shorte.st^
 ||analytics.shorthand.com^
 ||analytics.sitewit.com^
+||analytics.skyscanner.net^
 ||analytics.sleeknote.com^
 ||analytics.snidigital.com^
 ||analytics.strangeloopnetworks.com^
@@ -14720,6 +14721,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cookpad.com/*/activity_logs
 ||copilot-telemetry.githubusercontent.com^
 ||core-features.cambridge.org/proxy/client/metrics
+||coros.com/traceapi
 ||count.all.biz^
 ||count.darkreader.app^
 ||count.rin.ru^
@@ -16049,6 +16051,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tilanalytics.timesinternet.in^
 ||time.is/img/nod.png
 ||tiplink.io/fp-agent.js
+||titanprod.narvar.com^
 ||tms.abconsent.com^
 ||tms.delta.com/privacy/$image
 ||tms.eharmony.ca^

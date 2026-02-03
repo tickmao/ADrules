@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-02-03 08:19:02(GMT+8)
-! Total count: 181163
+! ! Version: 2026-02-03 14:17:08(GMT+8)
+! Total count: 181177
  
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
@@ -4797,7 +4797,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /stats-js.cgi?
 /stats-listener.js
 /stats-tracking.js
-/stats.*/event
+/stats.*/event$domain=~stats.prisamedia.cl
 /stats.*/hits/*
 /stats.*/tracker.
 /stats.asp?id
@@ -58092,6 +58092,7 @@ facet.wp.pl,ksiazki.wp.pl,tech.wp.pl,money.pl,moneyv.wp.pl#$#abort-on-property-r
 factfeed.com,mdrntoday.com,travelroo.com###vidazooAd
 factfeed.com,mdrntoday.com,travelroo.com#$#hide-if-matches-xpath './/div[contains(@class,"ad-lines") and contains(text(),"ADVERTISEMENT")]/parent::div[@class="ad-text-box"]/ancestor::div[@class][@style]'
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
+factually.co#%#//scriptlet('set-local-storage-item', 'userBrowserId', '$remove$')
 fairytailmx.com#@##sponsored-ad
 fandom.com#%#//scriptlet('set-constant', 'optimizely', 'emptyObj')
 fandom.com#%#//scriptlet('set-constant', 'optimizely.initialized', 'true')
@@ -79036,6 +79037,7 @@ zybang.com##.top_download
 ||analytics.lhiver.com.br^
 ||analytics.lifestyledemocracy.com^
 ||analytics.liftoff.io^
+||analytics.liine.com^
 ||analytics.lisaai.app^
 ||analytics.littlekingdesigns.com^
 ||analytics.liveact-vault.com^
@@ -80499,6 +80501,7 @@ zybang.com##.top_download
 ||api.fw.tv/embed/
 ||api.gabbrix.com^
 ||api.gameanalytics.com^
+||api.gamsgo2.com/data_explorer/metric
 ||api.garcezsports.com.br^
 ||api.garriga.com.br^
 ||api.gentlecure.com^
@@ -90349,6 +90352,7 @@ zybang.com##.top_download
 ||cornelsen.de/*/tracking.min.js
 ||corner-stats.sladewatkins.net^
 ||cornershirts.com^
+||coros.com/traceapi
 ||corp.w-nexco.co.jp/*/ga*.js
 ||corp.w-nexco.co.jp/*/googleAnalytics.js
 ||corporate-klm.americanexpress.nl^
@@ -101741,6 +101745,7 @@ zybang.com##.top_download
 ||factortg.com^$third-party
 ||factory.redbull.racing^
 ||factorybarbell.com^
+||factually.co/api/track-pageview
 ||fadechildren.com^$third-party
 ||fadedsnow.com^
 ||fadedsnow.com^$third-party
@@ -101788,6 +101793,7 @@ zybang.com##.top_download
 ||faithrowold.com^$third-party
 ||faiwax.golfhouse.de^
 ||fakedisguise.com^
+||fakerry.com^
 ||fakexa-post.mno.link^
 ||fakjkwp.cn^
 ||fakrul.bazarsarabela.com^
@@ -104423,6 +104429,7 @@ zybang.com##.top_download
 ||get.catch.co^
 ||get.cheapshot.co^
 ||get.cityworthapp.com^
+||get.civicscience.com^
 ||get.codehub.ninja^
 ||get.conciergecare.app^
 ||get.cryptocontrol.io^
@@ -116423,6 +116430,7 @@ zybang.com##.top_download
 ||kindhush.com^$third-party
 ||kindlaundry.rdtrke.com^
 ||kindlereunion.com^
+||kindlestorsion.com^
 ||kinesis.eu-west-1.amazonaws.com^
 ||kinesis.us-east-1.analytics.edmentum.com^
 ||kingfisher.gedaly.com^
@@ -117372,6 +117380,7 @@ zybang.com##.top_download
 ||laregione.ch/ext/av.php?
 ||largebrass.com^
 ||larinpayment.com^
+||larkersmaku.com^
 ||laruv.jlobeauty.com^
 ||las.lasemo.be^
 ||lasagneandands.com^$third-party
@@ -124378,7 +124387,6 @@ zybang.com##.top_download
 ||majorleaguegaming.com/assets/ab.js$script
 ||makbti.bandofboats.com^
 ||makemytrip.com^$cookie=dvid
-||makeship.com/_vercel/insights/script.js
 ||makeship.com/ingest/*?compression=
 ||makeship.com/ingest/static/recorder-v2.js
 ||makesimpact.com^
@@ -126344,6 +126352,7 @@ zybang.com##.top_download
 ||mat1.gtimg.com/rain/bailing20/*.*.png$image
 ||mat1.gtimg.com/rain/bailing20/*.jpg$image
 ||mat6tube.com/api/stats?
+||matamant.com^
 ||matas.dk/internal/Tracking/
 ||matchid.adfox.yandex.ru/getcookie$domain=vseinstrumenti.ru|kp.ru
 ||matelso.de/webtracking/
@@ -135464,6 +135473,7 @@ zybang.com##.top_download
 ||perf.bblmw.com^
 ||perf.hsforms.com^
 ||perf.mouser.com^
+||perfalytics.com^
 ||perfalytics.com^$third-party
 ||perfdrive.com^$third-party
 ||perfectaudience.com^$third-party
@@ -138618,6 +138628,7 @@ zybang.com##.top_download
 ||radar.cloudflare.com/api/analytics
 ||radar.imgsmail.ru^
 ||radar.manzlek.com^
+||radarcatalystmomentumindustries.com^
 ||radarstats.com^$third-party
 ||radexports.com^
 ||radiantcanopy.com^
@@ -166995,6 +167006,7 @@ zybang.com##.top_download
 ||titag.com^$third-party
 ||titan24.com/scripts/stats.js
 ||titanprod.narvar.com/*/track|
+||titanprod.narvar.com^
 ||titoboard-ss.zavydeals.com^
 ||titomacia.net.anwalt.de^
 ||tittendestages.net.anwalt.de^
@@ -174769,6 +174781,7 @@ zybang.com##.top_download
 ||vancuongthinh.com^
 ||vanfireworks.com^
 ||vanfireworks.com^$third-party
+||vangeewasps.com^
 ||vanilla.futurecdn.net/*/media/shared/js/slide-analytics.*.js
 ||vanilla.futurecdn.net/tvtechnology/media/shared/js/jwplayer-analytics
 ||vanilladev.com/analytics.
@@ -177175,6 +177188,7 @@ zybang.com##.top_download
 ||whitepapers.blackboard.com^
 ||whitepapers.rockwellautomation.com^
 ||whitepixel.com^$third-party
+||whizzerrapiner.com^
 ||whktr.runrocknroll.com^
 ||whmdrv.marpple.com^
 ||whoami.akamai.net.iberostar.com^
