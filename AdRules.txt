@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-02-03 14:17:08(GMT+8)
-! Total count: 181177
+! ! Version: 2026-02-03 20:09:35(GMT+8)
+! Total count: 181185
  
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
@@ -7764,6 +7764,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||adobe.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||adobe.tt.omtrdc.net/rest/v1/delivery?client=adobe&sessionId=$domain=acrobat.adobe.com
 @@||adobedc.demdex.net/ee/v1/identity/$xmlhttprequest,domain=cibc.com
+@@||adobedc.demdex.net^$xmlhttprequest,domain=sc.com
 @@||adobedtm.com/extensions/$domain=antena3.com|apple.com|atresmedia.com|atresplayer.com|automobiles.honda.com|bravotv.com|cadenaser.com|crave.ca|foodnetwork.com|lasexta.com|telus.com|verizon.com|xfinity.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^*-libraryCode_source.min.js$domain=doda.jp
@@ -12243,9 +12244,6 @@ audiotag.info##.dialog-fog
 audiotruyenfull.com#$#abort-current-inline-script document.addEventListener ai_run
 audiotruyenfull.com#$#abort-current-inline-script setTimeout Aff
 audiotruyenfull.com#$#abort-on-property-read adpiaListUrl
-auger-loizeau.com#$#abort-current-inline-script jQuery open
-auger-loizeau.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-auger-loizeau.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 augsburger-allgemeine.de,nikkansports.com##div[id^="cx_"]
 aupetitparieur.com,meilleurpronostic.fr,mamieastuce.com##div[class] > div[id] > main[class][id]
 aura.cn##.foot-xcx
@@ -58483,6 +58481,9 @@ flipkart.com#$#hide-if-matches-xpath './/div[@dir][contains(text(),"You may also
 flipkart.com#$#race start; hide-if-contains-visible-text /Sponsored/ 'div[style]' div[class]>span; hide-if-matches-xpath './/div[contains(@data-tkid,"ADVIEW")]/following::*[@width]/*[@width][@height][@fill]/ancestor::div[@data-id][@style][1]'; race stop;
 flo.com.tr#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
 flowus.cn##footer .swiper
+floydredcrowwesterman.com#$#abort-current-inline-script jQuery open
+floydredcrowwesterman.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+floydredcrowwesterman.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 flymer.ru#@#.ad-unit
 fm.douban.com##.left
 fmdisk.com##div[style="width: 960px; margin: 0 auto; height:900px; color: #F00; font-size: 14px; text-align:left;"] > p
@@ -64461,7 +64462,6 @@ ph4.ru##table[width][height="90"][style]
 pheclip.love,phim18vip.one,sieudam.sh#$#abort-current-inline-script $ pop
 phimhdplus.com#$#json-prune ads;abort-current-inline-script setTimeout click_time
 phimlongtieng.net#$#abort-current-inline-script document.createElement script
-phimmoii.to,comanalysis.ch#$#prevent-listener click ads
 phimtho.cc#$#abort-current-inline-script $ p0pUpRandom
 phimvuihd.net#$#override-property-read urlAds ''
 phonearena.com##.adblock_awareness
@@ -66922,7 +66922,7 @@ vidmoly.to#$#abort-current-inline-script addEventListener DOMContentLoaded; abor
 vidshare.tv,govid.*,hdvid.tv,gomovies.*,gostream.nu,openloadmovies.*,flashx.tv,cloudvideo.tv#$#abort-on-property-write Fingerprint2
 vidshare.tv,vidshar.tv,series.movie,gowatchseries.movie,gowatchseries.tv#$#abort-current-inline-script Object.defineProperty XMLHttpRequest
 vidsrc.*,cucuflix.*#$#abort-current-inline-script document.createElement /referrerPolicy.*no-referrer-when-downgrade/;
-viet69.cm,dualeotruyenpe.com,yurineko.my,andywhitemosaics.co.uk,cliphot69.shop,doctruyen3qhubz.com,ihentai.network,animehay.bar,hentaivc.pro,streamvl.top,buomtv.media,truyenvn.shop,javtiful.com,quatvn.my,phimsexhayvn96.com,phim18hdxx.com,vn6.sexviet88.xyz,demo.14412882.com,vlgaisex.pro,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.app,truyenqqno.com,clipsexsub3x.net,sayhentai.world,motphim.pokemonviet.com,lxmanga.space,phimlongtieng.net,newtruyenhot.pro,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,sexviet88.xyz,viet69.cm,goctruyentranhvui19.com,viet69vn.at#$#abort-current-inline-script WebAssembly instantiate
+viet69.cm,dualeotruyenpe.com,yurineko.my,ditlenlut.com,cliphot69.shop,doctruyen3qhubz.com,ihentai.network,animehay.bar,hentaivc.pro,streamvl.top,buomtv.media,truyenvn.shop,javtiful.com,quatvn.my,phimsexhayvn96.com,phim18hdxx.com,vn6.sexviet88.xyz,demo.14412882.com,vlgaisex.pro,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.app,truyenqqno.com,clipsexsub3x.net,sayhentai.world,motphim.pokemonviet.com,lxmanga.space,phimlongtieng.net,newtruyenhot.pro,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,sexviet88.xyz,viet69.cm,goctruyentranhvui19.com,viet69vn.at#$#abort-current-inline-script WebAssembly instantiate
 view-old.email.realcommercial.com.au$image
 view-old.email.realestate.com.au$image
 view.013.tmmsg.com$image
@@ -69150,6 +69150,7 @@ vsaduidoma.com##.ABD_display_wrapper
 vse42.ru##.ya-metrika
 vsetut.su,animedia.tv#$#abort-on-property-read zfgformats
 vsviti.com.ua#$#abort-on-property-read tdAnimationStack.init
+vuetips.com,comanalysis.ch#$#prevent-listener click ads
 vulture.com##div[data-uri="www.vulture.com/_components/clay-space/instances/taboola@published"]
 vuukle.com##a[href*="news.vuukle.com/u/"]
 vuzlit.com#$#abort-on-property-read _0xc091
@@ -69423,7 +69424,7 @@ www.qianwen.com##.leading-7.text-center.w-16.h-7.rounded-8.text-theme.text-12.bg
 www.qianwen.com#?#button:contains(下载电脑版)
 www.qof.happycustomer.io$image
 www.rodillacupones.com$image
-www.rophim.nl#$#prevent-listener click isSwapping
+www.rophim.la#$#prevent-listener click isSwapping
 www.s-10.cloud.s11.sfmc-osl.com$image
 www.sandbox-intro.cloud.s11.sfmc-osl.com$image
 www.seznam.cz#$#cookie-remover adform
@@ -70274,6 +70275,7 @@ zybang.com##.top_download
 ||2rid9fii9chx.www.atlaslane.com^
 ||2rwonuh.com^
 ||2smt6mfgo.de^
+||2trk.info^$third-party
 ||2tty.overstappen.nl^
 ||2u3v4w5x6y.com^
 ||2vqgtxw.cn^
@@ -75450,6 +75452,7 @@ zybang.com##.top_download
 ||accutrain.actonservice.com^
 ||accuzip.actonservice.com^
 ||accwww9.53kf.com^
+||acds-events.adobe.io^
 ||ace-sync.toast.com/sendid?sid=*&uid=
 ||ace.naver.com^
 ||ace.segye.com/?cookie
@@ -87568,7 +87571,6 @@ zybang.com##.top_download
 ||cdn.trackclicks.info^$third-party
 ||cdn.trackcollect.com/metrics/
 ||cdn.trakkr.ai^
-||cdn.transifex.com/live.js
 ||cdn.tvdez.com^$third-party
 ||cdn.usefathom.com^
 ||cdn.user-api.com^$domain=ahaonline.cz|info.cz|onetv.cz
@@ -101188,6 +101190,7 @@ zybang.com##.top_download
 ||events.prd.api.discomax.com^
 ||events.prd.api.max.com^
 ||events.privy.com^
+||events.production.us1.pgw-pci.klarna.net^
 ||events.pyszne.pl^
 ||events.rahoy.com^
 ||events.realgravity.com^
@@ -119009,6 +119012,7 @@ zybang.com##.top_download
 ||live.bilibili.com^$removeparam=visit_id
 ||live.comunicaciones.jetstereo.com^
 ||live.cxo.name^
+||live.exchangesolutions.com^
 ||live.mrf.io/statics/marfeel/gardac-sync.js
 ||live.polycom.com^
 ||live.prismamediadigital.com/ops/TRA/ab_ban/$image,domain=voici.fr
@@ -136844,6 +136848,7 @@ zybang.com##.top_download
 ||preciousplanes.com^
 ||precisear.com^
 ||precisioncounter.com^$third-party
+||preciso.net^$third-party
 ||predataclient.b-cdn.net^
 ||predicta.net^$third-party
 ||predictivedna.com^$third-party
@@ -137415,6 +137420,7 @@ zybang.com##.top_download
 ||pubimgs.com^
 ||pubimgs.net/main.gif?
 ||public-data-api.miyoushe.com^
+||public.9gtb.com^
 ||public.cobrowse.oraclecloud.com/rely/storage/
 ||public.fbot.me/track/
 ||public.gdtimg.com^
@@ -142437,6 +142443,7 @@ zybang.com##.top_download
 ||scripts.finanzen.net/Content/Scripts/user/google-tag-manager-head.js
 ||scripts.hepsiburada.net/assets/analytics/analytics.*.js
 ||scripts.jixie.media^$third-party
+||scripts.postie.com/otcteung/lp.1.js
 ||scripts.psyma.com^
 ||scripts.rubiconredirect.com/scripts/vk_lightinthebox.js
 ||scripts.sophus3.com/s3s/ams/logging.js
@@ -177721,6 +177728,7 @@ zybang.com##.top_download
 ||wtaccesscontrol.com^
 ||wtaccesscontrol.com^$third-party
 ||wtag.estlier.net^$third-party
+||wtb-tag.mikmak.ai^
 ||wtb-tag.swaven.com^
 ||wtbevents.pricespider.com^
 ||wtdpkq.tausendkind.de^
