@@ -4,7 +4,7 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-02-05 20:10:18(GMT+8)
+! ! Version: 2026-02-06 02:16:28(GMT+8)
 ! Total count: 181249
  
 ###AdBlockDialog
@@ -16138,7 +16138,6 @@ ebay.*#$#hide-if-contains-visible-text /(S*p*o*n*s*o*r*e*d|A*n*z*e*i*g*e|S*p*o*n
 ebay.*#$#hide-if-contains-visible-text /(S.{0,30}p.{0,30}o.{0,30}n.{0,30}s.{0,30}o.{0,30}r|A.{0,30}n.{0,30}z.{0,30}e.{0,30}i.{0,30}g|C.{0,30}o.{0,30}m.{0,30}m.{0,30}a.{0,30}n.{0,30}d|P.{0,30}a.{0,30}t.{0,30}r.{0,30}o.{0,30}c.{0,30}i.{0,30}n|S.{0,30}p.{0,30}o.{0,30}n.{0,30}s.{0,30}o.{0,30}r.{0,30}i.{0,30}z.{0,30}z)/ 'div[data-slot*="PLACEMENT_"]' 'div[data-slot*="PLACEMENT_"] > div[id*="placement"] > div > div > div > div > div > div > div > div > div > div > div > div'; hide-if-contains-visible-text /(S.{0,30}p.{0,30}o.{0,30}n.{0,30}s.{0,30}o.{0,30}r|A.{0,30}n.{0,30}z.{0,30}e.{0,30}i.{0,30}g|C.{0,30}o.{0,30}m.{0,30}m.{0,30}a.{0,30}n.{0,30}d|P.{0,30}a.{0,30}t.{0,30}r.{0,30}o.{0,30}c.{0,30}i.{0,30}n|S.{0,30}p.{0,30}o.{0,30}n.{0,30}s.{0,30}o.{0,30}r.{0,30}i.{0,30}z.{0,30}z)/ 'div[data-slot*="PLACEMENT_"]' 'div[data-slot*="PLACEMENT_"] div.BbQd';
 ebay.*#$#hide-if-contains-visible-text /(Sponsored)|(Anzeige)|(Sponsorisé)|(Commandité)|(Patrocinado)|(Sponsorizzato)/ 'ul > li' 'ul > li span[aria-labelledby]'
 ebay.*#$#hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Patrocinado|Sponsorizzato)/ 'div[class^="YJDr"]>div' 'div[style*="color: #707070"]'
-ebay.*#$#hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Sponsorizzato|Sponsorowane|Gesponsord|Patrocinado)/ 'ul > li' 'ul > li *[aria-hidden]'
 ebay.*#$#hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Sponsorizzato|Sponsorowane|Gesponsord|Patrocinado)/ 'ul.srp-results>li.s-item' 'span[data-w]' 'color: rgba(0,0,0,1)' '-ignore-padding:true' '-disable-bg-color-check: true'
 ebay.*#$#hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato)/ 'div[data-viewport]' 'div[data-viewport] div[role="text"]'
 ebay.*#$#hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助)/ 'div[class][data-testid] div[id^="placement"]' 'div ^^sh^^ *[role^="text"]'; hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助)/ 'div[class][data-testid] div[id^="placement"] ^^sh^^ > div' 'div ^^sh^^ *[role^="text"]'; hide-if-contains-visible-text /(Sponsored|Anzeige|Sponsorisé|Commandité|Sponsorowane|Gesponsord|Patrocinado|Sponsorizzato|贊助)/ 'div[class][data-testid] div[id^="placement"][style] ^^sh^^ *' 'div ^^sh^^ *';
@@ -69165,7 +69164,7 @@ vsaduidoma.com##.ABD_display_wrapper
 vse42.ru##.ya-metrika
 vsetut.su,animedia.tv#$#abort-on-property-read zfgformats
 vsviti.com.ua#$#abort-on-property-read tdAnimationStack.init
-vuetips.com,comanalysis.ch#$#prevent-listener click ads
+vuetips.com,comanalysis.ch,onflix.me#$#prevent-listener click ads
 vulture.com##div[data-uri="www.vulture.com/_components/clay-space/instances/taboola@published"]
 vuukle.com##a[href*="news.vuukle.com/u/"]
 vuzlit.com#$#abort-on-property-read _0xc091
@@ -129544,6 +129543,7 @@ zybang.com##.top_download
 ||minibilling.com^
 ||minigame5-normal-hl.zijieapi.com^
 ||minigame5-normal-lq.zijieapi.com^
+||minimetrika.xsolla.com^
 ||mininghub.club^$third-party
 ||miniso.com.tr/*/sendEventV2|
 ||miniurls.co/Webservices/jsParseLinks.aspx$script,third-party
