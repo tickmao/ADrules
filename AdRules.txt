@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-02-05 08:18:41(GMT+8)
-! Total count: 181235
+! ! Version: 2026-02-05 14:27:43(GMT+8)
+! Total count: 181239
  
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
@@ -58961,6 +58961,7 @@ hh88-email.com$image
 hianime.*#$#hide-if-matches-xpath './/a[contains(@href,"flix")]/img[@alt="flix"][@style]/ancestor::div[@style]'
 hianime.*#$#prevent-listener pointerdown; abort-on-iframe-property-read localStorage; abort-on-iframe-property-read Math.random
 hinatasoku.blog.jp#?#.right-container > div.sidewrapper:has(> div.side > a[href="http://www.ziyu.net/"])
+hindustantimes.com##.middleTaboola
 hindustantimes.com#%#!function(){window.pSUPERFLY={virtualPage:function(){}};}();
 hindustantimes.com#%#//scriptlet('set-local-storage-item', '/^_c(b|hartbeat)/', '$remove$')
 hindustantimes.com#%#//scriptlet('set-local-storage-item', 'ht_cdp', '$remove$')
@@ -61429,6 +61430,7 @@ m.qidian.com##div.book-detail-btn:nth-of-type(3)
 m.qu.la#?#:-abp-has(> a[href*=".bcebos."])
 m.qu.la#?#ul:-abp-has(> li > a[href*=".bcebos."])
 m.sm.cn##DIV[ad_seid],.dl-banner-lg.card
+m.smzdm.com##.damo-footer-open-app__fixed-logo
 m.sogou.com##.recommend-pop.vr-recommend
 m.sohu.com###artLifeService
 m.sohu.com##.art-rec-news
@@ -110611,6 +110613,7 @@ zybang.com##.top_download
 ||himum.trymagicbox.com^
 ||hinata.me^*/pageview|
 ||hindsight.significanceapps.com^
+||hindustantimes.com/cdp/user/ht
 ||hindustantimes.com/res/images/one-pixel.png
 ||hindustantimes.com^$cookie=_ht_fp
 ||hindustantimes.com^$cookie=ppid
@@ -171519,7 +171522,7 @@ zybang.com##.top_download
 ||trackvoluum.com^$third-party
 ||trackword.biz^$third-party
 ||trackyourstats.com^$third-party
-||traction.technologyadvice.com^
+||traction.technologyadvice.com^$third-party
 ||tractorsupply.com^$cookie=/WC_USERACTIVITY_/
 ||tractorsupply.com^$cookie=WC_ACTIVEPOINTER
 ||tractorsupply.com^$cookie=WC_GENERIC_ACTIVITYDATA
@@ -173623,6 +173626,7 @@ zybang.com##.top_download
 ||ulyuom.xyz^
 ||um-public-panel-prod.s3.amazonaws.com^
 ||um.contentstudio.io^
+||um.merinfo.se^
 ||um.viuapi.io/loggingservice/
 ||um5xcgngmart.xyz^
 ||umami.*/script.js|$script
