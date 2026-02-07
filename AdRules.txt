@@ -4,9 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! ! Version: 2026-02-07 20:06:09(GMT+8)
-! Total count: 181289
- 
+! Version: 2026-02-08 02:05:49(GMT+8)
+! Total count: 181290
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -11504,6 +11503,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
 @||crunchyroll.com/*/ads_enabled_flag*.js$script
 Mplay/kk1.js
+[$path=/edmredir.php]mobile01.com#%#//scriptlet('trusted-replace-node-text', 'script', '/sendOfflineEvent[\s\S]*?window\.location\.href/', '/(window\.dataLayer[\s\S]*?sendOfflineEvent[\s\S]*?(window.location.href = [\s\S]*?;))/', '$2$1')
+[$path=/search]ya.ru,yandex.*#%#//scriptlet('remove-attr', 'data-counter', '.serp-list a[href]')
 ^endpoint=track^$image
 _/bigREDcat.css?
 _/bigREDdog.js
