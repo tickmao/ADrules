@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-02-09 08:19:30(GMT+8)
-! Total count: 181305
+! Version: 2026-02-09 14:23:55(GMT+8)
+! Total count: 181312
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -937,6 +937,7 @@ $cookie=_ym_uid
 $cookie=aam_uuid
 $cookie=abLdr
 $cookie=abMbl
+$cookie=ab_uuid
 $cookie=ac_user_id
 $cookie=actppresence
 $cookie=ad-id
@@ -61925,6 +61926,7 @@ marketrealist.com#$#abort-on-property-read adHandler.cmd.push
 marketrealist.com,kansas.com,thenewstribune.com#$#abort-on-property-read $aproxy
 marketwatch.com#$#hide-if-contains-visible-text /Advertisement/ 'div[class^="container"]' 'div>span'
 marketwatch.com#$#hide-if-matches-xpath './/img/following-sibling::span[contains(text(),"Ad Block")]/ancestor::div/ancestor::div[string-length(@class) >26]'; hide-if-matches-xpath './/div[@style][@class][@data-dianomi-context-id]//img[@style]/following::iframe[@style][contains(@title,"Dianomi ad")]/ancestor::div[string-length(@class) >26][1]';
+marketwatch.com#%#//scriptlet('set-local-storage-item', 'pvid', '$remove$')
 marketwatch.com,wsj.com#$#abort-on-property-write window.__buildAd;
 markezine.jp##.carouselBlock > li[id^="cx_"].c-headlineindex_listitem
 masahub.net,sbanh.com,sbembed.com,sblona.com,sblongvu.com,sbrapid.com,streamsb.com,streamsb.net#$#abort-on-property-read decodeURI; abort-on-property-read mm
@@ -81825,6 +81827,7 @@ zybang.com##.top_download
 ||app.pandasuite.io^
 ||app.panomoments.com^
 ||app.partner.fisglobal.com^
+||app.partnerboost.com/brand/track.*.min.js
 ||app.partnerboost.com^
 ||app.pawsket.com^
 ||app.payments-response.americanexpress.co.uk^
@@ -101309,6 +101312,7 @@ zybang.com##.top_download
 ||events.wonderstory.es^
 ||events.xletix.com^
 ||events.yourcx.io^
+||events1.avantisvideo.com^
 ||events2.directos.eu^
 ||events2.www.edenfantasys.com^
 ||events3alt.adcolony.com^
@@ -116473,6 +116477,7 @@ zybang.com##.top_download
 ||kickass.immunicity.gold/analyze*.js
 ||kickass.unlockproj.party/analyze*.js
 ||kickfire.com^$third-party
+||kicklogz.com/anl/mytag.js
 ||kickstarter.com/Uy3R669N/init.js
 ||kiddbs.baby-calendar.jp^
 ||kidney.renovaabd.com^
@@ -136942,6 +136947,7 @@ zybang.com##.top_download
 ||prebid-log.getpublica.com^
 ||prebid-server-canary.ifunny.co^
 ||prebid.loopmertb.com^
+||prebid.tapatalk.com^
 ||prebidmanager.com^$third-party
 ||preciousplanes.com^
 ||precisear.com^
@@ -167927,6 +167933,7 @@ zybang.com##.top_download
 ||tp.your-look-for-less.nl^
 ||tp.your-look-for-less.se^
 ||tp2p.kg.qq.com^
+||tp88trk.com^
 ||tp88trk.com^$third-party
 ||tpa7.iahorro.com^
 ||tpbywf.emp-shop.pl^
