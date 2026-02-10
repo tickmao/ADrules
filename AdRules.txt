@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-02-10 14:24:31(GMT+8)
-! Total count: 181366
+! Version: 2026-02-10 20:16:02(GMT+8)
+! Total count: 181372
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -12800,6 +12800,10 @@ campusfrance.org#%#//scriptlet('set-constant', 'pa.sendEvent', 'noopFunc')
 camsstream.com#$#abort-current-inline-script onload;
 canadiantire.ca#%#//scriptlet('set-local-storage-item', 'signifydSessionIdInfo', '$remove$')
 canhasbitcoin.com###adblock-message
+cap3.life#$#prevent-listener click d .art-control-fullscreen
+cap3.life#$#prevent-listener click e.target
+cap3.life#$#prevent-listener click setTimeout
+cap3.life#$#prevent-listener fullscreenchange e.target
 capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'noopFunc')
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 careers.samsungena-global.com$image
@@ -62381,7 +62385,7 @@ moskit-tracking.bibi.com.br$image
 moskit-tracking.ezbrew.com.br$image
 moskit-tracking.olyra.com.br$image
 moskit-tracking.pontotrack.com$image
-motchillk.ac,cap3.life#$#abort-on-property-read sessionStorage
+motchillk.ac#$#abort-on-property-read sessionStorage
 motorbikecatalog.com#$#override-property-read window.navigator.connection.rtt 1001
 motorpage.ru#$#json-prune '0.BannerId 1.BannerId 2.BannerId 3.BannerId 4.BannerId 5.BannerId 6.BannerId'
 motortrend.com#$#hide-if-matches-xpath './/div[contains(@id,"ad-id-curated_abovenavad")][@data-ad="true"]/parent::div[contains(@class,"cls-helper")][1]'
@@ -65132,7 +65136,6 @@ rnd-email.workatgather.com$image
 rnd-email.workatthrive.com$image
 rnd-email.workbetter.bg$image
 rnd-email.yukonstruct.com$image
-robong.cc#$#simulate-mouse-event '.show.modal-backdrop.fade$delay=1100'
 robotcoingame.com,monstercoingame.com,wonderlandco.in#@#.adsbygoogle
 rojadirecta.*#$#abort-on-property-read smrtSB; abort-on-property-read smrtSP
 rojadirecta.me#@##adserver
@@ -69457,8 +69460,8 @@ www.linkedin.com#$#simulate-mouse-event 'xpath(//*[text()="Promoted" or text()="
 www.mail.reedexport.com.cn$image
 www.medicalupdate.at$image
 www.meijuii.cc##DIV[style*='vw; display: block;']
-www.motchill43.com,trumtruyen.xyz#$#abort-current-inline-script setTimeout Aff
-www.motchill43.com,xnhau.hot,teamlanhlung8.shop,xemphimjav.xyz#$#abort-on-property-read localStorage
+www.motchill44.com,trumtruyen.xyz#$#abort-current-inline-script setTimeout Aff
+www.motchill44.com,xnhau.hot,teamlanhlung8.shop,xemphimjav.xyz#$#abort-on-property-read localStorage
 www.nettruyenupp.com#$#abort-on-property-read sp
 www.network.click.s11.sfmc-osl.com$image
 www.news.icemiller.com$image
@@ -90846,6 +90849,7 @@ zybang.com##.top_download
 ||crazyegg.com^$third-party
 ||crbcn.arialattner.com^
 ||crcao.newenglishteas.com^
+||crcldu.com^
 ||creamaroc.com^
 ||creasolunshort.com^
 ||create.encore-mx.com^
@@ -137393,6 +137397,8 @@ zybang.com##.top_download
 ||protectsubrev.com^$third-party
 ||protestcopy.com^
 ||prothomalo.com^$cookie=uuid_v2
+||proton.me/api/data/
+||proton.me/api/feature/v2/frontend/client/metrics
 ||protosell.actonservice.com^
 ||protys.protys.fr^
 ||provenpixel.com^$third-party
