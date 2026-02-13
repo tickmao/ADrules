@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-02-13 14:20:52(GMT+8)
-! Total count: 181341
+! Version: 2026-02-13 20:08:42(GMT+8)
+! Total count: 181346
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -12778,6 +12778,7 @@ businessinsider.in#?#li[class*="display-"]:-abp-has(div > h3 + p:-abp-contains(A
 businessinsider.in,bombaytimes.com#?#div:-abp-has(> h2:-abp-contains(Promoted Stories) + div)
 businessinsider.jp##div[class^="article_specialFeature_"]
 businessinsider.jp##div[class^="displayhandler"]:has(> div[class^="premiumRecommend"])
+businessinsider.jp##div[class^="premiumRecommend_articles__"]
 businessinsider.jp##div[class^="recommendArticlesList_recommend__"]
 buzzheavier.com,extratorrent.st,hdtube.porn,hentaihaven.icu,hentaikai.com,leaktape.*,flashbang.sh,trashbytes.net,ytstv.me,yts.*,yts-official.*#$#abort-on-property-read atob
 bycard.by,goodfon.ru,old-games.ru,satsis.info,swordmaster.org##.adb
@@ -101513,6 +101514,7 @@ zybang.com##.top_download
 ||exmeqy.smartbuyglasses.de^
 ||exnsar.raiton.ru^
 ||exoclick.com^$cookie
+||exodus.com^$cookie=cfz_zaraz-analytics
 ||exorigos.com^$third-party
 ||exovueplatform.com^$third-party
 ||exp.notion.so^
@@ -111667,6 +111669,7 @@ zybang.com##.top_download
 ||i.poker2u.app^
 ||i.pokerbros.net^
 ||i.pokernews.com^
+||i.posthog.com/*/?ip=
 ||i.posthog.com^
 ||i.raise.me^
 ||i.rttd.io^
@@ -135387,6 +135390,7 @@ zybang.com##.top_download
 ||pb.adriver.ru^
 ||pb.i.sogou.com^
 ||pb.siepomaga.pl^
+||pb.ytmp3tube.com/js/script.js$domain=yt1s.com.co
 ||pbaiyho.cn^
 ||pbbl.co^$third-party
 ||pbc.nypost.com^
@@ -138721,6 +138725,7 @@ zybang.com##.top_download
 ||r.stripe.com^$ping,script,xmlhttprequest
 ||r.studiosarte.com^
 ||r.wdfl.co/rw.js
+||r.winf.site^
 ||r.wz.de^
 ||r.yna.co.kr/global/lib/*/js/nlogger.js
 ||r0.mail.ru/pixel/
@@ -172986,7 +172991,7 @@ zybang.com##.top_download
 ||tuplzt.xyz^
 ||tupperwaresecuritiessettlement.e.epiqnotification.com^
 ||turbobit.net/ajax/fdlogger/
-||turbobit.net/js/analytics/
+||turbobit.net/js/analytics/fdUserFingerprintToken.js
 ||turbodeter.com^
 ||turboeagle.co^
 ||turbolion.io^
