@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-02-23 10:44:21(GMT+8)
-! Total count: 186110
+! Version: 2026-02-23 14:57:25(GMT+8)
+! Total count: 186117
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2021,6 +2021,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /_/trace/trace/*
 /_CPiX/art
 /__Analytics-Start?url=
+/__core/metrics.js
 /__imp_apg__/*
 /__rmn.gif?
 /__ssobj/core.js
@@ -7325,6 +7326,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 4game.com,4game.ru#%#//scriptlet('set-local-storage-item', 'trackingEvents', '$remove$')
 4kporn.xxx,cambro.tv,mangovideo.club###kt_player > a[href][target="_blank"]
 4kporn.xxx,cambro.tv,mangovideo.club#$#abort-current-inline-script crakPopInParams; abort-on-property-write onload
+4lapy.ru#%#//scriptlet('set-local-storage-item', 'client_id', '$remove$')
+4lapy.ru#%#//scriptlet('set-local-storage-item', 'marketing', '$remove$')
 4pda.to#$#hide-if-matches-xpath './/a[@target="_blank"]/img[@alt="" and @title=""]/parent::a/ancestor::*[@id and @class][1]'; hide-if-matches-xpath './/a[@href][@title][@target="_blank"]/img[@itemprop]/parent::a[@href]'; hide-if-matches-xpath './/a[@href][@target="_blank"]/img[@title and @border]/ancestor::*[2]'; hide-if-matches-xpath './/*[@id and @class]/article[@class="post" and @itemscope]/ancestor-or-self::*[1]';
 4pda.to#%#//scriptlet('remove-attr', 'data-dotrack', 'a[data-dotrack]')
 4tuning.ro#@#.adsbygoogle
@@ -84656,6 +84659,7 @@ zybang.com##.top_download
 ||animegoods.co.kr^$cookie=/fb_/
 ||animegoods.co.kr^$cookie=ec_ipad_device
 ||animember.net/js/access.js
+||animo.sto.wiki^
 ||anivisual.net/mim*.js|$script,domain=anivisual.net
 ||anizmplayer.com/gMetrics/
 ||anjo.vivercuidadores.com.br^
@@ -84947,6 +84951,7 @@ zybang.com##.top_download
 ||api.270degrees.nl/*/log?apiKey=
 ||api.36dfsa.com^
 ||api.3quartosimoveis.com.br^
+||api.4lapy.ru/api/v*/events/
 ||api.5starclinicltd.com^
 ||api.a-kasse-guiden.dk^
 ||api.aagigastronomia.com.br^
@@ -92199,6 +92204,7 @@ zybang.com##.top_download
 ||cdl2.booksy.com^
 ||cdlcli.sortmund.pl^
 ||cdmjur.xyz^
+||cdn-*.gravityfield.ai^
 ||cdn-a.raptor.digital^
 ||cdn-adn.rayjump.com^
 ||cdn-channels-pixel.ex.co^
@@ -101446,6 +101452,7 @@ zybang.com##.top_download
 ||digikey.*/resources/ba4e6e570brn21616213e20fbeb902d9
 ||digiland.it/count.cgi?
 ||digimedia.com/pageviews.php?
+||diginetica.net^
 ||digistat.westjet.com^
 ||digistats.de^$third-party
 ||digistats.westjet.com^
