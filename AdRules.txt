@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-02-24 11:45:20(GMT+8)
-! Total count: 188461
+! Version: 2026-02-24 14:53:04(GMT+8)
+! Total count: 188482
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -15238,6 +15238,7 @@ cn.bing.com##.bnp_rich_div_visible.bottom
 cn.bing.com##.bnp_rich_div_visible.top
 cn.bing.com#$#hide-if-contains 360 #b_results>li .b_adProvider
 cn.bing.com,cn.bing.net##.b_bza_pole
+cnbctv18.com###postDetail > div[style][class^="jsx-"]:has(> .taboola_section)
 cnbeta.com##.wdj_box
 cnbeta.com##DIV[style="display:block !important;position:fixed;bottom:0;margin-top:10px;width:100%;background:#c44;color:#fff;font-size:15px;z-index:99999"]
 cnbeta.com##div[id][style^="position: fixed; bottom: 0px;"]
@@ -68710,6 +68711,8 @@ mydrivers.com##.ab
 mydrivers.com##.bb
 mydrivers.com#@#.baidu, a[href^=http][target=_blank]
 myfirstcomp.ru#?#.tm-sidebar-b > div.uk-panel:has(script[src^="https://adcounter"])
+myhixel.com#%#//scriptlet('set-local-storage-item', 'ANONYMOUS_CUSTOMER_ID', '$remove$')
+myhixel.com#%#//scriptlet('set-local-storage-item', 'user_id', '$remove$')
 myjane.ru,omskpress.ru,astrakhan.ru,tambovnet.org#$#abort-on-property-read kav_cn
 mykhel.com#$#hide-if-matches-xpath './/div[@class="rightArtImg"]/img[contains(@src,"boldsky.com") or contains(@src,"gizbot.com") or contains(@src,"oneindia.com") or contains(@src,"nativeplanet.com") or contains(@src,"goodreturns.in") or contains(@src,"drivespark.com") or contains(@src,"careerindia.com") or contains(@src,"filmibeat.com")]/ancestor::div[@class="rightArt"][@data-content_id]'
 mylivesocial.com##.bgimg
@@ -70823,7 +70826,6 @@ piratia.su###block-warning
 pirlotv.tv###ad_overlay
 pirlotv.tv###ad_overlay_content
 pirlotv.tv###ad_overlay_countdown
-pitchfork.com,gq.com#%#//scriptlet('set-local-storage-item', '/^avoinspector/', '$remove$')
 pixel.monitor*.returnpath.net$image
 pixhost.to#$#prevent-listener getexoloader;
 pixiv.net##.ads_anchor
@@ -71576,6 +71578,7 @@ secured.click.s11.sfmc-osl.com$image
 security.oneplus.com#%#//scriptlet('set-constant', '_dx', 'emptyObj')
 seedpeer.me###body > #pageTop + * + #headerbox + TABLE[width="100%"]
 seekingalpha.com#@##ad_unit
+self.com,allure.com,pitchfork.com,gq.com#%#//scriptlet('set-local-storage-item', '/^avoinspector/', '$remove$')
 seltzerland.com#$#abort-on-property-read adsRedirectPopups
 semprotyuk.com##div[style^="margin-bottom:150px;"][style*="padding-right:2em;"]
 send.grantstation.com$image
@@ -72311,6 +72314,7 @@ theextopia.com##.adsbanner
 theextopia.com##.adsfoot1
 theextopia.com##.adsfoot2
 theflixertv.*#$#hide-if-matches-xpath './/div[@dir][@style][attribute::*[starts-with(name(), "data-")]]/ancestor-or-self::*[1]'
+thegentlemansjournal.com#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
 theguardian.com##.js-adblock-sticky
 theguardian.com##.site-message--adblock-message
 thehill.com###block-thehill-blocks-amp-outbrain
@@ -73338,6 +73342,7 @@ userstyles.org##.android_button_banner
 userstyles.org##.android_button_button
 userstyles.org#%#//scriptlet("set-constant", "poptin_display", "noopFunc")
 usgang.ch###rectangle-wrapper
+usmagazine.com#%#//scriptlet('set-local-storage-item', 'rl_anonymous_id', '$remove$')
 usnews.com###null-recommendations-widget
 uuu9.com##.c_box
 v.ifeng.com##div[class^="index_container"]
@@ -76380,10 +76385,11 @@ zybang.com##.top_download
 ||11b6n4ty2x3.taxliencode.com^
 ||11jianzhan.com^
 ||11nux.com^$third-party
+||11st.co.kr/js/*/RakeData.js
 ||11st.co.kr/js/*/reviewLog.js
-||11st.co.kr/js/rake/RakeData.js
 ||11st.co.kr/st/
 ||11st.co.kr^$cookie=/RAKE_SID/
+||11st.co.kr^$cookie=PCID
 ||120.132.57.41/pjk/pag/ys.php
 ||1205qitiao2022.xyz^
 ||121.43.235.135^
@@ -84131,6 +84137,7 @@ zybang.com##.top_download
 ||alicat.actonservice.com^
 ||alicdn.com/AWSC/et/
 ||alicdn.com/UnionCps/tktrace/cps.js
+||alicdn.com/alilog/mlog/
 ||alicdn.com/f/pcdn/i.php?
 ||alicdn.com/js/aplus_*.js
 ||alicdn.com/mtb/lib-smartbanner-
@@ -87565,6 +87572,7 @@ zybang.com##.top_download
 ||aplus.aliexpress.*/ae.pc_ctr.statweb_ae_ctr
 ||aplus.aliexpress.*/aes.1.1
 ||aplus.aliexpress.*/g.gif?logtype=
+||aplus.gmarket.co.kr^
 ||aplus.qwen.ai/aplus.monitor.log_arrival_rate
 ||apm-engine.meteor.com^$third-party,xmlhttprequest
 ||apm-fe.xiaohongshu.com^
@@ -87590,6 +87598,7 @@ zybang.com##.top_download
 ||app-analytics-ru.huami.com^
 ||app-analytics-services.com^
 ||app-analytics.snapchat.com^
+||app-api.vidjet.io/track-event
 ||app-bnkr.b-cdn.net/js/lv.js
 ||app-branch.yummybazaar-qa.com^
 ||app-clicks-corporate.firstrepublic.com^
@@ -91122,6 +91131,7 @@ zybang.com##.top_download
 ||bidgx.com^
 ||bidpapers.com^
 ||bidphysics.com^$third-party
+||bidr.io^
 ||bidr.io^$third-party
 ||bidrbu.bett1.at^
 ||bidsimulator.com^$third-party
@@ -111230,6 +111240,7 @@ zybang.com##.top_download
 ||gloriousbeef.com^$third-party
 ||glove.fit^$third-party
 ||glow.glowtrackjoy.com^
+||glowing.com/unilog
 ||glowingmeadow.com^
 ||glowingmeadow.com^$third-party
 ||glpca.com^
@@ -111249,6 +111260,8 @@ zybang.com##.top_download
 ||gm.mmstat.com^
 ||gm99.com^$third-party
 ||gmarket.co.kr/js/common/uuid.js
+||gmarket.co.kr^$cookie=cna
+||gmarket.co.kr^$cookie=sca
 ||gmdcft.vsemayki.ru^
 ||gmdci.pastease.com^
 ||gmdigital.it/vtrack-staging.js
@@ -112144,6 +112157,7 @@ zybang.com##.top_download
 ||goodreads.com^$removeparam=from_srp
 ||goodreads.com^$removeparam=qid
 ||goodreads.com^$removeparam=rank
+||goodrx.com^$cookie=grx_unique_id
 ||goods.preoponno.com^
 ||google-analtyics.com/analytics.js
 ||google-analytics-cn.com^
@@ -118679,6 +118693,8 @@ zybang.com##.top_download
 ||img.ishanggao.com^
 ||img.kuai.xunlei.com/js/statistics.js
 ||img.labnol.org/di/support.png$image
+||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/global-metrics/
+||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/js/mmtrack.js
 ||img.learn.abreon.com^
 ||img.link.cabinetry.com^
 ||img.litix.io/a.gif
@@ -120355,6 +120371,7 @@ zybang.com##.top_download
 ||investing.com^$cookie=smd
 ||investing.com^$cookie=udid
 ||investingchannel.com^$third-party
+||investinglive.com/api/set-device-id
 ||investment.lianest.co.jp^
 ||investments.aberdeenstandard.com^
 ||investments.virtus.com^
@@ -136933,6 +136950,7 @@ zybang.com##.top_download
 ||mygostore.com/api/log
 ||myhaitang.xyz/assets/public/
 ||myhealth.ssmhealth.com^
+||myhixel.com/apps/awin/
 ||myhome.nifty.com/buy/assets/js/tracking.min.js
 ||myhome.nifty.com/column/js/tracking.js
 ||myhome.nifty.com/smp/js/trackPageview.js
@@ -146950,6 +146968,7 @@ zybang.com##.top_download
 ||s.northumberlandnews.com^
 ||s.np6.com^
 ||s.officialnanosparkle.com^
+||s.opensend.com^
 ||s.orangeville.com^
 ||s.ourwindsor.ca^
 ||s.p7s1.io/datalayer/conviva
@@ -173982,6 +174001,7 @@ zybang.com##.top_download
 ||theconversation.com/javascripts/lib/content_tracker_hook.js
 ||thecounter.com^$third-party
 ||thecrazychili.com^
+||theculturetrip.com^$cookie=tct-real-user
 ||thedailybeast.com/static/js/thirdparty.
 ||thedoc.doctronic.ai^
 ||thedp.exhalewell.com^
@@ -184086,6 +184106,7 @@ zybang.com##.top_download
 ||webmasters.ksalsocial.online/pixel/
 ||webmaxlogger.net^
 ||webmd.com/static/v/c?
+||webmd.com^$cookie=VisitorId
 ||webmet.creditreform-mahnwesen.de^
 ||webmet.creditreform.at^
 ||webmet.creditreform.de^
