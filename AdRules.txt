@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-02-26 09:28:44(GMT+8)
-! Total count: 188480
+! Version: 2026-02-26 14:52:45(GMT+8)
+! Total count: 188504
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -4728,6 +4728,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /smmch-mine.js
 /smmch-own.js
 /snowman.gif?p=
+/snowplow-collector-prod.$xmlhttprequest
 /snowplow-tracker.tatest.js
 /snowplow.*.js$domain=~snowplow.io|~tv2.no
 /snowplow.js
@@ -15304,6 +15305,7 @@ comopremium.com.ar##IMG[src="templates/plugmod/images/a.png"]
 comprovendolibri.it#@#.myTestAd
 comptoir-info.com#@#.textad
 computerbild.de##.articleAdditional > .mehrthema
+computerweekly.com#%#//scriptlet('set-local-storage-item', 'anonUserTrackingID', '$remove$')
 configurator.ducati.com#%#//scriptlet("set-constant", "WURFL", "emptyObj")
 confirmation.kanbanx.com$image
 connect.cupidondate.com$image
@@ -71592,7 +71594,6 @@ secured.click.s11.sfmc-osl.com$image
 security.oneplus.com#%#//scriptlet('set-constant', '_dx', 'emptyObj')
 seedpeer.me###body > #pageTop + * + #headerbox + TABLE[width="100%"]
 seekingalpha.com#@##ad_unit
-self.com,allure.com,pitchfork.com,gq.com#%#//scriptlet('set-local-storage-item', '/^avoinspector/', '$remove$')
 seltzerland.com#$#abort-on-property-read adsRedirectPopups
 semprotyuk.com##div[style^="margin-bottom:150px;"][style*="padding-right:2em;"]
 send.grantstation.com$image
@@ -75626,6 +75627,7 @@ windowscentral.com#%#//scriptlet('set-local-storage-item', 'vf.analytics.us', '$
 winfuture.de#$#hide-if-matches-xpath './/span[.="ANZEIGE"]/ancestor::div[contains(@class,"news210") or contains(@class,"news330")]'
 wing.wingshackwings.com$image
 winzoro.net##.isadNotif
+wired.com,self.com,allure.com,pitchfork.com,gq.com#%#//scriptlet('set-local-storage-item', '/^avoinspector/', '$remove$')
 wirkaufens.de#%#//scriptlet('trusted-replace-fetch-response', '/"ip":".*?"/', '"ip":""', 'api.ipify.org')
 wiseway.com.cn##.float-kefu
 wizrocketmail.net$image
@@ -87540,6 +87542,8 @@ zybang.com##.top_download
 ||apigeek.toyshow.com.br^
 ||apigtm.closethome.com.br^
 ||apigtmserver.bioaccess.com.br^
+||apigw.scmp.com/metrics/monitoring
+||apigw.scmp.com/pwa-v2-unleash-proxy/proxy/client/metrics
 ||apihorizon.nnmtools.com^
 ||apilog-web.acfun.cn^
 ||apimeta.certificacaoporcompetencia.com.br^
@@ -92955,6 +92959,7 @@ zybang.com##.top_download
 ||cache2.delvenetworks.com^
 ||caclick.baidu.com^
 ||cactus.jd.com/behavior_report
+||cactus.joybuy.com^
 ||cactusglobal.io^$third-party
 ||cactusmedia.com^$third-party
 ||cad.youku.com^
@@ -94232,6 +94237,7 @@ zybang.com##.top_download
 ||cdp.vemt.com^$third-party
 ||cdp.vercel.com/rs/
 ||cdp.yna.co.kr^
+||cdpapi.livemint.com/api/adserve/lm
 ||cdpdp.arcticcool.com^
 ||cdrhjt.com^
 ||cdrive.compellent.com^
@@ -95135,6 +95141,7 @@ zybang.com##.top_download
 ||clixgalore.com^$third-party
 ||clixpy.com^$third-party
 ||clixtell.com/track.js
+||clk-m.joybuy.com^
 ||clk.americansavingsfinder.com^
 ||clk.clearcovegoods.com^
 ||clk.clearskideals.com^
@@ -96833,6 +96840,7 @@ zybang.com##.top_download
 ||coolapk.com/v6/page/dataList?$replace=/extra_entities//
 ||coolapk.com/v6/search?type=hotSearch$replace=/\{"data":\[.*\]/{"data":[]/
 ||coolbe.*/api/*/events
+||coolblue.de/js/mimir/
 ||coolblue.nl/monitoring/
 ||coolestcatcare.com^
 ||coolestcatcare.com^$third-party
@@ -98692,6 +98700,8 @@ zybang.com##.top_download
 ||dap.amsterdam.nl^
 ||dap.digitalgov.gov/Universal-Federated-Analytics-Min.js
 ||dap.dmm.co.jp/imp?
+||dap.livemint.com^
+||dap.worldota.net^
 ||dapperdiscussion.com^
 ||dapperdiscussion.com^$third-party
 ||dappervppaclassactionsettlement.e.epiqnotification.com^
@@ -106641,6 +106651,7 @@ zybang.com##.top_download
 ||epoid.xyz^
 ||epoisejobs.epoise.com^
 ||epoisepreptest.epoise.com^
+||epoq.de/inbound-servletapi/event?
 ||epoun.top^
 ||epoxy.flatixepoxycoating.com^
 ||epromote.co.za/track/
@@ -110238,6 +110249,7 @@ zybang.com##.top_download
 ||gala.met.vgwort.de^
 ||galada.it/omnitag/
 ||galaxiemedia.fr^$third-party
+||galaxus.com/_next/static/chunks/rum.$script
 ||galaxus.de/*/*/*/*/*/*/*/$script,domain=galaxus.de
 ||galaxus.de^$cookie=/^\.(b|s|xp|ub\.)id/
 ||galileotelemetry.tencent.com^
@@ -112471,6 +112483,7 @@ zybang.com##.top_download
 ||gracefulmilk.com^
 ||gracefulmilk.com^$third-party
 ||grado.ufv.es^
+||grafana-agent.cuboxx.io^
 ||grafana.net/collect/
 ||graffiti-tags.apple.com^
 ||grainmass.com^
@@ -115887,6 +115900,7 @@ zybang.com##.top_download
 ||h562.pasadenastarnews.com^
 ||h5collector.miyoushe.com^
 ||h5log-api-dualstack.miyoushe.com^
+||h5log.joybuy.com^
 ||h5log.zongheng.com^
 ||h5speed.m.jd.com/event/log
 ||h689.nydailynews.com^
@@ -116585,6 +116599,7 @@ zybang.com##.top_download
 ||hinata.me^*/pageview|
 ||hindsight.significanceapps.com^
 ||hindustantimes.com/cdp/user/ht
+||hindustantimes.com/cdp/user/lm
 ||hindustantimes.com/res/images/one-pixel.png
 ||hindustantimes.com^$cookie=_ht_fp
 ||hindustantimes.com^$cookie=ppid
@@ -130408,6 +130423,7 @@ zybang.com##.top_download
 ||mallorcamagazin.com/sfCounter
 ||malog.byapps.co.kr^
 ||mamka.aviasales.ru^
+||manage.edb.gov.sg/pd.js
 ||manage.nortrez.com^
 ||manage88.com^
 ||managedaccounts.nvenergy.com^
@@ -139936,6 +139952,9 @@ zybang.com##.top_download
 ||ostrich.hegic-tokenizer.co^
 ||ostrich.scd-rv.com.au^
 ||ostrichesica.com^
+||ostrovok.ru/hc/static/master/funnel-loader.js
+||ostrovok.ru/hc/static/master/funnel.js
+||ostrovok.ru/hotel/api/report-web-vitals/
 ||ostsee-zeitung.de/viewlog_receiver.php?
 ||osur.dell.com^
 ||osuwzo.oyunfor.com^
@@ -142380,6 +142399,7 @@ zybang.com##.top_download
 ||playfulriver.com^
 ||playhop.com/clck/
 ||playout.3qsdn.com/watchtime?event=
+||playox.de/analytics/
 ||playstats.v.duowan.com^
 ||playtomic.com/Tracker/
 ||playvideohd.com/cdn-cgi/trace
@@ -145059,6 +145079,7 @@ zybang.com##.top_download
 ||recobell.io/rest/logs?
 ||recogerconsentimiento.com/consent/
 ||recognified.net^$third-party
+||recommend.9gag.com/interact/event/
 ||reconditeprison.com^
 ||reconditeprison.com^$third-party
 ||reconditerake.com^
@@ -148249,6 +148270,7 @@ zybang.com##.top_download
 ||scholar.google.com^$ping
 ||scholarloop.com^
 ||school.novakidschool.com/api/*/metrics
+||schottenland.de/na/ajax.php?ax=HiT&
 ||schouder.somt.nl^
 ||schpa.newroadadvertising.com^
 ||schrl.nkuku.com^
@@ -152138,6 +152160,7 @@ zybang.com##.top_download
 ||sgimage.netmarble.com/js/gtm/
 ||sgimo.gimofirst.com^
 ||sglyd.cn^
+||sgm-w.jd.com^
 ||sgm.vfl-wolfsburg.de^
 ||sgmcdn.racingpost.com^
 ||sgmnt.beacons.ai^
@@ -155873,6 +155896,7 @@ zybang.com##.top_download
 ||smetrics.ebgsolutions.com^
 ||smetrics.echostar.com^
 ||smetrics.ecmweb.com^
+||smetrics.edb.gov.sg^
 ||smetrics.edc.ca^
 ||smetrics.eddiebauer.com^
 ||smetrics.edge.ca^
@@ -173806,7 +173830,6 @@ zybang.com##.top_download
 ||testadmiral.com^$third-party
 ||testbnc.mksp.io^
 ||testbranch.onsequel.com^
-||testdomain123.com^
 ||teste.clientemais.paodeacucar.com^
 ||testedtouch.com^
 ||testforce.actonservice.com^
@@ -180579,6 +180602,7 @@ zybang.com##.top_download
 ||ucuzabilet.com/ajax/referrerAnalytics
 ||ucweb.com/collect/
 ||ud.autoboativeshow.com^
+||ud.galaxus.de^
 ||ud.habs.tixonlinenow.com^
 ||ud783c02.com^
 ||uda71a.oliviakate.nl^
