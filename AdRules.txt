@@ -4,8 +4,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 day (update frequency)
 ! Description: Merge from EasyList,EasyListChina etc. and Add Some Rules.
-! Version: 2026-03-02 09:29:07(GMT+8)
-! Total count: 188574
+! Version: 2026-03-02 14:50:06(GMT+8)
+! Total count: 188579
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -931,6 +931,7 @@ $cookie=_wctrck
 $cookie=_wp_visitor
 $cookie=_yTrackUser
 $cookie=_yTrackVisit
+$cookie=_yjsu_yjad
 $cookie=_ym_d
 $cookie=_ym_isad
 $cookie=_ym_uid
@@ -4696,6 +4697,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /simtracker.min.js
 /sinaads/release/sinaads.js
 /site/mov*$third-party
+/site24x7rum-min.js
 /site_statistics.js
 /site_stats.js
 /site_stats/*
@@ -15859,6 +15861,7 @@ egyanime.*,egydead.*#$#abort-on-property-write _pop
 egydead.*#$#abort-current-inline-script Promise JSON.parse
 ehorizon.thedailybeast.com$image
 eic.org.cn##.lx-btm-box
+eiga.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 elahmad.com##body > div[id^="ads"]
 elahmad.com#%#//scriptlet('prevent-fetch', 'pahtag.tech')
 elahmad.com#@##adblock
@@ -118938,6 +118941,7 @@ zybang.com##.top_download
 ||indeed.com/cmp/_rpc/flog
 ||indeed.com/cmp/_rpc/logentry
 ||indeed.com/indeedapply/tracking/
+||indeed.com/m/rpc/dwell/log
 ||indeed.com/m/rpc/frontendlogging
 ||indeed.com/m/rpc/log/
 ||indeed.com/rpc/$~xmlhttprequest
@@ -186565,6 +186569,7 @@ zybang.com##.top_download
 ||xn--jor0b302fdhgwnccw8g.com^
 ||xn--jvrp4x1zyfta.net^
 ||xn--m7r781dz66a.cn^
+||xn--pckua2a7gp15o89zb.com/api/t/v*/vit
 ||xn--pckua2a7gp15o89zb.com/api/tracking.js
 ||xn--qrq171dxpq.com^
 ||xn--swt207gl1hzc.net^
