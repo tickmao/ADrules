@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-05 02:39:27(GMT+8)
-! Total count: 195867
+! Version: 2026-03-05 14:32:15(GMT+8)
+! Total count: 195891
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -191,6 +191,7 @@
 ##.dispositifAdblockContent
 ##.dispositifAdblockMessageBox
 ##.diysdk_webServices_banners1und1MainContent
+##.dx-recommend-icons
 ##.embed-responsive-trendmd
 ##.fc_foot
 ##.fed-part-advs.fed-text-center.fed-font-xvi
@@ -210,6 +211,7 @@
 ##.mi_btcon.ad
 ##.modal__body-adblock
 ##.msg-adblock
+##.my-2.md\:my-3
 ##.ninja-recommend-block
 ##.no-ad-reminder
 ##.noadblock
@@ -247,6 +249,7 @@
 ##A[href*='//v.wanfumei.net']
 ##A[href*='/adjump/?']
 ##A[href*='aducx.com']
+##A[href*='cc:'] > IMG[src]
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
 ##A[href*='ds2f1sd31g.vip']
 ##A[href*='exuvu.com']
@@ -583,10 +586,19 @@
 ##[style^='position: fixed; z-index: 2147483616; width: 10%; height: 32.5px;']
 ##a > I.gg-icon
 ##a > IMG[src$='.gif'][wapsrc][style^='width: 100%']
+##a.checkNum[target="_blank"] > img[data-src]
 ##a.gggg[href^="https"]
+##a[href*=".cc:"] > img[src]
+##a[href*=".cc:"][target="_blank"][class] > span
 ##a[href*=".com?s="]
+##a[href*=".vip:"] > img[src]
+##a[href*="/?cid="][target="_blank"]
+##a[href*="?channelCode="] > img[src]
+##a[href*="?channelCode="][target="_blank"]
 ##a[href*='html?channelCode'] > IMG[src*='.gif'][width='100%']
+##a[href][data-ad_slot_name]
 ##a[href][target="_blank"] > img[width="100%"][src$=".gif"]
+##a[href][target="_blank"][rel="external nofollow"] > img[src]
 ##a[href^="/ad.html?url="]
 ##a[href^="http://click.hotlog.ru/"]
 ##a[href^="http://hitcounter.ru/top/stat.php"]
@@ -703,6 +715,15 @@
 ##iframe.ad-frame
 ##img#hth[onclick$="hth.html')"]
 ##img#hth[onclick^="window.open"]
+##img[alt$="抖阴"]
+##img[alt*="PG"][alt*="娱乐"]
+##img[alt*="成人"][alt*="免费直播"]
+##img[alt*="成人"][alt*="抖阴"]
+##img[alt*="色情"][alt*="免费直播"]
+##img[alt="33直播"]
+##img[alt="开元电子"]
+##img[alt="澳门新葡京"]
+##img[alt^="PG"][alt*="爆率"]
 ##img[src*="counter.yadro.ru"]
 ##img[src^="//counter.ukr.net/"]
 ##img[src^="http://c.bigmir.net/"]
@@ -95466,6 +95487,7 @@ zybang.com##.top_download
 ||benelux2.secureforms.mcafee.com^
 ||benent.net/nf/analysis/
 ||benricho.org/AD_Tag/
+||bentengine.com^
 ||bentinghanks.com^
 ||bentley.euroshop.com.pe^
 ||bento.agoda.com^
@@ -135802,6 +135824,7 @@ zybang.com##.top_download
 ||lyricshook.com^
 ||lyszsz.cn^
 ||lytdjv.oculosworld.com.br^
+||lytics.fileditch.com^
 ||lytics.findairpods.com^
 ||lytics.io^$third-party
 ||lytiks.com^$third-party
@@ -148798,6 +148821,7 @@ zybang.com##.top_download
 ||postbank.de/etc/*/clientlib-postbank-webtrekk
 ||postgraduate.smu.edu.sg^
 ||postgraduate2.smu.edu.sg^
+||posthog.com/*/?retry_count
 ||posthog.lingvanex.com^
 ||posthog.tarnkappe.info^
 ||postmates.com/_events$redirect=nooptext
@@ -181466,7 +181490,6 @@ zybang.com##.top_download
 ||time-and-attendance.insperity.com^
 ||time.aktion-mensch.de^
 ||time.is/img/nod.png
-||time.is^$cookie=c
 ||time4shopping.com.ua/api/api.php/stat
 ||timeclock.mytoolr.com^
 ||timecrossed.com^
@@ -182153,6 +182176,7 @@ zybang.com##.top_download
 ||ton.vendafacilton.com.br^
 ||toneden.io/*/analytics/
 ||tongji-res.meizu.com^
+||tongji.90dao.com^$ping
 ||tongji.mafengwo.cn^
 ||tongji.techweb.com.cn^
 ||tongji.trafficmanager.net/?
