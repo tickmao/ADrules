@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-04 20:41:38(GMT+8)
-! Total count: 195854
+! Version: 2026-03-05 02:39:27(GMT+8)
+! Total count: 195867
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -9392,6 +9392,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||googletagservices.com/tag/js/gpt.js$domain=bihann.com|nehannn.com
 @@||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com
 @@||googletagservices.com/tag/js/gpt.js$domain=fukuishimbun.co.jp
+@@||googletagservices.com/tag/js/gpt.js$domain=gallito.com.uy
 @@||googletagservices.com/tag/js/gpt.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|maxisciences.com|ohmymag.com|ohmymag.de
 @@||googletagservices.com/tag/js/gpt.js$domain=imgur.com
 @@||googletagservices.com/tag/js/gpt.js$domain=news.tvb.com
@@ -10599,6 +10600,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||securepubads.g.doubleclick.net$script,domain=last.fm
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=ani.gamer.com.tw
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=gallito.com.uy
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=ifoodie.tw
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=mxplayer.in
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=shahid.mbc.net
@@ -10745,6 +10747,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||srnet.eu/ads2.js$script
 @@||srnk.co/js/ads.js$xmlhttprequest
 @@||srs.blastingnews.com/js/adv/_compiled.js$script
+@@||srvr.dmvs-apac.com/dm-story/*.js$domain=eldeber.com.bo|reduno.com.bo
 @@||ssl-images-amazon.com^*/satelliteLib-$script,domain=audible.com
 @@||ssl.geoplugin.net/javascript.gp$domain=imalentstore.com
 @@||ssl.geoplugin.net/javascript.gp$domain=retrohahn.myshopify.com
@@ -12355,9 +12358,6 @@ banzou.name###ads_2
 banzou.name###appfu
 banzou.name###daiyan
 baomoi.com#$#abort-on-property-write AdtimaRender
-barefootblonde.com#$#abort-current-inline-script jQuery open
-barefootblonde.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-barefootblonde.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 barracuda.buyersparadise.happycustomer.io$image
 baseballpost.jp###highschool-pickup
 batman.avadacom.com$image
@@ -15664,6 +15664,7 @@ cmail.carezone.com$image
 cmail.sportsbet.io$image
 cmail1.com%2Ft$image
 cmail1.com/t$image
+cmangax14.com#$#cookie-remover ads_num true
 cmg.optimizeapp.com$image
 cmmonitor.com#@#.adsbygoogle
 cms-demolobalid3.click.s11.sfmc-osl.com$image
@@ -69548,6 +69549,9 @@ iciba.com##.info-product
 iciba.com##.pc-entry
 iciba.com##div[class^="Kyad_"]
 id.condenast.com#%#//scriptlet('set-constant', 'appInfo.snowplow.trackSelfDescribingEvent', 'noopFunc')
+identitypoliticspod.com#$#abort-current-inline-script jQuery open
+identitypoliticspod.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+identitypoliticspod.com#$#override-property-read adsPlayer '';override-property-read adsTvcs ''
 ideya-biznesa.ru##.admania_adblock_detector
 idiva.com#?#div:-abp-has(> h2:-abp-contains(More From Web))
 idle-girl.com###custom_html-74
@@ -77820,7 +77824,7 @@ v11av.xyz##.content__body [rel='nofollow'][href][target='_blank']
 v11av.xyz##.row.q-ma-none A[rel='noopener nofollow'][href][style='display: block;']
 vaem.gene.com$image
 vaem.veeva.gene.com$image
-vailonxx.co#$#abort-current-inline-script jQuery window.open
+vailonxx.me#$#abort-current-inline-script jQuery window.open
 valetudo.ru#?#.v_left > div.moduletable:has(script[src^="https://www.googletagmanager.com/"])
 valleybreeze.com#%#//scriptlet('remove-attr', 'hidden', '#asset-content[hidden]')
 vardembed.xyz,videovard.sx###MyDickIsFat
@@ -77940,7 +77944,7 @@ vidmoly.to###dos_vlock
 vidshare.tv,govid.*,hdvid.tv,gomovies.*,gostream.nu,openloadmovies.*,flashx.tv,cloudvideo.tv#$#abort-on-property-write Fingerprint2
 vidshare.tv,vidshar.tv,series.movie,gowatchseries.*#$#abort-current-inline-script Object.defineProperty XMLHttpRequest
 vidsrc.*,cucuflix.*#$#abort-current-inline-script document.createElement /referrerPolicy.*no-referrer-when-downgrade/;
-viet69.ke,dualeotruyenky.com,yurineko.my,haxcore.net,cliphot69.shop,doctruyen3qhubs.com,ihentai.network,chuyentiepanimehay.one,hentaivc.blog,streamvl.top,buomtv.media,truyenvn.shop,javtiful.com,quatvn.my,phimsexhayvn96.com,phim18hdxx.com,vn6.sexviet88.xyz,demo.14412882.com,xem.phimnung3x.pro,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.city,truyenqqno.com,clipsexsub3x.net,sayhentai.world,motphim.pokemonviet.com,lxmanga.space,phimlongtieng.net,newtruyentranh7.com,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,sexviet88.xyz,viet69.ke,goctruyentranhvui19.com,viet69vn.at#$#abort-current-inline-script WebAssembly instantiate
+viet69.ke,dualeotruyenky.com,yurineko.my,haxcore.net,cliphot69.shop,doctruyen3qhubs.com,ihentai.network,chuyentiepanimehay.one,hentaivc.blog,streamvl.top,buomtv.media,truyenvn.shop,javtiful.com,quatvn.my,phimsexhayvn96.com,phim18hdxx.com,vn6.sexviet88.xyz,demo.14412882.com,xem.phimnung3x.pro,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.city,truyenqqno.com,clipsexsub3x.net,sayhentai.vc,motphim.pokemonviet.com,lxmanga.space,phimlongtieng.net,newtruyentranh7.com,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,sexviet88.xyz,viet69.ke,goctruyentranhvui19.com,viet69vn.at#$#abort-current-inline-script WebAssembly instantiate
 view-old.email.realcommercial.com.au$image
 view-old.email.realestate.com.au$image
 view.013.tmmsg.com$image
@@ -98835,6 +98839,7 @@ zybang.com##.top_download
 ||cdn1.edgedatg.com/aws/abc/scripts/adobe-analytics2.js
 ||cdn1.edgedatg.com/aws/apps/datg/web-js-telemetry-service/*/production/js/datgts.js
 ||cdn1.figuren-shop.de^
+||cdn1.irontive.com/apps/ironpixel.js
 ||cdn1.skrill.com^
 ||cdn3.mancdn88.com^
 ||cdn3.net/pixe/
@@ -99072,6 +99077,8 @@ zybang.com##.top_download
 ||chalkoil.com^$third-party
 ||challengeh.carte-gr.total.fr^
 ||chambulwacs.com^
+||championat.com/api/unity-id/*/init
+||championat.com/atlas/metrics/
 ||championat.com^$cookie=adtech_uid
 ||championat.com^$cookie=rchainid
 ||championat.com^$cookie=top100_id
@@ -100026,6 +100033,7 @@ zybang.com##.top_download
 ||clrci.canadagoose.com^
 ||clrt.ai^
 ||cls.cn/v2/web/ad?
+||cls.rambler.ru/api/*/events
 ||cls7.theushuaiaexperience.com^
 ||clshkv.labirint.ru^
 ||clt.banggood.com^
@@ -114835,6 +114843,7 @@ zybang.com##.top_download
 ||frequentflesh.com^
 ||frequentflesh.com^$third-party
 ||fresh.inlinkz.com^$third-party
+||freshacceleronparalleldynamics.net^
 ||freshatl.azurewebsites.net^
 ||freshclip.tv/tracking/
 ||freshcounter.com^$third-party
@@ -134918,6 +134927,7 @@ zybang.com##.top_download
 ||log.pdfviewerscannerstore.live^
 ||log.perfecttitspics.com^
 ||log.phonefreshfix.live^
+||log.photorecoverypicturerecovery.com^
 ||log.pinterest.com^
 ||log.pipeline.datarize.io^
 ||log.player.cntv.cn/stat.html?
@@ -134938,6 +134948,7 @@ zybang.com##.top_download
 ||log.rhythmtowers.com^
 ||log.rmp.rakuten.co.jp^
 ||log.rutube.ru^
+||log.scanqrcodedesign.live^
 ||log.seekda.com^
 ||log.shortbread.analytics.console.aws.a2z.com^
 ||log.shortbread.aws.dev^
@@ -134951,6 +134962,7 @@ zybang.com##.top_download
 ||log.strawpoll.com^
 ||log.strm.yandex.ru^
 ||log.suddenclean.com^
+||log.sweepycleanplus.com^
 ||log.tagtic.cn^
 ||log.talkie-ai.com^
 ||log.targetpush.co.kr^
@@ -141965,6 +141977,7 @@ zybang.com##.top_download
 ||mollnia.com^$third-party
 ||mollusk.apis.ign.com/metrics/
 ||mollusk.working.actor^
+||mollyflow.com^
 ||molpmh.xyz|
 ||momentfilter.com^
 ||momently.com^$third-party
