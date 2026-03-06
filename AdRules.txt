@@ -6,7 +6,7 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-06 14:39:48(GMT+8)
+! Version: 2026-03-06 20:40:12(GMT+8)
 ! Total count: 195912
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
@@ -80518,7 +80518,7 @@ yad2.co.il###sLightbox_container
 yad2.co.il###sLightbox_overlay
 yafud.pl###adsense_banner_top
 yahoo.co.jp##div[class*="SideMenuAd"]
-yahoo.co.jp#$#hide-if-matches-xpath './/div[@style]/div[@style]/ancestor::div[@style][1]/parent::div[contains(@style,"width: 990px")]'; hide-if-matches-xpath './/div[contains(@style,"yads")]/parent::div[@style][1]'; hide-if-matches-xpath './/div[@style]/a[@href][@target]/parent::div[@style][1]//parent::div[@style][not(contains(@class,"map"))]/ancestor::div[@id][contains(@style,"width")]'; hide-if-matches-xpath './/iframe[@title="Ad Content"]/parent::div[@id]/ancestor::div[@id][@class][1]';
+yahoo.co.jp#$#hide-if-matches-xpath './/div[@style]/div[@style]/ancestor::div[@style][1]/parent::div[contains(@style,"width: 990px")]'; hide-if-matches-xpath './/div[contains(@style,"yads")]/parent::div[@style][1]'; hide-if-matches-xpath './/div[@style]/a[@href][@target]/parent::div[@style][1]//parent::div[@style][not(contains(@class,"map"))]/ancestor::div[@id][contains(@style,"width")]'; hide-if-matches-xpath '//*[contains(@class,"yjAdImage") or @data-i-text="広告" or @data-uv-element="yads_uv_banner"]/ancestor-or-self::div[starts-with(@id,"yads_")]'; hide-if-matches-xpath '//*[contains(@data-uv-element,"yads") or (@data-i-elm="textBody" and text()="広告")]/ancestor-or-self::div[starts-with(@id,"yads_")]';
 yahoo.com###crazyad_mask
 yahoo.com###module-appPromoBanner
 yahoo.com##.crazyad
