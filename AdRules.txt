@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-09 09:42:59(GMT+8)
-! Total count: 195921
+! Version: 2026-03-09 14:54:32(GMT+8)
+! Total count: 195928
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2984,6 +2984,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /dh-anti-adblocker/*
 /dibu.adadadad
 /diffuser.js
+/digibox.gif?c=$image
 /digital-data-enrichment.min.js
 /disable-adblock.
 /discourse-fingerprint_
@@ -3844,7 +3845,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /logger.dll/*
 /logger/?referer=
 /logger/p.gif?*d=/*
-/logging/ClientEvent
 /logging/React-UHP?
 /logging/log.do
 /logging/logjs
@@ -7765,6 +7765,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||api.cxense.com/public/widget/data?json=$domain=business.nikkei.com
 @@||api.cxense.com/public/widget/data?json=$domain=delfi.lt
 @@||api.cxense.com/public/widget/data?json=$domain=df.cl
+@@||api.cxense.com/public/widget/data?json=$domain=diamond.jp
 @@||api.cxense.com/public/widget/data?json=$domain=elle.com
 @@||api.cxense.com/public/widget/data?json=$domain=euractiv.com
 @@||api.cxense.com/public/widget/data?json=$domain=i-voce.jp
@@ -8056,6 +8057,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cdn.cxense.com/cx.cce.js$domain=business.nikkei.com
 @@||cdn.cxense.com/cx.cce.js$domain=df.cl
 @@||cdn.cxense.com/cx.cce.js$domain=dhnet.be
+@@||cdn.cxense.com/cx.cce.js$domain=diamond.jp
 @@||cdn.cxense.com/cx.cce.js$domain=elcorreogallego.es
 @@||cdn.cxense.com/cx.cce.js$domain=elle.com
 @@||cdn.cxense.com/cx.cce.js$domain=euractiv.com
@@ -8074,6 +8076,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cdn.cxense.com/cx.js$domain=cdn.cxpublic.com
 @@||cdn.cxense.com/cx.js$domain=df.cl
 @@||cdn.cxense.com/cx.js$domain=dhnet.be
+@@||cdn.cxense.com/cx.js$domain=diamond.jp
 @@||cdn.cxense.com/cx.js$domain=elcorreogallego.es
 @@||cdn.cxense.com/cx.js$domain=elle.com
 @@||cdn.cxense.com/cx.js$domain=euractiv.com
@@ -8389,10 +8392,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||custojusto.pt/smarttag.js
 @@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
 @@||cvs.com^$generichide
-@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|handelsblatt.com|inquirer.com|mainichi.jp|marketwatch.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|inquirer.com|mainichi.jp|marketwatch.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cxense.com/cx.cce.js$domain=tarzanweb.jp
 @@||cxense.com/cx.cce.js$domain=tn.com.ar
-@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|handelsblatt.com|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
+@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|handelsblatt.com|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
 @@||cxense.com/cx.js$domain=mainichi.jp
 @@||cxense.com/cx.js$domain=nlab.itmedia.co.jp
 @@||cxense.com/cx.js$domain=shueisha.co.jp
@@ -8401,7 +8404,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cxense.com/cx.js$script,domain=tv-tokyo.co.jp
 @@||cxense.com/document/search?
 @@||cxense.com/persisted/execute$domain=nippon.com
-@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|friday.gold|friday.kodansha.co.jp|handelsblatt.com|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cxense.com^$domain=ikea.com
 @@||cxense.com^$domain=thelocal.fr
 @@||cxpublic.com/ToyoKeizai.js$domain=str.toyokeizai.net
@@ -11010,7 +11013,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||tns-counter.ru/tcounter.js$domain=forbes.ru
 @@||tntdrama.com/modules/custom/ten_video/js/analytics_v2.js$~third-party
 @@||toggo.de/static/js/sourcepoint.js$domain=toggo.de
-@@||tokbox.com/prod/logging/ClientEvent$domain=examroom.ai
 @@||tools.finra.org/monitoring/adrum_init.js$domain=tools.finra.org
 @@||tools.pinpoll.com^$script,subdocument,domain=iframely.net
 @@||top.list.ru/counter?id=$domain=crimea-kurort.com
@@ -12858,6 +12860,7 @@ clanky.seznam.cz,search.seznam.cz##.Result.Result--organic > .Result-ico:not([cl
 clanky.seznam.cz,search.seznam.cz##.Result.Result--organic > :not(.Result-contentContainer):not(.Result-ico):not(.Result-title)
 clanky.seznam.cz,search.seznam.cz#?#.Result:-abp-has(.Result--organic [class^="Result-contentContainer _"])
 clanky.seznam.cz,search.seznam.cz#?#:-abp-has(> .Result--organic .Result-title-link:not([class="Result-title-link"]))
+cleverfit.fitness-konzepte.de#%#//scriptlet('set-local-storage-item', 'one_stats_metadata', '$remove$')
 click-clic.stg-transactions.canadapost-postescanada.ca$image
 click-clic.transactions.canadapost-postescanada.ca$image
 click-email.bendmailing.com$image
@@ -77209,6 +77212,8 @@ trace.bounce.17track.net$image
 trace.mail.myifashop.com$image
 track-email.matrixcare.com$image
 track-email.zenhub.com$image
+track-mmp.navercorp.com%2Freceived%2F*.gif$image
+track-mmp.navercorp.com/received/*.gif$image
 track.app.fasttrackclub.de$image
 track.base2services.co$image
 track.bettingexpert.com$image
@@ -99016,6 +99021,7 @@ zybang.com##.top_download
 ||cerionnano.actonservice.com^
 ||cerohj.loccitane.ru^
 ||ceros.com/a?data
+||cert.tryggehandel.net/ping
 ||certifica.com^$third-party
 ||certify.nasm.org^
 ||cervell.io^$third-party
@@ -99609,6 +99615,7 @@ zybang.com##.top_download
 ||clerk.io/static/clerk.js
 ||clerks.doccheck.com^
 ||cleverbridge.com/*/cleverAnalytics.js^
+||cleverfit.fitness-konzepte.de/_api/stats-service
 ||cleveritics.com^$third-party
 ||cleverpush.com^$third-party
 ||clevertap-prod.com^$third-party
@@ -154698,9 +154705,9 @@ zybang.com##.top_download
 ||scupio.net^$third-party
 ||scuvcc.sportmax.com^
 ||scuzgq.greencell.global^
+||scv-*.io.naver.com/jackpotlog/*/logs|$xmlhttprequest
 ||scv-blog.io.naver.com/jackpotlog/
 ||scv-cafe.io.naver.com/jackpotlog/*/logs$xmlhttprequest,redirect=noopjson
-||scv-game.io.naver.com/jackpotlog/*/logs|$xmlhttprequest
 ||scv.band.us/jackpotlog/*/logs|$xmlhttprequest
 ||scvgzt.onequince.com^
 ||scw.systems^$third-party
