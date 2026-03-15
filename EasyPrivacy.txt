@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202603141804
+! Version: 202603150112
 ! Title: EasyPrivacy
-! Last modified: 14 Mar 2026 18:04 UTC
+! Last modified: 15 Mar 2026 01:12 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 2084abac4546ca45800aa05ded1a75abbf1ffad6
+! Commit: 5aec019102e240a1bdcee1187627b1243e12e7ad
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -1370,6 +1370,7 @@
 /li.lms-analytics/insight.min.js
 /lib/analytics.js
 /library/svy/broker.js
+/libs/sentry/*/sentry.js
 /libs/tracker.js
 /liferay-analytics-api.js
 /liferay-analytics-processor.js
@@ -11086,6 +11087,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||genesis.malwarebytes.com^
 ||geni.us/snippet.js
 ||geni.us/snippet.min.js
+||geniusplus.ai/v1/lre-events?
 ||geo.bdg.com^
 ||geo.ertya.com^
 ||geo.gorillanation.com^
@@ -11942,6 +11944,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||quora.com/qevents.js
 ||qzzr.com/_uid.gif
 ||r.mail.ru^$script
+||r.sdiapi.net^
 ||r.skimresources.com^
 ||r.stripe.com^$ping,script,xmlhttprequest
 ||r.wdfl.co/rw.js
@@ -12017,6 +12020,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rtc.hibuwebsites.com/feature/metrics
 ||rtc.multiscreensite.com^
 ||rtxpx-a.akamaihd.net^
+||rudder-server-prd.arena.im/v1/track
 ||rudder-tracking.rudderstack.com^
 ||rum-collector.leaderint.workers.dev^
 ||rum.azion.com^
@@ -12382,6 +12386,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tag.digops.sincro.io^
 ||tag.elevaate.io^
 ||tag.flagship.io^
+||tag.gendiscover.com^
 ||tag.getamigo.io^
 ||tag.imagino.com^
 ||tag.lexer.io^
@@ -13737,6 +13742,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metrics.find.gr^
 ||stats-real-clients.zentech.gr^
 ! Hebrew
+||selectika.com/selectika-pixel.min.js
 ||tag.weezmo.com^
 ||walla.co.il/stats/
 ! Hungarian
@@ -14198,6 +14204,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d.wi-fi.ru^
 ||dbex-tracker-v2.driveback.ru^
 ||dp.ru/counter.gif?
+||dspgate.ru/pixel?
 ||error.videonow.ru^
 ||events.auth.gid.ru^
 ||events.plus.yandex.net^
@@ -15222,6 +15229,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||grabify.link/api/js
 ||graylog.prod.cams.run^
 ||grgnsht.nzxt.com^
+||grokipedia.com/api/analytics
+||grokipedia.com/api/ev
 ||groove.so/unlocker.js
 ||groupon.com/analytic/
 ||groupondata.com/tracky
@@ -15564,6 +15573,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mstm.motorsport.com^
 ||mtg.macpaw.com^
 ||mtm.bondagevalley.cc^
+||musescore.com/components/data?
+||musescore.com/score/stats/
 ||mx.eneba.com^
 ||myanimelist.net/static/logging.html
 ||myfreecams.com/php/tracking.php?
@@ -15888,6 +15899,15 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||searchiq.co/api/tr?
 ||secretbenefits.com/js/script.js
 ||secure.checkout.visa.com/logging/
+||secure.cricket365.com/tag/
+||secure.football365.com/tag/
+||secure.golf365.com/tag/
+||secure.loverugbyleague.com/tag/
+||secure.planetf1.com/tag/
+||secure.planetfootball.com/tag/
+||secure.planetrugby.com/tag/
+||secure.teamtalk.com/tag/
+||secure.tennis365.com/tag/
 ||seekingalpha.com/mone_event
 ||segapi.whop.com^
 ||service.techzine.eu^
@@ -16506,6 +16526,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||youtube-nocookie.com/robots.txt?
 ||youtube-nocookie.com/youtubei/v1/log_event?
 ||youtube.com/api/stats/ads?
+||zed.dev/docs/theme/analytics.js
 ! ||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=
 ||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&
 ||youtube.com/get_video?
@@ -55822,6 +55843,7 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||labrc.pw/advstats/$xmlhttprequest
 @@||mc.yandex.ru/metrika/tag.js$script,domain=auto.yandex|coddyschool.com
 @@||mealty.ru/js/ga_events.js$~third-party
+@@||my.beeline.ru/resources/js/webtrends.js?$script,~third-party
 @@||mycargo.rzd.ru/dst/scripts/common/analytics-helper.js$~third-party
 @@||online.bcs.ru^*/piwik.bcs.js$script
 @@||openfpcdn.io/fingerprintjs/v3/iife.min.js$script,domain=mos03education.ru
