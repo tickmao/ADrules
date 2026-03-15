@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-15 02:29:33(GMT+8)
-! Total count: 206439
+! Version: 2026-03-15 09:52:31(GMT+8)
+! Total count: 206461
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -3720,6 +3720,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /lib/analytics.js
 /libraries/analytics/*.js$domain=origins.com|aveda.com|aveda.com.tr|clinique.com|clinique.com.tr|esteelauder.com|jomalone.com|maccosmetics.com
 /library/svy/broker.js
+/libs/sentry/*/sentry.js
 /libs/tracker.js
 /liferay-analytics-api.js
 /liferay-analytics-processor.js
@@ -9918,6 +9919,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||mxpnl.com/libs/mixpanel-*.min.js$domain=eloan.co.il
 @@||mxpnl.com^$domain=dailysteals.com
 @@||mxpnl.com^$domain=mixpanel.com
+@@||my.beeline.ru/resources/js/webtrends.js?$script,~third-party
 @@||my.goabode.com/assets/js/fp2.min.js$script,~third-party
 @@||myaccount.chicagotribune.com/assets/scripts/tag-manager/googleTag.js$~third-party
 @@||myaccount.google.*^$removeparam
@@ -117512,6 +117514,7 @@ zybang.com##.top_download
 ||dsp.logly.co.jp^$third-party
 ||dsp.newsbreak.com^
 ||dsparking.com^$third-party
+||dspgate.ru/pixel?
 ||dspil.jcp.com^
 ||dsply.com^$third-party
 ||dsptrack.mobshark.net^
@@ -124175,6 +124178,7 @@ zybang.com##.top_download
 ||genieessp.jp^$third-party
 ||genieesspv.jp^$third-party
 ||geniuslinkcdn.com^$third-party
+||geniusplus.ai/v1/lre-events?
 ||genova.gas-up.it^
 ||gentags.net^
 ||gentian-frd.hjapi.com^
@@ -126240,6 +126244,8 @@ zybang.com##.top_download
 ||grok.com/_data/v1/events
 ||grok.com/api/log_metric
 ||grok.com/api/statsig/
+||grokipedia.com/api/analytics
+||grokipedia.com/api/ev
 ||gromore.pangolin-sdk-toutiao.com^
 ||groove.so/unlocker.js
 ||groovespacing.com^
@@ -151853,6 +151859,8 @@ zybang.com##.top_download
 ||murdoog.com^$third-party
 ||murdoog.com^*/Pixel/$image
 ||murjz.consumerexaminer.com^
+||musescore.com/components/data?
+||musescore.com/score/stats/
 ||museter.com/track.php?
 ||mushroomgods.com^
 ||mushywaste.com^
@@ -160054,6 +160062,7 @@ zybang.com##.top_download
 ||r.rbc.ru^
 ||r.rover.com^
 ||r.sax.sina.com.cn^
+||r.sdiapi.net^
 ||r.sib2.gardrops.com^
 ||r.skimresources.com^
 ||r.sportsie.com^
@@ -162102,6 +162111,7 @@ zybang.com##.top_download
 ||rubicon.wellsfargo.com^
 ||rubiconredirect.com^$third-party
 ||rucounter.ru^$third-party
+||rudder-server-prd.arena.im/v1/track
 ||rudder-tracking.rudderstack.com^
 ||rudderlabs.com^$third-party
 ||rudr-events.joybird.com^
@@ -164402,6 +164412,7 @@ zybang.com##.top_download
 ||secure.constellation.iqvia.com^
 ||secure.copy9loom.com^
 ||secure.coup7cold.com^
+||secure.cricket365.com/tag/
 ||secure.cuba7tilt.com^
 ||secure.curl7bike.com^
 ||secure.dana8herb.com^
@@ -164443,6 +164454,7 @@ zybang.com##.top_download
 ||secure.file3size.com^
 ||secure.flow8free.com^
 ||secure.food9wave.com^
+||secure.football365.com/tag/
 ||secure.fortinet.com^
 ||secure.frog9alea.com^
 ||secure.game9time.com^
@@ -164454,6 +164466,7 @@ zybang.com##.top_download
 ||secure.gift2pair.com^
 ||secure.give2hill.com^
 ||secure.glue1lazy.com^
+||secure.golf365.com/tag/
 ||secure.golp4elik.com^
 ||secure.grow1maid.com^
 ||secure.haag0some.com^
@@ -164538,6 +164551,7 @@ zybang.com##.top_download
 ||secure.loom3otto.com^
 ||secure.lope4refl.com^
 ||secure.lote1otto.com^
+||secure.loverugbyleague.com/tag/
 ||secure.mack7oyes.com^
 ||secure.main5poem.com^
 ||secure.make6pain.com^
@@ -164595,7 +164609,10 @@ zybang.com##.top_download
 ||secure.perceptive-innovation-ingenuity.com^
 ||secure.perk0mean.com^
 ||secure.pes.itv.com/*/event|
+||secure.planetf1.com/tag/
+||secure.planetfootball.com/tag/
 ||secure.planetfootball.com/tag/*/tag.js
+||secure.planetrugby.com/tag/
 ||secure.plug1luge.com^
 ||secure.plug4norm.com^
 ||secure.poor5zero.com^
@@ -164654,6 +164671,8 @@ zybang.com##.top_download
 ||secure.swat8toot.com^
 ||secure.tank3pull.com^
 ||secure.team8save.com^
+||secure.teamtalk.com/tag/
+||secure.tennis365.com/tag/
 ||secure.tent0mown.com^
 ||secure.text6film.com^
 ||secure.thepersonal.com^
@@ -164950,6 +164969,7 @@ zybang.com##.top_download
 ||sejdfu.coeur.de^
 ||sekaopi.nocre.jp^
 ||selaris.com^$third-party
+||selectika.com/selectika-pixel.min.js
 ||selectivesummer.com^
 ||selectivesummer.com^$third-party
 ||selectjeeps.acutx.org^
@@ -189522,6 +189542,7 @@ zybang.com##.top_download
 ||tag.foreverfierce.com^
 ||tag.franquiahomeangels.com.br^
 ||tag.geeker.co^
+||tag.gendiscover.com^
 ||tag.getamigo.io^
 ||tag.getdrip.com^$third-party
 ||tag.goadopt.io^$third-party
@@ -205781,6 +205802,7 @@ zybang.com##.top_download
 ||zed.dev/_vercel/insights/view
 ||zed.dev/api/send_page_event
 ||zed.dev/api/send_page_event|
+||zed.dev/docs/theme/analytics.js
 ||zedwhyex.com^$third-party
 ||zeerat.com^$third-party
 ||zefpks.dealdonkey.com^
