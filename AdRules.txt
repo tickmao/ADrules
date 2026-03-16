@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-16 09:54:15(GMT+8)
-! Total count: 206467
+! Version: 2026-03-16 15:08:45(GMT+8)
+! Total count: 206476
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -80568,6 +80568,7 @@ mzh.moegirl.org.cn#?#.n-button__content:contains(在App内打开)
 n.sinaimg.cn/finance/blackcat/pc/blink.gif$image
 n.sinaimg.cn/tech/zcapp2018/zc_new1x.png$image
 n.thapcam53.pro#$#simulate-mouse-event '#modalasd$continue,delay=300'
+n11.com#%#//scriptlet('prevent-addEventListener', 'click', 'ownerDocument', 'elements', 'a.product-card[href]')
 naekranie.pl###niceMessage
 naekranie.pl#$#abort-on-property-read adQueue
 nanjpride.blog.jp##div[class^="article-outer"] > div.recommend:has(> div.ninja-recommend-block)
@@ -101464,7 +101465,7 @@ zybang.com##.top_download
 ||armadillo.oceandecadenortheastpacific.org^
 ||armadillo.superpeak.dk^
 ||armedangels.com/javascript/script.js
-||arms-retcode-sg.aliyuncs.com/r.png?
+||arms-retcode*.aliyuncs.com/r.png?
 ||arms-retcode.aliyuncs.com^$removeparam=_v
 ||arms-retcode.aliyuncs.com^$removeparam=api
 ||arms-retcode.aliyuncs.com^$removeparam=begin
@@ -107188,6 +107189,7 @@ zybang.com##.top_download
 ||chat.deepseek.com/api/v0/events
 ||chat.forddirectdealers.com^
 ||chat.groq.com/global_stats
+||chat.vica.gov.sg/api/v1/unleash/proxy/client/metrics
 ||chata.quickcep.com/im/behavior/visitor/update
 ||chatfuel.com/cf-analytics/
 ||chatgpt.com/ces/*/b|$xmlhttprequest
@@ -115976,6 +115978,7 @@ zybang.com##.top_download
 ||denakop.com^$third-party
 ||dendrosenecio.dpmedias.com^
 ||dengage.com^$third-party
+||deno.com/i/
 ||denpjz.jamesedition.com^
 ||denver.thexlife.co^
 ||deo.shopeemobile.com/shopee/shopee-trackingsdk-
@@ -134693,8 +134696,6 @@ zybang.com##.top_download
 ||intern.oc-hairsystems.com^
 ||intern.oc-womenshair.com^
 ||internal-analytics.odoo.com^
-||internal-e.posthog.com^
-||internal-t.posthog.com^
 ||internal.3m.com^
 ||internal.hcltech.com^
 ||internalcomms.dbschenker.com^
@@ -151923,6 +151924,7 @@ zybang.com##.top_download
 ||mwbilx.pisos.com^
 ||mwdwepok.xyz^
 ||mwed.jp/assets/packs/js/measurements/
+||mwed.jp/i/acs.gif?
 ||mwf7.montecarlowellness.com^
 ||mws.verisk.com^
 ||mwstats.net^$third-party
@@ -152241,6 +152243,7 @@ zybang.com##.top_download
 ||mysunwest.fmservice.com^
 ||mythad.com^
 ||mythosupflow.com^
+||mythtracker.com^
 ||mytictac.com^$third-party
 ||mytop.live.vkvideo.ru^
 ||mytopf.com^$third-party
@@ -156834,6 +156837,7 @@ zybang.com##.top_download
 ||people.moderncampground.com^
 ||people.spaciousskiescampgrounds.com^
 ||peoplehr.actonservice.com^
+||pepin.padlet.com^
 ||pepleb.ekosport.de^
 ||pepnsnq.cn^
 ||pepper.trywellbe.ba^
@@ -158118,7 +158122,11 @@ zybang.com##.top_download
 ||postbank.de/etc/*/clientlib-postbank-webtrekk
 ||postgraduate.smu.edu.sg^
 ||postgraduate2.smu.edu.sg^
+||posthog.com/*/?ip=$xmlhttprequest
 ||posthog.com/*/?retry_count
+||posthog.com/*/logs?$xmlhttprequest
+||posthog.com/api/homepage-hits
+||posthog.com/api/signup-count
 ||posthog.lingvanex.com^
 ||posthog.tarnkappe.info^
 ||postmates.com/_events$redirect=nooptext
@@ -164195,6 +164203,7 @@ zybang.com##.top_download
 ||sdk.nsureapi.com/sdk.js
 ||sdk.optimove.net^
 ||sdk.out.usbla.net^
+||sdk.rum.aliyuncs.com/v*/bl.js
 ||sdk.sipujia.cn^
 ||sdk.stats-locations.com^
 ||sdkapi-prod.dfinery.ai^
