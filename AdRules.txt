@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-19 02:51:36(GMT+8)
-! Total count: 206546
+! Version: 2026-03-19 09:47:41(GMT+8)
+! Total count: 206547
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -7530,7 +7530,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||adobe.com.ssl.d1.sc.omtrdc.net^$xmlhttprequest,domain=www.adobe.com
 @@||adobe.com^$cookie=/^AMCVS?_.*AdobeOrg/
 @@||adobe.tt.omtrdc.net/rest/v1/delivery?client=adobe&sessionId=$domain=acrobat.adobe.com
-@@||adobedc.demdex.net/ee/v1/identity/$xmlhttprequest,domain=cibc.com
+@@||adobedc.demdex.net/ee/v1/identity/$xmlhttprequest,domain=cibc.com|westjet.com
 @@||adobedc.demdex.net^$xmlhttprequest,domain=sc.com
 @@||adobedtm.com/extensions/$domain=antena3.com|apple.com|atresmedia.com|atresplayer.com|automobiles.honda.com|bravotv.com|cadenaser.com|crave.ca|foodnetwork.com|lasexta.com|telus.com|verizon.com|xfinity.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
@@ -119662,6 +119662,7 @@ zybang.com##.top_download
 ||emptyescort.com^
 ||emptyescort.com^$third-party
 ||emrdnt.sumaity.com^
+||emrld.cc^
 ||ems-a8net-tracking.easy-myshop.jp^
 ||ems.golpobox.com^
 ||ems.youku.com/event?
