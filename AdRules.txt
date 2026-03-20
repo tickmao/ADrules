@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-20 09:41:58(GMT+8)
-! Total count: 206459
+! Version: 2026-03-20 19:05:23(GMT+8)
+! Total count: 206466
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -12481,6 +12481,7 @@ bombaytimes.com##a[onclick*="click"][rel="nofollow,noindex"]
 bombaytimes.com#?#div:-abp-has(> h4 > span:-abp-contains(Ad: ))
 bombaytimes.com,businessinsider.in#?#div:-abp-has(> h2:-abp-contains(Promoted Stories) + div)
 bon.chanceaufkredit.com$image
+bonappt.co.uk#$#abort-current-inline-script window.addEventListener Ads
 bongda365f.com#$#override-property-read isSkipAds true
 bonstreams.net,cloudvideo.tv,cucuflix.*,flashx.tv,gogoanime.*,gomovies.*,keeplinks.co,movies123.xyz,openloadmovies.*,vidsrc.*,yts-official.*,yts.*#$#abort-on-property-read atob
 booking.com#$#hide-if-matches-xpath './/span[@color][contains(@class,"PromoText")]/parent::div[@data-autobot-element-id]/ancestor::div[contains(@class,"ListingCardWrapper")]'
@@ -12515,7 +12516,7 @@ budport.com.ua##body > div[style^="position:fixed;"][style*="z-index"][style*="b
 budport.com.ua#$#abort-current-inline-script $ append
 bulletin.sntba.com#%#//scriptlet("set-constant", "returnCitySN", "emptyObj")
 bunshun.jp##.recommend-articles:has(> div[class^="taboola"])
-buomtv.media,muzay.net,chuyentiepanimehay.one,cliphot69.shop,clipsexsub3x.net,damconuong.plus,demo.14412882.com,doctruyen3qhubk.com,dualeotruyenqr.com,goctruyentranhvui19.com,hentaivc.cc,hhtq5.vip,ihentai.network,javtiful.com,luottruyen3.com,lxmanga.space,misskon.com,motphim.pokemonviet.com,vlmupsex.net,newtruyentranh8.com,phim18hdxx.com,phimlongtieng.net,phimsexhayvn96.com,quatvn.my,sayhentai.vc,sex.xinh3x.me,sexdiary.club,sexviet88.xyz,streamvl.top,truyenqqno.com,truyenvn.shop,umetruyenz.org,vevocloud.com,viet69.ly,viet69vn.at,vn2.xvideos69.xxx,vn6.sexviet88.xyz,www.sieutamphim.pro,yurineko.my#$#abort-current-inline-script WebAssembly instantiate
+buomtv.media,muzay.net,chuyentiepanimehay.one,cliphot69.shop,clipsexsub3x.net,damconuong.plus,demo.14412882.com,doctruyen3qhubk.com,dualeotruyenqr.com,goctruyentranhvui19.com,hentaivc.cc,hhtq5.vip,ihentai.network,javtiful.com,luottruyen3.com,lxmanga.space,misskon.com,motphim.pokemonviet.com,gaimupsex.net,newtruyentranh8.com,phim18hdxx.com,phimlongtieng.net,phimsexhayvn96.com,quatvn.my,sayhentai.vc,sex.xinh3x.me,sexdiary.club,sexviet88.xyz,streamvl.top,truyenqqno.com,truyenvn.shop,umetruyenz.org,vevocloud.com,viet69.ly,viet69vn.at,vn2.xvideos69.xxx,vn6.sexviet88.xyz,www.sieutamphim.pro,yurineko.my#$#abort-current-inline-script WebAssembly instantiate
 burze.dzis.net#@#.adsbygoogle
 business.nikkei.com##.cbCxense
 business.nikkei.com#?#.l-content_footer.recommendesInfomation:contains(あなたにオススメ)
@@ -16149,6 +16150,8 @@ dictionary.cambridge.org#$#override-property-read window.navigator.connection.rt
 dictionary.cambridge.org,loawa.com,malaymail.com#$#abort-current-inline-script setTimeout /EventTarget.*prototype.*addEventListener.*Map/
 dictionary.cambridge.org,malaymail.com#$#abort-current-inline-script setTimeout /error-report.com/
 digi.no##img[src^="https://ish.tumedia.no/ish_tracker.gif"]
+digital-eliteboard.com%2Fb%2Fimage.gif%3Fp%3D
+digital-eliteboard.com/b/image.gif?p=
 digital.neoseguradora.com.br$image
 digitalcitizen.life###dont-block-our-ads-popup
 digitalcitizen.life##.TopAdBanner
@@ -75874,6 +75877,7 @@ gaara-fr.com###ga-skin-top! url: https://easylist-downloads.adblockplus.org/anti
 gaara-fr.com###pub01
 gagadget.com,ringside24.com,newsyou.info#$#abort-on-property-read localStorage
 gaijin.at##.box_error.box_error_icon
+gaimupsex.net#$#abort-on-property-read Cookies
 gala.com#%#//scriptlet('set-local-storage-item', '_gal1', '$remove$')
 gamaniak.com#@#.adsbygoogle
 game2day.ru##div[class^="adblock_"]
@@ -82931,7 +82935,6 @@ pptjia.com##.alert2_wrap
 pptv.com###installApp
 pr-cy.ru##div[id^="aabb"]
 pracuj.pl#%#//scriptlet('set-cookie-reload', 'gptrackCookie', '1')
-prawngarden.com#$#abort-current-inline-script window.addEventListener Ads
 prd.api.bleacherreport.com^
 pre.click.s11.sfmc-osl.com$image
 preemlinks.com#@##divads
@@ -87760,7 +87763,6 @@ vizer.tv#@#.adBlockDetected
 vizer.tv#@#.adsbox
 vk.barkov.net##.alert-danger
 vk.com,vk.ru#$#abort-on-property-read vk__adsLight.adsShowed
-vlmupsex.net#$#abort-on-property-read Cookies
 vmware.click.s11.sfmc-osl.com$image
 vndoc.com#$#override-property-read seconds 0
 vnexpress.net#%#//scriptlet('set-local-storage-item', '/^fosp_/', '$remove$')
@@ -117605,6 +117607,8 @@ zybang.com##.top_download
 ||duckdns.org^$third-party,websocket
 ||duckduckgo.com/*/reportAnalytics
 ||duckduckgo.com/*/reportAnalytics$xmlhttprequest,redirect-rule=noopjson
+||duckduckgo.com/atb.js
+||duckduckgo.com/exti/
 ||duckduckgo.com/t.js?q=
 ||duckduckgo.com/t/
 ||duckduckgo.com/y.js?ifu=
@@ -122317,6 +122321,7 @@ zybang.com##.top_download
 ||fjjmnh.com^
 ||fjkjaj.peterhahn.nl^
 ||fjnrh.period.co^
+||fjordsand.com^
 ||fjortk.braun-hamburg.com^
 ||fjqtg.resthavenokc.com^
 ||fjqtyu.bethowen.ru^
@@ -148387,6 +148392,7 @@ zybang.com##.top_download
 ||metrics-broker.prod.p.tf1.fr^
 ||metrics-cbslocal-com.cdn.ampproject.org^
 ||metrics-config.icloud.com^
+||metrics-content.duckduckgo.com^
 ||metrics-dra.dt.hicloud.com^
 ||metrics-fe-na1.hubspot.com^
 ||metrics-go.experian.com^
@@ -153235,7 +153241,7 @@ zybang.com##.top_download
 ||nlobp.champssports.ca^
 ||nlog.commerce.naver.com^$redirect=nooptext
 ||nlog.instajob.ai^
-||nlog.naver.com^$domain=~shopping.naver.com|~smartstore.naver.com|~brand.naver.com
+||nlog.naver.com^$domain=~shopping.naver.com|~smartstore.naver.com|~brand.naver.com|~flight.naver.com
 ||nlog.shinhan.com^
 ||nlp-japan.life-and-mind.com^
 ||nlpd.alfavin.ch^
@@ -153730,7 +153736,7 @@ zybang.com##.top_download
 ||ntkuq.poradnikapteczny.com^
 ||ntlab.org^$third-party
 ||ntm.pstatic.net/scripts/ntm_$domain=naver.com
-||ntm.pstatic.net/scripts/ntm_*.js$domain=~smartstore.naver.com|~brand.naver.com
+||ntm.pstatic.net/scripts/ntm_*.js$domain=~smartstore.naver.com|~brand.naver.com|~flight.naver.com
 ||ntmb.de/count.html?
 ||ntms-test.coles.com.au^
 ||ntms-test.creditcards.money.qantas.com^
@@ -179008,7 +179014,7 @@ zybang.com##.top_download
 ||ssl.proxiware.io^
 ||ssl.proxiware.org^
 ||ssl.pstatic.net/img.tvcast/pc/js/wcslog
-||ssl.pstatic.net/static.gn/js/clickcrD.js$domain=~search.naver.com|~smartstore.naver.com|~brand.naver.com
+||ssl.pstatic.net/static.gn/js/clickcrD.js$domain=~search.naver.com|~smartstore.naver.com|~brand.naver.com|~flight.naver.com
 ||ssl.pstatic.net/static.news/*/js/generated/aside.statistics.js$domain=media.naver.com|news.naver.com
 ||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/aside.statistics.js
 ||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/statistics_jquery.js
@@ -187053,6 +187059,7 @@ zybang.com##.top_download
 ||steinernehaus.viessmann.at^
 ||steinsala.viessmann.lu^
 ||stel.telegraaf.nl^
+||stellarduel.com^
 ||stellaservice.com^$third-party
 ||stem.cellmedicine.com^
 ||sten.buenaonda-holidays.com^
