@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-24 02:43:47(GMT+8)
-! Total count: 206515
+! Version: 2026-03-24 09:28:18(GMT+8)
+! Total count: 206526
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2393,6 +2393,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /api/pixel?
 /api/reqAnalytic/*
 /api/rest/analytics/page/rendered$domain=komonews.com|wjactv.com|upnorthlive.com|cnycentral.com|wpde.com|cbs6albany.com|kutv.com|wjla.com|news3lv.com|kmph.com|kfoxtv.com|fox17.com|foxbaltimore.com|foxchattanooga.com|foxillinois.com|foxnebraska.com|foxreno.com|foxrochester.com|foxsanantonio.com|nbcmontana.com|okcfox.com|siouxlandnews.com|wach.com|wchstv.com|wcyb.com|wfxl.com|wgxa.tv|wlos.com|wsbt.com|cbs2iowa.com|fox4beaumont.com|mycbs4.com|mynews4.com|news4sanantonio.com|abc6onyourside.com|wtov9.com|turnto10.com|fox11online.com|mynbc15.com|nbc16.com|fox23maine.com|nbc24.com|fox28savannah.com|myfox28columbus.com|fox42kptm.com|dayton247now.com|fox56.com|katu.com|local12.com|bakersfieldnow.com|ktul.com|22thepoint.com|abc3340.com|abc45.com|abc7amarillo.com|abcnews4.com|cbs12.com|cbs4local.com|cbsaustin.com|chattanoogacw.com|cw14online.com|cwomaha.tv|cw18milwaukee.com|cw23tv.com|cw34.com|cw35.com|cw9tv.com|cwcentralpa.com|cwcincinnati.com|cwcolumbus.com|cwlasvegas.com|cwtreasurevalley.com|fox38corpuschristi.com|fox47.com|fox49.tv|foxkansas.com|foxrichmond.com|idahonews.com|katv.com|kcby.com|kdsm17.com|keprtv.com|kfdm.com|khqa.com|kimatv.com|kmyu.tv|kocb.com|kpic.com|krcgtv.com|krcrtv.com|ktvl.com|ktvo.com|ktxs.com|kunptv.com|kunwtv.com|kval.com|local21news.com|midmichigannow.com|myrdctv.com|mytv30web.com|mytvbaltimore.com|mytvbuffalo.com|mytvcharleston.com|mytvdayton.com|mytvrichmond.com|mytvwichita.com|mytvz.com|nebraska.tv|nevadasportsnet.com|newschannel20.com|newschannel9.com|raleighcw.com|seattlerefined.com|southernoregoncw.com|star64.tv|telemundoaustin.com|thecw38.com|thecw46.com|thecwtc.com|thecwtv.tv|thenationaldesk.com|utv44.com|wabm68.com|watchdaytime.com|wcti12.com|weartv.com|wfgxtv.com|wgme.com|wpgh53.com|wset.com|wtwc40.com|wutv29.com|wwmt.com|13wham.com
+/api/sentry/tunnel$xmlhttprequest
 /api/stat?
 /api/statsd|$~third-party,xmlhttprequest
 /api/track?guid
@@ -3338,6 +3339,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /geov2.js
 /get/*/inventory|
 /get/*/live/_/jts.js
+/get/live/web/_/*$script,~third-party
 /get_cdns?$third-party,xmlhttprequest
 /get_geoip?
 /get_site_data?requestUUID=
@@ -80680,6 +80682,8 @@ newegg.*#$#hide-if-matches-xpath './/div[contains(@class,"menu-box")]/span[conta
 newegg.*#$#override-property-read window.__initialState__.SponsoredBrand emptyObj
 newegg.com##div[class*="-sponsored"]
 newegg.com#%#//scriptlet('set-constant', 'GA4LPHandler', 'noopFunc')
+newegg.com%2Fmr%2F*.gif%3Fr%3D
+newegg.com/mr/*.gif?r=
 newidea.e.aremedia.com.au$image
 newideafood.e.aremedia.com.au$image
 newkaliningrad.ru##body > .soclinks + script + div[class]:not([id])
@@ -97002,6 +97006,7 @@ zybang.com##.top_download
 ||anaconda.webitizeicts.com^
 ||anaconda.zephyrus.gg^
 ||anajg.calisibeauty.de^
+||anal.billingserv.com^
 ||anal.biostile.cz^
 ||anal.biostile.gr^
 ||anal.biostile.si^
@@ -97938,6 +97943,7 @@ zybang.com##.top_download
 ||analytics.neruzksa.com^
 ||analytics.net.dz.jumia.com^
 ||analytics.netkeiba.com^
+||analytics.netralex.com^
 ||analytics.netronline.dev^
 ||analytics.newdirectionsaromatics.ca^
 ||analytics.newdirectionsaromatics.com^
@@ -138552,6 +138558,7 @@ zybang.com##.top_download
 ||link.bemachine.app^
 ||link.bestest.io^
 ||link.bestwinners.xyz^
+||link.bhvr.com^
 ||link.bigroom.tv^
 ||link.bloetz.net^
 ||link.bluecallapp.com^
@@ -148037,6 +148044,7 @@ zybang.com##.top_download
 ||meinauto.de/js/vendor/criteo/criteo_ld.js
 ||meinauto.hdd-dienste.de^
 ||meiqia.com^$third-party
+||meiro.io^$third-party
 ||meitetsu.co.jp/*/ga*.js
 ||meitustat.com^
 ||meiweifood.xyz^
@@ -157755,6 +157763,7 @@ zybang.com##.top_download
 ||player.ivideosmart.com/ivsplayer/*/moat-tracker.js
 ||player.javboys.cam/cdn-cgi/trace
 ||player.kwikmotion.com/packages/videojs-stat/
+||player.mangomolo.com/stats/
 ||player.ooyala.com/errors/report?
 ||player.sbs.co.kr/log/
 ||player.stats.live-video.net^
@@ -162274,6 +162283,7 @@ zybang.com##.top_download
 ||rxwdv.neoprocycling.com.au^
 ||rxyggrq.cn^
 ||ry0.rythmefm.com^
+||rybbit.sg-app.com^
 ||rybfjx.sportscheck.com^
 ||rychlost.cz/_pub/jquery/scripts.js$script
 ||rychlost.cz/_pub/scripts/js.js$script
@@ -198280,6 +198290,7 @@ zybang.com##.top_download
 ||u.makro.pl^
 ||u.makro.pt^
 ||u.salony.com^
+||u.strike.bz^
 ||u.txuesoft.cn^
 ||u.unison-doors.com^
 ||u.zhugeapi.net^
