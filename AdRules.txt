@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-24 20:58:23(GMT+8)
-! Total count: 206542
+! Version: 2026-03-25 02:54:50(GMT+8)
+! Total count: 206546
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -76873,6 +76873,9 @@ hpplus.jp#%#//scriptlet('set-local-storage-item', 'fw_uid', '$remove$')
 hq.mg.everplans.com$image
 hqq.*,netu.tv#$#abort-on-property-read _pop
 hqq.*,netu.tv#$#abort-on-property-read ownerid
+hqq.to###bigplaybutxt {remove:true;}
+hqq.to###thispays {remove:true;}
+hqq.to##iframe[class="ppxls_awersd"] {remove:true;}
 hr.hr.onlinekabelshop.nl$image
 huaban.com##.hb-ad
 huaban.com,zcool.com.cn##.ad
@@ -82735,7 +82738,7 @@ pcworld.com#%#//scriptlet('href-sanitizer', 'a[href*="skimresources.com"]', '?ur
 pearlclub.vinpearl.com$image
 pebx.pl#@#.adsbygoogle
 peers.tv##.moanerwrap
-peliculaseroticasonline.tv#$#abort-on-property-write _0x1dc1
+peliculaseroticasonline.*#$#abort-on-property-write _0x1dc1
 peliculasyseries-online.com,pelisflixhd.art,tvporinternet2.com,verpeliculasio.online#$#abort-on-property-write window.open
 pelikan.*#%#//scriptlet('set-local-storage-item', 'PAPVisitorId', '$remove$')
 pelisflixhd.art,series-de.online#$#abort-on-property-read doSecondPop; abort-on-property-read doSecondPopU
@@ -88375,7 +88378,7 @@ z0r.de##.adb
 zab.ru#$#abort-on-property-read document.body.style
 zakon.kz##.adblock_alert
 zarabiajnaokazjach.pl#@##adsense
-zbporn.com#$#abort-on-property-read popns
+zbporn.com,hqq.to#$#abort-on-property-read popns
 zch-vip.com##.plugin-access
 zdactzl96snkye37.click.s11.sfmc-osl.com$image
 zdnet.com###taboola-below-home-thumbnails-homepage
@@ -89406,6 +89409,7 @@ zybang.com##.top_download
 ||91160.com/nykj/f=static/v4/common/tj.js
 ||9189.pandasuite.io^
 ||91chaodijia.com^
+||91jp3.beauty/000/flink/analytics.php
 ||91mjw.com/hy-66-90.php
 ||91p20.space^
 ||91xzba.com^
