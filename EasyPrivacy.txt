@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202603261243
+! Version: 202603261842
 ! Title: EasyPrivacy
-! Last modified: 26 Mar 2026 12:43 UTC
+! Last modified: 26 Mar 2026 18:42 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 8df29b87c328e7edd0dfe4fb799b429f5ab126a0
+! Commit: 5f9b6fa1b8bb5805abdb631a6a7b205352c62b7e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -1959,6 +1959,7 @@
 /RcAnalyticsEvents.js
 /rcAnalyticsLib.js
 /rd-js-integration.min.js
+/rdtracker/rdtracker.min.js
 /readReceipt/notify/?img=$image
 /readthedocs-analytics.js
 /realtimeapi/impression?
@@ -5296,6 +5297,7 @@ omni.soundestlink.com$image
 ||minewhat.com^$third-party
 ||minkatu.com^$third-party
 ||mirabelsmarketingmanager.com^$third-party
+||mirakl.net^$third-party
 ||mixi.mn^$third-party
 ||mixpanel.com^$third-party
 ||mkt3261.com^$third-party
@@ -15257,6 +15259,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||girlsofdesire.org/images/girlsofdesire.org/analytics.js
 ||github.com/_private/browser/stats
 ||github.dev/diagnostic?
+||givefreely.com/ingest/
 ||glassdoor.*/geb/events/
 ||glassmoni.researchgate.net^
 ||global.canon/00cmn/js/*/analytics-
@@ -16082,6 +16085,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stapewithadblock.xyz/stat/
 ||starfiles.co/analytics.php
 ||startpage.com/sp/$ping
+||startpage.com/sp/atq/ep2/sodar/sodar2.js
 ||startpage.com/sp/dplpxs?
 ||startpage.com/sp/jst
 ||starzplay.com/resources/js/analytics.js
@@ -54252,7 +54256,9 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||adat.travelo.hu^
 ||adat.veol.hu^
 ||adat.videa.hu^
+||arukereso.hu/*.impression?tt=
 ||beam.telex.hu^
+||checkout.arukereso.hu^$ping
 ||events.ingatlan.com^
 ||hirtv.hu/ajaxx/_stat/
 ||hirtv.hu/nx_general_stat.jpg?
