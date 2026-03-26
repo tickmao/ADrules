@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-25 20:55:55(GMT+8)
-! Total count: 206563
+! Version: 2026-03-26 02:48:54(GMT+8)
+! Total count: 206566
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -5345,6 +5345,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /v1/pixel.js
 /v1/pixel?
 /v1/rgstr?k=client-
+/v1/rgstr?k=client-$xmlhttprequest,redirect-rule=noopjson
 /v1/rgstr?k=client-$xmlhttprequest,redirect=noopjson,domain=chatgpt.com
 /v1/stats/track
 /v1/tracker.js
@@ -144939,6 +144940,7 @@ zybang.com##.top_download
 ||m-oo-m.com/data/report/
 ||m-pathy.com^$third-party
 ||m-stratovibe.prod.suno.com^
+||m-stratovibe.prod.suno.com^$xmlhttprequest,redirect-rule=noopjson
 ||m-t.io^$third-party
 ||m-t.topya.com^
 ||m-test.papertrail.io^
@@ -157734,6 +157736,7 @@ zybang.com##.top_download
 ||plausible.tubemagic.com^
 ||plausible.urbanekuensteruhr.de^
 ||plausible.veszelovszki.com^
+||plausible.vidsonic.net^
 ||plausible.visitu.com^
 ||plausible.viteshot.com^
 ||plausible.west.io^
