@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-27 20:52:34(GMT+8)
-! Total count: 206625
+! Version: 2026-03-28 02:48:19(GMT+8)
+! Total count: 206628
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -4018,6 +4018,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /nb-collector|
 /ncj-pixel.js
 /neilson.js
+/nelio-ab-testing/assets/dist/js/visitor-type.js
 /neoworx_tracker.php
 /netmining.js
 /netresults.js
@@ -7435,7 +7436,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@|https://$script,domain=sport1.de
 @@|wss://zoom.us^$removeparam
 @@||$xmlhttprequest,domain=last.fm
-@@||*/abd.js^$domain=amybakesbread.com|downshiftology.com|halfbakedharvest.com|krollskorner.com|natashaskitchen.com|onceuponachef.com|sallysbakingaddiction.com|simply-delicious-food.com|skinnytaste.com|spendwithpennies.com|tastesbetterfromscratch.com|themediterraneandish.com|thewoksoflife.com|titlecaseconverter.com|whec.com
+@@||*/abd.js^$domain=amybakesbread.com|downshiftology.com|halfbakedharvest.com|krollskorner.com|natashaskitchen.com|onceuponachef.com|sallysbakingaddiction.com|simply-delicious-food.com|skinnytaste.com|spendwithpennies.com|tastesbetterfromscratch.com|theloopywhisk.com|themediterraneandish.com|thewoksoflife.com|titlecaseconverter.com|whec.com
 @@||/template/conch/asset/js/hlhtml.js$domain=www.lldm.net|1anime.me
 @@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,domain=myair.resmed.com|one.one.one.one
 @@||1001trackstats.com/api/$xmlhttprequest,domain=songstats.com
@@ -11770,8 +11771,8 @@ amap.com##.app_download_box
 america.avadacom.com$image
 america.moseasia.com$image
 amsterdam.moseasia.com$image
-amybakesbread.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#abort-on-property-read Intl.DateTimeFormat false
-amybakesbread.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#replace-xhr-response /[\s\S]*/ '' /pub_300x250/
+amybakesbread.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,theloopywhisk.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#abort-on-property-read Intl.DateTimeFormat false
+amybakesbread.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,theloopywhisk.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#replace-xhr-response /[\s\S]*/ '' /pub_300x250/
 amyscans.com##div[class*="code-block"]
 ana1.me##.videopos
 analytics.connect-mail.savy.technology$image
@@ -11826,7 +11827,7 @@ animeunity.cc#$#abort-on-property-read zfgstorage; abort-current-inline-script d
 animeunity.tv#$#abort-on-property-read localStorage
 animevietsub.how,animevietsub.mx,hh3dhay.life,tram3d.online#$#abort-current-inline-script eval $._Eu
 animevietsub9.com#$#abort-on-property-read _0x3f9b
-animew.ru,cunofilms.ru,freehat.cc,hlamer.ru,lostpix.com,oxax.tv,potokcdn.com,prostoporno.help,tivix.co,tt-cup.com,uploadimagex.com,vmusi.ru,volynpost.com,wowskill.ru,xittv.net,zerno-ua.com#$#abort-on-property-read open
+animew.ru,cunofilms.ru,freehat.cc,hlamer.ru,it-world.ru,lostpix.com,oxax.tv,potokcdn.com,prostoporno.help,tivix.co,tt-cup.com,uploadimagex.com,vmusi.ru,volynpost.com,wowskill.ru,xittv.net,zerno-ua.com#$#abort-on-property-read open
 animeworld.so#$#abort-on-property-read window.open
 animezone.pl#@#.myTestAd
 animixplay.*#$#abort-current-inline-script String.fromCharCode
@@ -77144,6 +77145,7 @@ instacart.*##div:has(> div > div > h2 + span):has(img[alt="Advertisement"])
 instacart.*##div[id]:has(> a[href*="/brands/"] img[src*="display.instacart.com"]):has(> div[id$="-inner"] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id]:has(> a[href*="/brands/"] img[src*="display.instacart.com"]):has(> div[id] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id]:has(> div > a[href*="/brands/"] img[src*="display.instacart.com"]):has(> div[id] > div[role="region"][aria-label="item carousel"])
+instacart.*##div[id]:has(> div > a[href*="/brands/"] img[src*="display.instacart.com"]):has(> section[id] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id][class]:has(> a > div:first-child img):has(> a div[style*="display:"] span)
 instacart.*##div[id][class]:has(> a > img):has(ul li:first-of-type a div[style*="display:"] span)
 instacart.*##div[id][class]:has(> div:first-child > a img[alt*="Sponsored"], > div[aria-hidden="true"]:last-child)
@@ -77152,7 +77154,7 @@ instacart.*##li:has(fp-ads-tag):not(:has(h2))
 instacart.*#$#abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read ADBLOCK_DETECTED false;
 instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[text()="Top picks from other aisles"]/ancestor-or-self::h2/ancestor-or-self::div[@class="e-1yrpusx"]'
 instacart.*#$#hide-if-matches-xpath3 './/div[@style][matches(replace(string(.)," ",""),"Sponsored")]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'
-instacart.*#$#race start; hide-if-matches-xpath './/*[ self::div[span[text()="Spons"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spon"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spo"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponsor")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"d")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; race stop;
+instacart.*#$#race start; hide-if-matches-xpath './/*[ self::div[span[text()="Spons"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spon"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spo"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponsor")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"d")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-sp-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-sp-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; race stop;
 instagram.com#$#hide-if-contains-visible-text '/Ad|Anzeige|Gesponsert|Sponsored|Geborg|Sponzorováno|Sponsoreret|Χορηγούμενη|Publicidad|Sponsoroitu|Sponsorisé|Bersponsor|Sponsorizzato|広告|광고|Ditaja|Sponset|Gesponsord|Sponsorowane|Patrocinado|Реклама|Sponsrad|ได้รับการสนับสนุน|May Sponsor|Sponsorlu|赞助内容|贊助|প্রযোজিত|પ્રાયોજિત|स्पॉन्सर्ड|Sponzorirano|ಪ್ರಾಯೋಜಿತ|സ്‌പോൺസർ ചെയ്‌തത്|पुरस्‍कृत|प्रायोजित|ਪ੍ਰਾਯੋਜਿਤ|මුදල් ගෙවා ප්‍රචාරය කරන ලදි|Sponzorované|స్పాన్సర్ చేసింది|Được tài trợ|Спонсорирано|Commandité|Sponsorizat|Спонзорисано/' 'article>div[class]' 'span[class]';
 instagram.com#$#json-prune data.xdt_injected_story_units.ad_media_items
 instantmanga.com###notice
@@ -83553,8 +83555,8 @@ salesforceiq.com/t.png$image
 sallysbakingaddiction.com#$#cookie-remover /adblocker/ true
 sameday.costco.*#$#abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read ADBLOCK_DETECTED false
 sameday.costco.*#$#hide-if-matches-xpath './/div[@style]/following::span[text()]/preceding::div[@aria-hidden="true"]/preceding::img[contains(@alt,"Sponsored") or contains(@alt,"Advertisement")]/ancestor-or-self::div[@id][@class][1]'
-sameday.costco.*#$#race start; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ed")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"d")]]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//sp-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-ads-tag]/ancestor::li[1]'; race stop;
-sameday.costco.*#$#race start; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spons")] and descendant::span[contains(text(), "ored")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(), "d")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/div[contains(@id,"-inner")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; hide-if-matches-xpath '//div[@id]/div[contains(@id,"-content")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; race stop;
+sameday.costco.*#$#race start; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ed")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"d")]]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//sp-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-sp-tag]/ancestor::li[1]'; race stop;
+sameday.costco.*#$#race start; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spons")] and descendant::span[contains(text(), "ored")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(), "d")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/div[contains(@id,"-inner")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; hide-if-matches-xpath '//div[@id]/div[contains(@id,"-content")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; hide-if-matches-xpath '//div[@id]/section[contains(@id,"-content")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; race stop;
 samehadaku.net#@##adsense
 samsclub.com##div[class="analytics"][data-strategy="Sponsored products"]
 samsclub.com#$#hide-if-contains-visible-text /Sponsored/ 'div[style][class]' span[class]
@@ -83637,7 +83639,7 @@ sendvid.com#$#abort-current-inline-script document.createElement /break;case \$/
 senmanga.com##P[class="no"]
 seorinexpress.com#%#//scriptlet('set-constant', 'AM_PRODUCT', 'noopFunc')
 series24.*,tvporinternet2.com#$#abort-on-property-read aclib.runPop
-seriesonline.*,vidup.to,watchseries.*#$#abort-current-inline-script addEventListener HTMLAllCollection;
+seriesonline.*,vsembed.*,vidup.to,watchseries.*#$#abort-current-inline-script addEventListener HTMLAllCollection;
 seriesyonkis.cx#$#abort-on-property-read window.atob; abort-on-property-read open; abort-on-property-read _0x4c81
 server-setting.info#@#.adsbygoogle
 server.avalst.com$image
@@ -85494,7 +85496,7 @@ uniongang.org#?#td[align="center"][height="27"]:contains(Счётчики)
 unisender.solar-staff.com%2F*%2Fgo1_read_tracker%2F$image
 unisender.solar-staff.com/*/go1_read_tracker/$image
 unito.life#%#//scriptlet('abort-current-inline-script', 'KeenTracking')
-unito.life$$script[tag-content="KeenTracking"]
+unito.life$$script:contains(KeenTracking)
 unn.com.ua##.b-footer-counters
 unpkg.com/aladug/*.js
 uol.com.br#%#//scriptlet('set-constant', 'UOLPD', 'emptyObj')
@@ -89014,6 +89016,7 @@ zybang.com##.top_download
 ||3347.wolf-gordon.com^
 ||3347.wolfgordon.com^
 ||33across.com^
+||33brisk.net^
 ||34.215.155.61^
 ||35.194.26.233^
 ||35.239.57.233^
@@ -89238,6 +89241,7 @@ zybang.com##.top_download
 ||5dyx.com/static/jquery.js
 ||5dyx.com/static/js/deny.js
 ||5e00.pandasuite.io^
+||5e4316klk7bv7c.rest^
 ||5etv.com^$third-party
 ||5fm.985fm.ca^
 ||5gg17gm.com^
@@ -102295,6 +102299,9 @@ zybang.com##.top_download
 ||aveuglediking.com^
 ||avhmf.toms.com^
 ||aviasales.$cookie=/^_sp_id/
+||aviasales.*-analytics.
+||aviasales.*/analytics_pv.
+||aviasales.*/sentry-replay.
 ||avid.actonservice.com^
 ||avidlender.com^
 ||aviite.freaksstore.com^
@@ -103979,7 +103986,6 @@ zybang.com##.top_download
 ||blasterzone.it/analytics/
 ||blau-subdomain.b.information.blau.de^
 ||blava.viessmann.sk^
-||blaverroes.qpon^
 ||blavity.black.news^
 ||blazeoccamy.com^
 ||bldr.mkt.samsung.com^
@@ -104431,7 +104437,6 @@ zybang.com##.top_download
 ||borelmazatec.com^
 ||borghaswing.com^
 ||boringberry.com^
-||boringegotistical.com^
 ||boringpirate.com^
 ||boshishuwu.com/js/middlestyle.js
 ||boshishuwu.com/js/zhuanhua.js
@@ -104448,6 +104453,7 @@ zybang.com##.top_download
 ||botdetection.hbrsd.com^
 ||botdetector.ru^$third-party
 ||botfaqtor.ru^$third-party
+||botisopper.com^
 ||botize.com^$third-party
 ||botman.ninja^$third-party
 ||botndm.nl^*/init.min.js
@@ -104728,6 +104734,7 @@ zybang.com##.top_download
 ||bravebone.com^$third-party
 ||braveglobal.tv^
 ||bravenet.com/counter/
+||braveryriftraining.com^
 ||bravo.israelweather.co.il^
 ||bravotube.net/b_track.js
 ||braze.eu/api/v3/data/
@@ -105311,6 +105318,7 @@ zybang.com##.top_download
 ||bynvhb.godiva.com^
 ||byoviral.com^$third-party
 ||byqdtp.interpark.com^
+||byrniessilky.com^
 ||bysbpc.teufelaudio.nl^
 ||bysfnu.bodeboca.com^
 ||bytecdn.cn/ta/resource/v0/analytics.js
@@ -108411,7 +108419,6 @@ zybang.com##.top_download
 ||coesitecubbing.com^
 ||cofactordigital.actonservice.com^
 ||coffe.faynestudio.com.br^
-||coffeavirify.com^
 ||coffee.brandzaak.nl^
 ||coffee.garageroasted.co.uk^
 ||coffeesidehustle.com^
@@ -119940,6 +119947,7 @@ zybang.com##.top_download
 ||enquiry.marketingcube.com.au^
 ||enquisite.com^$third-party
 ||enricher.stape.beer^
+||enrolcopals.com^
 ||enroll.workforcewellness.com^
 ||enrolldi.glic.com^
 ||enrolwebserverside.enrolweb.com^
@@ -120015,6 +120023,7 @@ zybang.com##.top_download
 ||eoapxl.com^
 ||eocfk.thehappyplanner.com^
 ||eodda.womanwithin.com^
+||eodnprwxgjixj.online^
 ||eoffoutlet.bgsautomation.com.br^
 ||eofjtw.jjshouse.se^
 ||eofwfj.ria.com^
@@ -120065,6 +120074,7 @@ zybang.com##.top_download
 ||epicoldschool.com^$third-party
 ||epicooler-ss.checkoutera.com^
 ||epicswimming.com^
+||epicureholer.com^
 ||epidemictuna.com^
 ||epilot.com^$third-party
 ||epimetheus.navigator.gmx.net^
@@ -121344,7 +121354,6 @@ zybang.com##.top_download
 ||extstat.info^$third-party
 ||exuberantedge.com^
 ||exuberantedge.com^$third-party
-||exudingidolet.com^
 ||exwatch.exclusievetijd.nl^
 ||exwvpm.misumi-ec.com^
 ||exxwhi.jmty.jp^
@@ -126248,7 +126257,6 @@ zybang.com##.top_download
 ||gravitygive.com^
 ||gravitykick.com^
 ||gravitykick.com^$third-party
-||grayedmellit.com^
 ||graylog.prod.cams.run^
 ||grayoranges.com^
 ||grayoranges.com^$third-party
@@ -136861,7 +136869,6 @@ zybang.com##.top_download
 ||khzmgk.plumbworld.co.uk^
 ||ki.knauf-industries.com^
 ||kia.ru/bitrix/templates/.default/js/jquery.gatrack.dpack.js
-||kiackhaulmy.com^
 ||kialeesewster.com^
 ||kian.rockmelon.agency^
 ||kib.hu^
@@ -145420,6 +145427,7 @@ zybang.com##.top_download
 ||maltobrolly.com^
 ||mambasscious.com^
 ||mamka.aviasales.ru^
+||mammoniwooing.shop^
 ||manage.edb.gov.sg/pd.js
 ||manage.nortrez.com^
 ||manage88.com^
@@ -148220,7 +148228,6 @@ zybang.com##.top_download
 ||mercury.coupang.com^
 ||mercury.jd.com/log.gif
 ||mercuryace.com^
-||mercyhonk.com^
 ||meremark.com^
 ||meremark.com^$third-party
 ||mereni.boutiq.cz^
@@ -154992,7 +154999,6 @@ zybang.com##.top_download
 ||op.szlcsc.com/getFloatAdvertising?callback=
 ||opalmetely.com^
 ||opalquill.com^
-||opalsmeer.com^
 ||opbandit.com^$third-party
 ||opbdps.bonprix.fi^
 ||opbvu.getfirstperson.com^
@@ -159948,7 +159954,6 @@ zybang.com##.top_download
 ||qugkzc.babyonlinewholesale.com^
 ||quhdnr.musiciansfriend.com^
 ||quibids.com/marketing/pixels/
-||quichecarib.com^
 ||quick-counter.net^$third-party
 ||quick.openapp.link^
 ||quickkoala.io^
@@ -159986,6 +159991,7 @@ zybang.com##.top_download
 ||quizzicalpartner.com^$third-party
 ||quizzicalzephyr.com^
 ||quizzicalzephyr.com^$third-party
+||qujye8zbujrup1g7g.cfd^
 ||quk9.destinia.com.ar^
 ||qumaef.conects.com^
 ||qumhzv.calmamall.com^
@@ -160224,6 +160230,7 @@ zybang.com##.top_download
 ||rabuagc.cn^
 ||rac.ruutu.fi^
 ||racemanager-app.sapsailing.com^
+||racierlithous.com^
 ||rackcdn.com/gate.js
 ||rackcdn.com/stf.js
 ||rackforstorage.com^
@@ -176379,6 +176386,7 @@ zybang.com##.top_download
 ||spotpass.com/api/log
 ||spottednoise.com^
 ||spottednoise.com^$third-party
+||spouteroutgain.com^
 ||spox.com/pub/js/track.js
 ||spplamt.xyz^
 ||spqurb.webtour.com^
@@ -187776,7 +187784,6 @@ zybang.com##.top_download
 ||studylabs.cn^
 ||stuffedclipse.com^
 ||stulmunshent.com^
-||stummelbeelbow.com^
 ||stunthedge.com^
 ||stupendoussleet.com^
 ||stupendoussleet.com^$third-party
@@ -191725,7 +191732,6 @@ zybang.com##.top_download
 ||thedailybeast.com/static/js/thirdparty.
 ||thedoc.doctronic.ai^
 ||thedp.exhalewell.com^
-||theedomcudgels.com^
 ||thefatherofsalmon.com^
 ||thefishstops.com^
 ||thefontzone.com^
@@ -192693,7 +192699,6 @@ zybang.com##.top_download
 ||tom.itv.com/itv/count/*
 ||tomandligula.com^
 ||tomatobarrel.com^
-||tomehippish.cyou^
 ||tommys.openapp.link^
 ||tomonline-inc.com^$third-party
 ||toms.com/*/FacebookCAPI-Event
@@ -201422,7 +201427,6 @@ zybang.com##.top_download
 ||waitingnumber.com^
 ||waitrose.com/gDaVC7/
 ||waivinggilim.com^
-||waiwaimetage.com^
 ||waixpa.supriagora.com.br^
 ||waizongguan.net^
 ||wal.wolfram.com^
@@ -204996,7 +205000,6 @@ zybang.com##.top_download
 ||yaqurc.com^
 ||yardianalytics.com^
 ||yardstick.bitchute.com^
-||yarestengore.com^
 ||yarezo.vendee-tourisme.com^
 ||yaroec.plytki-lazienki.pl^
 ||yarpp.org/pixels/
