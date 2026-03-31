@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-31 09:52:43(GMT+8)
-! Total count: 213007
+! Version: 2026-03-31 15:05:06(GMT+8)
+! Total count: 213013
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -89296,6 +89296,7 @@ torrentkitty.tv#$#abort-on-property-read _fupfgk; abort-on-property-read _nyjdy
 torrentproject.com##A[href^="//torrentproject.com/out/?"]
 torrnado.win##body > div > .a-overlay
 tourister.ru##.nt-foot-item[style="overflow:hidden;"]
+tourister.ru#%#//scriptlet('href-sanitizer', 'a[href*="/go?"]', '?url')
 tous-sports.tv##IMG[src="http://www.tous-sports.tv/images/blanccloses.png"]
 tousatu-ch.net##.widget_custom_html:has(> div.textwidget > div[style^="width: 100%;"] > div.ninja-recommend-block)
 tousatu-club.com###text-9
@@ -104096,6 +104097,7 @@ zybang.com##.top_download
 ||api.melonity.gg^
 ||api.mendoachocolates.com.br^
 ||api.mercadolibre.com/tracks
+||api.mercari.jp/client_events/
 ||api.mesari.com.br^
 ||api.mestresdosite.com.br^
 ||api.metodo-cisne.pt^
@@ -125290,6 +125292,7 @@ zybang.com##.top_download
 ||etscju.mens-rize.com^
 ||etsy.com/api/*/ajax/public/cheddar|
 ||etsy.com/api/v*/ajax/public/bacon|
+||etsy.com/api/v*/ajax/public/recs-interactions
 ||etsy.com/api/v*/ajax/public/statsd|
 ||etsy.com/bcn/beacon
 ||etsy.com/bcn/beacon|
@@ -144765,6 +144768,7 @@ zybang.com##.top_download
 ||livelyroot.com/apps/ba-loy/app_metrics
 ||livelyvideo.tv/lb/logger
 ||liveme-sensors-collect2-*.amazonaws.com^
+||livemint.com/lm-img/js/lm-inp-tracker.js
 ||livep.l.qq.com^
 ||liveperson.net/hc/*/?visitor=
 ||liverail.com/?metric=
@@ -149579,6 +149583,7 @@ zybang.com##.top_download
 ||logs.spilgames.com^
 ||logs.supersonic.com^
 ||logs.theccaa.com^
+||logs.tourister.ru^
 ||logs.unchecky.com^
 ||logs.viadata.store^$third-party
 ||logs.viavideo.digital^
@@ -199150,6 +199155,7 @@ zybang.com##.top_download
 ||tpucdn.com/js/ga-*.js
 ||tpufe.centuryhomesamerica.com^
 ||tpvuxt.xyz^
+||tpwdg.com^$script
 ||tpx.tesseradigital.com^
 ||tpxyqc.intenson.pl^
 ||tq.cn/floatcard?
