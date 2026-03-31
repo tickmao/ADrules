@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-31 15:05:06(GMT+8)
-! Total count: 213013
+! Version: 2026-03-31 21:03:53(GMT+8)
+! Total count: 213023
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -7598,6 +7598,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||akc.blueconic.net^$domain=akc.org
 @@||al-aqsanews.com
 @@||al.ly/Advertiser.js$script
+@@||alicdn.com/alilog/mlog/aplus_v2.js$domain=qianwen.com
 @@||aliexpress.*^$cookie=/^_ga_/
 @@||aliunicorn.com^*/click_stat/
 @@||aliyuncs.com/*.png
@@ -8521,6 +8522,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||ecmb.bdimg.com/*.jpg
 @@||ecmb.bdimg.com/*.png
 @@||eddiebauer.com/__ssobj/core.js+ssdomvar.js+generic-adapter.js
+@@||edge.adobedc.net/ee/$xmlhttprequest,domain=vivo.com.br
 @@||edge.permutive.app/*-web.js$domain=eldo.lu
 @@||edgesuite.net/crossdomain.xml$domain=sbs.com.au
 @@||edgesuite.net^*/frontend_webtrekk.js$domain=goertz.de
@@ -11782,8 +11784,7 @@ anikore.jp#$#html[class^="loading"] { visibility: visible !important; }
 anime-drama.jp###block-11
 anime-sama.fr#$#hide-if-matches-xpath './/a[contains(@href,"paid_referral")]/img/ancestor::div[@id][1]';
 anime-shinden.info#@##ads_video
-anime13.site,anime47.best,hoctot.hocmai.vn,keysmatterinc.com,maclife.io,noitu.site,player.phimapi.com,s2.phimsexvn1.blog,sachmoi.net,samtruyentranh.com,vietsub.site,vinaurl.net,xfast.sbs,zpic.io#$#abort-on-property-read open
-anime47.best,chich69.top,comong.info,forum.timfshare.com,honghotduongpho.vn,mv.dailyphimz.com,mv.phimbathu.one,phimchill.life,quangcaoyenbai.com,xemsexhihi.net,teamlanhlung8.shop,thefaplive.com,truyensieuhay.com,tv.tvhayhd.org,ungtycomicsau.com#$#abort-on-property-read document.cookie
+anime47.best,chich69.top,comong.info,forum.timfshare.com,honghotduongpho.vn,mv.dailyphimz.com,mv.phimbathu.one,phimchill.life,quangcaoyenbai.com,xemsexhihi.net,teamlanhlung8.shop,thefaplive.com,truyensieuhay.com,tv.tvhayhd.org,ungtycomicsan.com#$#abort-on-property-read document.cookie
 anime4fun.com###hover
 animecomplet.*,cpasbien.ch,cpasbien.si,dadyflix.co,dl-protect.*,dl-protect1.com,ed-protect.org,extreme-down.*,extreme-download.*,filmsexeporno.com,french-stream.*,hds-streaming.su,hds-streaming.tv,hdss.la,hdss.to,ianime-fr.com,japscan.*,jetanimes.*,lelscanfr.com,lelscans.net,mavanimes.*,streaming-french.*,streamingfrance.com,summarynetworks.com,toonanime.*,torrent9.*,vanime.*,vf-film.net,voirseries.*,vostanimey.net,vostanimez.tv,vostfree.*,wawacity.*,zone-annuaire.*,zone-telechargement.*#$#abort-current-inline-script document.documentElement /atob|case|JSON.parse/; abort-current-inline-script String.fromCharCode /atob|break/; abort-on-property-write JSON.parse; abort-current-inline-script Math /atob|break/;
 animedia.tv,vsetut.su#$#abort-on-property-read zfgformats
@@ -11805,11 +11806,12 @@ animepahe.*#$#abort-on-property-read _0x43d1; abort-on-property-read _0x53b5
 animepahe.*#$#abort-on-property-read document.querySelector
 animesonline22.com#$#abort-current-inline-script JSON.parse /atob|btoa|break/
 animespirit.*###CollapsiblePanel_Statistics
+animet.info,anime47.best,hoctot.hocmai.vn,keysmatterinc.com,maclife.io,noitu.site,player.phimapi.com,s2.phimsexvn1.blog,sachmoi.net,samtruyentranh.com,vietsub.site,vinaurl.net,xfast.sbs,zpic.io#$#abort-on-property-read open
 animet.org,motchillzz.site,xemphim.site#$#override-property-read maxAds 0
 animetaro.com#$#abort-on-property-read window.open
 animeunity.cc#$#abort-on-property-read zfgstorage; abort-current-inline-script document.documentElement /break|case/; abort-on-property-read decodeURI;
 animeunity.tv#$#abort-on-property-read localStorage
-animevietsub.how,animevietsub.mx,hh3dhay.life,tram3d.online#$#abort-current-inline-script eval $._Eu
+animevietsub.how,animevietsub.id,hh3dhay.life,tram3d.online#$#abort-current-inline-script eval $._Eu
 animevietsub9.com#$#abort-on-property-read _0x3f9b
 animew.ru,cunofilms.ru,freehat.cc,hlamer.ru,it-world.ru,lostpix.com,oxax.tv,potokcdn.com,prostoporno.help,tivix.co,tt-cup.com,uploadimagex.com,vmusi.ru,volynpost.com,wowskill.ru,xittv.net,zerno-ua.com#$#abort-on-property-read open
 animeworld.so#$#abort-on-property-read window.open
@@ -12482,7 +12484,7 @@ budport.com.ua##body > div[style^="position:fixed;"][style*="z-index"][style*="b
 budport.com.ua#$#abort-current-inline-script $ append
 bulletin.sntba.com#%#//scriptlet("set-constant", "returnCitySN", "emptyObj")
 bunshun.jp##.recommend-articles:has(> div[class^="taboola"])
-buomtv.media,phim3xhay.net,chuyentiepanimehay.one,cliphot69.shop,clipsexsub3x.net,damconuong.blog,demo.14412882.com,doctruyen3qhubk.com,dualeotruyenqr.com,goctruyentranhvui19.com,hentaivc.cc,hhtq5.vip,ihentai.network,javtiful.com,luottruyen3.com,lxmanga.space,misskon.com,motphim.pokemonviet.com,sexmup9x.pro,newtruyentranh8.com,phim18hdxx.com,phimlongtieng.net,phimsexhayvn96.com,quatvn.my,sayhentai.vc,sex.xinh3x.me,sexdiary.club,sexviet88.xyz,streamvl.top,truyenqqno.com,truyenvn.shop,umetruyenz.org,vevocloud.com,viet69.ly,viet69vn.at,vn2.xvideos69.xxx,vn6.sexviet88.xyz,www.sieutamphim.pro,yurineko.*#$#abort-current-inline-script WebAssembly instantiate
+buomtv.media,phim3xhay.net,chuyentiepanimehay.one,cliphot69.shop,genz3x.com,damconuong.blog,demo.14412882.com,doctruyen3qhubk.com,dualeotruyensg.com,goctruyentranhvui19.com,hentaivcc.com,hhtq5.vip,ihentai.network,javtiful.com,luottruyen3.com,lxmanga.space,misskon.com,motphim.pokemonviet.com,mupsexphim.net,newtruyentranh8.com,phim18hdxx.com,phimlongtieng.net,phimsexhayvn96.com,quatvn.my,sayhentai.vc,sex.xinh3x.me,sexdiary.club,sexviet88.xyz,streamvl.top,truyenqqno.com,truyenvn.shop,umetruyenz.org,vevocloud.com,viet69.cd,viet69vn.at,vn2.xvideos69.xxx,vn6.sexviet88.xyz,www.sieutamphim.pro,yurineko.*#$#abort-current-inline-script WebAssembly instantiate
 burze.dzis.net#@#.adsbygoogle
 business.nikkei.com##.cbCxense
 business.nikkei.com#?#.l-content_footer.recommendesInfomation:contains(あなたにオススメ)
@@ -12525,7 +12527,7 @@ campusfrance.org#%#//scriptlet('set-constant', 'pa.sendEvent', 'noopFunc')
 camsstream.com#$#abort-current-inline-script onload;
 canadiantire.ca#%#//scriptlet('set-local-storage-item', 'signifydSessionIdInfo', '$remove$')
 canhasbitcoin.com###adblock-message
-cap3.monster#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
+cap3.click#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
 capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'noopFunc')
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 careers.samsungena-global.com$image
@@ -16362,7 +16364,7 @@ dstar.pzk.pl#@#.adsbygoogle
 dtarihi.com#$#simulate-mouse-event 'xpath(.//div[@class][contains(@style,"display: block;")][@id]//following-sibling::div[@class]/div[contains(@class," ")][1])$delay=0'
 dtf.ru#$#override-property-read Object.prototype.detectAdblock undefined
 dtf.ru,vc.ru##.layout__right-column > div[class*=" "][style] > div[class*=" "] > div:only-child
-dualeotruyenqr.com#$#abort-current-inline-script document.addEventListener popunder
+dualeotruyensg.com#$#abort-current-inline-script document.addEventListener popunder
 duba.net###login_alert
 dujiaoshou.cn###ad1
 dumskaya.net,da-te.jp##.counter
@@ -81842,6 +81844,7 @@ liens.newsletters.jeuxvideo.com%2Fm%2Fopening%2F$image
 liens.newsletters.jeuxvideo.com/m/opening/$image
 liepin.com##DIV[id^="nodetpl_g_"]
 life.ru##.read-next
+lifehacker.jp###mainContent > div[class^="articles_pArticles_Title_"]:has(+ div[class^="displayhandler_"] > div > div[id^="cxMore"])
 liga.net#@#div[id^="div-gpt-ad"]
 lightrun.com#%#//scriptlet('set-constant', 'gtag', 'noopFunc')
 limaenvivo.com##IMG[title="close"]
@@ -84382,6 +84385,8 @@ mercadolibre.*,mercadolivre.com.br#$#hide-if-matches-xpath './/span[@class="ui-s
 mercadolibre.*,mercadolivre.com.br#$#hide-if-matches-xpath './/span[contains(@class,"ui-recommendations-font-color--GRAY")][text()]//ancestor-or-self::section[contains(@class,"ui-recommendations-carousel-wrapper-ref")][1]'
 mercadolibre.*,mercadolivre.com.br#$#hide-if-matches-xpath '//h2[contains(@class,"hero__right-section-text-promoted-typography")][text()]/ancestor-or-self::div[contains(@class,"andes-card")][@id]'
 mercadolivre.*,mercadolibre.*#$#hide-if-matches-xpath './/span[@class="ui-billboard-ad__title"]/ancestor::div[@id="ui-billboard-ad"]'
+mercadolivre.com.br#$#hide-if-has-and-matches-style 'div[class^="adn-container-square"]' 'div[id]>[data-component="adn"]' 'div[id]>[data-component="adn"]>adn-banner-vertical-square-image ^^sh^^ a[class^="content-target"]'
+mercadolivre.com.br#$#hide-if-has-and-matches-style 'div[id]>[data-component^="adn"]>*' 'div[id]>[data-component="adn"]>adn-banner-vertical-square-image ^^sh^^ a[class^="content-target"]>div[class^="adn-container-square"]'
 mercedesclub.cz#@#.reklama
 meritgiftcards.shopmygiftcards.com$image
 mesddl.cc###cboxContent
@@ -84846,7 +84851,7 @@ moskit-tracking.solazerpiscinas.com.br$image
 moskit-tracking.updraw.com.br$image
 mosung.com$image
 motchillk.bot#$#abort-on-property-read sessionStorage
-motchilltv.team#$#prevent-listener click popup
+motchilltv.taxi#$#prevent-listener click popup
 motorbikecatalog.com#$#override-property-read window.navigator.connection.rtt 1001
 motorpage.ru#$#json-prune '0.BannerId 1.BannerId 2.BannerId 3.BannerId 4.BannerId 5.BannerId 6.BannerId'
 motortrend.com#$#hide-if-matches-xpath './/div[contains(@id,"ad-id-curated_abovenavad")][@data-ad="true"]/parent::div[contains(@class,"cls-helper")][1]'
@@ -84866,6 +84871,7 @@ mparticle.uc.cn##.UtpAd
 mparticle.uc.cn##.share-import-title
 mparticle.uc.cn##div[class^=ShowContent__ShowContentButton]
 mparticle.uc.cn##div[class^=recommend]
+mphim.one#$#override-property-read urlAds ''
 mpse.jp%2F*%2Frw%2Fbeacon_$image
 mpse.jp/*/rw/beacon_$image
 mr.postman.storyworth.com$image
@@ -84892,6 +84898,7 @@ mumu*.com/js/cdn.js$~third-party
 mumu.163.com##.pic-con
 mundi.com.br#$#hide-if-contains-visible-text /Anúncio/ 'div[role][tabindex^="0"]' 'div[class]>div'
 mundoperfecto.net#$#prevent-listener click preventDefault
+mupsexphim.net#$#abort-on-property-read Cookies
 muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer', 'noopFunc')
 muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer.prototype.newProgram', 'noopFunc')
 muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer.prototype.programEvent', 'noopFunc')
@@ -85437,6 +85444,8 @@ ostroh.info###modal.modal-bg
 ot-boutique.fr#@##publicite
 otekomachi.yomiuri.co.jp###_popIn_right
 otekomachi.yomiuri.co.jp##.p-ads
+otomoto.*#$#abort-on-property-read Baxter.targeting.ad_price; abort-on-property-read Baxter.targeting.ad_title; override-property-read Baxter.targeting emptyObj;
+otomoto.*#?#[data-testid="financing-widget-simulator-entrypoint"]:has(span:has-text(reklama))
 otzovik.com#$#abort-on-property-read Object.prototype.RtbBlockCreateWrapper
 out-c.equip.co$image
 out-globalid3.click.s11.sfmc-osl.com$image
@@ -87168,7 +87177,6 @@ phim.haysex.asia,truyenqqtto.com#$#abort-current-inline-script Promise /break|ca
 phimhdplus.com#$#json-prune ads; abort-current-inline-script setTimeout click_time
 phimlongtieng.net#$#abort-current-inline-script document.createElement script
 phimtho.cc#$#abort-current-inline-script $ p0pUpRandom
-phimvuihd.one#$#override-property-read urlAds ''
 phonearena.com##.adblock_awareness
 photofilters.com##.adBlocked
 photolessons.org###modal-adbmon-div
@@ -88050,7 +88058,6 @@ setn.com##.header-right-banner-b
 setn.com##.rightFloat
 settlersonlinemaps.com###prb
 sex.javnong.cc#$#abort-on-property-read Math.round
-sexmup9x.pro#$#abort-on-property-read Cookies
 sexvid.*##div[class^="sp-player visible"][id^="sp-player"]
 sexvid.*#$#abort-on-property-read atob; abort-current-inline-script document.write /promo/; override-property-read window.diptr undefined; abort-on-property-read window.pu; abort-current-inline-script document.write iframe;
 seznam.cz#$#override-property-read sssp emptyObj
@@ -89767,7 +89774,7 @@ trakem.topcargo.com$image
 trakt.tv###huckster-desktop-bottom
 trakt.tv###huckster-desktop-top
 trakt.tv##.huckster-dfp
-tram3d.lat#$#abort-current-inline-script setTimeout appendChild
+tram3d.space#$#abort-current-inline-script setTimeout appendChild
 transactional-email.joinleland.com$image
 transkarpatia.net#$#abort-current-inline-script document.createElement redtram
 trc.mail.harpa.ai$image
@@ -92539,7 +92546,7 @@ www.facebook.com,web.facebook.com#$#race start; hide-if-contains /Anzeige|Sponso
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"] span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[aria-label][attributionsrc][href^="?__cft__"][role="link"]>span>span[aria-labelledby]'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href*="/ads/about/"][role="link"][tabindex="0"]>span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href="#"][role="link"][tabindex="0"]>span>span[aria-labelledby]>span[style]'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrwae]{12}|[Patrocind]{11}|[Sponsrizat]{13}|[Anzeig]{6}/ 'div[role=feed] div[role=article]' a[href^="?__cft__"]; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-matches-xpath '//div[@role="complementary"]//following::a[@aria-labelledby][contains(@attributionsrc,"/privacy_sandbox/comet/register/source/?eid")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[@aria-labelledby][@attributionsrc="blank"][@target="_blank"]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[@aria-labelledby][contains(@attributionsrc,"/privacy_sandbox/comet/register/source/?eid")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[@aria-labelledby][@attributionsrc="unknown"][@target="_blank"]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; race stop;
-www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(label_brs_conteb|brs_la_cont_lbl|contentt_labed_brs|conen_the_brs_labej|for_lael_cotent_lbl_brs|conen_label_brs_new|for_brs_lab_flag_codnten|brs_labeyl_new_flag_cont|the_brs_lbel_label_conten|labeg_brs_label_conten|conen_new_lbe_brs|label_brs_of_la_content|of_brs_conent_labl_flag|brs_label_lbl_cote|lbel_conen_brs_of|lb_coniten_the_brs|labce_conen_brs_the|label_brhs_the_laybe_contnt|new_the_contnt_brs_lab|cote_lanb_flag_brfs_label|brs_cnten_lael_for|brs_lbe_new_contenqt_for|coten_brys_for_label|flag_lbel_contnt_brd|conte_la_br|lab_br_con_label|lbl_label_cont_of_brs|brs_labn_conte_lbl|brs_cntent_lab|bry_label_conten|lbl_bru_cntent_lakb|of_label_new_contet_brrs|contenet_lael_brs|lbe_brs_cofnten|flag_lbe_for_brs_conent|brs_of_flag_contdent_lae|best_lael_conte_brs_newsts|brrs_cnten_lab_the_new|for_conternt_lab_brjs|lael_conte_brs|for_of_lae_conten_brs|contnt_brs_for_la|brs_new_cont_labl_label|brs_la_conten|for_labe_br_con|conte_brs_of_for_lael|labe_the_conte_brs_flag|brs_new_of_lb_contetnt|labe_br_co|label_cont_br_la|la_conte_br|labe_conten_br|lab_conte_br_flag|br_conte_la|cote_lbl_brs_for_lbe|conte_lab_flag_for_brs|brs_conte_labell|flag_laba_brs_content|br_s_content_label|conten_brs_labe|lab_the_flag_conten_brs|lbl_brs_cnte_label|conten_labl_brs|labkel_brs_cont_of|countent_la_brs_label|br_labe_fo_cont_labe|brs_label_la_content_the|brs_lbe_counte_the_flag|cnte_lbel_brm_flag|for_contn_brs_labell_label|new_brs_conten_lab|brs_conte_alabe|labe_brs_flag_cont|new_cnten_br_labvel|brs_of_lb_for_conqten|conten_brs_lab|brs_conent_lab|for_contenzt_brs_lb|br_label_con_lab|for_of_br_labe|lab_brs_of_cone|of_brs_label|distace_of_brs_new_autio_label|labe_cont_brs|sponsore_brs_the|conent_lbl_brqs_lbe|br_lael_content_new|cont_brws_laobe|contenrt_brs_lbe_flag|the_cone_brs_lbl_lbe|cntent_labbe_brs|contxe_brms_labl_lbl|conte_brf_la|lael_flag_cntent_label_bras|the_conten_brs_lbe|labe_label_brs_conent|contn_of_brs_for_la|flag_cnte_label_brs|the_brs_content_labe|lael_the_conteun_brs_label|new_conen_for_brs_la|lbel_brs_contnt|brs_contena_of_labe|the_contenh_lab_for_brs|brs_flag_lael_of_connte|contet_lbl_brs_the_lbel|brg_larb_coten|conte_of_lab_for_br|lbe_label_of_conte_brs|label_of_lbel_conten_brr|lb_conte_brl_la|lbl_conteb_brls_lab|conteynt_brrs_label|label_brs_cont_the_labl|brs_cont_lbe|flag_labe_content_brs|lbe_conen_brd_lbl|new_conent_brs_la|cote_new_labj_brs|brs_lbel_conten|of_lbl_brs_contet_labl|brs_for_labecl_conen|label_brfs_contte_lab_lbl|conteln_for_brs_labe|la_conten_brs|the_conte_lab_br|labiel_brs_cont|cote_the_lael_brs_of|new_coenten_lbe_br|br_lae_content|flag_for_conent_brs_labe|lagbel_coten_bre|lagbel_coten_br|content_label_flag_new_br|labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto"|"sponsore_da"|"spons_the_dat"|"th_dat_spo")[^\n]+?("SponsoredData"|"lbl_adv_iden"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl|auctio_spnsor_distace|for_auci_new_sponsor_distanyc|dist_sponsor_auc|au_spon_flag_dist|di_auc_fl_spo|fl_au_flag_di_sp|auc_lb_dis_spon_the|auc_sponsor_dist|lbl_sponsor_dist_au|auc_for_dis_sponso|au_dista_spon|distanc_sponsore_aucti|au_sponsor_dist|auct_spon_dist|auction_distanc_sponsored|auctio_dist_sponsore|sponsocr_distanc_of_auctido|sponsred_auct_dista_of|sponsorexd_aucto_for_lbl_distance|dist_sponso_auctio|aution_disan_new_sonsored|auc_sponsore_distan|sponsor_au_dis|aucton_sponso_ditance|label_sposor_disntance_auctin|lbl_auti_flag_dstanc_sponsord|label_au_lb_spon_fla_dstan|spons_aut_dsta_lb_fla|label_aut_dstan_fl_spons_lb|sponsor_aut_dst_lb_fl|sponsorce_aucio_distanc|auti_the_sponsore_distnc|ditanc_flag_sponsore_aujction|distanc_new_sonsored_auctilo|distan_lbl_au_sponsore|dstan_of_conen_aucti_label|label_acti_sponsory_dstance|sponsore_contet_lbl_disjtan_actio|disance_auctiko_sponso|dstance_auctfio_spdonsore|distance_sponsore_auction_new|aucti_sponsxor_distran|sonsore_for_distance_of_auxcti|the_sponsoyr_distance_auctin_lbl|auctzion_ditan_sponsored|distnc_auct_sponsore|for_sonsor_disjtance_auct|of_sponsor_distanc_auc|auctio_sponso_distan|distanc_auct_spon|sponsor_auct_dis|dstanc_sponsorefd_of_aution_the|spon_auc_dis|aucto_disance_sponso|distnce_actio_lbl_sponso|auct_the_distanc_sponsor|au_distan_label_spons|au_dist_of_spon|spons_distanc_auctio_label|flag_auction_sonsore_distance|lbl_diwstan_new_sponsore_auctiob|the_disan_sonsore_auctigo|sponsorw_distn_aucton_of|disan_sonsore_auctigo|new_sponsore_distan_auctio_the|distanck_auction_the_of_sponsord|distan_sponso_aucti|spons_auct_flag_dis|distanc_spvonsored_auceti|aucti_ditan_sposored_label|label_dstance_sponsored_acti_lbl|disanc_for_spnsore_aucti|auct_distanbc_of_new_sponsoreg|distanc_sponsored_flag_aucti|of_spon_dista_auc|spons_distanc_au|distan_autio_sponcsored_flag|distan_auctin_sposored|sponsor_aucton_distanc_new_of|new_distan_sponsor_aucton|auct_the_distansce_sonsored|sponnsore_distwan_for_auti|sponso_the_action_ditance_for|aucion_dstance_sponpsor|sponored_for_of_distanc_auti|distance_auctio_label_sponsre|flag_disanc_sponsofred_auci|disitance_auct_new_sponsoe_lbl|lbl_aucion_flag_sponsre_dista|the_aucti_distnanc_sponasore|distac_auctioj_flag_sponmsor|distan_flag_sponso_auction|new_dista_aucpti_label_sponsored|sponso_aucftion_disan|dstan_sponsre_auction|sponored_label_aucti_disance|sponsobr_dihstance_auctio_new|lbl_sponsor_distnan_label_aucio|sposor_distan_auti_lbl|distapnce_of_sponso_auction|new_action_dstanc_lbl_spofnsore|spoansore_auctio_distan)/'
+www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(lb_cntent_brys|label_brs_conteb|brs_la_cont_lbl|contentt_labed_brs|conen_the_brs_labej|for_lael_cotent_lbl_brs|conen_label_brs_new|for_brs_lab_flag_codnten|brs_labeyl_new_flag_cont|the_brs_lbel_label_conten|labeg_brs_label_conten|conen_new_lbe_brs|label_brs_of_la_content|of_brs_conent_labl_flag|brs_label_lbl_cote|lbel_conen_brs_of|lb_coniten_the_brs|labce_conen_brs_the|label_brhs_the_laybe_contnt|new_the_contnt_brs_lab|cote_lanb_flag_brfs_label|brs_cnten_lael_for|brs_lbe_new_contenqt_for|coten_brys_for_label|flag_lbel_contnt_brd|conte_la_br|lab_br_con_label|lbl_label_cont_of_brs|brs_labn_conte_lbl|brs_cntent_lab|bry_label_conten|lbl_bru_cntent_lakb|of_label_new_contet_brrs|contenet_lael_brs|lbe_brs_cofnten|flag_lbe_for_brs_conent|brs_of_flag_contdent_lae|best_lael_conte_brs_newsts|brrs_cnten_lab_the_new|for_conternt_lab_brjs|lael_conte_brs|for_of_lae_conten_brs|contnt_brs_for_la|brs_new_cont_labl_label|brs_la_conten|for_labe_br_con|conte_brs_of_for_lael|labe_the_conte_brs_flag|brs_new_of_lb_contetnt|labe_br_co|label_cont_br_la|la_conte_br|labe_conten_br|lab_conte_br_flag|br_conte_la|cote_lbl_brs_for_lbe|conte_lab_flag_for_brs|brs_conte_labell|flag_laba_brs_content|br_s_content_label|conten_brs_labe|lab_the_flag_conten_brs|lbl_brs_cnte_label|conten_labl_brs|labkel_brs_cont_of|countent_la_brs_label|br_labe_fo_cont_labe|brs_label_la_content_the|brs_lbe_counte_the_flag|cnte_lbel_brm_flag|for_contn_brs_labell_label|new_brs_conten_lab|brs_conte_alabe|labe_brs_flag_cont|new_cnten_br_labvel|brs_of_lb_for_conqten|conten_brs_lab|brs_conent_lab|for_contenzt_brs_lb|br_label_con_lab|for_of_br_labe|lab_brs_of_cone|of_brs_label|distace_of_brs_new_autio_label|labe_cont_brs|sponsore_brs_the|conent_lbl_brqs_lbe|br_lael_content_new|cont_brws_laobe|contenrt_brs_lbe_flag|the_cone_brs_lbl_lbe|cntent_labbe_brs|contxe_brms_labl_lbl|conte_brf_la|lael_flag_cntent_label_bras|the_conten_brs_lbe|labe_label_brs_conent|contn_of_brs_for_la|flag_cnte_label_brs|the_brs_content_labe|lael_the_conteun_brs_label|new_conen_for_brs_la|lbel_brs_contnt|brs_contena_of_labe|the_contenh_lab_for_brs|brs_flag_lael_of_connte|contet_lbl_brs_the_lbel|brg_larb_coten|conte_of_lab_for_br|lbe_label_of_conte_brs|label_of_lbel_conten_brr|lb_conte_brl_la|lbl_conteb_brls_lab|conteynt_brrs_label|label_brs_cont_the_labl|brs_cont_lbe|flag_labe_content_brs|lbe_conen_brd_lbl|new_conent_brs_la|cote_new_labj_brs|brs_lbel_conten|of_lbl_brs_contet_labl|brs_for_labecl_conen|label_brfs_contte_lab_lbl|conteln_for_brs_labe|la_conten_brs|the_conte_lab_br|labiel_brs_cont|cote_the_lael_brs_of|new_coenten_lbe_br|br_lae_content|flag_for_conent_brs_labe|lagbel_coten_bre|lagbel_coten_br|content_label_flag_new_br|labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto"|"sponsore_da"|"spons_the_dat"|"th_dat_spo")[^\n]+?("SponsoredData"|"lbl_adv_iden"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl|auctio_spnsor_distace|for_auci_new_sponsor_distanyc|dist_sponsor_auc|au_spon_flag_dist|di_auc_fl_spo|fl_au_flag_di_sp|auc_lb_dis_spon_the|auc_sponsor_dist|lbl_sponsor_dist_au|auc_for_dis_sponso|au_dista_spon|distanc_sponsore_aucti|au_sponsor_dist|auct_spon_dist|auction_distanc_sponsored|auctio_dist_sponsore|sponsocr_distanc_of_auctido|sponsred_auct_dista_of|sponsorexd_aucto_for_lbl_distance|dist_sponso_auctio|aution_disan_new_sonsored|auc_sponsore_distan|sponsor_au_dis|aucton_sponso_ditance|label_sposor_disntance_auctin|lbl_auti_flag_dstanc_sponsord|label_au_lb_spon_fla_dstan|spons_aut_dsta_lb_fla|label_aut_dstan_fl_spons_lb|sponsor_aut_dst_lb_fl|sponsorce_aucio_distanc|auti_the_sponsore_distnc|ditanc_flag_sponsore_aujction|distanc_new_sonsored_auctilo|distan_lbl_au_sponsore|dstan_of_conen_aucti_label|label_acti_sponsory_dstance|sponsore_contet_lbl_disjtan_actio|disance_auctiko_sponso|dstance_auctfio_spdonsore|distance_sponsore_auction_new|aucti_sponsxor_distran|sonsore_for_distance_of_auxcti|the_sponsoyr_distance_auctin_lbl|auctzion_ditan_sponsored|distnc_auct_sponsore|for_sonsor_disjtance_auct|of_sponsor_distanc_auc|auctio_sponso_distan|distanc_auct_spon|sponsor_auct_dis|dstanc_sponsorefd_of_aution_the|spon_auc_dis|aucto_disance_sponso|distnce_actio_lbl_sponso|auct_the_distanc_sponsor|au_distan_label_spons|au_dist_of_spon|spons_distanc_auctio_label|flag_auction_sonsore_distance|lbl_diwstan_new_sponsore_auctiob|the_disan_sonsore_auctigo|sponsorw_distn_aucton_of|disan_sonsore_auctigo|new_sponsore_distan_auctio_the|distanck_auction_the_of_sponsord|distan_sponso_aucti|spons_auct_flag_dis|distanc_spvonsored_auceti|aucti_ditan_sposored_label|label_dstance_sponsored_acti_lbl|disanc_for_spnsore_aucti|auct_distanbc_of_new_sponsoreg|distanc_sponsored_flag_aucti|of_spon_dista_auc|spons_distanc_au|distan_autio_sponcsored_flag|distan_auctin_sposored|sponsor_aucton_distanc_new_of|new_distan_sponsor_aucton|auct_the_distansce_sonsored|sponnsore_distwan_for_auti|sponso_the_action_ditance_for|aucion_dstance_sponpsor|sponored_for_of_distanc_auti|distance_auctio_label_sponsre|flag_disanc_sponsofred_auci|disitance_auct_new_sponsoe_lbl|lbl_aucion_flag_sponsre_dista|the_aucti_distnanc_sponasore|distac_auctioj_flag_sponmsor|distan_flag_sponso_auction|new_dista_aucpti_label_sponsored|sponso_aucftion_disan|dstan_sponsre_auction|sponored_label_aucti_disance|sponsobr_dihstance_auctio_new|lbl_sponsor_distnan_label_aucio|sposor_distan_auti_lbl|distapnce_of_sponso_auction|new_action_dstanc_lbl_spofnsore|spoansore_auctio_distan)/'
 www.forum.click.s11.sfmc-osl.com$image
 www.ghxi.com##.wpcom_ad_wrap
 www.ghxi.com##DIV[style^='padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: ']
@@ -93938,6 +93945,7 @@ zybang.com##.top_download
 ||91mjw.com/hy-66-90.php
 ||91p20.space^
 ||91xzba.com^
+||94summary.net^
 ||9544702.kazooby.com^
 ||9693.pandasuite.io^
 ||9735476.sender.skyscanner.com^
@@ -107871,6 +107879,7 @@ zybang.com##.top_download
 ||bear.modulr.design^
 ||bearblog.dev/hit/
 ||bears.daigostudio.com^
+||beastlyfluke.com^
 ||beat.yourtv.jp^
 ||beateechafed.com^
 ||beatricecathy.com^
@@ -111033,6 +111042,7 @@ zybang.com##.top_download
 ||cavecurtain.com^
 ||cavecurtain.com^$third-party
 ||caxtsk.russoraffaele.it^
+||cayosunhairs.com^
 ||cazbt.immunage.us^
 ||cb-mms.carbuyer.co.uk^
 ||cba24n.com.ar/api/v*/analytics
@@ -113371,6 +113381,7 @@ zybang.com##.top_download
 ||com.econa.com^
 ||com.gardio.se^
 ||comagic.ru^$third-party
+||comalesmirled.com^
 ||combativecar.com^
 ||combativecar.com^$third-party
 ||combativedetail.com^
@@ -158913,7 +158924,6 @@ zybang.com##.top_download
 ||noodlemagazine.com/api/stats?
 ||noodshare.pics^$all
 ||noowho.com^$third-party
-||nopahaes.com^
 ||nopea.terramare.com^
 ||nordace.com/track.js
 ||nordbayern.de/scripts/drive-*.js
@@ -162427,7 +162437,6 @@ zybang.com##.top_download
 ||pets.channeladvisor.com^
 ||peueg.swankybadger.com^
 ||pevftg.shopee.sg^
-||pewterscanonry.cyou^
 ||pexnjio.cn^
 ||peyqvn.falke.com^
 ||pezkg.chichicosmetics.com^
@@ -162586,6 +162595,7 @@ zybang.com##.top_download
 ||pickmicro.com^
 ||piclick.kr^$third-party
 ||pico.tools/metrics/
+||picoidpayout.com^
 ||picoworkers.com/login.php$replace=/\/fingerprint2.js" integrity="/\/fingerprint2.js" _integrity="/
 ||picrew.me^$csp=script-src-attr 'none'
 ||pics-view.com/ad-track
@@ -166175,7 +166185,6 @@ zybang.com##.top_download
 ||redbee.serverside.ai^$image
 ||redbooks.actonservice.com^
 ||redbricksoap.com^
-||redbuckzincate.com^
 ||redbull.com/btnt.js
 ||redcapsunlime.com^
 ||redcdn.pl/file/*/web/tdbc/*/js/redgalaxy-tdbc-*.min.js
@@ -181971,6 +181980,7 @@ zybang.com##.top_download
 ||spirebaboon.com^$third-party
 ||spirit.com/kp4CLSb5/init.js
 ||spiritednow.xyz/ad^$subdocument,domain=pressian.com
+||spiritedprefer.com^
 ||spitefulriver.com^
 ||spixel.socy.es^
 ||spjysa.only.com^
@@ -182092,7 +182102,6 @@ zybang.com##.top_download
 ||spotpass.com/api/log
 ||spottednoise.com^
 ||spottednoise.com^$third-party
-||spouteroutgain.com^
 ||spox.com/pub/js/track.js
 ||spplamt.xyz^
 ||spqurb.webtour.com^
@@ -193845,7 +193854,6 @@ zybang.com##.top_download
 ||stretchsneeze.com^$third-party
 ||stretchsquirrel.com^
 ||stretchsquirrel.com^$third-party
-||strgape.com^
 ||stricaik.com^
 ||strikeclient.usnursing.com^
 ||strikenurse.usnursing.com^
@@ -193941,6 +193949,7 @@ zybang.com##.top_download
 ||stupendoussleet.com^$third-party
 ||stupendoussnow.com^
 ||stupendoussnow.com^$third-party
+||stupid-police.com^
 ||stupidscene.com^
 ||stupidscene.com^$third-party
 ||stupidsnake.com^
@@ -212176,6 +212185,7 @@ zybang.com##.top_download
 ||zannv.wearfigs.com^
 ||zanox-affiliate.de^$third-party
 ||zanox.com^$third-party
+||zapasizzard.com^
 ||zapcdn.space/zapret.js
 ||zapfieshop-ss.checkoutera.com^
 ||zapier.com/api/*/events
