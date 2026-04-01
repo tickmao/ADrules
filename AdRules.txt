@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-03-31 21:03:53(GMT+8)
-! Total count: 213023
+! Version: 2026-04-01 02:53:31(GMT+8)
+! Total count: 213033
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -3474,6 +3474,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /hm/ytymer?x=
 /hmapxy.js
 /hnpprivacy-min.js
+/ho.php?t=$image
 /hockeystack.min.js
 /home-insight/ad_placements$xmlhttprequest
 /home-insight/initial_analytics$xmlhttprequest
@@ -4612,6 +4613,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /script.outbound-links.js
 /script.outbound-links.pageview-props.revenue.js
 /script.tagged-events.js
+/script.tagged-events.outbound-links.js
 /script/pixel.js
 /scriptAnalytics.js
 /scriptonline.js?uin=
@@ -80904,6 +80906,8 @@ hjenglish.com,hujiang.com##.lamu_banner
 hlouhopAes=no5$xmlhttprequest,domain=ahaonline.cz|info.cz|onetv.cz
 hlouhopAes=no5$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|blesk.cz|dama.cz|e15.cz|mojezdravi.cz|zeny.cz|zive.cz
 hltv.org#$#hide-if-matches-xpath '//img[contains(@class,"day-only") or contains(@class, "night-only")][@loading="lazy"]/ancestor::a[@rel]/parent::div[@id]'
+hm-f.jp%2Fho.php%3Ft=
+hm-f.jp/ho.php?t=
 hmangamatome.net###text-39
 hnonline.sk,info.cz,lupa.cz#$#abort-current-inline-script Math.random adb
 hobbylog.jp##.pbancut
@@ -109993,6 +109997,7 @@ zybang.com##.top_download
 ||c.photologo.co^
 ||c.plerdy.com^
 ||c.pravo.ru^
+||c.qiandao.cn^
 ||c.qrdate.org^
 ||c.quackr.io^
 ||c.refun.do^
@@ -125862,6 +125867,7 @@ zybang.com##.top_download
 ||events.sk.ht^
 ||events.skyridgeglamping.com^
 ||events.splash-screen.net^
+||events.split.io^
 ||events.split.io^$domain=~collegeboard.org
 ||events.squarespace.com^
 ||events.srfestival.com^
@@ -164099,6 +164105,7 @@ zybang.com##.top_download
 ||prod-collector.bigbasket.com^
 ||prod-events.nykaa.com^
 ||prod-mhaa.mhtr.be^
+||prod-ue1-metrics.hingeprod.net^
 ||prod.accdab.net/beacon/
 ||prod.adobeccstatic.com/unav/*/AnalyticsProvider.
 ||prod.benchmarkemail.com/tracker.bundle.js
@@ -164263,6 +164270,7 @@ zybang.com##.top_download
 ||protechbuying.mektri.com^
 ||protechbuying.velnotra.com^
 ||protechbuying.zyrahomeplus.com^
+||protechts.net^
 ||protecmedia.com^$third-party
 ||protectcrev.com^$third-party
 ||protected-api.branch.io^
@@ -165739,6 +165747,7 @@ zybang.com##.top_download
 ||railwayreason.com^
 ||railwayreason.com^$third-party
 ||rain.franzy.com^
+||rainbet.com/api/ping
 ||rainbow-prod-jdlog.ldoverseas.com^
 ||rainbownine.net^$third-party
 ||raindrop.io/pb/api/event
@@ -197511,6 +197520,7 @@ zybang.com##.top_download
 ||telemetry.services.yofi.ai^
 ||telemetry.smartframe.io^
 ||telemetry.soundcloud.com^
+||telemetry.split.io^
 ||telemetry.stryker.com^
 ||telemetry.stytch.com^
 ||telemetry.svc.transifex.net^
