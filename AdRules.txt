@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-01 21:06:19(GMT+8)
-! Total count: 213055
+! Version: 2026-04-02 02:52:50(GMT+8)
+! Total count: 213070
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -11876,6 +11876,8 @@ apkmirror.com##script:contains(canRunAds = false)
 apkmirror.com#@#.adsbygoogle
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
+apkpure.com#%#//scriptlet('remove-node-text', 'script', '/deviceId|__apkpureFirstInteractionType|fingerprintjs|pvid/i')
+apkpure.com#%#//scriptlet('set-local-storage-item', '__BEACON_deviceId', '$remove$')
 apkpure.net,apkpure.com##DIV.js-ad-slot
 apnetv.xys#$#abort-on-property-write adScript.src; abort-current-inline-script document.createElement loadScript
 apowersoft.cn##.activity-poster
@@ -12038,7 +12040,7 @@ audiotag.info###dclaim
 audiotag.info##.dialog-fog
 audiotruyenfull.com#$#abort-current-inline-script document.addEventListener ai_run
 audiotruyenfull.com#$#abort-on-property-read adpiaListUrl
-audiotruyenfull.com,teamlanhlungday.store,trumtruyen.xyz,www.motchill52.com#$#abort-current-inline-script setTimeout Aff
+audiotruyenfull.com,teamlanhlungday.store,trumtruyen.xyz,www.motchill53.com#$#abort-current-inline-script setTimeout Aff
 augsburger-allgemeine.de,nikkansports.com##div[id^="cx_"]
 aupetitparieur.com,mamieastuce.com,meilleurpronostic.fr##div[class] > div[id] > main[class][id]
 aura.cn##.foot-xcx
@@ -88787,7 +88789,7 @@ te.googlecloud.happenee.com$image
 te.konference.sslhana.cz$image
 te.live.koop.cz$image
 te.thepraguecastle.com$image
-teamlanhlung8.shop,vietsub.site,www.motchill52.com#$#abort-on-property-read localStorage
+teamlanhlung8.shop,vietsub.site,www.motchill53.com#$#abort-on-property-read localStorage
 teamlanhlungday.store,tusachmanga99.com#$#abort-current-inline-script $ window.open
 tech.sina.com.cn##.zc-app
 tech.sina.com.cn##.zc-app-btn.right-bar-btn
@@ -89834,7 +89836,7 @@ trrprnjroaadfpe9.kdpwizard.app$image
 truyen-hentai.com#$#abort-on-property-read Math.random; prevent-listener getexoloader; abort-on-property-read initCustomEvent;
 truyen-hentai.com#$#hide-if-matches-xpath './/*[@class]/ancestor-or-self::div[contains(@class,"reklam")][1]'; hide-if-matches-xpath './/a[contains(@href,"zlinkd.com")][@rel="sponsored"]/ancestor::div[@class][1]';
 truyen247.pro#$#abort-current-inline-script eval
-truyensextv.com,yanhh3d.sh,z.chinav.sex#$#abort-current-inline-script document.addEventListener opup
+truyensextv.com,yanhh3d.cx,z.chinav.sex#$#abort-current-inline-script document.addEventListener opup
 tsdm.live###ts_sidebar_base
 tst0-0.cloud.s11.sfmc-osl.com$image
 tsviewer.com#@#.adsbygoogle
@@ -94041,6 +94043,7 @@ zybang.com##.top_download
 ||a.amw.com^
 ||a.anoncity.cc/api/track
 ||a.apkeditor.io^
+||a.apkpures.xyz^
 ||a.appbaqend.com^
 ||a.arbona.hr^
 ||a.atlrparis.com^
@@ -98684,6 +98687,7 @@ zybang.com##.top_download
 ||accounts.ad.nl/gscounters.sendReport
 ||accounts.google.com/gsi/log
 ||accounts.haymarket.media/tracking/drip-event
+||accounts.snapchat.com/accounts/sso?client_id=snapchat-com-metrics
 ||accounts.snapchat.com/accounts/static/scripts/pixel.js
 ||accountsdoor.com^
 ||accountsdoor.com^$third-party
@@ -99626,7 +99630,7 @@ zybang.com##.top_download
 ||adorableattention.com^
 ||adorableattention.com^$third-party
 ||adoric-om.com^$third-party
-||adoric.com^$third-party
+||adoric.com^
 ||adpaths.com^$third-party
 ||adpay.ssg.com/adpayapi/pay/send.ssg
 ||adpia.client.adpinfo.com^
@@ -104579,6 +104583,8 @@ zybang.com##.top_download
 ||apk.qqvv88.com^
 ||apkonline.ru^$third-party
 ||apkpure.com/api/v1/get-withdraw-count
+||apkpure.com/static/script/device-*-min.js
+||apkpure.com^$cookie=_qimei
 ||apl.roskomsvoboda.org/js/script.js
 ||apllogistics.actonservice.com^
 ||aplobv.xexymix.com^
@@ -106915,6 +106921,8 @@ zybang.com##.top_download
 ||aws-br-cdn.kwai.net.iberostar.com^
 ||aws-br-pic.kwai.net.iberostar.com^
 ||aws.amazon.com/csds/collector/
+||aws.api.snapchat.com/snapchat.ab.exposure_service.ExposureService/BatchUpdateAbExposure^
+||aws.api.snapchat.com/snapchat.cdp.cof.CircumstancesService/targetingQuery^
 ||aws.userlogsanalytics.com^
 ||awsapprunner.com/api/frontend/client/metrics
 ||awsexam.quantresear.ch^
@@ -107811,6 +107819,7 @@ zybang.com##.top_download
 ||beacon.carfax.com^
 ||beacon.cdn.qq.com^
 ||beacon.cdnma.com^
+||beacon.cdnpure.com^
 ||beacon.coofis.com^
 ||beacon.digima.com^
 ||beacon.dropbox.com^
@@ -125559,6 +125568,7 @@ zybang.com##.top_download
 ||event.dengage.com^
 ||event.dfinery.io^
 ||event.dnv.com^
+||event.dxmdp.com^
 ||event.evtm.53.com^
 ||event.flareflow.tv^
 ||event.geniee-search.net^
@@ -129034,6 +129044,7 @@ zybang.com##.top_download
 ||gcobf.hillcountrychocolate.com^
 ||gcoiys.cutsclothing.com^
 ||gcowhi.thesalarycalculator.co.uk^
+||gcp.api.snapchat.com/web-blizzard/web/send^
 ||gcp.fasthorse.workers.dev^
 ||gcpgjk.tiendamabe.com.co^
 ||gcprivacy.com^
@@ -131004,7 +131015,7 @@ zybang.com##.top_download
 ||googletagmanager.com/ns.html?$third-party
 ||googletagmanager.com/static/service_worker/
 ||googletagmanager.com^
-||googletagmanager.com^$app=app.shinagawa.listentonovels.androidApp|com.edadeal.android|com.mysticsense.androidapp
+||googletagmanager.com^$app=app.shinagawa.listentonovels.androidApp|com.edadeal.android|com.mysticsense.androidapp|com.walla.wallasports
 ||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com,redirect=googletagservices-gpt,important
 ||googletagservices.com/tag/js/gpt.js$domain=sinoptik.ua|gutefrage.net|dt.ua|ngs.ru|unian.net|easybib.com|bohenon.com|linuxtopia.org|newsroom.kh.ua|hclips.com|noticierodigital.com|northumberlandgazette.co.uk|mywebtimes.com|watchuseek.com|telekritika.ua|fontanka.ru|bhub.com.ua|guhoyas.com|rst.ua|hh.ru|buhgalter.com.ua|unocero.com|autonews.com|metropoles.com|okezone.com|m.yeniakit.com.tr|kanalukraina.tv|day.az|knuddels.de
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=dafiti.com.co
@@ -140625,6 +140636,7 @@ zybang.com##.top_download
 ||j927.statnews.com^
 ||j93557g.com^
 ||j93557g.com^$third-party
+||ja*.apppure.net^
 ||ja-jp-a8.etudehouse.com^
 ||ja-jp.siemensplmevents.com^
 ||ja.yushuha.com^
@@ -156230,6 +156242,7 @@ zybang.com##.top_download
 ||mixi.net/static/js/build/mixi-analysis.production.js
 ||mixnews.lv/wp-content/uploads/perfmatters/gtagv*.js
 ||mixomniture.rbs.com^
+||mixpanel-proxy-ivbdkvonca-uc.a.run.app^
 ||mixpanel-proxy.coingecko.com^
 ||mixpanel-proxy.ted.com^
 ||mixpanel.com/track
@@ -165627,6 +165640,7 @@ zybang.com##.top_download
 ||r.blidzdeal.com^
 ||r.browser.miui.com^
 ||r.cdnpure.com/webReport
+||r.cdnpure.com^
 ||r.chip.de/images/pic.gif?
 ||r.cricbet.co^
 ||r.cvglobal.co^
@@ -204894,6 +204908,7 @@ zybang.com##.top_download
 ||ud783c02.com^
 ||uda71a.oliviakate.nl^
 ||udbdf-v2.nimo.tv^
+||udbdf.apkpure.com^
 ||udblog.huya.com^
 ||udc.msn.com^
 ||udc.yahoo.com/v*/public/*&yhlClient=rapid*&yhlClientVer=$domain=yahoo.com
