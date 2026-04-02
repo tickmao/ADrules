@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-02 15:04:53(GMT+8)
-! Total count: 213073
+! Version: 2026-04-02 20:59:05(GMT+8)
+! Total count: 213077
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -12533,7 +12533,7 @@ campusfrance.org#%#//scriptlet('set-constant', 'pa.sendEvent', 'noopFunc')
 camsstream.com#$#abort-current-inline-script onload;
 canadiantire.ca#%#//scriptlet('set-local-storage-item', 'signifydSessionIdInfo', '$remove$')
 canhasbitcoin.com###adblock-message
-cap3.click#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
+cap3.lol#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
 capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'noopFunc')
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 careers.samsungena-global.com$image
@@ -12601,6 +12601,7 @@ checkscam.vn#$#abort-current-inline-script document.addEventListener open
 cheetahfun.com##.guide
 chen-xing/figure_bed*
 chess.click.s11.sfmc-osl.com$image
+chichi-pui.com#$#hide-if-matches-xpath './/*[@class]/ancestor::aside[contains(@class,"advertisement")]'
 childish2x1.fun,childish2x2.fun,lottedira.store,tekora.fun,tekora.space#$#abort-current-inline-script $ aff
 china.cn##.ltp_box
 chinaacc.com##.leftBox
@@ -88654,6 +88655,7 @@ suara.com##.dailymotion-widget
 subhd.com##div[style="position:fixed;bottom:20px;left:20px;"]
 subtaboo.com#$#hide-if-matches-xpath './/div[@style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 1769px; height: 1010px; z-index: 2147483647;"]/ancestor-or-self::div[1]';
 success.interactivehailmaps.com$image
+sulasok.*,sulasokvids.*#$#abort-current-inline-script  Date.now shouldRun;
 suning.com###sn-sidebar-change-code
 suning.com###sn-sidebar-change-code > IMG.tab-tip-code-warp-img
 suning.com###sn-sidebar-change-redpacket
@@ -90160,6 +90162,7 @@ vev.red,vidup.io#$#abort-current-inline-script window.__INITIAL_STATE__
 vgroup.mailgun.vgroup.cl$image
 vgtimes.ru#$#json-prune 'data.0.attributes.bannerId'
 via.intercom.io/o$image
+vidara.*#$#abort-on-property-read popundersPerIP; abort-current-inline-script String.fromCharCode 2147483647
 vide-greniers.org##A[class^="replacement_"]
 videobug.net,videofun.me,vidzur.com##.randid
 videofun.me###flowplayer > div[class][style]:first-child
@@ -93487,7 +93490,6 @@ zybang.com##.top_download
 ||2rid9fii9chx.www.atlaslane.com^
 ||2rwonuh.com^
 ||2smt6mfgo.de^
-||2tk74zbwj5h394.cfd^
 ||2trk.info^$third-party
 ||2tty.overstappen.nl^
 ||2u3v4w5x6y.com^
@@ -104368,6 +104370,7 @@ zybang.com##.top_download
 ||api.superembalagem.com.br^
 ||api.superkidsfantasia.com.br^
 ||api.svan.com.br^
+||api.syg.ma/page_view
 ||api.taboola.com/2.0/json/*/recommendations.$redirect=nooptext,domain=azby.fmworld.net
 ||api.taboola.sve.cc^
 ||api.tacotax.fr/v2/amplitude_trackers
@@ -156127,7 +156130,6 @@ zybang.com##.top_download
 ||mimakiusa.actonservice.com^
 ||mimamsaslews.com^
 ||mimg.sportsworldi.com/Lib/google_analytics.js
-||mimiunprest.com^
 ||mimosamajor.com^
 ||mimosamajor.com^$third-party
 ||mindbox.ru^$cookie=deviceUUID
@@ -167840,6 +167842,7 @@ zybang.com##.top_download
 ||ruvdkw.turk.net^
 ||ruw.de/js/trackSidebarClicks.js
 ||ruw.roanokeunderwriting.com^
+||ruwiki.ru/api/ruwiki/rest/metrics/
 ||ruwiki.ru/w/rest.php/metrics/
 ||ruwxnw.wyconcosmetics.com^
 ||ruxdiunj.mapuhit.co.il^
@@ -194372,6 +194375,7 @@ zybang.com##.top_download
 ||suunta.visma.fi^
 ||suurl.nuudcare.de^
 ||suvgo.lacedhair.com^
+||suwgpealj.in^
 ||suxqvc.pinksisly.com^
 ||suy5x8.com^
 ||suydnc.wwf.it^
@@ -203354,7 +203358,6 @@ zybang.com##.top_download
 ||tritethunder.com^
 ||tritethunder.com^$third-party
 ||tritetongue.com^
-||tritoloarca.com^
 ||triton.actonservice.com^
 ||triton.companyegg.com^
 ||triton.cutterstick.com^
@@ -205221,6 +205224,7 @@ zybang.com##.top_download
 ||umami.is^$third-party
 ||umami.spencerdevs.xyz^
 ||umami.subdavis.com^
+||umami.syg.ma^
 ||umami.vidfast.pro^
 ||umami.wakarimasen.moe^
 ||umazvs.raybiotech.com^
