@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-04 09:44:39(GMT+8)
-! Total count: 213117
+! Version: 2026-04-04 18:37:40(GMT+8)
+! Total count: 213122
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -558,9 +558,11 @@
 ##[style*='width: 100% !important; margin: 0px !important; padding: 0px !important; display: flex !']
 ##[style*='width: 100% !important; margin: 0px !important; padding: 0px !important; display: flex !'] *
 ##[style*='width: 100vw; background: url'][style$='no-repeat; position: fixed;'][style*='0px 0px / 100vw ']
+##[style*='width:9.6vw;height:7.96875vw;background: #000;opacity:0.01;']
 ##[style*='width:9.6vw;height:8.5vw;background:#000;opacity:0.01;']
 ##[style='box-sizing: border-box; position: relative; left: 0px; z-index: 912944; text-indent: -10em;']
 ##[style='display: block; width: 100%; height: 125px; background-size: 100% 100%;']
+##[style='display: block; width: 100%; height: 127px; background-size: 100% 100%;']
 ##[style='display: block; width: 100%; left: 0px; position: fixed; z-index: 2147483646; height: 49px; bottom: 132px;']
 ##[style='position:absolute !important;padding:0px !important;margin:0px !important;width:100% !important;font-size:0px !important;line-height:0px !important;']
 ##[style='position:relative !important;padding:0px !important;margin:0px !important;line-height:1 !important;']
@@ -79474,6 +79476,7 @@ factfeed.com,mdrntoday.com,travelroo.com#$#hide-if-matches-xpath './/div[contain
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
 factually.co#%#//scriptlet('set-local-storage-item', 'userBrowserId', '$remove$')
 fairytailmx.com#@##sponsored-ad
+familydoctor.com.cn##IFRAME[width='400']
 fandom.com#%#//scriptlet('set-constant', 'optimizely', 'emptyObj')
 fandom.com#%#//scriptlet('set-constant', 'optimizely.initialized', 'true')
 fanfics.me##.red.nodata
@@ -87832,7 +87835,9 @@ replyemails.united.com$image
 replymgt.careerbuilder.com$image
 researchlobalid3.click.s11.sfmc-osl.com$image
 reservalobalid3.click.s11.sfmc-osl.com$image
-reshu.by,reshuent.kz,sdamgia.ru#@#.googlead
+reshuent.ru,sdamgia.ru##.S29e4f5cdae
+reshuent.ru,sdamgia.ru##main > div[class*=" "]:nth-child(-n+2) > div ~ div
+reshuent.ru,sdamgia.ru#@#.googlead
 resources.picstudio.ai$image
 response.sungard.com$image
 retinaboys.com###screen_block
@@ -88010,8 +88015,6 @@ screenov.eu#?#.container > div.box:has(> a[href^="https://www.liveinternet.ru/cl
 scrolller.com#?#.popup--sticky:-abp-contains(adblock)
 scsjgjj.com###floatinfo
 sd-company.su###dom_adblock
-sdamgia.ru##.S29e4f5cdae
-sdamgia.ru##main > div[class*=" "]:nth-child(-n+2) > div ~ div
 sdamgia.ru#$#abort-on-property-read Object.prototype.getRenderToElement
 se.pl###adb_popup
 sealfit.ontraport.net%2Fo%3F$image
@@ -140153,7 +140156,7 @@ zybang.com##.top_download
 ||ioxqdp.leatherology.com^
 ||ip-adress.com^$third-party
 ||ip-approval.com/*/ip-checker-js$script,domain=amiga.sk
-||ip-check-perf.radar.cloudflare.com^
+||ip-check-perf.radar.cloudflare.com^$third-party
 ||ip-label.net^$third-party
 ||ip-tracker.org^$third-party
 ||ip-whois.net/img_ip*.php$third-party
@@ -181131,6 +181134,7 @@ zybang.com##.top_download
 ||sns.cuckoonestartstudio.com^
 ||sns2.secureforms.mcafee.com^
 ||snssdk.gatedata.org^
+||sntcbhv.com^
 ||snuea.coopsleepgoods.com^
 ||snva.jp/api/bcon/$image
 ||snva.jp/api/bcon/basic?
@@ -197585,6 +197589,7 @@ zybang.com##.top_download
 ||telemetry.otsuka-us.com^
 ||telemetry.owenscorning.com^
 ||telemetry.phenixrts.com^
+||telemetry.portal.voltdeutschland.org^
 ||telemetry.proton.me^
 ||telemetry.reembed.com^
 ||telemetry.ruthschris.com^
