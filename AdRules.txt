@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-05 14:58:21(GMT+8)
-! Total count: 213126
+! Version: 2026-04-05 20:43:09(GMT+8)
+! Total count: 213128
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2067,6 +2067,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /_i?type=event&
 /_lib/ga.js
 /_mzblank.gif?
+/_nostra/batch
+/_nostra/identity/*
 /_owa.gif?
 /_servix/webid.aspx?$script
 /_sess/script.js
@@ -10691,7 +10693,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||snesfun.com/js/ads.js$script
 @@||snowplow.swm.digital/com.snowplowanalytics.snowplow/$domain=7plus.com.au
 @@||snowplow.swm.digital^$domain=7plus.com.au
-@@||snva.jp/javascripts/reco/$script,domain=store.charle.co.jp
+@@||snva.jp/javascripts/reco/$script,domain=abc-mart.net|store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
 @@||sobot.com^
 @@||software.seek.intel.com^$document
@@ -125092,6 +125094,7 @@ zybang.com##.top_download
 ||error-report.com^$domain=watchuseek.com
 ||error-report.com^$domain=wordhippo.com
 ||error-report.com^$domain=woxikon.de
+||error-tracker.pages.dev^
 ||error-tracking.reddit.com^
 ||error.fc2.com/blog/$image
 ||error.fc2.com/blog3/$script
@@ -142297,7 +142300,6 @@ zybang.com##.top_download
 ||klgqv.pikolinos.com^
 ||klhqp.sesamesustainability.com^
 ||klhxyi.costakreuzfahrten.ch^
-||klickly.com/track
 ||klickly.com^$third-party
 ||kliesn.iprimo.jp^
 ||klik.nrc.nl/ping?
