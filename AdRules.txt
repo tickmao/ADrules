@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-07 21:06:29(GMT+8)
-! Total count: 222994
+! Version: 2026-04-08 02:55:41(GMT+8)
+! Total count: 223005
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -4030,6 +4030,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /neoworx_tracker.php
 /netmining.js
 /netresults.js
+/network-analytics.js
 /neustar.beacon.js
 /new-client/trackers.
 /new-relic.js
@@ -7307,7 +7308,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@|https://$script,domain=sport1.de
 @@|wss://zoom.us^$removeparam
 @@||$xmlhttprequest,domain=last.fm
-@@||*/abd.js^$domain=amybakesbread.com|disneydining.com|disneyfoodblog.com|downshiftology.com|halfbakedharvest.com|krollskorner.com|natashaskitchen.com|onceuponachef.com|sallysbakingaddiction.com|simply-delicious-food.com|skinnytaste.com|spendwithpennies.com|tastesbetterfromscratch.com|theloopywhisk.com|themediterraneandish.com|thewoksoflife.com|titlecaseconverter.com|whec.com
+@@||*/abd.js^$domain=amybakesbread.com|budgetbytes.com|disneydining.com|disneyfoodblog.com|downshiftology.com|halfbakedharvest.com|krollskorner.com|natashaskitchen.com|onceuponachef.com|recipetineats.com|sallysbakingaddiction.com|simply-delicious-food.com|skinnytaste.com|spendwithpennies.com|tastesbetterfromscratch.com|theloopywhisk.com|themediterraneandish.com|thewoksoflife.com|titlecaseconverter.com|whec.com
 @@||/template/conch/asset/js/hlhtml.js$domain=www.lldm.net|1anime.me
 @@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,domain=myair.resmed.com|one.one.one.one
 @@||1001trackstats.com/api/$xmlhttprequest,domain=songstats.com
@@ -11657,8 +11658,8 @@ amap.com##.app_download_box
 america.avadacom.com$image
 america.moseasia.com$image
 amsterdam.moseasia.com$image
-amybakesbread.com,disneydining.com,disneyfoodblog.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,theloopywhisk.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#abort-on-property-read Intl.DateTimeFormat false
-amybakesbread.com,disneydining.com,disneyfoodblog.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,theloopywhisk.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#replace-xhr-response /[\s\S]*/ '' /pub_300x250/
+amybakesbread.com,budgetbytes.com,disneydining.com,disneyfoodblog.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,recipetineats.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,theloopywhisk.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#abort-on-property-read Intl.DateTimeFormat false
+amybakesbread.com,budgetbytes.com,disneydining.com,disneyfoodblog.com,downshiftology.com,halfbakedharvest.com,krollskorner.com,natashaskitchen.com,onceuponachef.com,recipetineats.com,sallysbakingaddiction.com,simply-delicious-food.com,skinnytaste.com,spendwithpennies.com,tastesbetterfromscratch.com,theloopywhisk.com,themediterraneandish.com,thewoksoflife.com,titlecaseconverter.com,whec.com#$#replace-xhr-response /[\s\S]*/ '' /pub_300x250/
 amyscans.com##div[class*="code-block"]
 ana1.me##.videopos
 analytics.connect-mail.savy.technology$image
@@ -89307,6 +89308,7 @@ insideout.e.aremedia.com.au$image
 instacart.*##div:has(> div > div > h2 + span):has(img[alt="Advertisement"])
 instacart.*##div[id]:has(> a[href*="/brands/"] img[src*="display.instacart.com"]):has(> div[id$="-inner"] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id]:has(> a[href*="/brands/"] img[src*="display.instacart.com"]):has(> div[id] > div[role="region"][aria-label="item carousel"])
+instacart.*##div[id]:has(> a[href*="/brands/"] img[src*="display.instacart.com"]):has(> section[id] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id]:has(> div > a[href*="/brands/"] img[src*="display.instacart.com"]):has(> div[id] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id]:has(> div > a[href*="/brands/"] img[src*="display.instacart.com"]):has(> section[id] > div[role="region"][aria-label="item carousel"])
 instacart.*##div[id][class]:has(> a > div:first-child img):has(> a div[style*="display:"] span)
@@ -89317,7 +89319,7 @@ instacart.*##li:has(fp-ads-tag):not(:has(h2))
 instacart.*#$#abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read ADBLOCK_DETECTED false;
 instacart.*#$#hide-if-matches-xpath './/div[contains(@style,"display:")]/following::span[text()]/preceding::div[text()="Top picks from other aisles"]/ancestor-or-self::h2/ancestor-or-self::div[@class="e-1yrpusx"]'
 instacart.*#$#hide-if-matches-xpath3 './/div[@style][matches(replace(string(.)," ",""),"Sponsored")]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'
-instacart.*#$#race start; hide-if-matches-xpath './/*[ self::div[span[text()="Spons"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spon"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spo"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponsor")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"d")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-sp-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-sp-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-fp-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-fp-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; race stop;
+instacart.*#$#race start; hide-if-matches-xpath './/*[ self::div[span[text()="Spons"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spon"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/*[ self::div[span[text()="Spo"] and span[contains(text(), "ored")]] or self::*[@data-fp-eligible] ]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li] or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponsor")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"ed")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag[div[span[contains(text(),"Sponso")]and span[contains(text(),"d")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/sp-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-sp-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-ads-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-sp-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-fp-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-cc-tag[div[span[contains(text(),"S")]and span[contains(text(),"ponsored")]]]/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-fp-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; hide-if-matches-xpath './/ic-cc-tag/ancestor::li[1]/ancestor-or-self::*[self::div[child::li]or self::li[not(parent::div)]][1]'; race stop;
 instagram.com#$#hide-if-contains-visible-text '/Ad|Anzeige|Gesponsert|Sponsored|Geborg|Sponzorováno|Sponsoreret|Χορηγούμενη|Publicidad|Sponsoroitu|Sponsorisé|Bersponsor|Sponsorizzato|広告|광고|Ditaja|Sponset|Gesponsord|Sponsorowane|Patrocinado|Реклама|Sponsrad|ได้รับการสนับสนุน|May Sponsor|Sponsorlu|赞助内容|贊助|প্রযোজিত|પ્રાયોજિત|स्पॉन्सर्ड|Sponzorirano|ಪ್ರಾಯೋಜಿತ|സ്‌പോൺസർ ചെയ്‌തത്|पुरस्‍कृत|प्रायोजित|ਪ੍ਰਾਯੋਜਿਤ|මුදල් ගෙවා ප්‍රචාරය කරන ලදි|Sponzorované|స్పాన్సర్ చేసింది|Được tài trợ|Спонсорирано|Commandité|Sponsorizat|Спонзорисано/' 'article>div[class]' 'span[class]';
 instagram.com#$#json-prune data.xdt_injected_story_units.ad_media_items
 instantmanga.com###notice
@@ -96073,9 +96075,10 @@ sailthrulink.si.com$image
 sales.gilsbar.com$image
 salesforceiq.com/t.png$image
 sallysbakingaddiction.com#$#cookie-remover /adblocker/ true
+sameday.costco.*##div[id]:has(> div[id] > ul li[data-testid="compact-shoppable-header"])
 sameday.costco.*#$#abort-current-inline-script setTimeout ic-detect-ad-block; override-property-read ADBLOCK_DETECTED false
 sameday.costco.*#$#hide-if-matches-xpath './/div[@style]/following::span[text()]/preceding::div[@aria-hidden="true"]/preceding::img[contains(@alt,"Sponsored") or contains(@alt,"Advertisement")]/ancestor-or-self::div[@id][@class][1]'
-sameday.costco.*#$#race start; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ed")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"d")]]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//sp-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-sp-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-fp-tag]/ancestor::li[1]'; hide-if-matches-xpath './/ic-fp-tag/ancestor::li[1]'; race stop;
+sameday.costco.*#$#race start; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ored")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(),"ed")]]/ancestor::li[1]'; hide-if-matches-xpath './/li//div[@style][descendant::span[contains(text(), "Spon")] and descendant::span[contains(text(),"d")]]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//sp-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-ads-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-sp-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-fp-tag]/ancestor::li[1]'; hide-if-matches-xpath './/div[@role="group"][.//ic-cc-tag]/ancestor::li[1]'; hide-if-matches-xpath './/ic-cc-tag/ancestor::li[1]'; hide-if-matches-xpath './/ic-fp-tag/ancestor::li[1]'; race stop;
 sameday.costco.*#$#race start; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spons")] and descendant::span[contains(text(), "ored")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/a//div[descendant::span[contains(text(), "Spo")] and descendant::span[contains(text(), "d")]]/ancestor::div[3]'; hide-if-matches-xpath '//div[@id]/div[contains(@id,"-inner")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; hide-if-matches-xpath '//div[@id]/div[contains(@id,"-content")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; hide-if-matches-xpath '//div[@id]/section[contains(@id,"-content")][a[img[contains(@alt,"Ad")]] or .//div[starts-with(@id,"video-player")]]/parent::div'; race stop;
 samehadaku.net#@##adsense
 samsclub.com##div[class="analytics"][data-strategy="Sponsored products"]
@@ -112646,6 +112649,7 @@ zybang.com##.top_download
 ||api.teslatreinamentos.com^
 ||api.testbook.com/api/*/popup
 ||api.teste.auditiv.pt^
+||api.tezfiles.com/*/analytics/
 ||api.thefantazy.com/web-vitals
 ||api.thequietandco.com^
 ||api.thetamovement.com.br^
@@ -114186,6 +114190,7 @@ zybang.com##.top_download
 ||aralego.net^$third-party
 ||aramuz.net/frontapi/*/analyticsEvent?
 ||araskargo.com.tr/tr/jv_google_analytics.js
+||arbitrarydecisions.com/fingerprint-sw.js
 ||arc.io^$third-party
 ||arc.msn.com/*/Impression?PID=
 ||arc.nexx.cloud/static/structure/pixel_transparent.png
@@ -118176,6 +118181,7 @@ zybang.com##.top_download
 ||byqdtp.interpark.com^
 ||byrniessilky.com^
 ||bysbpc.teufelaudio.nl^
+||bysefujedu.com/fingerprint-sw.js
 ||bysfnu.bodeboca.com^
 ||bytecdn.cn/ta/resource/v0/analytics.js
 ||bytedance.com/pixel/
@@ -128682,6 +128688,7 @@ zybang.com##.top_download
 ||datas3ntinel.com^
 ||dataserver.bagypack.com^
 ||datasign.co/js/opn.js
+||datasink.sensorsjourney.com^
 ||datasphere-sbsvc.sharethis.com^
 ||datastape.hometexbd.com^
 ||datastat.me^
@@ -150162,6 +150169,7 @@ zybang.com##.top_download
 ||jsnoownma.fun^
 ||jsomtq.telescope.com^
 ||json.inf.mtml.ru/?*&count=
+||jspcdn.cn^
 ||jspqms.bellevue-ferienhaus.de^
 ||jspzv.supergut.com^
 ||jsqng.covesmart.com^
@@ -158332,6 +158340,7 @@ zybang.com##.top_download
 ||log.zingnews.vn^
 ||log.znews.vn^
 ||log.zongheng.com^
+||log0-misc-hl.amemv.com^
 ||log000.goo.ne.jp^
 ||log002.commutil.kr^
 ||log1.apkomega.com^
@@ -207229,6 +207238,7 @@ zybang.com##.top_download
 ||teejubilee.com^
 ||teen.zubie.com^
 ||teenage.engineering/_api/mw/track/
+||teenager365.to/player/stats.php?event=$image,redirect=1x1-transparent.gif,domain=teenager365.to
 ||teenerdormer.com^
 ||teenporn.ws/zaq/cron.php
 ||teenytinycellar.com^
@@ -207600,6 +207610,7 @@ zybang.com##.top_download
 ||texturetrick.com^$third-party
 ||teyourmarketing.trungaleegan.com^
 ||teyvmb.moniquelhuillier.com^
+||tezfiles.com/log|
 ||tf.360.cn^
 ||tf1.fr^$cookie=ABTasty
 ||tf1.fr^$cookie=ABTastySession
