@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-08 09:54:51(GMT+8)
-! Total count: 223005
+! Version: 2026-04-08 16:01:35(GMT+8)
+! Total count: 223012
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -8982,6 +8982,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||googletagmanager.com/gtm.js$domain=computerhoy.com
 @@||googletagmanager.com/gtm.js$domain=coolermaster.com
 @@||googletagmanager.com/gtm.js$domain=cotizadorsalud.mapfre.com.mx
+@@||googletagmanager.com/gtm.js$domain=creator.fronius.com
 @@||googletagmanager.com/gtm.js$domain=cuisineactuelle.fr
 @@||googletagmanager.com/gtm.js$domain=cuk.pl
 @@||googletagmanager.com/gtm.js$domain=cwtv.com
@@ -87271,7 +87272,6 @@ epubee.com##.vipNoteBar
 epwk.com##.collect-info-icon
 epwk.com##.collect-info-wrap
 epwk.com##.head_banner
-ermt.net,onflix.my,phimmoic.fm#$#prevent-listener click ads
 erofishki.cc,fishki.net#$#abort-on-property-read fishki.adv
 erostopics.net###custom_html-137
 erostopics.net###custom_html-81
@@ -88635,6 +88635,7 @@ gogoanimes.*,rarbg.to,rarbg2019.org,rarbgaccess.org,rarbgdata.org,rarbgget.org,r
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
 gokano.com#@#.adsbygoogle
+gol.ru#%#//scriptlet('set-local-storage-item', 'uniqueClientId', '$remove$')
 goldderby.com#$#override-property-read confirm noopFunc
 goldderby.com#$#override-property-read d3d3LmdvbGRkZXJieS5jb21fb25sb2Fk undefined
 goldderby.com#$#prevent-element-src-loading script /loader\.min\.js/
@@ -92911,6 +92912,7 @@ moskit-tracking.sacreinvestimentos.com.br$image
 moskit-tracking.solazerpiscinas.com.br$image
 moskit-tracking.updraw.com.br$image
 mosung.com$image
+motchillbr.io,onflix.my,phimmoic.fm#$#prevent-listener click ads
 motchillk.hot#$#abort-on-property-read sessionStorage
 motchilltv.taxi#$#prevent-listener click popup
 motorbikecatalog.com#$#override-property-read window.navigator.connection.rtt 1001
@@ -95799,6 +95801,7 @@ quora.com##span[data-nosnippet="true"] .q-box.qu-pb--tiny.qu-pt--medium
 quora.com##span[data-nosnippet="true"] .q-box.qu-pt--medium
 qushucheng.com##.appguide-wrap
 qushucheng.com##.hotcmd-wp
+quykhu.com#$#abort-current-inline-script document.addEventListener atob
 qyer.com###zpui-head-ad
 r.gleam.io$image
 r.ml.reverso.net%2Ftr%2Fop$image
@@ -100529,7 +100532,6 @@ vostfr-vf.com##.fixe
 vostfr-vf.com##A[href="/100Mbs.html"]
 vostfr-vf.com##A[href^="http://api.adlure.net/partner/click/"]
 vostfree.*#$#abort-on-property-write _pop
-vozer.io#$#abort-current-inline-script document.addEventListener atob
 vps.gdft.happycustomer.io$image
 vsadu.ru##.adb-block
 vsaduidoma.com##.ABD_display_wrapper
@@ -126681,6 +126683,7 @@ zybang.com##.top_download
 ||data-ff95894520.apps.iocnt.de^
 ||data-ingest.xtralife.com^
 ||data-ingestion.flowgpt.com^
+||data-lake-api.internet.apps.samsung.com^
 ||data-logdelivery.wconcept.co.kr^
 ||data-nl.computer-automation.de^
 ||data-nl.connect-professional.de^
@@ -145720,6 +145723,7 @@ zybang.com##.top_download
 ||hypebeast.com/firebase-messaging-sw.js
 ||hypemarketing.pl/cdn/fhmm-tracker.js
 ||hyperactivate.com^$third-party
+||hypercarart.com^
 ||hypercomments.com/widget/*/analytics.html
 ||hypercounter.com^$third-party
 ||hyperdisk.actonservice.com^
@@ -176124,6 +176128,8 @@ zybang.com##.top_download
 ||ridestore.com^$cookie=/^google-analytics_v4__/
 ||ridge.com/cdn/shopifycloud/media-analytics/
 ||ridgemerino.com/api/collect
+||ridibooks.com$cookie=/^AMP/
+||ridibooks.com$cookie=ruid
 ||ridmvd.dazzystore.com^
 ||ridve.simmsfishing.com^
 ||ridzf.ispeedtolead.com^
@@ -219072,6 +219078,7 @@ zybang.com##.top_download
 ||wizard.clickdrive.nl^
 ||wizardbuck.com^
 ||wizardbuck.com^$third-party
+||wizardstrategy.com^
 ||wizcase.com/jssdk//track/
 ||wiztube.xyz/cdn-cgi/trace
 ||wjmyfp.billetdavion.be^
