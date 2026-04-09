@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-08 21:08:42(GMT+8)
-! Total count: 223016
+! Version: 2026-04-09 03:06:46(GMT+8)
+! Total count: 223020
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -5327,6 +5327,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /urchin.js
 /usage/Clickstream?
 /usage/ReportEvent?
+/use1-track.atlassian.com/*
 /user-context?referrer=
 /user-data-minified.$script
 /userdata_n?
@@ -93080,6 +93081,7 @@ netigate.feedback.sbk.org$image
 netigate.teleservice.net$image
 nettiauto.com#%#//scriptlet("set-constant", "listingGoogleEETracking", "noopFunc")
 nettruyenar.com#$#abort-on-property-read links
+netu.ac#$#abort-on-property-read BetterJsPop; abort-on-property-read PopURL; abort-on-property-write window.open; abort-current-inline-script document.createElement 'delete window'; override-property-read adblockcheck false;
 netviagens.com###nvAdForm
 nevasport.ru##.adblock-notify
 new.m.taobao.com##[style*="top: 0px"]
@@ -112117,6 +112119,7 @@ zybang.com##.top_download
 ||api.farmarte.com^
 ||api.farmflix.com.br^
 ||api.fasfoficial.com.br^
+||api.fboom.me/*/analytics/
 ||api.federalsteel.ca^
 ||api.felipestefanoni.com^
 ||api.fenixtwo.com^
@@ -135243,6 +135246,7 @@ zybang.com##.top_download
 ||fbfxcf.pyrenex.com^
 ||fbjpji.europcar.es^
 ||fbo-statistics-collector-tc.is.flippingbook.com^
+||fboom.me/log|
 ||fbot.me/error
 ||fbot.me/events/
 ||fbsbx.com/paid_ads_pixel/
