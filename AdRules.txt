@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-09 21:12:22(GMT+8)
-! Total count: 223035
+! Version: 2026-04-10 02:55:46(GMT+8)
+! Total count: 223043
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2372,6 +2372,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /api/LM/Report?placeUUID=$third-party
 /api/ad/*
 /api/adplogger/*
+/api/ads-bff-client/*
 /api/adtracking$xmlhttprequest
 /api/analytics$domain=hotmediahub.com|teralink.me|teraearn.com|terashare.me|fansonlinehub.com|terashare.co
 /api/async.php?t=user&m=pagehits&
@@ -16558,8 +16559,6 @@ egydead.*#$#abort-current-inline-script Promise JSON.parse
 ehorizon.thedailybeast.com$image
 eic.org.cn##.lx-btm-box
 eiga.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
-elahmad.com##body > div[id^="ads"]
-elahmad.com#%#//scriptlet('prevent-fetch', 'pahtag.tech')
 elahmad.com#@##adblock
 elcomercio.es#$##engagement-top { display: none !important; }
 elcomercio.es#$#body { overflow: auto !important; }
@@ -108929,6 +108928,7 @@ zybang.com##.top_download
 ||aiwei365.net^
 ||aixifan.com/acsdk/log.min.js?
 ||aixifan.com/static/*/appGuide/
+||aizhantj.com*/tjpv/?cc=
 ||aizhantj.com^
 ||aiztl.eloquii.com^
 ||aj4j.icu^
@@ -112290,6 +112290,7 @@ zybang.com##.top_download
 ||api.klips.com.br^
 ||api.kongogramado.com.br^
 ||api.kudaplox.com^
+||api.kuper.ru/v*/vendo/track/
 ||api.kwaizt.com^
 ||api.lab8oficial.com.br^
 ||api.lafiorestore.com.br^
@@ -122343,6 +122344,7 @@ zybang.com##.top_download
 ||container.luxbridgestack.com^
 ||container.pepperjam.com^$third-party
 ||containers.appdomain.cloud/api/send-log$domain=ibm.com
+||containers.dsp.solta.io^
 ||contanuity.com^$third-party
 ||contato.ervencosmetics.com.br^
 ||contatoreaccessi.com^$third-party
@@ -122985,6 +122987,7 @@ zybang.com##.top_download
 ||cp.winfuture.de/stats
 ||cpa.hh.ru/api/tracker/
 ||cpa.hh.ru^
+||cpa.kuper.ru/api/tracker/
 ||cpaevent.ru^$third-party
 ||cpaqj.callawaygolfpreowned.com^
 ||cpatrendreklam.com^$third-party,script
@@ -134708,6 +134711,7 @@ zybang.com##.top_download
 ||ext-inv-cdn.presage.io^$third-party
 ||ext.baidu.com^
 ||ext.chtbl.com/trackable.js
+||ext.clickstream.sberbank.ru/metrics/
 ||ext.goguardian.com^
 ||ext.host-tracker.com^
 ||extendoffice.com/analytics.js
@@ -139627,6 +139631,7 @@ zybang.com##.top_download
 ||goto.nearlist.com^
 ||goto.newmarklearning.com^
 ||goto.rosegal.com^
+||goto.startracking.ru/api/v1/impression?aff_id=
 ||goto.suno.com^
 ||goto.zaful.com^
 ||gotoaws.dresslily.com^
@@ -176565,6 +176570,8 @@ zybang.com##.top_download
 ||rrzhbr.djoser.nl^
 ||rrznha.lanvin-en-bleu.com^
 ||rs.adpinfo.com^
+||rs.kuper.ru/v*/batch|
+||rs.kuper.ru/v*/track
 ||rs.mail.ru/*.gif$image,redirect=1x1-transparent.gif,domain=my.mail.ru
 ||rs.mail.ru/bulkstat/
 ||rs.mail.ru/ns.gif?n=
@@ -201384,6 +201391,7 @@ zybang.com##.top_download
 ||stat.jusnetkarnovgroup.pt^
 ||stat.kaago.com^
 ||stat.kakaku.com^
+||stat.katitube.com^
 ||stat.kbs.co.kr^
 ||stat.kela.fi^
 ||stat.khanate.pro^
