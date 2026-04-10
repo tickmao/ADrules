@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-10 09:59:37(GMT+8)
-! Total count: 223043
+! Version: 2026-04-10 15:27:10(GMT+8)
+! Total count: 223069
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2877,6 +2877,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /comscore_pageview
 /condor.slgnt.eu/optiext/optiextension.dll?$image
 /confiant.js
+/config/tj.js
 /configuration-stat.js
 /contentiq.js
 /conversion_async.js
@@ -3638,6 +3639,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /js/htmlkc.js
 /js/iMAWebCookie.js?
 /js/initsite.js^$domain=anysex.com|xcafe.com
+/js/j*s*r*u*n*n*e*r.js$~third-party
 /js/js4.js
 /js/kaixin.js
 /js/lmdas.js
@@ -88076,6 +88078,7 @@ ghxi.com##div[style^="padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-i
 gidonline.eu,kinogo.eu#$#abort-on-property-read target_script
 gidonline.eu,torrent-soft.net#$#abort-on-property-read atob
 gierkionline.pl#$#hide-if-matches-xpath './/div[@id]//div[contains(text(),"Reklama")]/parent::div[contains(@class,"banner")]/ancestor::div[@id][@class][1]'
+giga.chat#%#//scriptlet('set-local-storage-item', '/DEVICE_ID/', '$remove$')
 gio.com.au#%#//scriptlet('set-constant', 'webAnalytics', 'emptyObj')
 gio.com.au#%#//scriptlet('set-constant', 'webAnalytics.publish', 'noopFunc')
 giovanniterlingen.com#@#.text_ads
@@ -101258,6 +101261,7 @@ zybang.com##.top_download
 ||*.com/*fbeea*.js^$domain=footfetishvid.com
 ||*.e437040a9a.com/api/senddata?^$xmlhttprequest,domain=porntrex.com
 ||*.kameleoon.eu^$domain=20minutes.fr|20min.fr
+||*.org/config/v7.js
 ||*.website/*^$xmlhttprequest,domain=knaben.xyz
 ||*/loader.min.js^$script,domain=billboard.com
 ||*/loader.min.js^$script,domain=deadline.com
@@ -101319,6 +101323,7 @@ zybang.com##.top_download
 ||-productionnfreya.net.daraz.com^
 ||-tmp-logs-metrics.hb.tt.omtrdc.net^
 ||-tmp.net.daraz.com^
+||/js/0x1a2b3c4d.js
 ||0.0.0.0^$third-party,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
 ||0.0.0.1^
 ||0.as.sourceforge.net/article^$script,domain=sourceforge.net
@@ -112111,6 +112116,7 @@ zybang.com##.top_download
 ||api.exc.mob.com^
 ||api.exercitesportes.com.br^
 ||api.explosaopizza.com.br^
+||api.eye.sbdv.ru^
 ||api.faba.pw^
 ||api.fabricadementores.com^
 ||api.fabricamillacomerciors.com.br^
@@ -112955,7 +112961,7 @@ zybang.com##.top_download
 ||app.accelerate.zoominfo.com^
 ||app.acekuwait.com^
 ||app.activityhero.com^
-||app.adjust.com^$app=com.microsoft.bing|jp.gocro.smartnews.android|com.daily.health.tracker.monitor|com.glovo|com.edadeal.android|com.dailymotion.dailymotion|com.novoda.dch|com.jotform.v2|com.location.track.proxy.gps|com.magical.smart.alban|com.lenovo.anyshare.gps
+||app.adjust.com^$app=com.microsoft.bing|jp.gocro.smartnews.android|com.daily.health.tracker.monitor|com.glovo|com.edadeal.android|com.dailymotion.dailymotion|com.novoda.dch|com.jotform.v2|com.location.track.proxy.gps|com.magical.smart.alban|com.lenovo.anyshare.gps|com.fileclean.manager.easy
 ||app.adjust.com^$third-party
 ||app.adjust.io^
 ||app.adjust.net.in^
@@ -115740,6 +115746,7 @@ zybang.com##.top_download
 ||baitoru.com/pu/js/2017/adobe_send_tracking.js
 ||baiwb.com^
 ||baiyishaonian.cn^
+||bajielm.com^
 ||bakercommunications.actonservice.com^
 ||bal.balciselahattin.com^
 ||balanicextreat.com^
@@ -120230,6 +120237,7 @@ zybang.com##.top_download
 ||cheh9k4t.com^
 ||chelaology.com^
 ||chelsea.clicks.hqo.co^
+||chemist68.top^
 ||chenhao97.top^
 ||cheqzone.com^$third-party
 ||cherriescare.com^
@@ -120727,6 +120735,7 @@ zybang.com##.top_download
 ||clickaider.com^$third-party
 ||clickalyzer.com^$third-party
 ||clickatell.actonservice.com^
+||clickbeat.sberdevices.ru^
 ||clickbrainiacs.com^$third-party
 ||clickcease.com^$third-party
 ||clickclick.net^$third-party
@@ -121807,6 +121816,7 @@ zybang.com##.top_download
 ||commercial.davey.com^
 ||commercial.equifax.com^
 ||commercial.inform.equifax.com^
+||common-api.rozetka.*/collect/
 ||common.doosanmagazine.com/js/eLogs.js$domain=allurekorea.com
 ||common.doosanmagazine.com/reciveLogs.php
 ||common.duapps.com/appLock/getConf?tk*&vendor=
@@ -123584,6 +123594,7 @@ zybang.com##.top_download
 ||cuphk.ecsportsusa.com^
 ||cupra.euroshop.com.pe^
 ||cups.republicoftea.com^
+||curalate.com^
 ||curalate.com^$third-party
 ||curated.fieldtest.cc^
 ||curatedtea.com^
@@ -124475,6 +124486,7 @@ zybang.com##.top_download
 ||d39yds8oe4n4jq.cloudfront.net^
 ||d3aicbrzoy14kh.cloudfront.net^
 ||d3awx1l7oivs5m.cloudfront.net^$script,image
+||d3b02estmut877.cloudfront.net/grumi-ip.js
 ||d3banl4fzuxsjl.cloudfront.net^
 ||d3bo67muzbfgtl.cloudfront.net^
 ||d3c3cq33003psk.cloudfront.net^
@@ -147054,6 +147066,7 @@ zybang.com##.top_download
 ||imgnova.xyz/Tas/P.js$script,domain=imgnova.xyz
 ||imgs.signifyd.com^
 ||imgsct.cookiebot.com^
+||imgsdy8iyf8723y97g.top^
 ||imgsicily.it/dist/sweetalert
 ||imgsmail.ru/gstat?
 ||imgssl.constantcontact.com/letters/images/sys/S.gif
@@ -149769,6 +149782,7 @@ zybang.com##.top_download
 ||jjghu.biohmhealth.com^
 ||jjjak.com^
 ||jjjcyjj.cn^
+||jjjxsw.com/js/common.*
 ||jjkiahh.icu^
 ||jjkjn.luumlife.com^
 ||jjklrcw.com^
@@ -153752,6 +153766,7 @@ zybang.com##.top_download
 ||lmorsb.highstreettv.com^
 ||lmpadebis.gala-series.com^
 ||lms.roblox.com^
+||lmtjapi.com^
 ||lmtonline.com/413gkwMT/init.js
 ||lmtra.lonepeakoverland.com^
 ||lmufb.theswellscore.com^
@@ -158212,6 +158227,7 @@ zybang.com##.top_download
 ||log.daqi.com^
 ||log.dav.edu.vn^
 ||log.documentmanagerpdfdocxlssale.live^
+||log.documentreaderapp.com^
 ||log.down61.com^
 ||log.dpa.com^
 ||log.dramaboxdb.com^
@@ -164267,6 +164283,7 @@ zybang.com##.top_download
 ||metrics.probiotaamericas.com^
 ||metrics.probiotaevent.com^
 ||metrics.products.omya.com^
+||metrics.prom.third-party-app.sberdevices.ru^
 ||metrics.proquest.com^
 ||metrics.protectmyid.com^
 ||metrics.protocolo360.net^
@@ -168176,6 +168193,7 @@ zybang.com##.top_download
 ||npvcb.23andme.com^
 ||npvva.purplegator.com^
 ||npzbf.spongelle.com^
+||npzc1yzag7.com^
 ||npzkb.pokerchips.com^
 ||nq3ghu0vy2qo.www.ryaktive.com^
 ||nqacsh.aalborg24.dk^
@@ -168382,6 +168400,8 @@ zybang.com##.top_download
 ||nu.esri.nl^
 ||nu.nl^$cookie=temptation-id
 ||nu.rottne.com^
+||nuance.com/tagserver/incrementality/onEvent
+||nuance.com/tagserver/logging/
 ||nuannuanqi.top^
 ||nubap.buffalojeans.com^
 ||nubbycoolly.com^
@@ -168963,6 +168983,7 @@ zybang.com##.top_download
 ||okqmc.bloomnu.com^
 ||okqqix.karitoke.jp^
 ||okqwidvnsk.net^
+||okr.sbdv.ru^
 ||oksiqv.styletread.com.au^
 ||okt.to^$third-party
 ||oktagv.immobilienscout24.at^
@@ -175685,6 +175706,7 @@ zybang.com##.top_download
 ||report.pixverse.ai^
 ||report.starshort.online^
 ||report.tantanapp.com^
+||report123.help^
 ||report2.iciba.com^
 ||reportic.app^
 ||reporting-api.gannettinnovation.com^
@@ -214543,6 +214565,7 @@ zybang.com##.top_download
 ||txt.styr.com^
 ||txtyuzhaiwu.com/astyle/wap.js
 ||txupuq.unyleya.edu.br^
+||txutayo.com^
 ||txv0.destinia.hu^
 ||txv2-br-cdn.kwai.net.iberostar.com^
 ||txvoin.with2.net^
@@ -216188,6 +216211,7 @@ zybang.com##.top_download
 ||utmcontadoronline.marciokellyton.com.br^
 ||utmjwd.mamasandpapas.com.kw^
 ||utmpv.budclub.com^
+||utmtmkfjbitxzlhijfce.top^
 ||utnrm.luminox.com^
 ||utop.umengcloud.com^
 ||utopia.de/app/themes/utopiamain/assets/js/wecantrack.js
@@ -220952,6 +220976,7 @@ zybang.com##.top_download
 ||xn--2ss830adjbqy7h.xn--fiqs8s^
 ||xn--49s928hlshoya.cn^
 ||xn--521-x72fh66s.cn^
+||xn--9krv3x413bbyb.com^
 ||xn--bqro42frpg5up.cn^
 ||xn--e1aaipcdgnfsn.su^*/counter.php
 ||xn--gov-x68dy61b.shop^
@@ -221701,6 +221726,7 @@ zybang.com##.top_download
 ||ymlykj.com/nuxt/static/liveBanner.jpg
 ||ymm17.cc^
 ||ymm19.cc^
+||ymmiyun.com^
 ||ymprove.gmx.net^
 ||ymprove.web.de^
 ||ymqnky.bagaggio.com.br^
