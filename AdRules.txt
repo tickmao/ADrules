@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-10 20:57:19(GMT+8)
-! Total count: 223082
+! Version: 2026-04-11 02:42:25(GMT+8)
+! Total count: 223088
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2975,6 +2975,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /dcjs/prod/*
 /dcs.gif?
 /dcs_tag.js
+/dead-clicks-autocapture.js
 /deadblocker/*
 /default/pAnalytics
 /delivery/afr.
@@ -6241,7 +6242,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 19937.sfap-qa1.marketingcloudqaops.com$image
 19990.connector-qa1.marketingcloudqaapis.com$image
 19990.sock-qa1.marketingcloudqaops.com$image
-1afav.net,1film.to,279kzq8a4lqa0ddt7sfp825b0epdl922oqu6.fun,7us7m00f.fun,andyday-tv.lol,andydayz.*,animeheaven.*,bf0skv.org,boosterx.stream,camcaps.*,desi-porn.tube,dinisglows.com,dsvplay.com,emturbovid.com,extratorrent.st,fc2stream.*,flaswish.com,flemmix.*,fmovies-co.net,fmovies.*,fmovies24-to.com,hltv.org,hqq.*,hyhd.org,jilliandescribecompany.com,jkanime.*,kaliscan.*,kaotic.com,krakenfiles.com,lauradaydo.com,lukesitturn.com,mdfx9dc8n.net,mediagraming.com,mixdrop.*,movearnpre.*,oneupload.*,pandamovies.org,primesrc.me,primevid.click,putlocker.*,spankbang.com,streameeeeee.site,supervideo.cc,supjav.com,supremejav.com,tipfly.xyz,toflix.*,turbovidhls.com,ups2up.*,videasy.net,vidello.*,vidply.com,vidsrc-embed.ru,vixcloud.*,voe.sx,walterprettytheir.com,web.netmovies.*,xatovjatsosg.com,xprime.*,younetu.*,zgdpo8nr.fun#$#abort-on-property-write window.open
+1afav.net,1film.to,279kzq8a4lqa0ddt7sfp825b0epdl922oqu6.fun,7us7m00f.fun,andyday-tv.lol,andydayz.*,animeheaven.*,bf0skv.org,boosterx.stream,camcaps.*,desi-porn.tube,dinisglows.com,dsvplay.com,emturbovid.com,extratorrent.st,fc2stream.*,flaswish.com,flemmix.*,fmovies-co.net,fmovies.*,fmovies24-to.com,hltv.org,hqq.*,hyhd.org,hurawatch.*,jilliandescribecompany.com,jkanime.*,kaliscan.*,kaotic.com,krakenfiles.com,lauradaydo.com,lukesitturn.com,mdfx9dc8n.net,mediagraming.com,mixdrop.*,movearnpre.*,oneupload.*,pandamovies.org,primesrc.me,primevid.click,putlocker.*,spankbang.com,streameeeeee.site,supervideo.cc,supjav.com,supremejav.com,tipfly.xyz,toflix.*,turbovidhls.com,ups2up.*,videasy.net,vidello.*,vidply.com,vidsrc-embed.ru,vixcloud.*,voe.sx,walterprettytheir.com,web.netmovies.*,xatovjatsosg.com,xprime.*,younetu.*,zgdpo8nr.fun#$#abort-on-property-write window.open
 1fichier.com##[style="float:right;width:300px;height:600px"]
 1film.to,animepahe.*,dsvplay.com,flemmix.*,fuxporn.com,gogoplay1.com,komikcast.com,lookmovie.la,manhuascan.io,mdfx9dc8n.net,oneupload.*,prmovies.*,speedostream.com,tipfly.xyz,ups2up.*,watchseri.net,wiflix-max.site,wiflix.*,yomovies.*#$#abort-current-inline-script JSON.parse
 1flix.*#$#abort-current-inline-script Array.prototype.reduce;
@@ -12216,7 +12217,7 @@ betteranime.net#$#abort-current-inline-script document.createElement _mdttdpu
 betterhomesandgardens.e.aremedia.com.au$image
 bettycrocker.com,pillsbury.com#$#simulate-mouse-event 'xpath(.//div[@class="adAboveSiteHeader"]//span[@class="closeAdButton"][@aria-label])'
 bez-smenki.ru#$#abort-current-inline-script $ showPopupextra
-bf0skv.org,dopebox.to,fmovies.*,luluvid.com,movies2watch.tv,theflixertv.*,vidara.*#$#abort-current-inline-script document.createElement 'delete window'
+bf0skv.org,dopebox.to,fmovies.*,hurawatch.*,luluvid.com,movies2watch.tv,theflixertv.*,vidara.*#$#abort-current-inline-script document.createElement 'delete window'
 bfmtv.com##.geste
 bgr.com#%#//scriptlet("set-constant", "pmc_do_analytics_pagecount", "false")
 bhg.e.aremedia.com.au$image
@@ -87263,7 +87264,7 @@ engvideo.net,hianime.*,hollymoviehd.cc,mangago.*,ling-online.net,ups2up.*#$#abor
 enigmaboard.com##.no
 entapark.jp##div[id$="-pickup"][style^="height"]
 entrilia-email.losangefinance.com$image
-envivotv.net,lucenpop.com.es,topflix.tv#$#abort-current-inline-script Math zfgloaded
+envivotv.net,lucenpop.com.es,topflix.*,top-flix.*#$#abort-current-inline-script Math zfgloaded
 eotrx.substackcdn.com$image
 epay.click.s11.sfmc-osl.com$image
 epicplayplay.*#$#abort-current-inline-script document.createElement /fakeelement/
@@ -87765,7 +87766,8 @@ firmwaredrive.com#%#setTimeout(function() { var el = document.querySelector('inp
 firstrowas.co###ad_overlabut
 firstrowfr.eu###adblockplus
 firstrowfr.eu###fanback
-fiverr.com##div.gig-card-layout:has(img[src*="OZFqhkpkj4rzV28c.png"], img[src*="QKYiNoKD17FwRIF5.png"], img[src*="aiT2m7sbl2hXXOa6.png"], img[src*="cQnTumUw98ivhYML.png"])
+fiverr.com##div.gig-card-layout:has(img[src*="36X9sGTpevt06NPT.png"], img[src*="BceqkF3LnmJpNRQG.png"], img[src*="11acg12GijETBnWT.png"], img[src*="HL2JUeXfmAh9GKyj.png"], img[src*="sPoSroPEWomV8b6n.png"],img[src*="Pa6HREWC0QRy8Sg8.png"], img[src*="94B1MpvSma9V6yei.png"], img[src*="EwDCz5FGqv9xTNC0.png"], img[src*="DlPY5tL76Q8XLBiz.png"], img[src*="i24Zsa7U5zQY8Lxz.png"], img[src*="01jUC1zYUPx3KqNu.png"], img[src*="Go7k2GmwduBztMmD.png"], img[src*="jrOdUMZsLzny4otV.png"], img[src*="4OlUz5c0QOFUCjNL.png"], img[src*="a5YuqjfONZ3FPiIS.png"], img[src*="GapzBJVJQAmpJpxU.png"], img[src*="57s1ZK1pjCTOGCsk.png"], img[src*="0yjkU6gfSAEdgJLL.png"], img[src*="NX2ftURez37LL3Ez.png"], img[src*="Fv45uiBZV9B1PYaL.png"], img[src*="t3l1LLu7hLhrt1jM.png"], img[src*="12HIkKechDRwgDd2.png"], img[src*="GKPndWo8f7mJruzw.png"], img[src*="tkQ3IFzDCPhtECHP.png"], img[src*="WSi5uERRnUyRpa6m.png"], img[src*="pluQxDhGJtOfz36g.png"], img[src*="f5YH8xFwmBC4rf7V.png"], img[src*="VZYADZi2qGqFsl8F.png"], img[src*="4nlavmMvgG2pU0Uy.png"], img[src*="A5yTbnUcMlq2fhMZ.png"], img[src*="wj0noOjLJ2NXlvcX.png"])
+fiverr.com#?#div.slide:has(span[data-track-tag^="typography"]:-abp-contains(/Anzeige|Ad|Anuncio|Publicité|Anúncio|Annuncio|Advertentie/))
 fixolas.net##[href="http://fixolas.net/"] > IMG
 fkcmail.lighthousefinancial.com.au$image
 flashback.org###top-banner-container
@@ -87813,7 +87815,7 @@ fmg.suncoastcreditunion.com$image
 fmgmail.krvariccapital.com$image
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 fmovies.*#$#hide-if-matches-xpath '//div[starts-with(@style, "position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;")]';
-fmovies.*,hurawatch.cc,theflixer.*#$#abort-on-property-read window.zfgstorage
+fmovies.*,hurawatch.*,theflixer.*#$#abort-on-property-read window.zfgstorage
 fnjiasu.com##.layui-layer
 fnjiasu.com##.sidebar_download
 fnjiasu.com##.swiper-container
@@ -89076,6 +89078,7 @@ huntress.com#%#//scriptlet('set-local-storage-item', 'snowplowOutQueue_cf', '$re
 hupu.com###game-center-entrance-container
 hupu.com##.m-app-info
 hupu.com##DIV[class^="game-center-"]
+hurawatch#$#prevent-listener /break;case \$/;
 huxiu.com##li:nth-of-type(1) > .header-top-list__link > .flip-wrap > .flip-up
 huya.com###J_duyaHeaderRight > .clearfix.duya-header-control > .hy-nav-download.hy-nav-right
 huya.com###player-download-guide-tip
@@ -117410,6 +117413,7 @@ zybang.com##.top_download
 ||bpt.webedia-group.com^
 ||bpwmfh.backmarket.be^
 ||bpwmy.thepoplight.com^
+||bpxly1rnlywuc1.cfd^
 ||bpztsxx.com^
 ||bqacmp.vidaxl.no^
 ||bqcmk.gardenofmemoriesmetairie.com^
@@ -162325,6 +162329,7 @@ zybang.com##.top_download
 ||mediagauge.com^$third-party
 ||mediaglacier.com^$third-party
 ||mediago.io^$third-party
+||mediagroupnetwork.com/js/ua.js
 ||mediahub.ekopark.pl^
 ||mediahub.mondi.pl^
 ||mediahuis.be/cxense/
@@ -172885,6 +172890,7 @@ zybang.com##.top_download
 ||pqjprom.cn^
 ||pqlcpm.kindoh.co.kr^
 ||pqlmae.lamaisonduchocolat.co.jp^
+||pqmv5xir9y5zb6h.rest^
 ||pqn7.cheque-dejeuner.fr^
 ||pqoge.theinteriordesigninstitute.com^
 ||pqomnfbg.com^
