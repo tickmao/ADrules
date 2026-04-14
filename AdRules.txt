@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-14 19:53:01(GMT+8)
-! Total count: 236367
+! Version: 2026-04-14 21:14:02(GMT+8)
+! Total count: 236372
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -106660,7 +106660,6 @@ nxslink.wwlp.com$image
 nxslink.wytv.com$image
 nxslink.yourerie.com$image
 nyb.soundestlink.com*track$image
-nypost.com#%#//scriptlet('set-local-storage-item', 'ow/social-browser-storage', '$remove$')
 nytimes.com#%#//scriptlet("set-constant", "Navigator.prototype.joinParakeetInterestGroup", "noopFunc")
 o2.pl##div[class$="cevoIl"]
 o2.pl,wp.pl#?#div:-abp-has(> script:-abp-contains(=== 'function'))
@@ -110283,6 +110282,7 @@ the-ans.jp##.side-reccomend
 the-crossword-solver.com#$#hide-if-matches-xpath './/div[contains(@id,"slot-sticky")]/parent::div[1]'
 the-crossword-solver.com#$#override-property-read window.navigator.connection.rtt 1001
 the-japan-news.com#%#//scriptlet('set-cookie-reload', 'fp', '1')
+the-sun.com,nypost.com#%#//scriptlet('set-local-storage-item', 'ow/social-browser-storage', '$remove$')
 the-village.com.ua##.infoA
 theargus.co.uk##.adwarn.adblock-warning
 theavtimes.com,thetrendspotter.net#$#abort-on-property-read advads_passive_ads
@@ -141532,6 +141532,7 @@ zybang.com##.top_download
 ||datadome.co^$third-party
 ||datadome.co^$third-party,domain=~paypal.com
 ||datadome.maisonsdumonde.com^
+||datadome00.id.me/tags.js
 ||datadrivens.protocolopumpgluteos.com.br^
 ||datadsk.com^$third-party
 ||datafa.st/js/script.js
@@ -180450,6 +180451,7 @@ zybang.com##.top_download
 ||nicovideo.jp/api/tkas_video_impression
 ||nid.barrons.com/prod/sp/nid_sp.js
 ||nid.mansionglobal.com^
+||nid.the-sun.com^
 ||nid.thesun.co.uk^
 ||nid.thetimes.com^
 ||nidays.austria.ni.com^
@@ -219366,7 +219368,7 @@ zybang.com##.top_download
 ||tags.tiq.rbcinsurance.com^
 ||tags.tiq.rbcprivateinsurance.com^
 ||tags.tiq.worldprotect.com^
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com|the-sun.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au
 ||tags.tiqcdn.com/utag/*/utag.v.js
 ||tags.tiqcdn.com^$app=uk.co.thetimes|com.hulu.plus|com.booking
@@ -220911,6 +220913,7 @@ zybang.com##.top_download
 ||thdidx.xyz^
 ||the-group.net/aether/
 ||the-sun.com/assets/client/analyticsListeners*.js
+||the-sun.com/assets/optimizely/
 ||the.chayapest.com^
 ||the.checkfox.de^
 ||the.levelfashionwear.com^
@@ -229691,6 +229694,8 @@ zybang.com##.top_download
 ||varianty.lviv.ua/counter.php
 ||variedades.pop25.com.br^
 ||variti.net^$third-party
+||varta1.com.ua/api/ads-analytics
+||varta1.com.ua/api/analytics
 ||varun.fullleafteacompany.com^
 ||varys.asongofzandc.xyz^
 ||vast.com/vimpressions.js$third-party
