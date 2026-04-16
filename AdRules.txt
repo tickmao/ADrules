@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-16 10:05:06(GMT+8)
-! Total count: 236393
+! Version: 2026-04-16 15:23:02(GMT+8)
+! Total count: 236395
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -4573,6 +4573,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /rpc/log/*
 /rpc/log?
 /rpc/preccount?
+/rptracker.js$domain=rshb.ru
 /rr/t?step=
 /rrweb-record-pack.js
 /rrweb-record.min.js
@@ -228780,6 +228781,7 @@ zybang.com##.top_download
 ||urlbrief.com^$third-party
 ||urldefense.com/*/webmon.js
 ||urldefense.com^$image,third-party
+||urldefense.com^$third-party
 ||urldefense.proofpoint.com^*analytics_insight.min.js
 ||urlir.sophiawebster.com^
 ||urlkwqi.cn^
