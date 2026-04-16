@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-15 21:11:52(GMT+8)
-! Total count: 236390
+! Version: 2026-04-16 03:06:44(GMT+8)
+! Total count: 236393
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -102599,6 +102599,9 @@ jump.refinery29.uk$image
 junksport.com##DIV[style="background-color: rgb(251, 236, 173); position: absolute; margin: 0px 0px 0px -350px; left: 50%; width: 700px; z-index: 999999; height: 22px; font-family: arial; font-weight: bold; font-size: 14px; text-shadow: none; text-align: left; color: black; padding-top: 5px; padding-bottom: 5px; top: 0px;"]
 jupako.uk###over-large
 jupako.uk###over-small
+jurasudfoot.com#$#abort-current-inline-script jQuery open
+jurasudfoot.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
+jurasudfoot.com#$#override-property-read adsPlayer ''; override-property-read adsTvcs ''
 just-for-fun.ru##body > div[class*="-container"][class*="-hide"]
 justjared.com,pockettactics.com#$#abort-on-property-read PerformanceLongTaskTiming
 justwatch.com#$#hide-if-matches-xpath './/div[contains(@class,"ad-pill")]/div[contains(@aria-label,"advertisement")]/p[text()]/ancestor::div[starts-with(@class,"title-list-grid__item sponsored-recommendation")]'
@@ -104941,7 +104944,7 @@ m.lianjia.com##.download_fixed
 m.lianjia.com##.download_full_box
 m.lianjia.com##.fadeDown.download_topfixed.mod_download
 m.lianjia.com##.mod_app.mod_sub_tit.mod_tit
-m.lianjia.com##div.mod_download:nth-of-type(1) 
+m.lianjia.com##div.mod_download:nth-of-type(1)
 m.loxi.io$image
 m.mailgun.commpartners.com$image
 m.mg.hotelhead.de$image
@@ -106473,9 +106476,6 @@ noon.com#$#hide-if-matches-xpath './/img[contains(@src,"ads/banner-")]/parent::s
 noon.com#$#hide-if-matches-xpath './/span[@style][contains(text(),"Ad")]/parent::div[contains(@class,"adWrapper")]/ancestor::div[contains(@class,"ProductDetailsDesktop_maxWrapper")][1]'
 noon.com#$#race start; hide-if-matches-xpath './/*[local-name()="svg"][@width][@fill="none"]/*[local-name()="rect"]/ancestor::a[@class][@href]/parent::div[1]'; hide-if-matches-xpath './/div[@class][contains(text(),"Ad") or contains(text(),"مدفوع")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'; hide-if-matches-xpath './/div[@class][contains(text(),"Sponsored") or contains(text(),"إعلان")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'; hide-if-matches-xpath './/img[contains(@src,"ad-")]/ancestor::a[@href]/ancestor-or-self::div[contains(@class,"ProductBoxLinkHandler")]'; race stop;
 norisoku.com###random
-northernlightsccs.com#$#abort-current-inline-script jQuery open
-northernlightsccs.com#$#hide-if-matches-xpath './/div[@id or @class]/p/a[@title]/ancestor-or-self::div[1]'
-northernlightsccs.com#$#override-property-read adsPlayer ''; override-property-read adsTvcs ''
 nos.national.aaa.com$image
 note.youdao.com##.top-btns
 noted.e.bauermedia.co.nz$image
@@ -114277,6 +114277,9 @@ www.streaming.view.s11.sfmc-osl.com$image
 www.sys-14.cloud.s11.sfmc-osl.com$image
 www.toptruyenzone.com#$#abort-current-inline-script Promise instance
 www.toptruyenzone.com#$#abort-current-inline-script setTimeout open
+www.toutiao.com##.download-app-banner
+www.toutiao.com##.download.tool-item
+www.toutiao.com##.ttp-portal-anime-show
 www.trumpwinneroffice.com$image
 www.truyen35zz.com#$#abort-current-inline-script jQuery click_ads
 www.wdbay.com##[class][classname]
