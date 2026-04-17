@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-17 15:23:26(GMT+8)
-! Total count: 236416
+! Version: 2026-04-17 21:05:42(GMT+8)
+! Total count: 236422
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -8571,6 +8571,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||contentlockingnetworks.com/gLoader.php?GID=$script,third-party
 @@||contentlockingnetworks.com/gTemplate.php?GID=$subdocument,third-party
 @@||conversion.im/images/icons/google-analytics.png
+@@||conversions.appsflyersdk.com^$app=com.wishabi.flipp
 @@||convertexperiments.com^$domain=skratchlabs.com
 @@||cookielaw.org^*/OtAutoBlock.js$domain=bancsabadell.com|darkreading.com|uphold.com
 @@||coolkora.com^$elemhide
@@ -11015,6 +11016,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||srnet.eu/ads2.js$script
 @@||srnk.co/js/ads.js$xmlhttprequest
 @@||srs.blastingnews.com/js/adv/_compiled.js$script
+@@||srv024.service.canada.ca/assets/adobe-analytics-route-helpers-$script,~third-party
 @@||srvr.dmvs-apac.com/dm-story/*.js$domain=eldeber.com.bo|reduno.com.bo
 @@||ssl-images-amazon.com^*/satelliteLib-$script,domain=audible.com
 @@||ssl.geoplugin.net/javascript.gp$domain=imalentstore.com
@@ -12760,7 +12762,7 @@ budport.com.ua##body > div[style^="position:fixed;"][style*="z-index"][style*="b
 budport.com.ua#$#abort-current-inline-script $ append
 bulletin.sntba.com#%#//scriptlet("set-constant", "returnCitySN", "emptyObj")
 bunshun.jp##.recommend-articles:has(> div[class^="taboola"])
-buomtv.media,cave9x.net,chuyentiepanimehay.one,cliphot69.hair,genz3x.com,damconuong.ceo,demo.14412882.com,doctruyen3qhubz.net,dualeotruyenbx.com,goctruyentranhvui19.com,hentaizvn.net,hhtq5.vip,ihentai.network,javtiful.com,luottruyen5.com,lxmanga.space,misskon.com,motphim.pokemonviet.com,mupsexphim.net,newtruyentranh10.com,phim18hdxx.com,phimlongtieng.net,phimsexhayvn96.com,quatvn.my,sayhentai.vc,sex.xinh3x.me,sexdiary.club,sexviet88.xyz,streamvl.top,truyenqqno.com,truyenvn.shop,umetruyenz.org,vevocloud.com,viet69.mu,viet69vn.at,vn2.xvideos69.xxx,vn6.sexviet88.xyz,www.sieutamphim.pro,yurineko.*#$#abort-current-inline-script WebAssembly instantiate
+buomtv.media,clipsexvip.com,chuyentiepanimehay.one,cliphot69.hair,genz3x.com,damconuong.ceo,demo.14412882.com,doctruyen3qhubz.net,dualeotruyenbx.com,goctruyentranhvui19.com,hentaizvn.net,hhtq5.vip,ihentai.network,javtiful.com,luottruyen5.com,lxmanga.space,misskon.com,motphim.pokemonviet.com,mupsexphim.net,newtruyentranh10.com,phim18hdxx.com,phimlongtieng.net,phimsexhayvn96.com,quatvn.my,sayhentai.sh,sex.xinh3x.me,sexdiary.club,sexviet88.xyz,streamvl.top,truyenqqno.com,truyenvn.shop,umetruyenz.org,vevocloud.com,viet69.mu,viet69vn.at,vn2.xvideos69.xxx,vn6.sexviet88.xyz,www.sieutamphim.pro,yurineko.*#$#abort-current-inline-script WebAssembly instantiate
 burger-king.by#%#//scriptlet('set-local-storage-item', 'mindboxDeviceUUID', '$remove$')
 burze.dzis.net#@#.adsbygoogle
 business.nikkei.com##.cbCxense
@@ -12804,7 +12806,7 @@ campusfrance.org#%#//scriptlet('set-constant', 'pa.sendEvent', 'noopFunc')
 camsstream.com#$#abort-current-inline-script onload;
 canadiantire.ca#%#//scriptlet('set-local-storage-item', 'signifydSessionIdInfo', '$remove$')
 canhasbitcoin.com###adblock-message
-cap3.fit#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
+cap3.cyou#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
 capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'noopFunc')
 careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
 careers.samsungena-global.com$image
@@ -106077,7 +106079,7 @@ miaopai.com,renren.com##.swiper-container
 micast.tv###closediv
 micast.tv###up
 micast.tv##.adv
-michorussellweekend.ie,onflix.my,phimmoichill.so#$#prevent-listener click ads
+michorussellweekend.ie,onflix.my,eile.ie#$#prevent-listener click ads
 micronotes.svbt.com$image
 midroll$xmlhttprequest,domain=iprima.cz
 miercn.com###foot_return_foot
@@ -128337,6 +128339,7 @@ zybang.com##.top_download
 ||avid.actonservice.com^
 ||aviite.freaksstore.com^
 ||aviko.actonservice.com^
+||avito.ru/clickstream/events/
 ||avito.ru/stat/
 ||avito.ru^*/some-pretty-script.js
 ||avito.st/mstatic/build/legacy/*/fingerprint.*.js
@@ -178461,6 +178464,7 @@ zybang.com##.top_download
 ||mon-va*.capcutapi.com^
 ||mon-va.byteoversea.com^$third-party
 ||mon-va.capcutapi.com^
+||mon.avito.ru^
 ||mon.byteoversea.com^
 ||mon.capcutapi.us^
 ||mon.domdog.io^
@@ -182692,6 +182696,7 @@ zybang.com##.top_download
 ||otclick-adv.ru^$third-party
 ||otekt.rocautomobile.ro^
 ||otel-collector.lenta.tech^
+||otel-collector.reliability.smartnews.net^
 ||otel-mobile.doordash.com^
 ||otfim.gurunanda.com^
 ||otfur.craneandcanopy.com^
@@ -189745,6 +189750,7 @@ zybang.com##.top_download
 ||rum.api.intuit.com^
 ||rum.azion.com^
 ||rum.azioncdn.net^
+||rum.battle.net^
 ||rum.cdnpure.com^
 ||rum.conde.io^
 ||rum.condenastdigital.com^
