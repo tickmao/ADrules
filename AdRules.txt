@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-20 10:06:42(GMT+8)
-! Total count: 236463
+! Version: 2026-04-20 15:56:52(GMT+8)
+! Total count: 236480
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -2430,6 +2430,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /api/v3/getPageVisits
 /api/v3/trackSegmentEvent
 /api/video/stats/*$xmlhttprequest
+/api/web/v1/tracker$ping
 /api_adlog.php?
 /api_ip_info.php
 /apilog?
@@ -3507,6 +3508,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /ht.js?site_
 /htdocs/js/admiral/init.js
 /html/js/iter-libraries/iter-statistics.js*$domain=eluniversal.com.co|elcolombiano.com|vanguardia.com.mx
+/https:\/\/www\.fakt\.pl\/[a-zA-Z0-9_]{40,200}/$xmlhttprequest,~third-party,match-case,domain=fakt.pl
 /hubspot-ga-tracking.js
 /hunter/alog/*
 /i.gif?
@@ -108608,6 +108610,11 @@ planetminecraft.com#$#hide-if-matches-xpath '//b[text()="ADVERTISEMENT"]/ancesto
 platform.autods.com#%#//scriptlet('set-constant', '_conv_q', 'emptyObj')
 platform.autods.com#%#//scriptlet('set-constant', '_conv_q.push', 'noopFunc')
 play.doramasplus.net#$#override-property-read openUp noopFunc
+play.xumo.com#%#//scriptlet('set-local-storage-item', '_xumo_ifaId', '$remove$')
+play.xumo.com#%#//scriptlet('set-local-storage-item', '_xumo_omnitureDeviceId', '$remove$')
+play.xumo.com#%#//scriptlet('set-local-storage-item', '_xumo_xumoDeviceId', '$remove$')
+play.xumo.com#%#//scriptlet('set-local-storage-item', 'com.kochava.tracker.DeviceId', '$remove$')
+play.xumo.com#%#//scriptlet('set-local-storage-item', 'com.kochava.tracker.EventQueue', '$remove$')
 play/safety=^$xmlhttprequest,domain=ahaonline.cz|info.cz|onetv.cz
 play/safety=^$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|blesk.cz|dama.cz|e15.cz|mojezdravi.cz|zeny.cz|zive.cz
 play44.net,videobug.net,videofun.me,vidzur.com,yucache.net##[style^="position: absolute; width: 100%;"]
@@ -131043,6 +131050,7 @@ zybang.com##.top_download
 ||btime.com/api/weblog?
 ||btkbei.courir.com^
 ||btkdu.roundhouseprovisions.com^
+||btldr.net^
 ||btloader.com/tag?$redirect=noopjs,domain=voici.fr
 ||btloader.com^
 ||btmean.cardosystems.com^
@@ -133526,6 +133534,8 @@ zybang.com##.top_download
 ||cityua.net^$third-party
 ||cityzen.io/Pixel/
 ||civicscience.com/jot?
+||civitai.*/api/page-view
+||civitai.*/api/trpc/track.addView
 ||civitai.com/api/page-view
 ||civitai.com/api/trpc/track.addView
 ||cix0wk.com^
@@ -146276,7 +146286,7 @@ zybang.com##.top_download
 ||eplgb.properhealth.com^
 ||epm.mailperformance.com^
 ||epnfoq.cyberpowersystem.co.uk^
-||epochtimes.de/mp/track/
+||epochtimes.de/epoch-mp/epoch_mp.min.js
 ||epoid.xyz^
 ||epoisejobs.epoise.com^
 ||epoisepreptest.epoise.com^
@@ -157501,6 +157511,7 @@ zybang.com##.top_download
 ||hlqpie.waves.com^
 ||hlreoc.gonuldensevenler.com^
 ||hlrqi.lasioinc.com^
+||hls-beacons-us.xumo.com^
 ||hlserve.com/Delivery/ClientPaths/Library/hook.js?$domain=golfgalaxy.com|dickssportinggoods.com
 ||hlserve.com^$third-party
 ||hlstatus.com^
@@ -162356,6 +162367,7 @@ zybang.com##.top_download
 ||jobmist.com^
 ||jobs.bvng.nl^
 ||jobs.ch/api/v1/public/product/track/
+||jobs.hanes.com/*/phenomtrack.min.js
 ||jobs.smpgn.co^
 ||jobvite.com/analytics.js
 ||joc.marketing.atafreight.com^
@@ -175396,6 +175408,7 @@ zybang.com##.top_download
 ||met.jasperforge.org^
 ||met.kunststoffe.de^
 ||met.qz-online.de^
+||met.seriesapi.co^
 ||met.sewell.com^
 ||met.vgwort.de^
 ||met.werkstatt-betrieb.de^
@@ -199096,6 +199109,7 @@ zybang.com##.top_download
 ||smarthint.co/Scripts/i/SmartHintTrack.Full.min.js
 ||smarthint.co/track/
 ||smartico.ai^$third-party
+||smartiwheel.com^
 ||smartlify.com^$third-party
 ||smartlink-api.amuse.io/api/analytics/
 ||smartlook.com^$third-party
@@ -222239,6 +222253,7 @@ zybang.com##.top_download
 ||tpc.googlesyndication.com/sodar/$domain=golfgalaxy.com|dickssportinggoods.com
 ||tpcs.payu.in/pixelwithcookie.gif$domain=hindustantimes.com
 ||tpe.theparticipanteffect.com^
+||tpead.net/stat/
 ||tpfrro.justlease.nl^
 ||tpi-app.herokuapp.com^
 ||tpiqbv.pixartprinting.ch^
@@ -227357,6 +227372,7 @@ zybang.com##.top_download
 ||try.tableausoftware.com^
 ||trygloramd-ss.checkoutera.com^
 ||trygloramd-ss.topashopo.com^
+||trygravity.ai/ack?
 ||trymask.com/api/$third-party
 ||tryme.binbingroup.com^
 ||tryme.hubbzoffices.com^
@@ -229979,6 +229995,7 @@ zybang.com##.top_download
 ||verify.test.spin.app^
 ||verifysession.uxcam.com^
 ||verint-cdn.com^
+||verisoul.ai^$third-party
 ||verizon-branch.locationlabs.com^
 ||verseballs.com^
 ||verseballs.com^$third-party
