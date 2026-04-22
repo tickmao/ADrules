@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-22 10:00:25(GMT+8)
-! Total count: 236516
+! Version: 2026-04-22 15:23:38(GMT+8)
+! Total count: 236529
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -3623,6 +3623,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /js/ad_insight/*
 /js/adbuddy.min.js$script
 /js/admiral-
+/js/adobe-analytics.js$domain=moneywise.com|money.ca
 /js/ads
 /js/an-detect.min.js$script
 /js/an-scripts.js$script
@@ -4629,6 +4630,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /sayacff.html
 /sayac|$subdocument
 /scmetrics.*/b/ss/*
+/scottie/api/cdp/v1/event|$domain=moneywise.com|money.ca
 /screencount?vcid=
 /scribd_events?
 /script.js|$~third-party,domain=4029tv.com|98online.com|abc-7.com|hearst.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mor-tv.com|mynbc5.com|nbc-2.com|wapt.com|wbal.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|wpbf.com|wptz.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
@@ -10793,6 +10795,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||s79.research.de.com/bb-mx/prime$domain=joyn.de
 @@||safe.zhanhuo.com^$domain=safe.zhanhuo.com
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
+@@||salesforce.com/beacon/$script,domain=safeway.ca
 @@||sams.11freunde.de/ee/*/interact?$xmlhttprequest,domain=11freunde.de
 @@||sams.spiegel.de/ee/irl1/v1/interact?$domain=spiegel.de
 @@||samsclub.com/px/*/captcha/captcha.js$domain=samsclub.com
@@ -143407,6 +143410,7 @@ zybang.com##.top_download
 ||donreach.com^$third-party
 ||dontbeevils.de^$third-party
 ||donut.thebakeacademy.com^
+||doofinder.com/api/v*/stats/
 ||doofinder.com/api/v2/stats/
 ||doomhedge.com^
 ||doomna.com^$third-party
@@ -151168,6 +151172,7 @@ zybang.com##.top_download
 ||globalmed.actonservice.com^
 ||globalservices.conde.digital/p77xzrbz9z.js
 ||globalservices.conde.digital^
+||globalsiteanalytics.com^
 ||globalsiteanalytics.com^$third-party
 ||globalsolutions.risk.lexisnexis.com^
 ||globalwebindex.net^$third-party
@@ -152361,6 +152366,7 @@ zybang.com##.top_download
 ||goto.nearlist.com^
 ||goto.newmarklearning.com^
 ||goto.rosegal.com^
+||goto.simplywall.st^
 ||goto.startracking.ru/api/v1/impression?aff_id=
 ||goto.suno.com^
 ||goto.zaful.com^
@@ -178551,12 +178557,13 @@ zybang.com##.top_download
 ||moneroocean.stream^$third-party
 ||monetarygoldgroup.com/_ub/
 ||monetate.net^$third-party
+||money.ca^$cookie=suid
 ||money.clerkie.io^
 ||money.hu^$cookie=UserUuid
 ||money.mioweb.cz^
 ||moneyclutchtrack.com^
 ||moneycontrol.com/news/services/get_comscore_pageview/
-||moneywise.com/scottie/api/cdp/v1/event|
+||moneywise.com^$cookie=suid
 ||monfzx.pioro.co^
 ||mongoose.cse-algolia.fr^
 ||mongoose.scrumgenius.com^
@@ -189810,6 +189817,9 @@ zybang.com##.top_download
 ||rudder-server-prd.arena.im^
 ||rudder-tracking.rudderstack.com^
 ||rudderlabs.com^$third-party
+||rudderstack.com/v1/batch?writeKey=
+||rudderstack.com/v1/identify|
+||rudderstack.com/v1/track|
 ||rudr-events.joybird.com^
 ||ruehg.dotcompliancegroup.com^
 ||rugs.luxuriousrugs.com.au^
@@ -198659,6 +198669,7 @@ zybang.com##.top_download
 ||simplify.razorsync.com^
 ||simplycast.us^$third-party
 ||simplymeasured.com^$third-party
+||simplywall.st/backend/flags/proxy/client/metrics
 ||simscale.actonservice.com^
 ||simulateswing.com^
 ||simule.ademiconbr.com^
@@ -217747,6 +217758,8 @@ zybang.com##.top_download
 ||swordtail.rockface.io^
 ||swp.de^$removeparam=source
 ||swqleb.adidas.ru^
+||swsdd.simplywall.st^
+||swssp.simplywall.st^
 ||swwcyk.ahaber.com.tr^
 ||swwcyk.aspor.com.tr^
 ||swwcyk.atv.com.tr^
