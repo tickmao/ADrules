@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-23 03:04:41(GMT+8)
-! Total count: 236540
+! Version: 2026-04-23 10:04:37(GMT+8)
+! Total count: 236558
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -11292,6 +11292,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||track.shipstation.com/collections/trackingEvents.js$~third-party
 @@||track2.royalmail.com^
 @@||trackcmp.net^|
+@@||trackdesk.com/api/node/settings/$domain=dashboard.naughtyaffiliates.com
+@@||trackdesk.com/sign-in$domain=dashboard.naughtyaffiliates.com
 @@||tracker.mattel.com/tracker.aspx?site=$script
 @@||tracker.mattel.com^$domain=barbie.com
 @@||tracking.immobilienscout24.de/tr.js?customCounterName=is24.de.meinkonto.merkzettel.myscout
@@ -148887,6 +148889,7 @@ zybang.com##.top_download
 ||flux.com/geo.html?
 ||flux.gameboost.com^
 ||fluxo.drluizsegundo.com^
+||fluxor-wrapper.api.emerios.com/api/v1/tracking/event/track
 ||flvpzm.pexo.cz^
 ||flwgx.gethommey.com.au^
 ||flx1.com^$third-party
@@ -149044,6 +149047,7 @@ zybang.com##.top_download
 ||forbes.com^$removeparam=sh
 ||forbes.realclearpolitics.com^
 ||forbidden.actonservice.com^
+||forbiddenbodyjewelry.com/wp-json/pys-*/event
 ||forbin.actonservice.com^
 ||forcapi.naturesnestgoa.com^
 ||force24.co.uk^$third-party
@@ -150467,6 +150471,7 @@ zybang.com##.top_download
 ||genieesspv.jp^$third-party
 ||geniuslinkcdn.com^$third-party
 ||geniusplus.ai/v1/lre-events?
+||genmobile.com/api/log
 ||genova.gas-up.it^
 ||gentags.net^
 ||gentian-frd.hjapi.com^
@@ -184363,7 +184368,7 @@ zybang.com##.top_download
 ||performance-logger.minted.com^
 ||performance.athleticgym.com.co^
 ||performance.inncollectiongroup.com^
-||performance.radar.cloudflare.com/beacon.js
+||performance.radar.cloudflare.com/beacon.js$domain=~cloudflare.com
 ||performancefirst.jp^$third-party
 ||performanceplay.co.kr^
 ||performancerevenues.com^$third-party
@@ -191426,9 +191431,18 @@ zybang.com##.top_download
 ||sarver.etouchbd.com^
 ||sarver.khatirajbd.com^
 ||sarver.shobjibazar.com^
+||sas.a.int-nft.peacocktv.com^
+||sas.a.peacocktv.com^
+||sas.a.stable-int.peacocktv.com^
 ||sas.adamasjeans.com^
 ||sas.com^$third-party
+||sas.f.int-nft.peacocktv.com^
+||sas.f.peacocktv.com^
+||sas.f.stable-int.peacocktv.com^
+||sas.int-nft.peacocktv.com^
 ||sas.nsm-corp.com^
+||sas.peacocktv.com^
+||sas.stable-int.peacocktv.com^
 ||sas15k01.com^$third-party
 ||sasc.solidworks.com^
 ||sascdn.com/mh_audience/
@@ -214847,6 +214861,7 @@ zybang.com##.top_download
 ||static.iris.informa.com/widgets/*/iris-t.js
 ||static.iyzipay.com/buyer-protection/assets/js/analytics.js
 ||static.jobrapido.com/public/tracking/
+||static.journify.io^
 ||static.kbdmp.com/ma/kb_
 ||static.kbs.co.kr/recommend/rcmd_track.js
 ||static.klaviyo.com/onsite/js/event_adapter.
@@ -218471,6 +218486,7 @@ zybang.com##.top_download
 ||t.johannus.com^
 ||t.josephnguyen.org^
 ||t.jossandmain.com^
+||t.journify.io^
 ||t.juneau.ca^
 ||t.juskys.de^
 ||t.juskys.fr^
@@ -228558,6 +228574,7 @@ zybang.com##.top_download
 ||umami.syg.ma^
 ||umami.vidfast.pro^
 ||umami.wakarimasen.moe^
+||umamix.fadunews.in^
 ||umazvs.raybiotech.com^
 ||umbel.com^$third-party
 ||umbrellaomendear.com^
@@ -230290,6 +230307,7 @@ zybang.com##.top_download
 ||vidtech.cbsinteractive.com/*/lib/tracking/adobe/VideoHeartbeat-
 ||vidtech.cbsinteractive.com/uvpjs/*/lib/tracking/adobe/
 ||vidtech.cbsinteractive.com/uvpjs/*/lib/tracking/mux.js
+||viduro.top/api/heartbeat
 ||vidwkd.com^
 ||vidyard.com/api/metrics
 ||viedemerde.fr/cuckolding^
