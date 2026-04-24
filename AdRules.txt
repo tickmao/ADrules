@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-24 15:53:02(GMT+8)
-! Total count: 236643
+! Version: 2026-04-24 21:09:48(GMT+8)
+! Total count: 236640
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -8338,6 +8338,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||cdn.cxense.com/cx.js$domain=wsj.com
 @@||cdn.cxense.com/sp*.html$domain=onetz.de
 @@||cdn.cxense.com/t_init.min.js$domain=dhnet.be
+@@||cdn.deviceinf.com^$domain=etail.market
 @@||cdn.dimml.io/dimml.js$domain=consumentenbond.nl
 @@||cdn.dimml.io/static/*.js$domain=consumentenbond.nl
 @@||cdn.dynamicyield.com^$domain=dafiti.com.co
@@ -12193,7 +12194,7 @@ apkpure.com#%#//scriptlet('remove-node-text', 'script', '/deviceId|__apkpureFirs
 apkpure.com#%#//scriptlet('set-local-storage-item', '__BEACON_deviceId', '$remove$')
 apkpure.net,apkpure.com##DIV.js-ad-slot
 apnetv.xys#$#abort-on-property-write adScript.src; abort-current-inline-script document.createElement loadScript
-apnews.com,dpreview.com,hollywoodreporter.com,sidereel.com,superherohype.com,torontosun.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
+apnews.com,artforum.com,artnews.com,billboard.com,deadline.com,dpreview.com,goldderby.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sidereel.com,superherohype.com,torontosun.com,variety.com,vibe.com,wwd.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
 apowersoft.cn##.activity-poster
 app.businessmaking.progress.net%2Fe%2F*%3Felq%3D$image
 app.businessmaking.progress.net/e/*?elq=$image
@@ -106498,7 +106499,7 @@ niuacc.com##.botLm-container
 niuacc.com##.masks
 niuacc.com##.yure
 nivod5.tv,nivod9.tv#$#override-property-read detailParams.is_ad_play false
-nj.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
+nj.com,syracuse.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
 nl.reckon.news$image
 nlab.itmedia.co.jp##div[id^="logly-"] + div.h10px.colBoxClear
 nnmclub.ro,nnmclub.to#$#abort-on-property-read _0x1ece false
@@ -120675,7 +120676,6 @@ zybang.com##.top_download
 ||acuityplatform.com^$third-party
 ||acuris.com/wat/v2/data-event
 ||acustomizedgift.com^$redirect=noopjs,script
-||acustomizedgift.com^$redirect=noopjson,xmlhttprequest
 ||acustomizedgift.com^$script,redirect=noopjs
 ||acustomizedgift.com^$~xmlhttprequest
 ||acv.au-hikari-kddi.com^
@@ -129538,7 +129538,6 @@ zybang.com##.top_download
 ||benent.net/nf/analysis/
 ||benricho.org/AD_Tag/
 ||bentengine.com^
-||bentinghanks.com^
 ||bentley.euroshop.com.pe^
 ||bento.agoda.com^
 ||bentonow.com^$third-party
@@ -129892,6 +129891,7 @@ zybang.com##.top_download
 ||bimiacg*.net/template/JOELEO/asset/js/jquery.leeleo.js
 ||bimiacg4.net/template/JOELEO/asset/js/jquery.common.js
 ||biminibliss.rwbimini.com^
+||bimongtrowman.com^
 ||bin.cartwire.co/js/analytics.js
 ||binarycrest.com^
 ||binarycrest.com^$third-party
@@ -133183,7 +133183,6 @@ zybang.com##.top_download
 ||cga.cobbgrillamerica.com^
 ||cgcag.timemission.com^
 ||cgctsw.mytour.vn^
-||cgcvmv7i2ri5xpc41if.cfd^
 ||cgdyw.net/xx/
 ||cgeimage.commutil.kr/jscomm/*/logger.js
 ||cgga.crdbag.com^
@@ -135782,6 +135781,7 @@ zybang.com##.top_download
 ||coolguesthouse.com^
 ||coolkidsdistrict.com^
 ||coolretargeting.com^
+||coolstels.com^
 ||coombrecuse.com^
 ||coop.vmware.com^
 ||cooperation.mitochondriak.com^
@@ -141647,6 +141647,7 @@ zybang.com##.top_download
 ||datadog-log.clovergames.io
 ||datadog-service.mvfglobal.com^
 ||datadoghq-browser-agent.com^$third-party
+||datadoghq.com/api/v2/rum
 ||datadoghq.com/assets/dd-browser-logs-rum.js
 ||datadoghq.eu^$third-party
 ||datadome.co^$third-party
@@ -142533,7 +142534,6 @@ zybang.com##.top_download
 ||dgkpzy.2ch2.net^
 ||dglge.sophiawebster.com^
 ||dgmolb.irishjobs.ie^
-||dgorwwtpltxnklf.com^
 ||dgqur.shopsassyjones.com^
 ||dguqe.outdoornativitysets.com^
 ||dgvkrt.xyz^
@@ -143931,6 +143931,7 @@ zybang.com##.top_download
 ||dtzrrz.green-japan.com^
 ||dtzru.colorescience.com^
 ||du4rq1xqh3i1k.cloudfront.net^
+||dualistesseda.com^
 ||dualstack-cgicol.amap.com^
 ||dualstack-collection.rong-edge.com^
 ||dualstack-logs.amap.com^
@@ -144945,7 +144946,6 @@ zybang.com##.top_download
 ||edrone.me/trace?
 ||edrone.me^$third-party
 ||edsawa.simplynursery.com^
-||edshessite.com^
 ||edssnet.changchunets.com^
 ||edt02.net^$third-party
 ||edtp.de^$third-party
@@ -146445,7 +146445,6 @@ zybang.com##.top_download
 ||erlirscid.com^
 ||ermiph.petermanningnyc.com^
 ||eroar.lionsclubs.org^
-||erodiumvodums.com^
 ||eromon.net/bin/movie/click_count.php
 ||eropuru.com/plugin/tracking/
 ||erotop.lv^$third-party
@@ -146577,7 +146576,6 @@ zybang.com##.top_download
 ||essentiallysports.com/growth/engagement/
 ||essmnx.edreams.ch^
 ||esssm.littlepoppyco.com^
-||establishscarcely.com^
 ||estadiodeportes.mx/__public/*/_next/static/chunks/GoogleAnalytics.js
 ||estadisticas.lanacion.com.ar^
 ||estadisticasgratis.com^$third-party
@@ -147898,6 +147896,7 @@ zybang.com##.top_download
 ||faithrowold.com^$third-party
 ||faiwax.golfhouse.de^
 ||fakedisguise.com^
+||fakeschool.com^
 ||fakexa-post.mno.link^
 ||fakexa.mno.link^
 ||fakjkwp.cn^
@@ -148545,7 +148544,6 @@ zybang.com##.top_download
 ||find-ip-address.org^$third-party
 ||find.api.micloud.xiaomi.net.iberostar.com^
 ||find.tjmartbd.com^
-||findcompere.com^
 ||finderlocator.com^$third-party
 ||findgaytube.com/analytics.js
 ||findmatches.com/bts.js
@@ -152541,7 +152539,6 @@ zybang.com##.top_download
 ||grandfatherguitar.com^
 ||grandfatherguitar.com^$third-party
 ||grandkingdom.com^
-||grandmatootsy.com^
 ||granify.com^$third-party
 ||granlite.com^
 ||granlite.com^$third-party
@@ -157784,6 +157781,7 @@ zybang.com##.top_download
 ||hooks.geralbet.bet.br^
 ||hooks.lider.bet.br^
 ||hookworm.campaignzee.com^
+||hooperguze.com^
 ||hootsuite.branch.rocks^
 ||hop.bouclidom.com^
 ||hop.clickbank.net^$script
@@ -174557,6 +174555,7 @@ zybang.com##.top_download
 ||martingfingian.com^
 ||marts.auctmarts.com^
 ||marty.zappos.com^
+||martylatah.com^
 ||maruf.the-a1-shop.com^
 ||marvelmetrix.com^$third-party
 ||mas.hronboard.me^
@@ -179378,7 +179377,6 @@ zybang.com##.top_download
 ||mwstats.net^$third-party
 ||mwt.mukuru.com^
 ||mwtyw.mool.fr^
-||mwvirquasetgiry.com^
 ||mwxema.galerieslafayette.com^
 ||mwzbp.ccbangong.com^
 ||mwzbp.iask.com.cn^
@@ -181663,7 +181661,6 @@ zybang.com##.top_download
 ||odc.1und1.de^
 ||odc.weather.com^
 ||odc.wunderground.com^
-||oddlystudent.com^
 ||oddsq.sokolovelaw.com^
 ||oddtp.norelie.co^
 ||odepcf.modetour.com^
@@ -183521,7 +183518,6 @@ zybang.com##.top_download
 ||paramountplus.com/*/metrics-*.js
 ||paramountplus.com/_next/static/chunks/page_view_event-*.js
 ||paramountplus.com/ping/?
-||parcelconsists.com^
 ||parchedsofa.com^
 ||parchedsofa.com^$third-party
 ||parchment.com/wp-content/themes/wp-parchment/assets/utm-tags.min.js
@@ -199133,6 +199129,7 @@ zybang.com##.top_download
 ||slc.cbssports.com/events
 ||slc.commerce.naver.com^
 ||sldoj.shoptimized.net^
+||sleavedyecch.cyou^
 ||sled.arvex-rental-cars.com^
 ||sleeknotestaticcontent.sleeknote.com/production/package-tracker.js
 ||sleepypiglet.deltashore.uk^
@@ -217066,6 +217063,7 @@ zybang.com##.top_download
 ||strtapewithadblock.art/stat/
 ||strtapewithadblock.xyz/stat/
 ||strtpe.link/stat/
+||struvlichi.com^
 ||sts.authramp.com^
 ||sts.batmobi.net^
 ||sts.domusacademy.com^
@@ -220870,6 +220868,7 @@ zybang.com##.top_download
 ||tercept.com^$third-party
 ||terdzl.ohmyglasses.jp^
 ||terik.site^
+||terminaltrove.com/_t/
 ||termite.queerburners.org^
 ||termsfeed.com/track/
 ||termvb.xyz^
@@ -221372,7 +221371,6 @@ zybang.com##.top_download
 ||tianyaui.com/cms_fragments/res/*/bbs_include_mod.js
 ||tianyaui.com/global/dashang/vip_seat/js/ds_vip_seat.js
 ||tianyuewangluo.top^
-||tiarajustina.com^
 ||tiava.com/js/analytics
 ||tibiaescourer.com^
 ||tick.sculch.app^
@@ -221550,7 +221548,6 @@ zybang.com##.top_download
 ||titanprod.narvar.com^
 ||titoboard-ss.zavydeals.com^
 ||titomacia.net.anwalt.de^
-||titratewinner.cfd^
 ||tittendestages.net.anwalt.de^
 ||titulky.com^$cookie=adbwshown
 ||titulky.com^$cookie=sid
@@ -228640,7 +228637,6 @@ zybang.com##.top_download
 ||ultraoranges.com^$third-party
 ||ultravalid.com^
 ||ultund.misterspex.nl^
-||uluhiiotas.com^
 ||ulutlv.esprit.fr^
 ||ulyfrf.dekruidenbaron.nl^
 ||ulyuom.xyz^
@@ -231115,6 +231111,7 @@ zybang.com##.top_download
 ||vxtbag.labelleetude.com^
 ||vxvibc.asahi-kasei.co.jp^
 ||vyanda.bonparfumeur.com^
+||vyar221.net^
 ||vyatka-grad.ru/wp-content/cache/*/amp-analytics-*.js
 ||vybbem.mk.ru^
 ||vybbem.womanhit.ru^
