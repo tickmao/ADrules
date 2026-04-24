@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-24 02:59:53(GMT+8)
-! Total count: 236636
+! Version: 2026-04-24 15:17:33(GMT+8)
+! Total count: 236643
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -3929,6 +3929,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /mati.gif?v=
 /matomo-tracking.js
 /matomo.js$domain=~github.com
+/matomo.js$third-party
 /matomo.php
 /matomo.php$ping
 /matomo.php?action_name=
@@ -12192,7 +12193,7 @@ apkpure.com#%#//scriptlet('remove-node-text', 'script', '/deviceId|__apkpureFirs
 apkpure.com#%#//scriptlet('set-local-storage-item', '__BEACON_deviceId', '$remove$')
 apkpure.net,apkpure.com##DIV.js-ad-slot
 apnetv.xys#$#abort-on-property-write adScript.src; abort-current-inline-script document.createElement loadScript
-apnews.com,dpreview.com,hollywoodreporter.com,sidereel.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
+apnews.com,dpreview.com,hollywoodreporter.com,sidereel.com,superherohype.com,torontosun.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
 apowersoft.cn##.activity-poster
 app.businessmaking.progress.net%2Fe%2F*%3Felq%3D$image
 app.businessmaking.progress.net/e/*?elq=$image
@@ -106497,6 +106498,7 @@ niuacc.com##.botLm-container
 niuacc.com##.masks
 niuacc.com##.yure
 nivod5.tv,nivod9.tv#$#override-property-read detailParams.is_ad_play false
+nj.com#%#//scriptlet('ubo-aost', 'decodeURI', '/(?=^(?!.*\.js))/')
 nl.reckon.news$image
 nlab.itmedia.co.jp##div[id^="logly-"] + div.h10px.colBoxClear
 nnmclub.ro,nnmclub.to#$#abort-on-property-read _0x1ece false
@@ -133411,6 +133413,7 @@ zybang.com##.top_download
 ||children.universityhealth.com^
 ||childrensclub.ubmfashion.com^
 ||chilledliquid.com^$third-party
+||chillingtofu.com^
 ||chiluyingxiao.com^
 ||chimpanzee.designerdailyreport.com^
 ||chimpstatic.com/mcjs-connected/js/
@@ -151024,6 +151027,7 @@ zybang.com##.top_download
 ||gifcdncn.trafficmanager.net^
 ||gift.bangla-deal.com^
 ||gift.skmshopbd.com^
+||giftclothings.com^
 ||giftornado.com/counter.php
 ||giftplanning.westmont.edu^
 ||giga-abs.de^
@@ -163175,6 +163179,7 @@ zybang.com##.top_download
 ||kasiklz.cc^
 ||kaspersky-labs.com/cld_track?
 ||kataribe.kataribecms.com^
+||kataweb.it^
 ||katelin.top^
 ||kattepush.com^$third-party
 ||kattoremontti.ruukki.com^
@@ -181531,7 +181536,6 @@ zybang.com##.top_download
 ||oas.monster.com/Scripts/oas_analytics.js
 ||oasisadvantage.actonservice.com^
 ||oasismarketing.oasisadvantage.com^
-||oasjs.kataweb.it^
 ||oavgoe.irs.jp^
 ||oazzl.powderhound.london^
 ||ob.cheqzone.com^
@@ -198182,6 +198186,7 @@ zybang.com##.top_download
 ||share-test.travelloapp.com^
 ||share-test.usehamper.com^
 ||share.1stphorm.app^
+||share.9cdn.net/share/*/js/tracking/
 ||share.9cdn.net/share/long_cache/js/tracking/
 ||share.appdater.mobi^
 ||share.appsaround.net^
@@ -227961,6 +227966,7 @@ zybang.com##.top_download
 ||tweakers.net^$removeparam=u
 ||tweakers.net^*&p=$image
 ||tweakers.nl/track/
+||tweaktown.com/cms/mp3_track.php
 ||tweetdeck.net.anwalt.de^
 ||twelvedawn.com^
 ||tweurx.baltic.se^
@@ -228419,6 +228425,7 @@ zybang.com##.top_download
 ||ufwsfi.magasins-u.com^
 ||ufzvgx.stylepit.se^
 ||ug-sg.byteoversea.com^
+||ug.baidu.com^
 ||ug.snssdk.com^
 ||ug.urban-goddess.com^
 ||ugapt.shoesforall.com^
