@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-25 02:40:54(GMT+8)
-! Total count: 236653
+! Version: 2026-04-25 09:54:59(GMT+8)
+! Total count: 236657
 ###AdBlockDialog
 ###Page-1[stroke='none'][fill='none'][fill-rule='evenodd']
 ###SOHU_MAIN > .module-cmt-float-bar
@@ -11305,7 +11305,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 @@||track.shipstation.com/collections/trackingEvents.js$~third-party
 @@||track2.royalmail.com^
 @@||trackcmp.net^|
-@@||trackdesk.com/api/node/settings/$domain=dashboard.naughtyaffiliates.com
+@@||trackdesk.com/api/node$domain=dashboard.naughtyaffiliates.com
+@@||trackdesk.com/api/reports$domain=dashboard.naughtyaffiliates.com
 @@||trackdesk.com/sign-in$domain=dashboard.naughtyaffiliates.com
 @@||tracker.mattel.com/tracker.aspx?site=$script
 @@||tracker.mattel.com^$domain=barbie.com
@@ -12194,7 +12195,7 @@ apkpure.com#%#//scriptlet('remove-node-text', 'script', '/deviceId|__apkpureFirs
 apkpure.com#%#//scriptlet('set-local-storage-item', '__BEACON_deviceId', '$remove$')
 apkpure.net,apkpure.com##DIV.js-ad-slot
 apnetv.xys#$#abort-on-property-write adScript.src; abort-current-inline-script document.createElement loadScript
-apnews.com,artforum.com,artnews.com,billboard.com,deadline.com,dpreview.com,goldderby.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sidereel.com,superherohype.com,torontosun.com,variety.com,vibe.com,wwd.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
+apnews.com,artforum.com,artnews.com,billboard.com,deadline.com,dpreview.com,goldderby.com,hollywoodreporter.com,indiewire.com,robbreport.com,rollingstone.com,sherdog.com,sidereel.com,superherohype.com,torontosun.com,variety.com,vibe.com,wwd.com#%#//scriptlet('ubo-acs', 'document.getElementsByTagName', '.pubads')
 apowersoft.cn##.activity-poster
 app.businessmaking.progress.net%2Fe%2F*%3Felq%3D$image
 app.businessmaking.progress.net/e/*?elq=$image
@@ -129812,6 +129813,7 @@ zybang.com##.top_download
 ||bigfishgames.com^$removeparam=npc
 ||bigfishgames.com^$removeparam=npi
 ||bigfishgames.com^$removeparam=pc
+||biggerbling.com^
 ||biggylabs.com.br/track-api/v2/track/site?
 ||bigleapforward.org^
 ||bigmining.com^$third-party
@@ -135902,6 +135904,7 @@ zybang.com##.top_download
 ||count.andreabrandi.com^
 ||count.asnetworks.de^
 ||count.bank99.at^
+||count.bg/js/script.js
 ||count.candou.com^
 ||count.carrierzone.com^
 ||count.channeladvisor.com^
@@ -159594,6 +159597,7 @@ zybang.com##.top_download
 ||img.learn.abreon.com^
 ||img.link.cabinetry.com^
 ||img.litix.io/a.gif
+||img.medscapestatic.com/pi/scripts/omniture/bi_medscape.js$domain=medscape.com
 ||img.n.nasdaq.com^
 ||img.nec.go.kr/js/*/analytics/wcslog.js
 ||img.newsletter.mazda.co.jp^
