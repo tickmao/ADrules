@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-04-29 16:06:07(GMT+8)
-! Total count: 137639
+! Version: 2026-04-29 21:43:07(GMT+8)
+! Total count: 137679
 ###AC_ad
 ###AD_Top
 ###ADtip
@@ -13925,7 +13925,6 @@ $xhr,redirect-rule=noop.txt,domain=oko.sh|tii.la
 @@/wp-content/plugins/ad-ace//includes/adblock-detector/advertisement.js$~3p
 @@/wp-content/plugins/blockalyzer-adblock-counter/*$image,script,~3p,domain=~gaytube.com|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@/wp-content/plugins/imedia-basic/adserver-*.js$domain=sgxnifty.org|dollarindex.org|cacfutures.org|dowfutures.org|nasdaqfutures.org|spfutures.org|ftsefutures.org|daxfutures.org|nikkeifutures.org|comexlive.org|ncdexlive.org
-@@/wp-content/themes/publisher/*/ads/static/adv/sailthru.js$domain=healthy4pepole.com
 @@/wp-content/themes/radio-hub/*.js$domain=tingfm.com
 @@/ws$websocket,domain=speedtest.net
 @@://*.ico$domain=livenewschat.eu
@@ -24309,7 +24308,6 @@ deployhappiness.com,dmitrysotnikov.wordpress.com,faravirusi.com,freedom-shift.ne
 derpibooru.org###imagespns
 deseret.com##.Ad-space
 desi-porn.tube##+js(remove-node-text, script, utm_mapping)
-desi-porn.tube,desi-porn.xyz##.header__nav > div > a[href][target="_blank"]
 desidime.com##.google-ads-section
 desidime.com##div[id^="div-ad"]
 designboom.com##.aside-adv-box
@@ -26041,7 +26039,6 @@ fapnado.*##[class^="zpot-horizontal"]
 fapnado.com##a:contains(Remove this ad)
 fapnado.com##a[href^="https://www.tckcandy.com/"]
 fapnado.com##div[style="height: 400px; width: 1240px; margin: 0 auto; text-align: center;"]
-fapnado.com,3dporndude.com,fapnow.*,fapcat.com,cambay.tv##.fp-logo
 fapnado.xxx##.fluid_html_on_pause_container
 fapnado.xxx##.fluid_start_container
 fapnado.xxx##.title:contains(/^Advertisement$/)
@@ -26051,8 +26048,6 @@ fapnado.xxx,fapnado.com##.text_link_holder
 fapnow.xxx##.content center
 fapnow.xxx##.xpot-horizontal
 fapnow.xxx##a[href^="https://go.gsrv.dev/"]
-fapnow.xxx,fapnado.xxx##.footer-margin
-fapnow.xxx,fapnado.xxx,fapnado.com###list_videos_related_videos_items > div[class]:has(a[href^="https://www.tckcandy.com/"])
 fapnow.xxx,fapnado.xxx,fapnado.com##a[href^="https://t.javhd-trk.com/"]
 faponic.com##.control-block > a[target="_blank"]:not([href*="faponic.com/login"])
 faponic.com##a[href^="https://nudify.online"]
@@ -26062,6 +26057,10 @@ fappeningbook.com##.left-dv > h2
 fappic.com##+js(set-constant, closeOverlay, noopFunc)
 fapreactor.com,pornreactor.cc#$#abort-current-inline-script Math decodeURIComponent
 faptor.com##.dblock
+faptor.com##center:contains(/^Advertisement$/)
+faptor.com,fapnado.com,3dporndude.com,fapnow.*,fapcat.com,cambay.tv##.fp-logo
+faptor.com,fapnow.xxx,fapnado.xxx##.footer-margin
+faptor.com,fapnow.xxx,fapnado.xxx,fapnado.com###list_videos_related_videos_items > div[class]:has(a[href^="https://www.tckcandy.com/"])
 faptube.xyz##+js(abort-current-script, Math, _0x)
 faqwiki.*##+js(abort-current-script, EventTarget.prototype.addEventListener, /AdBlock|adsbygoogle\.js/)
 farescd.com##+js(abort-current-script, mMcreateCookie)
@@ -28660,8 +28659,7 @@ healthline.com##div[data-testid="tabbed-article-section"] > div[class]:has(> asi
 healthline.com#@#div.css-0 > div[class]:not([id])
 healthshots.com##div[class^="storyBlock"]:not(.trackWidget)
 healthy4pepole.com##+js(abort-current-script, EventTarget.prototype.addEventListener, Adblock)
-healthy4pepole.com##+js(prevent-fetch, pagead2.googlesyndication.com)
-healthy4pepole.com##+js(set-constant, SanadLoadAds, true)
+healthy4pepole.com##+js(remove-node-text, script, div-gpt-ad-)
 healthylives.tw###contentBox > div[style^="width:336px;height: 280px;"]
 healthylives.tw##div[id^="gad"]
 hearthhead.com,thottbot.com,wowhead.com##.sidebar-bg
@@ -31583,8 +31581,6 @@ kentonline.co.uk##.row > div[class^="col-"]:has(> div[class] > span[id^="p_mpu"]
 kentonline.co.uk##span[id^="p_mpu"]
 kenyans.co.ke##.ad-kenyans
 kenyans.co.ke##.ad-kenyans-wrapper
-keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,desi-porn.xyz,uanal.com,pornl.tube,pornl.com,pornclassic.tube,tubepornclassic.com,desi-porn.tube,hdzog.*,hotmovs.com,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,keporn.vip,fuxxx.com,vjav.*,privatehomeclips.com##div[class^="partners"]
-keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,desi-porn.xyz,uanal.com,pornl.tube,pornl.com,pornclassic.tube,tubepornclassic.com,desi-porn.tube,hdzog.*,hotmovs.com,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,keporn.vip,fuxxx.com,vjav.*,privatehomeclips.com##div[class^="partners"] + div[class]
 keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,uanal.com,pornl.tube,xshemale.tube,keporn.vip,fuxxx.com,pornl.com##.video-ntv-wrapper
 keporn.vip,fuxxx.com,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,uanal.com,pornl.tube,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,pornl.com,ooxxx.com,privatehomeclips.com##section[style="padding: 20px;"]
 keporn.vip,keporn.com,peporn.com,teen21.com,pornuse.com,uanal.com##div[class^="top-categories"] > a[href][target="_blank"]
@@ -31599,6 +31595,8 @@ keylol.com,steamcn.com##div[class*="rnd_"]
 keyrblx.com##+js(prevent-fetch, chpadblock.com)
 keywin.org##.appdownload
 keywin.org##.pindaolist
+khaddavi.net##+js(set-constant, ads, {})
+khaddavi.net,hypestat.com,techbloogs.com,tutwuri.id,lokerwfh.net,dz4up.com##div[style="text-align: center;"] > a[target="_blank"] > img
 khaosod.co.th##.ads_position_wrapper
 khboxhd.com##+js(set-constant, themeSettings.adsSettings, {})
 khmertimeskh.com##.sow-slider-image
@@ -35089,6 +35087,7 @@ nextapple.com###lrec01
 nextapple.com##div[class^="na-ad-"]
 nextdoor.com##[data-v3-view-type="V3Wrapper"]:has(> [data-testid="feed-item-visibility-tracker"]:contains(Sponsored))
 nextdoor.com##div[data-v3-view-type="V3Wrapper"]:has(> span[data-testid="feed-item-visibility-tracker"] > div[id^="feedItem_"] span[class*="Item"]:contains(Sponsored))
+nextdoor.com#$#hide-if-contains-visible-text 'Sponsored' [data-testid="feed-item-card"]
 nextpit.*###nex-top
 nextpit.*##.cpgSlot
 nextpit.com.br,nextpit.it,nextpit.es,nextpit.fr,nextpit.com,androidpit.com.br##.gptSlot
@@ -37171,7 +37170,6 @@ pornkino.cc,xopenload.me,watchpornfree.info##+js(abort-on-property-read, popunde
 pornl.com###tags-scroll > h3.tag__item:has(> a[target="_blank"][href])
 pornl.com##+js(abort-current-script, String.fromCharCode, popup)
 pornl.com##.underplayer > section
-pornl.tube,keporn.com,voyeurhit.tube,uanal.com,peporn.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,ourgay.tube,pornuse.com,desi-porn.xyz,onlyporn.tube,in-porn.com,pornclassic.tube,transtxxx.com,gaytxxx.com,xshemale.tube,ourgay.com,fuxxx.com,txxxporn.tube,mrgay.com,xjav.tube,lesbigo.com,porn-latina.com,bdsmx.tube,blackporn.tube,inporn.com,porntop.com,vxxx.com,aniporn.com,txxx.*,vjav.com,voyeurhit.com,pornl.com,ooxxx.com,txxx.com,01tube.com,tubepornclassic.com,keporn.vip,transtxxx.com,abtranny.com,shemalez.*,upornia.*,privatehomeclips.com,gettranny.com,desi-porn.tube,thegay.com,xmilf.com,hotmovs.com,hclips.com,manysex.*,hdzog.com,hdzog.tube##.nopop
 pornleaks.in##+js(set-constant, ftuappss, true)
 pornleaks.in,comohoy.com##+js(addEventListener-defuser, DOMContentLoaded, getComputedStyle)
 pornleaks.in,comohoy.com##div[id^="anti-adblock-"]
@@ -40346,6 +40344,7 @@ startribune.com##div[data-testid="rail-ad"]
 startribune.com##div[data-testid="sponsored-list-ad"]
 startuphub.ai##.p-4.rounded-xl:contains(Sponsored)
 startuphub.ai##a.block.group:contains(Sponsored)
+starwank.com,faptor.com##.zpot-horizontal-img
 starwarsaddicted.it##+js(set-constant, advanced_ads_check_adblocker, noopFunc)
 starwarsaddicted.it,wuyong.fun,26g.me,myqqjd.com,poapan.xyz,javboys.com,idevicecentral.com,fcportables.com,codehelppro.com##+js(abort-on-property-read, reqServers)
 stat-nba.com###ad_video
@@ -41958,6 +41957,7 @@ toy-people.com##.rightAd_3002502
 toy-people.com##.right_bottom_bb
 toyota-club.eu##+js(remove-attr, class, body > div#obalovydiv)
 toyota-club.eu#@#.reklama
+toyotanation.com##+js(abort-on-stack-trace, document.getElementById, onerror)
 tpbay.*#$#abort-on-property-read _wm_settings
 tpead.net,advertape.net,tapepops.com,watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,streamadblocker.*,adblocktape.*,streamtapeadblockuser.*,strtapewithadblock.*,stapewithadblock.monster,adblockeronstape.me,streamadblockplus.com,shavetape.*,streamtapeadblock.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,tubeload.co,stape.fun,streamtape.*,strcloud.link##+js(no-window-open-if)
 tpead.net,advertape.net,tapepops.com,watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,streamadblocker.*,strtape.cloud,adblockeronstape.me,streamadblockplus.com,shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*,streamtape.com##+js(abort-current-script, document.createElement, adblock)
@@ -42060,7 +42060,6 @@ transtube.tv##.banabpang
 transtv.co.id##.banner__MGID
 transtxxx.com##+js(json-prune, video.channel)
 transtxxx.com##.video-content > div[class] > div:has(> div.pplayer) + div[class]
-transtxxx.com,txxxporn.tube,upornia.*##.video-videos-slider
 travelermaster.com##.__trm__adv-block
 travelermaster.com##div[class^="__trm__ad-med-rec-"]
 travelironguide.com,kreditexperte.online,goo.st##+js(set-constant, adblockstatus, false)
@@ -42470,10 +42469,10 @@ txxxporn.tube,txxx.*##.nav-left > a.nav-hover[target="_blank"]
 txxxporn.tube,txxx.*##.page-video > div[class]:has(> span.da-text)
 txxxporn.tube,txxx.*##.pplayer div.jw-title-secondary:has(a[target="_blank"])
 txxxporn.tube,txxx.*##.video-conten div[class]:has(> div[class] > div[class] > div.direct-abnner)
-txxxporn.tube,txxx.*##.video-videos-slider
 txxxporn.tube,txxx.*##div[class="video-conten"] > div:has(> div > a[href="/signin/"])
 txxxporn.tube,txxx.*##div[class^="sugggest"]
 txxxporn.tube,txxx.*##div[class^="video-conten"] > div[class] > div[class]:has(a[href="#"])
+txxxporn.tube,vjav.tube,vjav.com,voyeurhit.tube,ourgay.tube,pornclassic.tube,pornl.tube,txxx.*,hotmovs.*,upornia.*,hclips.com,privatehomeclips.com,ooxxx.com,manysex.*,pornl.com,xshemale.tube,ourgay.com,shemalez.*,voyeurhit.com,tubepornclassic.com##div[class$="review"] > a[href*="?ref="]
 txzqw.me##.tac[style="margin-bottom:5px;"]
 tyenews.com##div[id^="custom_html-"]
 tyenews.com##div[id^="metaslider_widget-"]
@@ -43245,9 +43244,14 @@ vjav.*##div[class] > div[class] > section[style="padding: 10px;"]
 vjav.*,gaytxxx.com##.undp
 vjav.com##+js(set-constant, adver, noopFunc)
 vjav.com##.video-page__content > div.left + div:has(> div > div[id^="ntv_"])
-vjav.com##.video-videos-slider:has(.item-adlabel)
 vjav.com##[style="width: 728px; height: 90px;"]
 vjav.com,ourgay.tube,pornclassic.tube,porn-latina.com,lesbigo.com,privatehomeclips.com,manysex.*,xmilf.com,inporn.com,xshemale.tube,ourgay.com,ooxxx.com##.tag__item:has(> a[target="_blank"][href])
+vjav.tube,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,desi-porn.xyz,uanal.com,pornl.tube,pornl.com,pornclassic.tube,tubepornclassic.com,desi-porn.tube,hdzog.*,hotmovs.com,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,keporn.vip,fuxxx.com,vjav.*,privatehomeclips.com##div[class^="partners"]
+vjav.tube,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,desi-porn.xyz,uanal.com,pornl.tube,pornl.com,pornclassic.tube,tubepornclassic.com,desi-porn.tube,hdzog.*,hotmovs.com,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,keporn.vip,fuxxx.com,vjav.*,privatehomeclips.com##div[class^="partners"] + div[class]
+vjav.tube,pornl.tube,keporn.com,voyeurhit.tube,uanal.com,peporn.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,ourgay.tube,pornuse.com,desi-porn.xyz,onlyporn.tube,in-porn.com,pornclassic.tube,transtxxx.com,gaytxxx.com,xshemale.tube,ourgay.com,fuxxx.com,txxxporn.tube,mrgay.com,xjav.tube,lesbigo.com,porn-latina.com,bdsmx.tube,blackporn.tube,inporn.com,porntop.com,vxxx.com,aniporn.com,txxx.*,vjav.com,voyeurhit.com,pornl.com,ooxxx.com,txxx.com,01tube.com,tubepornclassic.com,keporn.vip,transtxxx.com,abtranny.com,shemalez.*,upornia.*,privatehomeclips.com,gettranny.com,desi-porn.tube,thegay.com,xmilf.com,hotmovs.com,hclips.com,manysex.*,hdzog.com,hdzog.tube##.nopop
+vjav.tube,vjav.com##.headline:has(+ .video-videos-slider)
+vjav.tube,vjav.com,desi-porn.tube,desi-porn.xyz##.header__nav > * > a[href][target="_blank"]
+vjav.tube,vjav.com,transtxxx.com,upornia.*,txxxporn.tube,txxx.*##.video-videos-slider
 vjmedia.com.hk###author-spotlight + .clear + div
 vjmedia.com.hk###text-33
 vjmedia.com.hk##.code-block
@@ -43319,10 +43323,7 @@ voxfm.pl,se.pl,urzadzamy.pl,muratordom.pl#@#.sponsored-article
 voyeurhit.*##.video-tube-friends
 voyeurhit.com##+js(set-constant, adver, noopFunc)
 voyeurhit.com##.video-page > div[class] > div[class]:only-child:has(> div[class] > span:matches-css(before, content: /^Advertisement$/))
-voyeurhit.tube##a[href^="https://ctwmsg.com/"]
-voyeurhit.tube##a[href^="https://rtr2perf5.com/"]
 voyeurhit.tube,hdzog.tube##.jwplayer > div[style] > div[class]:has(> div[class]:contains(Advertisement))
-voyeurhit.tube,ourgay.tube,pornclassic.tube,pornl.tube,txxx.*,hotmovs.*,upornia.*,hclips.com,privatehomeclips.com,ooxxx.com,manysex.*,pornl.com,xshemale.tube,ourgay.com,shemalez.*,voyeurhit.com,tubepornclassic.com##div[class$="review"] > a[href*="?ref="]
 voyeurhit.tube,shemalez.*##.video-tube-friends + div[class]
 voyeurhit.tube,voyeurhit.com##.header__list > li > a[href][target="_blank"]
 voyeurhit.tube,voyeurhit.com##.video-page > div.video-related + div[class]
@@ -44215,7 +44216,7 @@ www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[
 www.facebook.com,web.facebook.com#$#race start; hide-if-matches-xpath '//div[@role="complementary"]//following::a[@aria-labelledby][@attributionsrc="blank"][@target="_blank"]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[@aria-labelledby][@attributionsrc="unknown"][@target="_blank"]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@attributionsrc,"/privacy_sandbox/comet/register/source/././?eid")][@target="_blank"][contains(@rel,"noopener") or contains(@rel,"nofollow") or contains(@rel,"noreferrer") or contains(@rel,"external")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@attributionsrc,"/privacy_sandbox/comet/register/./source/././?eid")][@target="_blank"][contains(@rel,"noopener") or contains(@rel,"nofollow") or contains(@rel,"noreferrer") or contains(@rel,"external")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; race stop;
 www.facebook.com,web.facebook.com#$#replace-xhr-response '/"(instream_extra_config|instream_video_ad_breaks_comet|post_roll_ad_break)":\{/' '"$1":null,"__x":{'
 www.facebook.com,web.facebook.com#$#replace-xhr-response '/"instream_video_ad_breaks":.[{]/' '"instream_video_ad_breaks":[],"__xb":[{'
-www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(brjs_lb_content|brs_labe_lbl_content|cotent_new_bre_labeel|br_cntent_lab|label_brs_lab_conten_lbl|cotent_flag_brs_of_la|bre_conte_lae|brs_conte_of_lbel|lbe_new_content_brs|lb_cntent_brys|label_brs_conteb|brs_la_cont_lbl|contentt_labed_brs|conen_the_brs_labej|for_lael_cotent_lbl_brs|conen_label_brs_new|for_brs_lab_flag_codnten|brs_labeyl_new_flag_cont|the_brs_lbel_label_conten|labeg_brs_label_conten|conen_new_lbe_brs|label_brs_of_la_content|of_brs_conent_labl_flag|brs_label_lbl_cote|lbel_conen_brs_of|lb_coniten_the_brs|labce_conen_brs_the|label_brhs_the_laybe_contnt|new_the_contnt_brs_lab|cote_lanb_flag_brfs_label|brs_cnten_lael_for|brs_lbe_new_contenqt_for|coten_brys_for_label|flag_lbel_contnt_brd|conte_la_br|lab_br_con_label|lbl_label_cont_of_brs|brs_labn_conte_lbl|brs_cntent_lab|bry_label_conten|lbl_bru_cntent_lakb|of_label_new_contet_brrs|contenet_lael_brs|lbe_brs_cofnten|flag_lbe_for_brs_conent|brs_of_flag_contdent_lae|best_lael_conte_brs_newsts|brrs_cnten_lab_the_new|for_conternt_lab_brjs|lael_conte_brs|for_of_lae_conten_brs|contnt_brs_for_la|brs_new_cont_labl_label|brs_la_conten|for_labe_br_con|conte_brs_of_for_lael|labe_the_conte_brs_flag|brs_new_of_lb_contetnt|labe_br_co|label_cont_br_la|la_conte_br|labe_conten_br|lab_conte_br_flag|br_conte_la|cote_lbl_brs_for_lbe|conte_lab_flag_for_brs|brs_conte_labell|flag_laba_brs_content|br_s_content_label|conten_brs_labe|lab_the_flag_conten_brs|lbl_brs_cnte_label|conten_labl_brs|labkel_brs_cont_of|countent_la_brs_label|br_labe_fo_cont_labe|brs_label_la_content_the|brs_lbe_counte_the_flag|cnte_lbel_brm_flag|for_contn_brs_labell_label|new_brs_conten_lab|brs_conte_alabe|labe_brs_flag_cont|new_cnten_br_labvel|brs_of_lb_for_conqten|conten_brs_lab|brs_conent_lab|for_contenzt_brs_lb|br_label_con_lab|for_of_br_labe|lab_brs_of_cone|of_brs_label|distace_of_brs_new_autio_label|labe_cont_brs|sponsore_brs_the|conent_lbl_brqs_lbe|br_lael_content_new|cont_brws_laobe|contenrt_brs_lbe_flag|the_cone_brs_lbl_lbe|cntent_labbe_brs|contxe_brms_labl_lbl|conte_brf_la|lael_flag_cntent_label_bras|the_conten_brs_lbe|labe_label_brs_conent|contn_of_brs_for_la|flag_cnte_label_brs|the_brs_content_labe|lael_the_conteun_brs_label|new_conen_for_brs_la|lbel_brs_contnt|brs_contena_of_labe|the_contenh_lab_for_brs|brs_flag_lael_of_connte|contet_lbl_brs_the_lbel|brg_larb_coten|conte_of_lab_for_br|lbe_label_of_conte_brs|label_of_lbel_conten_brr|lb_conte_brl_la|lbl_conteb_brls_lab|conteynt_brrs_label|label_brs_cont_the_labl|brs_cont_lbe|flag_labe_content_brs|lbe_conen_brd_lbl|new_conent_brs_la|cote_new_labj_brs|brs_lbel_conten|of_lbl_brs_contet_labl|brs_for_labecl_conen|label_brfs_contte_lab_lbl|conteln_for_brs_labe|la_conten_brs|the_conte_lab_br|labiel_brs_cont|cote_the_lael_brs_of|new_coenten_lbe_br|br_lae_content|flag_for_conent_brs_labe|lagbel_coten_bre|lagbel_coten_br|content_label_flag_new_br|labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto"|"sponsore_da"|"spons_the_dat"|"th_dat_spo")[^\n]+?("SponsoredData"|"lbl_adv_iden"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl|auctio_spnsor_distace|for_auci_new_sponsor_distanyc|dist_sponsor_auc|au_spon_flag_dist|di_auc_fl_spo|fl_au_flag_di_sp|auc_lb_dis_spon_the|auc_sponsor_dist|lbl_sponsor_dist_au|auc_for_dis_sponso|au_dista_spon|distanc_sponsore_aucti|au_sponsor_dist|auct_spon_dist|auction_distanc_sponsored|auctio_dist_sponsore|sponsocr_distanc_of_auctido|sponsred_auct_dista_of|sponsorexd_aucto_for_lbl_distance|dist_sponso_auctio|aution_disan_new_sonsored|auc_sponsore_distan|sponsor_au_dis|aucton_sponso_ditance|label_sposor_disntance_auctin|lbl_auti_flag_dstanc_sponsord|label_au_lb_spon_fla_dstan|spons_aut_dsta_lb_fla|label_aut_dstan_fl_spons_lb|sponsor_aut_dst_lb_fl|sponsorce_aucio_distanc|auti_the_sponsore_distnc|ditanc_flag_sponsore_aujction|distanc_new_sonsored_auctilo|distan_lbl_au_sponsore|dstan_of_conen_aucti_label|label_acti_sponsory_dstance|sponsore_contet_lbl_disjtan_actio|disance_auctiko_sponso|dstance_auctfio_spdonsore|distance_sponsore_auction_new|aucti_sponsxor_distran|sonsore_for_distance_of_auxcti|the_sponsoyr_distance_auctin_lbl|auctzion_ditan_sponsored|distnc_auct_sponsore|for_sonsor_disjtance_auct|of_sponsor_distanc_auc|auctio_sponso_distan|distanc_auct_spon|sponsor_auct_dis|dstanc_sponsorefd_of_aution_the|spon_auc_dis|aucto_disance_sponso|distnce_actio_lbl_sponso|auct_the_distanc_sponsor|au_distan_label_spons|au_dist_of_spon|spons_distanc_auctio_label|flag_auction_sonsore_distance|lbl_diwstan_new_sponsore_auctiob|the_disan_sonsore_auctigo|sponsorw_distn_aucton_of|disan_sonsore_auctigo|new_sponsore_distan_auctio_the|distanck_auction_the_of_sponsord|distan_sponso_aucti|spons_auct_flag_dis|distanc_spvonsored_auceti|aucti_ditan_sposored_label|label_dstance_sponsored_acti_lbl|disanc_for_spnsore_aucti|auct_distanbc_of_new_sponsoreg|distanc_sponsored_flag_aucti|of_spon_dista_auc|spons_distanc_au|distan_autio_sponcsored_flag|distan_auctin_sposored|sponsor_aucton_distanc_new_of|new_distan_sponsor_aucton|auct_the_distansce_sonsored|sponnsore_distwan_for_auti|sponso_the_action_ditance_for|aucion_dstance_sponpsor|sponored_for_of_distanc_auti|distance_auctio_label_sponsre|flag_disanc_sponsofred_auci|disitance_auct_new_sponsoe_lbl|lbl_aucion_flag_sponsre_dista|the_aucti_distnanc_sponasore|distac_auctioj_flag_sponmsor|distan_flag_sponso_auction|new_dista_aucpti_label_sponsored|sponso_aucftion_disan|dstan_sponsre_auction|sponored_label_aucti_disance|sponsobr_dihstance_auctio_new|lbl_sponsor_distnan_label_aucio|sposor_distan_auti_lbl|distapnce_of_sponso_auction|new_action_dstanc_lbl_spofnsore|spoansore_auctio_distan|label_the_sponsor_distance_auctio|aution_sponso_lbl_distanc|acti_the_sponsore_ditanc_for|auti_dstance_the_lbl_sponored|actio_label_lbl_sponrsore_distane|disan_auctlio_sponsored_lbl|label_of_distnc_sponsore_aucti|distan_sponsoir_auction)/'
+www.facebook.com,web.facebook.com#$#replace-xhr-response '/\{"(brjs_lb_content|brs_labe_lbl_content|cotent_new_bre_labeel|br_cntent_lab|label_brs_lab_conten_lbl|cotent_flag_brs_of_la|bre_conte_lae|brs_conte_of_lbel|lbe_new_content_brs|lb_cntent_brys|label_brs_conteb|brs_la_cont_lbl|contentt_labed_brs|conen_the_brs_labej|for_lael_cotent_lbl_brs|conen_label_brs_new|for_brs_lab_flag_codnten|brs_labeyl_new_flag_cont|the_brs_lbel_label_conten|labeg_brs_label_conten|conen_new_lbe_brs|label_brs_of_la_content|of_brs_conent_labl_flag|brs_label_lbl_cote|lbel_conen_brs_of|lb_coniten_the_brs|labce_conen_brs_the|label_brhs_the_laybe_contnt|new_the_contnt_brs_lab|cote_lanb_flag_brfs_label|brs_cnten_lael_for|brs_lbe_new_contenqt_for|coten_brys_for_label|flag_lbel_contnt_brd|conte_la_br|lab_br_con_label|lbl_label_cont_of_brs|brs_labn_conte_lbl|brs_cntent_lab|bry_label_conten|lbl_bru_cntent_lakb|of_label_new_contet_brrs|contenet_lael_brs|lbe_brs_cofnten|flag_lbe_for_brs_conent|brs_of_flag_contdent_lae|best_lael_conte_brs_newsts|brrs_cnten_lab_the_new|for_conternt_lab_brjs|lael_conte_brs|for_of_lae_conten_brs|contnt_brs_for_la|brs_new_cont_labl_label|brs_la_conten|for_labe_br_con|conte_brs_of_for_lael|labe_the_conte_brs_flag|brs_new_of_lb_contetnt|labe_br_co|label_cont_br_la|la_conte_br|labe_conten_br|lab_conte_br_flag|br_conte_la|cote_lbl_brs_for_lbe|conte_lab_flag_for_brs|brs_conte_labell|flag_laba_brs_content|br_s_content_label|conten_brs_labe|lab_the_flag_conten_brs|lbl_brs_cnte_label|conten_labl_brs|labkel_brs_cont_of|countent_la_brs_label|br_labe_fo_cont_labe|brs_label_la_content_the|brs_lbe_counte_the_flag|cnte_lbel_brm_flag|for_contn_brs_labell_label|new_brs_conten_lab|brs_conte_alabe|labe_brs_flag_cont|new_cnten_br_labvel|brs_of_lb_for_conqten|conten_brs_lab|brs_conent_lab|for_contenzt_brs_lb|br_label_con_lab|for_of_br_labe|lab_brs_of_cone|of_brs_label|distace_of_brs_new_autio_label|labe_cont_brs|sponsore_brs_the|conent_lbl_brqs_lbe|br_lael_content_new|cont_brws_laobe|contenrt_brs_lbe_flag|the_cone_brs_lbl_lbe|cntent_labbe_brs|contxe_brms_labl_lbl|conte_brf_la|lael_flag_cntent_label_bras|the_conten_brs_lbe|labe_label_brs_conent|contn_of_brs_for_la|flag_cnte_label_brs|the_brs_content_labe|lael_the_conteun_brs_label|new_conen_for_brs_la|lbel_brs_contnt|brs_contena_of_labe|the_contenh_lab_for_brs|brs_flag_lael_of_connte|contet_lbl_brs_the_lbel|brg_larb_coten|conte_of_lab_for_br|lbe_label_of_conte_brs|label_of_lbel_conten_brr|lb_conte_brl_la|lbl_conteb_brls_lab|conteynt_brrs_label|label_brs_cont_the_labl|brs_cont_lbe|flag_labe_content_brs|lbe_conen_brd_lbl|new_conent_brs_la|cote_new_labj_brs|brs_lbel_conten|of_lbl_brs_contet_labl|brs_for_labecl_conen|label_brfs_contte_lab_lbl|conteln_for_brs_labe|la_conten_brs|the_conte_lab_br|labiel_brs_cont|cote_the_lael_brs_of|new_coenten_lbe_br|br_lae_content|flag_for_conent_brs_labe|lagbel_coten_bre|lagbel_coten_br|content_label_flag_new_br|labl_for_coniten_of_brs|brs_content_of_labe|for_br_cont_lab|la_con_br|brs_conte_labe_flag|of_conite_flag_brs_labe|lbl_brs_lae_cntent|conte_brs_lb_for|lab_co_br_for|new_brs_content_label|new_brs_content_labe|brs_lab_lbl_conteint_of|brs_lb_conten|flag_br_lfbel_contte|conttent_labe_new_rz|the_brand_cont_sft_flag|brand_cont_sft_flag|flag_cntentk_lbel_b|con_safety_brs|cont_sfty_brs|content_sfty_brs|conte_br_labe_flag|brs_lbl_content|brs_cnt_lbl_the|the_brs_lab_content_new|the_br_s_cnt_label|the_br_s_cont_label|br_lb_label|br_lb_label_co|lbl_content_brs|labe_br_con_the|br_safety_content_label|br_con_label_for_safety|content_lbl_brs|content_label_brs|cont_label_brs|con_label_brs|new_con_label_brs|lbl_la_br_cont|new_lbl_la_br_cont|br_safety_con_label|new_br_safety_con_label|brs_con_label|brs_content_label|bran_lbl_cont|brand_lbl_cont)[^\n]+?("sponsored_data"|"data_spon"|"spon_dat"|"ads_data"|"the_spons_data"|"daspo_sto"|"sponsore_da"|"spons_the_dat"|"th_dat_spo")[^\n]+?("SponsoredData"|"lbl_adv_iden"|"ad_id")[^\n]+"cursor":"[^"]+"\}/' '{}' '/(sponsored_auction_distance|sp_auct_dis|flag_distan_spon_auc|of_distanc_auctio_spons|auction_distance_sp|auct_distance_sponsored|auc_distance_sponsored|auction_sponsored_dist|new_auction_sponsored_dist|auct_dis_of_sponsored|the_auct_dis_of_sponsored|auc_dis_sponsored|the_auc_dis_sponsored|spon_auct_dis|spons_dista_auc|dist_spons_auctio|sponsor_for_dis_au|distanc_auct_the_sponsor|spon_lbl_aucti_dista|label_auctio_spons_distanc|auct_dis_sponso|auc_dist_sponso|auc_dis_sponso|new_auc_dis_sponso|spon_lbl_dist_auct|spon_lbl_dis_auct|spons_lbel_dis_auct|lbl_flag_spon_auc_dist|sps_auction_distance|sps_auction_flag_distance|sps_auct_distance|sponso_auc_dist|new_of_sponsxored_diwsta_uctiopn|spon_auct_of_dist|dist_to_spons_auction|aucti_sponsor_the_new_distnc|distance_auti_sonsore|sponsore_auctio_dis|for_aucti_dista_spon|dist_auct_spons_lbl|auctio_spnsor_distace|for_auci_new_sponsor_distanyc|dist_sponsor_auc|au_spon_flag_dist|di_auc_fl_spo|fl_au_flag_di_sp|auc_lb_dis_spon_the|auc_sponsor_dist|lbl_sponsor_dist_au|auc_for_dis_sponso|au_dista_spon|distanc_sponsore_aucti|au_sponsor_dist|auct_spon_dist|auction_distanc_sponsored|auctio_dist_sponsore|sponsocr_distanc_of_auctido|sponsred_auct_dista_of|sponsorexd_aucto_for_lbl_distance|dist_sponso_auctio|aution_disan_new_sonsored|auc_sponsore_distan|sponsor_au_dis|aucton_sponso_ditance|label_sposor_disntance_auctin|lbl_auti_flag_dstanc_sponsord|label_au_lb_spon_fla_dstan|spons_aut_dsta_lb_fla|label_aut_dstan_fl_spons_lb|sponsor_aut_dst_lb_fl|sponsorce_aucio_distanc|auti_the_sponsore_distnc|ditanc_flag_sponsore_aujction|distanc_new_sonsored_auctilo|distan_lbl_au_sponsore|dstan_of_conen_aucti_label|label_acti_sponsory_dstance|sponsore_contet_lbl_disjtan_actio|disance_auctiko_sponso|dstance_auctfio_spdonsore|distance_sponsore_auction_new|aucti_sponsxor_distran|sonsore_for_distance_of_auxcti|the_sponsoyr_distance_auctin_lbl|auctzion_ditan_sponsored|distnc_auct_sponsore|for_sonsor_disjtance_auct|of_sponsor_distanc_auc|auctio_sponso_distan|distanc_auct_spon|sponsor_auct_dis|dstanc_sponsorefd_of_aution_the|spon_auc_dis|aucto_disance_sponso|distnce_actio_lbl_sponso|auct_the_distanc_sponsor|au_distan_label_spons|au_dist_of_spon|spons_distanc_auctio_label|flag_auction_sonsore_distance|lbl_diwstan_new_sponsore_auctiob|the_disan_sonsore_auctigo|sponsorw_distn_aucton_of|disan_sonsore_auctigo|new_sponsore_distan_auctio_the|distanck_auction_the_of_sponsord|distan_sponso_aucti|spons_auct_flag_dis|distanc_spvonsored_auceti|aucti_ditan_sposored_label|label_dstance_sponsored_acti_lbl|disanc_for_spnsore_aucti|auct_distanbc_of_new_sponsoreg|distanc_sponsored_flag_aucti|of_spon_dista_auc|spons_distanc_au|distan_autio_sponcsored_flag|distan_auctin_sposored|sponsor_aucton_distanc_new_of|new_distan_sponsor_aucton|auct_the_distansce_sonsored|sponnsore_distwan_for_auti|sponso_the_action_ditance_for|aucion_dstance_sponpsor|sponored_for_of_distanc_auti|distance_auctio_label_sponsre|flag_disanc_sponsofred_auci|disitance_auct_new_sponsoe_lbl|lbl_aucion_flag_sponsre_dista|the_aucti_distnanc_sponasore|distac_auctioj_flag_sponmsor|distan_flag_sponso_auction|new_dista_aucpti_label_sponsored|sponso_aucftion_disan|dstan_sponsre_auction|sponored_label_aucti_disance|sponsobr_dihstance_auctio_new|lbl_sponsor_distnan_label_aucio|sposor_distan_auti_lbl|distapnce_of_sponso_auction|new_action_dstanc_lbl_spofnsore|spoansore_auctio_distan|label_the_sponsor_distance_auctio|aution_sponso_lbl_distanc|acti_the_sponsore_ditanc_for|auti_dstance_the_lbl_sponored|actio_label_lbl_sponrsore_distane|disan_auctlio_sponsored_lbl|label_of_distnc_sponsore_aucti|distan_sponsoir_auction|flag_distan_sponslore_aucio)/'
 www.ghxi.com##.wpcom_ad_wrap
 www.ghxi.com##DIV[style^='padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: ']
 www.google.*###tads[aria-label]
@@ -45214,6 +45215,7 @@ youtube.com#$#override-property-read yt.ads.biscotti.getId_ undefined
 youtube.com#$#override-property-read yt.ads.biscotti.lastId_ undefined
 youtube.com#@##description-inner > ytd-merch-shelf-renderer > #main.ytd-merch-shelf-renderer
 youtube.com#@##player-ads
+youtube.com#@##sticker-layer
 youtube4kdownloader.com##+js(abort-on-property-read, pops)
 youtube4kdownloader.com,wantedbabes.com,softonic.com##.banner-center
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
@@ -54840,6 +54842,7 @@ zzzyk.com###Tinfo
 ||afablca.cn^
 ||afacingtite.cyou^
 ||afafevk.com^
+||afarsbaureoffice.cfd^
 ||afcav.com^
 ||afce.cn^
 ||afcgcq.icu^
@@ -60396,6 +60399,7 @@ zzzyk.com###Tinfo
 ||barometercorrodingunease.com^
 ||baronsamvat.com^
 ||barracuda.carte-gr.total.fr^
+||barrapisaca.com^
 ||barren-unit.pro^
 ||barrister85.top^
 ||barrons.com/cookies/pixel.gif
@@ -60917,6 +60921,7 @@ zzzyk.com###Tinfo
 ||belwrite.com^
 ||belyingmystic.cyou^
 ||bemail.it^*/analytics.js
+||bemeetyappy.com^
 ||bemistsdoffedsiccity.cfd^
 ||bemoatenform.qpon^
 ||bemobpath.com^
@@ -61029,6 +61034,7 @@ zzzyk.com###Tinfo
 ||bestpush.pconline.com.cn^
 ||bestqikan.com/static/js/swt.js
 ||bestrevenuenetwork.com^
+||bestrewdeplace.cfd^
 ||bestrutazygous.shop^
 ||bestsexpositions.com/pictures/2022/07/bigger-dick-*.gif
 ||bestvogue.com/fans/
@@ -61822,6 +61828,7 @@ zzzyk.com###Tinfo
 ||bmptbyb.com^
 ||bmrg.reflected.net^
 ||bmst.pw^
+||bmsxnwemqcjfd.space^
 ||bmwebm.org^
 ||bmyrihf.icu^
 ||bmyudk.clarins.de^
@@ -62230,6 +62237,7 @@ zzzyk.com###Tinfo
 ||bqstreamer.com^
 ||bqstreamer.com^$3p
 ||bqszugpxadzlg.store^
+||bqvgggxqavsp.com^
 ||bqvndd.ifood.com.br^
 ||bqvzsxadeajio.global^
 ||bqxyns0hv.com^
@@ -63340,6 +63348,7 @@ zzzyk.com###Tinfo
 ||c1hit.zerkalo.io^
 ||c1km4.com/mobile/app.js
 ||c1qm3mg41.com^
+||c1yul3hu3tbcwo1e2nm.rest^
 ||c2000.cn/c2000/
 ||c20700ec5a.com^
 ||c212.net^$third-party
@@ -67883,6 +67892,7 @@ zzzyk.com###Tinfo
 ||cuddlycake.com^$third-party
 ||cuddlylunchroom.com^$third-party
 ||cuddlywomanrl.com^
+||cudgelhotspur.qpon^
 ||cudgoz.mifcom.de^
 ||cudrqv.sts.pl^
 ||cue.search.naver.com/api/*/log/
@@ -69142,6 +69152,7 @@ zzzyk.com###Tinfo
 ||daqiso.com/ggbl/
 ||daqnetgw.com^
 ||darbhatahakinkier.qpon^
+||darbspanagia.qpon^
 ||dardzeglhpsqv.tech^
 ||daringsubstance.com^
 ||daringsupport.com^
@@ -75389,6 +75400,7 @@ zzzyk.com###Tinfo
 ||executeknowledge.com^$third-party
 ||execution-ci360.rai.it^
 ||executors2550.com^
+||executors601.net^
 ||executorsfrommap.com^
 ||exelator.com^$domain=disqus.com
 ||exelator.com^$third-party
@@ -77376,6 +77388,7 @@ zzzyk.com###Tinfo
 ||fqthetotf.com^
 ||fqtyucit.com^
 ||fqusyemawhbuw.space^
+||fqwm8ppl3ykixptyn1e8qhykiv1.cfd^
 ||fqxkj.cn^
 ||fqxnlh.kgcshop.co.kr^
 ||fr-go.experian.com^
@@ -79219,6 +79232,7 @@ zzzyk.com###Tinfo
 ||glinkhitler.com^
 ||glisteningguide.com^$third-party
 ||glisteningsign.com^$third-party
+||glisteningtrouble.com^
 ||glitteringbrook.com^$third-party
 ||glitteringsinkingdefense.com^
 ||glixaing.com^
@@ -80936,6 +80950,7 @@ zzzyk.com###Tinfo
 ||gvt2.com^
 ||gvw.wujjt2qo76qj3kmz65gpmo.cfd^
 ||gvwjiasjlk.com^
+||gvxfvpattvxul.space^
 ||gvxnff.soulara.com.au^
 ||gvz6e16t5lcpwtgwti7o.cfd^
 ||gvztlapluvckr.online^
@@ -82016,6 +82031,7 @@ zzzyk.com###Tinfo
 ||hiperstat.com^$third-party
 ||hipizza.openapp.link^
 ||hipkqt.contorion.de^
+||hippaqueans.qpon^
 ||hippierrapiner.com^
 ||hippopantile.cyou^
 ||hiprofitnetworks.com^
@@ -82541,6 +82557,7 @@ zzzyk.com###Tinfo
 ||howbuy.com/subject/js/jquery.blockUI.js
 ||howbuy.com/subject/js/layer/layer.js
 ||howdahbange.cfd^
+||howeververbyfenrir.cfd^
 ||howhow.cl^
 ||howlexhaust.com^
 ||howlingkilned.com^
@@ -83294,6 +83311,7 @@ zzzyk.com###Tinfo
 ||ibeat-analytics.com^$third-party
 ||ibeeckaidse.net^
 ||iber07yk9.com^
+||ibexescuffin.cfd^
 ||ibf.smrtp.link^
 ||ibf.tw/js/jquery.blockUI.js
 ||ibflhrepbphbu.space^
@@ -86827,6 +86845,7 @@ zzzyk.com###Tinfo
 ||jackashrocolo.qpon^
 ||jackcivilization.com^
 ||jackdd.xyz^
+||jackknifemonuments.com^
 ||jacksonyee.club^
 ||jacobybirring.cyou^
 ||jactantarguers.shop^
@@ -91634,6 +91653,7 @@ zzzyk.com###Tinfo
 ||locarnocovingdzeron.cyou^
 ||location.imsmetals.com^
 ||location3.com/analytics/
+||lochiawitchet.shop^
 ||locked-link.com^
 ||lockerdomecdn.com^
 ||locketsauce.com^
@@ -92458,6 +92478,7 @@ zzzyk.com###Tinfo
 ||lxsway.tyda.se^
 ||lxswqh.oyorooms.com^
 ||lxsz0w0aw.com^
+||lxtgkqanclxyf.space^
 ||lxting.com^
 ||lxtrack.com^$third-party
 ||lxwasy.tatragarden.ua^
@@ -92493,6 +92514,7 @@ zzzyk.com###Tinfo
 ||lyptaszfhobhx.site^
 ||lyricslocusvaried.com^
 ||lyrismdhabbdicolic.cyou^
+||lyrjntbhjhksh.site^
 ||lysq.com/data/attachment/portal/
 ||lyszsz.cn^
 ||lytics.findairpods.com^
@@ -97778,6 +97800,7 @@ zzzyk.com###Tinfo
 ||mohairnahumpinfall.qpon^
 ||mohamed.net.anwalt.de^
 ||mohardinomys.cyou^
+||mohurnoose.com^
 ||moiderincepts.cyou^
 ||moisefluytczar.qpon^
 ||moist-iron.pro^
@@ -100364,6 +100387,7 @@ zzzyk.com###Tinfo
 ||nunrzusi.in^
 ||nunuyy11.com/xx/d.js
 ||nunxhv.com^
+||nuoetydcuqyf.com^
 ||nuopadskjwbrcrs.com^
 ||nupload.me/uuu.php
 ||nuquds.citizenwatch.com^
@@ -101036,6 +101060,7 @@ zzzyk.com###Tinfo
 ||ojrgbc6kfz.com^
 ||ojrq.net^
 ||ojrq.net^$document,badfilter
+||ojshkarhebug.in^
 ||ojufuk.vincecamuto.com^
 ||ojvxtz.junonline.jp^
 ||ojxr.cn^
@@ -101598,6 +101623,7 @@ zzzyk.com###Tinfo
 ||oodcd.cn/pan/config/ad.json
 ||oodcd.cn/pan/config/copy.
 ||oodcd.cn/pan/config/history.
+||oodlinsuncock.cfd^
 ||ooeohrorotmprq.com^
 ||oogala.com^$3p
 ||oogkvtvfjovt.com^
@@ -104691,6 +104717,7 @@ zzzyk.com###Tinfo
 ||portal.krollontrack.co.uk^
 ||portal.librus.pl/ad|
 ||portfold.com^$third-party
+||portlytenuit.shop^
 ||portslocked.com^
 ||portswaving.com^
 ||porzo.com/js/analytics
@@ -105417,6 +105444,7 @@ zzzyk.com###Tinfo
 ||pstreetma.com^
 ||pstt.mtb-news.de^
 ||pstvvb.xyz^
+||psufldsm.com^
 ||psulrushe.net^
 ||pswec.com/px/$third-party
 ||pswgpb.seshop.com^
@@ -106539,6 +106567,7 @@ zzzyk.com###Tinfo
 ||qq260.com/shout.js
 ||qq2tdd0xx.com^
 ||qq745.com/m/ad/
+||qqabzpkizo.com^
 ||qqc.co/Webservices/jsParseLinks.aspx$script,third-party
 ||qqc.co/visitScript/$script,third-party
 ||qqcf.com/js/Content_Get.js
@@ -106891,6 +106920,7 @@ zzzyk.com###Tinfo
 ||qxn9qlvmca.com^
 ||qxovxngnlxkko.space^
 ||qxozluyvvyabw.online^
+||qxrcbjtqtzvdcp.com^
 ||qxrtkqsxrljbm.site^
 ||qxrvmu.com^
 ||qxsfaj.caloo.jp^
@@ -108432,6 +108462,7 @@ zzzyk.com###Tinfo
 ||ridgydefleasoboles.qpon^
 ||ridingpertconquest.com^
 ||rifdfxgcabbhk.online^
+||riffingamuyong.cfd^
 ||riffvanfoss.shop^
 ||riftharp.com^
 ||rifyeldz.top^
@@ -120708,6 +120739,7 @@ zzzyk.com###Tinfo
 ||swmhdata.stuttgarter-nachrichten.de^
 ||swmhdata.stuttgarter-zeitung.de^
 ||swmswjvdpc.com^
+||swnr0b7c.xyz^
 ||swobglimed.shop^
 ||swonswksodcbc.website^
 ||swoole.com/_images/kundian
@@ -129397,6 +129429,7 @@ zzzyk.com###Tinfo
 ||uwants.com^*_prod.html
 ||uwavgfrn.com^
 ||uwbyuykkrpgsr.website^
+||uwcbmixttuex.com^
 ||uwcnmtt.top^
 ||uwdqokjwmnfxu.site^
 ||uwdzbo.tgw.com^
@@ -129622,6 +129655,7 @@ zzzyk.com###Tinfo
 ||variablesthirdtransparent.com^
 ||varicalsalomon.cfd^
 ||varietyofdisplayformats.com^
+||varietytooartmolge.cyou^
 ||variflight.com/carnoc/ad/
 ||variouscreativeformats.com^
 ||variousformatscontent.com^
@@ -130715,6 +130749,7 @@ zzzyk.com###Tinfo
 ||vs3.com^
 ||vs4.com/impr.php?
 ||vs4.com/req.php?z=
+||vsafchalcxhpf.website^
 ||vsbdvf.icu^
 ||vsco.co/api/cantor/track
 ||vsct.cn^
@@ -130807,6 +130842,7 @@ zzzyk.com###Tinfo
 ||vuyibsm.icu^
 ||vuypew.ikks.com^
 ||vuzhzlzswecvc.global^
+||vuzupoepfovgh.site^
 ||vv.nettierbrakier.com^
 ||vv1.pyhfxdm.cn^
 ||vv4t0gqaa4.com^
@@ -131989,6 +132025,7 @@ zzzyk.com###Tinfo
 ||west.cn/vcp/getJScode/
 ||westca.com/server/
 ||weste.net/js/showpagead.js
+||westerawnesschirmed.qpon^
 ||westevents.presidio.com^
 ||wetpaint.com^*/track?
 ||wetpussy.sexy/js/index-nb.js
@@ -132001,6 +132038,7 @@ zzzyk.com###Tinfo
 ||wewqmwpeesisj.online^
 ||wextap.com^
 ||weygdpqepldez.space^
+||weyimnzwawiwz.space^
 ||weytnksofbrsj.site^
 ||wezbvq.heine-shop.nl^
 ||weznkotoko.com^
@@ -135597,6 +135635,7 @@ zzzyk.com###Tinfo
 ||yfdnzfa.com^
 ||yfdpco1.com^
 ||yfdpco3.com^
+||yfenyeuthgedn.online^
 ||yfenys.prenatal.com^
 ||yfepff.raymourflanigan.com^
 ||yfghi1.ven5k12mb81cjklipi8nf.cfd^
@@ -135631,6 +135670,7 @@ zzzyk.com###Tinfo
 ||ygsoeu.size.co.uk^
 ||ygtfgu.casamundo.nl^
 ||ygtzipndentuz.online^
+||ygumseqbggl.com^
 ||ygvxiyraogkfcy.com^
 ||ygwdai.cn^
 ||ygx2myq993.com^
