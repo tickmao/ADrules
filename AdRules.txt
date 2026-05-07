@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-05-07 09:50:29(GMT+8)
-! Total count: 137390
+! Version: 2026-05-07 10:24:10(GMT+8)
+! Total count: 137404
 ###AC_ad
 ###AD_Top
 ###ADtip
@@ -21636,7 +21636,7 @@ binaryfork.com##+js(no-setTimeout-if, .offsetHeight&&0!==)
 binbox.io#@#.banner-ad
 bing.com###BottomAppPro
 bing.com###TopApp
-bing.com###b_results > li[style*="padding-bottom: 8px;"][style*="235, 235, 235"]
+bing.com###b_results > li:has(.b_adProvider)
 bing.com###bingBrand
 bing.com###id_mobile
 bing.com##+js(json-prune, relatedAds)
@@ -21648,8 +21648,6 @@ bing.com##.b_adPATitleBlock
 bing.com##.b_adPATitleBlock + div
 bing.com##.b_algo:has(.ad_esltitle)
 bing.com##.b_algo:has(.b_ads1line)
-bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
-bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
 bing.com##.b_algo:has(> .b_title > h2 > .b_ads1line)
 bing.com##.b_bza_pole
 bing.com##.b_restorableLink:remove()
@@ -21704,6 +21702,7 @@ bing.com,cn.bing.net##a[h$=",Ads"]
 bing.com,cn.bing.net##a[href*="/aclick?ld="]
 bing.com,cn.bing.net##li.b_ad
 bing.com,cn.bing.net##li:has(a[h$=",Ads"])
+bing.com,~www.bing.com##.b_algo:has(p[style="display: none !important;"])
 bingdou.com.cn,hoteastday.com##.float_ad
 bingespree.net##+js(abort-current-script, document.write, atob)
 bingespree.net#$#abort-current-inline-script document.write atob
@@ -23152,7 +23151,6 @@ cmsdetect.com##+js(set-cookie, third, 1)
 cmsky.com##.textwidget a[href^="http"]:not([href*="cmsky"])
 cn-healthcare.com##.fh_ad_wrap
 cn-healthcare.com##.fh_advent_wrap
-cn.bing.com###b_results > li:has(.b_adProvider)
 cn.bing.com##.b_bza_pole
 cn.bing.com##.bnp_rich_div_visible.bottom
 cn.bing.com##.bnp_rich_div_visible.top
@@ -45726,6 +45724,7 @@ zzzyk.com###Tinfo
 ||002777.xyz^
 ||003store.com^
 ||007ds.com/js/js/
+||00a4722597.com^
 ||00eeekk.com//html5/activityPage/
 ||00k456wyh.com^
 ||00p034d0dw.com^
@@ -46733,6 +46732,7 @@ zzzyk.com###Tinfo
 ||2mdn.net/videoplayback/$redirect=noop-1s.mp4,domain=laurelberninteriors.com|safeframe.googlesyndication.com,media
 ||2mdn.net^$~media,3p
 ||2mf9kkbhab31.com^
+||2mpx9wr2u7ikinehxtngk1.cfd^
 ||2nl6sgd9c.com^
 ||2np37qvk8tf2.hji2qe9t2y6q8cw.cyou^
 ||2nqmub5hzuxm4prm.cfd^
@@ -47997,6 +47997,7 @@ zzzyk.com###Tinfo
 ||7ee7484ba9.com^
 ||7eer.net^$third-party
 ||7et314jxneec.zk8y4frfvwtbkmjmbpnbb4cvrjr.cfd^
+||7f89d90c6f.com^
 ||7fhginl5cekq8ykr5hc9bn26xwb.cfd^
 ||7fkm2r4pzi.com^
 ||7fva8algp45k.com^
@@ -48203,6 +48204,7 @@ zzzyk.com###Tinfo
 ||8a54c826fe.660d588959.com^
 ||8ab16250fe.com^
 ||8acd6b63f9.com^
+||8aef6f3c8b.com^
 ||8b49e8efa4.3582c977a8.com^
 ||8bcfwi4tqnrg81exx1kwk.cfd^
 ||8bfc9cbcbe.com^
@@ -60268,6 +60270,7 @@ zzzyk.com###Tinfo
 ||baqend.com/v1/rum/
 ||baqwo74y8.com^
 ||barazapushrod.cyou^
+||barbamarinaloner.cfd^
 ||barbarousbase.com^$third-party
 ||barboychimera.com^
 ||bardatm.ru^
@@ -60381,6 +60384,7 @@ zzzyk.com###Tinfo
 ||bbfcmorrxsmki.online^
 ||bbges.xyz^
 ||bbhktv.xyz^
+||bbigjasjgqkkq.website^
 ||bbjzly.top^
 ||bbk.pnc.com^
 ||bbl.k.dk/tracking/
@@ -65678,6 +65682,7 @@ zzzyk.com###Tinfo
 ||cmtrkg.com^
 ||cmttvv.bonprix.se^
 ||cmuryk.icu^
+||cmytpahumgpu.in^
 ||cmzaly.gebrueder-goetz.de^
 ||cn-go.experian.com^
 ||cn.adpinfo.com^
@@ -74686,6 +74691,7 @@ zzzyk.com###Tinfo
 ||esca.mno.link^
 ||escalated.io^$third-party
 ||escalatenetwork.com^
+||escarpssojasothic.cyou^
 ||eschsupply.actonservice.com^
 ||escorta-torino.study^
 ||escviyqoekkju.com^
@@ -80744,6 +80750,7 @@ zzzyk.com###Tinfo
 ||gumpusemf.shop^
 ||gumtree.com.au/tracking/
 ||gumyfui.com^
+||gunfireendorse.com^
 ||gunft.com^
 ||gunmi.cn^$3p
 ||gunzblazingpromo.com^
@@ -97338,6 +97345,7 @@ zzzyk.com###Tinfo
 ||mkltfc.atgp.jp^
 ||mkmkew.hometogo.no^
 ||mkmree.dmm.co.jp^
+||mkmthxgvuvsb.com^
 ||mkolqj.ozonee.pl^
 ||mkqdj.cn^
 ||mkrqllitlneir.site^
@@ -100027,6 +100035,7 @@ zzzyk.com###Tinfo
 ||npteptptaexam.quantresear.ch^
 ||nptkpt.vangraaf.com^
 ||npttech.com/advertising.js$important,script,redirect=noop.js,domain=~vijesti.me
+||npunr.cn^
 ||npvbjv.yourroom.ru^
 ||npvcfn.icu^
 ||npvgghqmsehdq.club^
@@ -104972,6 +104981,7 @@ zzzyk.com###Tinfo
 ||probtn.com^
 ||procdn.asia^
 ||proceduresto3.net^
+||proceedings33.top^
 ||process.global360.com^
 ||processesdisplease.com^
 ||processesshaken.com^
@@ -122084,6 +122094,7 @@ zzzyk.com###Tinfo
 ||teacherhimene.shop^
 ||teachgallop.com^
 ||teads.tv^
+||teadumiccdoct.website^
 ||tealium-proxy.libertex.org^
 ||tealiumiq.com^$domain=autobild.de
 ||tealiumiq.com^$third-party
@@ -123235,6 +123246,7 @@ zzzyk.com###Tinfo
 ||tl.tradetracker.net^
 ||tl813.com^$third-party
 ||tl86tv.com/52
+||tl8wmm46yqhyiunbq4egwzkutfmpw.rest^
 ||tl9q49ffi.com^
 ||tla.traderlink.com^
 ||tlanyan.pp.ua/wp-content/uploads/meomiao.png
@@ -130163,6 +130175,7 @@ zzzyk.com###Tinfo
 ||vittlespricesfidding.cfd^
 ||viu.actonservice.com^
 ||viu.viubyhub.com^
+||viugumilidftgt.com^
 ||vivacecored.cyou^
 ||vivaciousinterposed.com^
 ||vivaldi.*/rep/rep.js
@@ -130197,6 +130210,7 @@ zzzyk.com###Tinfo
 ||vjpagbjwoznds.site^
 ||vjpdxx.icu^
 ||vjpraiveafxow.space^
+||vjrfsrpvnznto.site^
 ||vjstudksodqe.com^
 ||vjvj.vj24co.com^
 ||vjyqsgzvps.com^
