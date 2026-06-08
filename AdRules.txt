@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-06-08 09:11:24(GMT+8)
-! Total count: 137016
+! Version: 2026-06-08 10:58:06(GMT+8)
+! Total count: 137040
 ###AC_ad
 ###AD_Top
 ###ADtip
@@ -7569,6 +7569,7 @@ $xhr,redirect-rule=noop.txt,domain=oko.sh|tii.la
 /analyticstrack.js
 /analyticstracking.js
 /analyticstrain.min.js
+/analytify-events-tracking.js
 /anametrix/cas.js
 /anclytic-ajax.html
 /anclytic.htm
@@ -11352,6 +11353,8 @@ $xhr,redirect-rule=noop.txt,domain=oko.sh|tii.la
 /woocommerce-google-adwords-conversion-tracking-tag/*
 /woopra.js
 /wp-admin/admin-ajax.php?action=adblockvisitor$~third-party
+/wp-analytify-forms/assets/js/tracking.js
+/wp-analytify/assets/js/scrolldepth.js
 /wp-auto-affiliate-links/*$script,stylesheet
 /wp-bannerize-$script,stylesheet
 /wp-bannerize.$script,stylesheet
@@ -35709,7 +35712,7 @@ op.gg##.flex-col:has(> div.flex > a[href^="https://member.op.gg/membership"][hre
 op.gg##.flex.h-fit.w-full.flex-col.gap-2 > div.justify-center.items-center:has( > div > div[style^="width: 100%; min-width:"])
 op.gg##.h-\[287px\]
 op.gg##.justify-between:has(> .title:first-child + a[href*="?utm_source="][href*="&utm_campaign=banner_frame"]:last-child)
-op.gg##.md\:max-w-\[1080px\]
+op.gg##.md\:max-w-\[1080px\]:not(.h-\[205px\])
 op.gg##.min-h-\[66px\]
 op.gg##.w-full > section.bg-gray-0.md\:overflow-hidden.md\:rounded.flex-col.p-2.w-full
 op.gg##div:has(> div[data-ad])
@@ -42641,7 +42644,6 @@ upzone.ga#@#.sponsorad
 uquiz.com##.side_bar
 ur.ly#@##bottomad
 urbandictionary.com###ud-root > div[class*="print:hidden"]:has(> .justify-center > div[class*="leaderboard:"])
-urbandictionary.com##.mb-4.justify-center
 urbandictionary.com##.mug-ad
 urbanize.city##.block-urbanize-ad-slot
 urbanmilwaukee.com##+js(set-constant, canRunAds, true)
@@ -47062,6 +47064,7 @@ zzzyk.com###Tinfo
 ||4000statistics.com^
 ||4000toinstruments.net^
 ||400withcase.com^
+||403f258ef0.com^
 ||40407.com/plus/rpad/
 ||40407.com/plus_rpad_
 ||405kk.com^
@@ -47697,6 +47700,7 @@ zzzyk.com###Tinfo
 ||689fe98d0d.com^
 ||68amt53h.de^
 ||68aq8q352.com^
+||68efc320d7.com^
 ||68s4eyiru.com^
 ||68td4yete.com^
 ||68tkaiaji.com^
@@ -58948,6 +58952,7 @@ zzzyk.com###Tinfo
 ||attunedunsanefisk.qpon^
 ||attuneslew.cyou^
 ||attuneuvito.com^
+||atuletoheroa.cfd^
 ||atumanera.burgerking.com.mx^
 ||aturoaphkaun.com^
 ||atuxrmazzebah.site^
@@ -59662,6 +59667,7 @@ zzzyk.com###Tinfo
 ||b0.yahoo.co.jp^
 ||b053d0h076.com^
 ||b08.fit^
+||b082df0e81.com^
 ||b0e8.com^$third-party
 ||b0rbgroup.xyz^
 ||b0rz2s5ik.com^
@@ -62622,6 +62628,7 @@ zzzyk.com###Tinfo
 ||bun1.dayi.org.cn^
 ||bunchbox.co^$third-party
 ||bunchhigher.com^
+||buncosunhazy.shop^
 ||bundle.9gtb.com^
 ||bundle.dyn-rev.app^
 ||bundle.ppas.monster^
@@ -64661,6 +64668,7 @@ zzzyk.com###Tinfo
 ||cidianwang.com/js/right
 ||cidianwang.com/js/zdtop.js
 ||cidrap.umn.edu/core/modules/statistics
+||cidtunppinhi.in^
 ||cientch.360doc.cn^
 ||ciffwoqq8xw13ch.rest^
 ||cifnews.com/ajax/adrequest/
@@ -67582,6 +67590,7 @@ zzzyk.com###Tinfo
 ||cubepins.com^
 ||cuberoot.co^$third-party
 ||cucaido.abphotos.link^
+||cuckoldbeeswaxballoon.cyou^
 ||cuckooretire.com^
 ||cuddlecoveragehiss.com^
 ||cuddlethehyena.com^
@@ -67815,6 +67824,7 @@ zzzyk.com###Tinfo
 ||cv5gezvaj.com^
 ||cvastico.com^
 ||cvbdlmcuzahza.site^
+||cvbhr8ibf2qoly.rest^
 ||cvd2jag5ru.com^
 ||cvevpwhszksij.online^
 ||cvftv2.com^
@@ -71581,6 +71591,7 @@ zzzyk.com###Tinfo
 ||downyi.com/tg/
 ||dowrrav.com^
 ||dowryhandgripballot.com^
+||doytoyakbsdcvn.com^
 ||dozententag.ni.com^
 ||dozeskeekersybo.cyou^
 ||dozu5h9yql.com^
@@ -71809,6 +71820,7 @@ zzzyk.com###Tinfo
 ||dsfondues.cyou^
 ||dsftcd.com^
 ||dsg.interia.pl^
+||dsgldf.com^
 ||dsgvgw.com^
 ||dsgwoa.com^
 ||dsgwqe.com^
@@ -77035,6 +77047,7 @@ zzzyk.com###Tinfo
 ||fqboclyjc.com^
 ||fqcqnb.dwr.com^
 ||fqdpqpwruidrz.store^
+||fqflsynvp.com^
 ||fqhakaihvu.com^
 ||fqk6e78c80.com^
 ||fqltwfrmprfj.com^
@@ -77425,6 +77438,7 @@ zzzyk.com###Tinfo
 ||fujifood.hk^
 ||fujincenter.com^
 ||fukzsbkp8.com^
+||fulanijahvismchiule.qpon^
 ||fulibac.com/images/upload/ad/
 ||fulibl.com/wp-content/uploads/2016/06/320-230.jpg
 ||fulitech.com.cn^*/float.js
@@ -85478,6 +85492,7 @@ zzzyk.com###Tinfo
 ||instana.io^$third-party
 ||instanceimprovedhew.com^
 ||instances360.net^
+||instancesfrom301.com^
 ||instant-gaming.com/affgames/
 ||instant-gaming.com/api/banner/partner/loader.js
 ||instant.one/a/tk
@@ -87197,6 +87212,7 @@ zzzyk.com###Tinfo
 ||jpvrbt.xyz^
 ||jpwfkn.besthotels.es^
 ||jpwfrl.mona.de^
+||jpwrashuzfstxc.com^
 ||jpysvip.net/ad/
 ||jpzbjh.icu^
 ||jpzdaanhktgiu.online^
@@ -99455,6 +99471,7 @@ zzzyk.com###Tinfo
 ||njdwxxyem.com^
 ||njhlvz.icu^
 ||njjsvxtovp.com^
+||njndkusublsuvld.com^
 ||njnlih.realitatea.net^
 ||njogejt.icu^
 ||njorya.aosom.de^
@@ -103658,6 +103675,7 @@ zzzyk.com###Tinfo
 ||pjcg3864p.com^
 ||pjcn.org^$3p
 ||pjdhguh14.com^
+||pjdjlrmelqxzh.site^
 ||pjgaez.autouncle.at^
 ||pjh7.us.chantelle.com^
 ||pji.nu/libs/pjpixel/
@@ -108177,6 +108195,7 @@ zzzyk.com###Tinfo
 ||rivpuelemplqj.space^
 ||rivrai.com^$third-party
 ||rivullvwg.com^
+||riw7qk75czt1xcohjijvq.cfd^
 ||riwhssuoploai.buzz^
 ||riwkmo.spacemarket.com^
 ||riwnmh.novasol.co.uk^
@@ -119814,6 +119833,7 @@ zzzyk.com###Tinfo
 ||studylabs.cn^
 ||stuff.wikiporno.org^
 ||stuffedclipse.com^
+||stuffserve.me^
 ||stulip.org/static/js/header.js
 ||stulmunshent.com^
 ||stummedmanilio.cyou^
@@ -130191,6 +130211,7 @@ zzzyk.com###Tinfo
 ||vortex.data.microsoft.com^
 ||vortex.hulu.com^
 ||vortexirked.cfd^
+||vosdgzthzejqr.website^
 ||vote.speaqapp.com^
 ||votedotorg.outvote.io^
 ||voteendurums.shop^
@@ -132545,6 +132566,7 @@ zzzyk.com###Tinfo
 ||wup-2ffe60ee.westpac.com.au^
 ||wuplexv.cn^
 ||wuporg.com^
+||wuqlgnyasteaf.site^
 ||wuqwruavhah.in^
 ||wurreseek.com^
 ||wutherveiponying.cfd^
@@ -133778,6 +133800,7 @@ zzzyk.com###Tinfo
 ||xegnfwkju.com^
 ||xehkxoftzdyar.online^
 ||xeikwh.icu^
+||xeiswdcgastrt.online^
 ||xejpzk.fram.fr^
 ||xekjzy.rinascente.it^
 ||xekrbwex7d.com^
@@ -133855,6 +133878,7 @@ zzzyk.com###Tinfo
 ||xhkvff.cn^
 ||xhohnr.fdm.pl^
 ||xhpghv.xyz^
+||xhqdvrbaoybgw.site^
 ||xhqgymmb.com^
 ||xhqmvu.k-uno.co.jp^
 ||xhr7cqlob.com^
