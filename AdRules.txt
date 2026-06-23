@@ -6,8 +6,8 @@
 ! Description: Standard version. Merged from EasyList, EasyList China, etc., with additional custom rules.
 ! License: Inherits upstream licenses (GPL-3.0, CC BY-SA 4.0, etc.)
 ! Upstream Sources: https://github.com/Cats-Team/AdRules/blob/script/Source.md
-! Version: 2026-06-23 17:28:02(GMT+8)
-! Total count: 138621
+! Version: 2026-06-23 22:35:40(GMT+8)
+! Total count: 138699
 ###AC_ad
 ###AD_Top
 ###ADtip
@@ -2672,6 +2672,7 @@
 ##.adthrive-ad
 ##.adthrive-content
 ##.adthrive-header
+##.adthrive-placeholder-content
 ##.adthrive-sidebar
 ##.adthrive-video-player
 ##.adthrive_custom_ad
@@ -15208,6 +15209,7 @@ $xhr,redirect-rule=noop.txt,domain=oko.sh|tii.la
 @@||chycor.co.uk/cms/advert_search_thumb.php$image,domain=chycor.co.uk
 @@||ci-mpsnare.iovation.com/snare.js$domain=equifax.ca
 @@||cibntv.net/youku/*.mp4?$domain=v.youku.com
+@@||cinehd.app^$generichide
 @@||cinema.pia.co.jp/img/ad/$image,~3p
 @@||citibank.com/*/branding/
 @@||cityam.com/assets/js/dfp/dfp.js$~3p
@@ -19497,7 +19499,7 @@ abxxx.com##.video-page__content > div.left > section
 abxxx.com,aniporn.com,missav.ai,missav.ws,missav123.com,missav888.com##div[style="width: 300px; height: 250px;"]
 abxxx.com,pornclassic.tube,thegay.com,thegay.tube,vjav.*,hotmovs.*,tubepornclassic.com##.video-page__content > div.left + div[class]:last-child
 abysscdn.com,freeplayervideo.com,player-cdn.com,playhydrax.com#$#abort-current-inline-script document.getElementById openPop
-abysscdn.com,freeplayervideo.com,player-cdn.com,playhydrax.com,www.bachnguyetquang.online,cap3.asia,hopphim.online,streamc.xyz#$#override-property-read open noopFunc
+abysscdn.com,freeplayervideo.com,player-cdn.com,playhydrax.com,www.bachnguyetquang.online,cap3.pics,hopphim.online,streamc.xyz#$#override-property-read open noopFunc
 abyssplayer.com,asmrfreeplayer.fun,mov18plus.cloud,jetvid.top,fembedx.top,hihihaha1.xyz,filmespi.online,playembedapi.site,abysscdn.com,playhydrax.com,hydrax.net##+js(set-constant, isClick, true)
 abyssplayer.com,asmrfreeplayer.fun,mov18plus.cloud,jetvid.top,fembedx.top,hihihaha1.xyz,playhydrax.com,hydrax.net,filmespi.online,playembedapi.site,abysscdn.com,player-cdn.com,nazarickol.com##body > #player ~ div[style^="position: fixed;"][style*="z-index:"]
 abyssplayer.com,asmrfreeplayer.fun,mov18plus.cloud,jetvid.top,fembedx.top,hihihaha1.xyz,playhydrax.com,hydrax.net,filmespi.online,playembedapi.site,abysscdn.com,player-cdn.com,nazarickol.com,redirect-ads.com##+js(abort-on-stack-trace, HTMLElement.prototype.click, _0x)
@@ -20153,6 +20155,7 @@ androiddevtools.cn###auto-scroll-ad-box
 androiddownload.net##+js(abort-current-script, document.getElementById, bannerad)
 androidecuatoriano.xyz##+js(prevent-fetch, pagead2.googlesyndication.com)
 androidecuatoriano.xyz##+js(set-constant, adblockDetector, {})
+androidexperto.com##div[class^="ym-p"][class*="-server-"]
 androidfilehost.com##.download-file > div.col-md-4[style="max-width: 320px;"]
 androidhellas.com##IMG[src="http://androidhellas.com/wp-content/uploads/2013/08/Android-Hellas-banner-728x90A.gif"]
 androiding.how##.jsXY6yjBmGN4
@@ -21557,11 +21560,8 @@ benchmark.pl##.hidden-lg-up
 benchmark.pl##.hidden-md-down
 benchmark.pl##.hidden-tb-down
 benchmark.pl##.hidden-tb-up
-benchmark.pl##.wp-billboard
 benchmark.pl##.wp-screening-placeholder-container
-benchmark.pl##div[class*=" "]:has(>div[class*=" "]:first-child + script:last-child)
-benchmark.pl,dobreprogramy.pl,so-magazyn.pl,parenting.pl,fotoblogia.pl,kafeteria.pl,pudelek.pl,genialne.pl,money.pl,abczdrowie.pl,autokult.pl,gadzetomania.pl,jastrzabpost.pl,komorkomania.pl,polygamia.pl,pysznosci.pl,o2.pl,wp.pl##div[class*=" "]:has(> img:is([src^="https://v.wpimg.pl/"], [src*="/images/adv/placeholder"]):first-child + div[class*=" "] + div[class*=" "] + script:last-child)
-benchmark.pl,dobreprogramy.pl,so-magazyn.pl,parenting.pl,fotoblogia.pl,kafeteria.pl,pudelek.pl,genialne.pl,money.pl,abczdrowie.pl,autokult.pl,gadzetomania.pl,jastrzabpost.pl,komorkomania.pl,polygamia.pl,pysznosci.pl,o2.pl,wp.pl##div[class*=" "]:has(> img:is([src^="https://v.wpimg.pl/"], [src*="/images/adv/placeholder"]):first-child + div[class*=" "] + script:last-child)
+benchmark.pl##div[class*=" "]:has(> div[class*=" "]:first-child + script:last-child)
 benchmark.pl,select.wp.pl,so-magazyn.pl,kafeteria.pl,informacje.wp.pl,wplatform.media,pcformat.pl,staszownews.pl,zdrowienews.pl,kurierostrowiecki.pl,ostrowiec24.info,kielce112.pl,lublinnews.pl,lovelifestyle.pl,telefan24.pl,marketing-zone.pl,panoramaplock.pl,ipolska24.pl,dzieckopoznan.pl,historiapoznania.pl,sportpoznan.pl,pysznosci.pl,kultura.wp.pl,jastrzabpost.pl,wirtualnemedia.pl,open.fm,deliciousmagazine.pl,poczta.wp.pl,pilot.wp.pl,polygamia.pl,abczdrowie.pl,money.pl,dobreprogramy.pl,o2.pl,gadzetomania.pl,komorkomania.pl,autocentrum.pl,pudelek.pl,vpolshchi.pl,parenting.pl,autokult.pl,fotoblogia.pl,dom.wp.pl,pogoda.wp.pl,gry.wp.pl,wroclaw.wp.pl,moto.wp.pl,wideo.wp.pl,kuchnia.wp.pl,facet.wp.pl,sportowefakty.wp.pl,turystyka.wp.pl,magazyn.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,tech.wp.pl,opinie.wp.pl,teleshow.wp.pl,gwiazdy.wp.pl,film.wp.pl,wiadomosci.wp.pl,finanse.wp.pl##+js(remove-cookie, /^WPsad/)
 benchmark.pl,wplatform.media,staszownews.pl,zdrowienews.pl,kurierostrowiecki.pl,ostrowiec24.info,kielce112.pl,lublinnews.pl,lovelifestyle.pl,telefan24.pl,marketing-zone.pl,panoramaplock.pl,dzieckopoznan.pl,historiapoznania.pl,sportpoznan.pl,kultura.wp.pl,facet.wp.pl,ipolska24.pl,wiadomosci.wp.pl,pysznosci.pl,open.fm,fotoblogia.pl,autokult.pl,money.pl,pudelek.pl##style + div[class*=" "]:has(> img:is([src^="https://v.wpimg.pl/"], [src*="/images/adv/placeholder"]) + div:last-child)
 benchmarkreviews.com##body:style(background-image: none!important;)
@@ -22598,7 +22598,7 @@ caoporn.com###middleimg
 caoporn.com##.container + #wrapper:not(.container)
 caoporn.com##.jw-icon-replay-contain > div[style^="display: block; position: absolute; background-color: white; width:"]
 caoporn.com##div[style="height:160px; max-width:100%; width:945px; padding-top:10px; margin:0px auto;"]
-cap3.asia#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
+cap3.pics#$#prevent-listener click /setTimeout|e\.target/; prevent-listener click d .art-control-fullscreen; prevent-listener fullscreenchange e.target;
 cap3.sbs,cap3.monster##+js(addEventListener-defuser, click, ()}, elements, .art-control-fullscreen)
 cap3.sbs,cap3.monster##+js(no-setTimeout-if, (""\,!1), 100)
 cap3.sbs,cap3.monster##+js(no-setTimeout-if, adsbygoogle)
@@ -23125,6 +23125,8 @@ cineb.rs,sflix.to##div[id^="hgiks-"]
 cineby.*#$#override-property-read window.atOptions1 undefined; override-property-read window.atOptions2 undefined
 cineby.sc##+js(addEventListener-defuser, , unloaded_at)
 cined.com##+js(set-constant, ulp_noadb, true)
+cinehd.app##+js(prevent-fetch, /doubleclick|ads-twitter.com|google-analytics.com|adsbygoogle/)
+cinehd.app##section[aria-label^="Sponsored"]
 cinejosh.com##.rw_footer_sticky
 cinejosh.com##span > div.text-center:has(> div.googleAdsSponsered)
 cinema.dinamalar.com##div[class^="topadtxt"]
@@ -30612,6 +30614,10 @@ ipleaders.in##a[href^="https://lawsikho.com/"] > img
 ipleak.net##.details tr[data-tooltip^="A VPN based "]
 iplocation.net##.col_4_of_12 > .widget:contains(Advertisement)
 iplogger.org##.commercial-wide
+ipolska24.pl,benchmark.pl##.wp-billboard
+ipolska24.pl,benchmark.pl,dobreprogramy.pl,so-magazyn.pl,parenting.pl,fotoblogia.pl,kafeteria.pl,pudelek.pl,genialne.pl,money.pl,abczdrowie.pl,autokult.pl,gadzetomania.pl,jastrzabpost.pl,komorkomania.pl,polygamia.pl,pysznosci.pl,o2.pl,wp.pl##div[class*=" "]:has(> img:is([src^="https://v.wpimg.pl/"], [src*="/images/adv/placeholder"]):first-child + div[class*=" "] + div[class*=" "] + script:last-child)
+ipolska24.pl,benchmark.pl,dobreprogramy.pl,so-magazyn.pl,parenting.pl,fotoblogia.pl,kafeteria.pl,pudelek.pl,genialne.pl,money.pl,abczdrowie.pl,autokult.pl,gadzetomania.pl,jastrzabpost.pl,komorkomania.pl,polygamia.pl,pysznosci.pl,o2.pl,wp.pl##div[class*=" "]:has(> img:is([src^="https://v.wpimg.pl/"], [src*="/images/adv/placeholder"]):first-child + div[class*=" "] + script:last-child)
+ipolska24.pl,jastrzabpost.pl,money.pl,o2.pl,wp.pl##article aside > .flex-none > div[class*=" "]:has(> div[class*=" "]:first-child + script:last-child)
 ipornia.com##+js(abort-on-property-read, vertis.popunder.neverblock)
 ipornia.com##+js(set-constant, vdaVars.neverblock.loaderUrl, undefined)
 iporntv.net###bannerPlace
@@ -31092,7 +31098,6 @@ japteenx.com##div[class^="photo-body-"]
 jardinsdubreil.fr#@##adhesion
 jasonsavard.com##+js(set-constant, detectAdsPromise, {})
 jasonsavard.com#@#.ad-placement
-jastrzabpost.pl,money.pl,o2.pl,wp.pl##article aside > .flex-none > div[class*=" "]:has(> div[class*=" "]:first-child + script:last-child)
 jatkoaika.com#$#hide-if-matches-xpath './/img[contains(@class,"hw-image")]/following::div[contains(text(),"Mainos")][contains(@class,"brand-")]/ancestor::div[starts-with(@class,"ja-brand")]'
 jauns.lv##.ad
 jauns.lv##.ph-1000x200
@@ -36553,7 +36558,6 @@ pcgamesn.com##.new_affiliate_embed
 pcgamesn.com##.saw-wrap
 pcgamesn.com#$#abort-on-property-read window.confirm
 pcgamesn.com#$#override-property-read window.navigator.connection.rtt 2000
-pcgamesn.com,ign.com,theatlantic.com##.ad-wrapper
 pcgamesn.com,pockettactics.com,wargamer.com##.sn-placement
 pcgamesn.com,pockettactics.com,wargamer.com##.snigel_ad
 pcgamestorrents.*,igg-games.*###tm-sidebar div > a[href] > img
@@ -38847,6 +38851,7 @@ rrjc.com##.coupletbox
 rrys2020.com###indexNav1
 rrys2020.com##.corner > LI > A[href*="yyets."]
 rscripts.net##+js(prevent-fetch, doubleclick)
+rscripts.net,pcgamesn.com,ign.com,theatlantic.com##.ad-wrapper
 rsload.net#$#abort-current-inline-script window.addEventListener load
 rspro.xyz#@#.body-top-ads
 rspro.xyz#@#.c-ads
@@ -40525,6 +40530,7 @@ spectrum.ieee.org##.top-leader-container
 spedostream2.shop##+js(set-constant, adblock_detect, noopFunc)
 speedcafe.com##div[class*="advanced_ads_"]
 speedguide.net##body > div[style="position:relative; margin:auto; padding: 0px; width:728px; height:100px; text-align:center;"]
+speedof.me##.mezgopv-zone
 speedpan.com###float-window
 speedtest.cn##.aP-box
 speedtest.cn##.advertisingSpace
@@ -43756,6 +43762,8 @@ vndoc.com#$#override-property-read seconds 0
 vnexpress.net##.title_box_category[style*="background:url(https://scdn.vnecdn.net/doisong/restruct/i/"][style*="/graphics/bg_fado_search.jpg)"]
 vnexpress.net##a[data-event-label="Button-TatAdblock"]
 vnexpress.net##iframe[src^="https://fado.vn/iframe/search?ref_id="]
+vnjpclub.com##+js(no-setTimeout-if, detectAdBlock)
+vnjpclub.com##.vnjp-ad-slot
 vnptioffice.vn#@#body[onbeforeunload="return myFunction()"]
 voachinese.com##.slide-in-wg
 vocm.com###leaderboard-area
@@ -44690,8 +44698,8 @@ www.facebook.com,web.facebook.com#$#json-prune 'require.0.3.0.__bbox.require.[].
 www.facebook.com,web.facebook.com#$#override-property-read Env.xvsijlg4 false; override-property-read Env.qmzkvr8p false; override-property-read Env.x3m9kf2n false; override-property-read GHLDetectionUtilsPreludeSafe.isJSONParseShimmedImpl falseFunc;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrizato]{11}|[Sponsrowane]{11}|[Anzeig]{6}|[Patrocnado]{11}|स्पॉन्सर्ड/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"] span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[aria-label][attributionsrc][href^="?__cft__"][role="link"]>span>span[aria-labelledby]'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href*="/ads/about/"][role="link"][tabindex="0"]>span'; hide-if-contains-visible-text /./ 'div#watch_feed div[class^="_"]' 'span>a[attributionsrc][href="#"][role="link"][tabindex="0"]>span>span[aria-labelledby]>span[style]'; race stop;
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}|[Sponsrwae]{12}|[Patrocind]{11}|[Sponsrizat]{13}|[Anzeig]{6}/ 'div[role=feed] div[role=article]' a[href^="?__cft__"]; race stop;
-www.facebook.com,web.facebook.com#$#race start; hide-if-matches-xpath '//div[@role="complementary"]//a[@target="_blank"][(not(@attributionsrc) and (contains(concat(" ",@rel," ")," tag") or contains(@rel,"bookmark") or contains(@rel,"search") or contains(@rel,"help") or contains(@rel,"author") or contains(@rel,"prev") or contains(@rel,"next"))) or (@aria-labelledby and (@attributionsrc="blank" or @attributionsrc="unknown")) or (contains(@attributionsrc,"privacy_sandbox") and (contains(@rel,"noopener") or contains(@rel,"nofollow") or contains(@rel,"noreferrer") or contains(@rel,"external")))]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//a[not(@attributionsrc)][contains(@rel,"next")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class]/..'; hide-if-matches-xpath '//div[@role="complementary"]//div[contains(@class,"xwib8y2") and contains(@class,"x1y1aw1k")][.//a[@target="_blank"][contains(@rel,"nofollow") and contains(@rel,"noreferrer") and (contains(@rel,"alternate") or contains(@rel,"license"))]]/parent::div'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[not(@attributionsrc)][contains(@rel,"next")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@rel,"next")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@rel,"noopener")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; race stop;
-www.facebook.com,web.facebook.com#$#race start; hide-if-matches-xpath '//div[not(*)][.="Ad" or .="Patrocinado" or .="Patrocinat" or .="Bersponsor" or .="Commandité" or .="Ditaja" or .="Gesponsert" or .="Gesponsord" or .="Sponsras" or .="Publicidad" or .="Sponsoreret" or .="Sponsoreeritud" or .="Sponset" or .="Sponsored" or .="Sponsorisé" or .="Sponsorizat" or .="Sponsorizzato" or .="Anzeige" or .="Sponsorlu" or .="Sponsorowane" or .="Реклама" or .="ממומן" or .="مُموَّلة" or .="دارای پشتیبانی مالی" or .="سپانسرڈ" or .="مُموَّل" or .="प्रायोजित" or .="সৌজন্যে" or .="ได้รับการสนับสนุน" or .="内容" or .="贊助" or .="Sponsoroitu" or .="May Sponsor" or .="Được tài trợ" or .="ಪ್ರಾಯೋಜಿತ" or .="स्पॉन्सर्ड" or .="広告" or .="赞助内容" or .="Рэклама" or .="Sponzorirano" or .="La maalgeliyey" or .="Geborg" or .="Reklam" or .="Plaćeni oglas" or .="광고" or .="Χορηγούμενη" or .="স্পনসর্ড" or .="প্রায়োজিত" or .="സ്പോൺസർ ചെയ്തത്" or .="സ്പോൺസർചെയ്തത്" or .="ਸਰਪ੍ਰਸਤੀ ਪ੍ਰਾਪਤ" or .="ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ" or .="මුදල් ගෙවා ප්‍රචාරය කරන ලදි" or .="විළ]" or .="Спонсорирано" or .="Спонзорисано" or .="ܒܘܕܩܐ ܡܡܘܘܢܐ" or .="Reklamo" or .="Hirdetés" or .="Sponsitud" or .="Sponzorováno" or .="Apmaksāta reklāma" or .="Urraithe" or .="Kostað"]/ancestor::a[@href][@role="link"][@tabindex][1]/parent::div' '//div[@role="main"]'; hide-if-matches-xpath '//div[contains(text(),"Ad") or contains(text(),"Patrocinado") or contains(text(),"Patrocinat") or contains(text(),"Bersponsor") or contains(text(),"Commandité") or contains(text(),"Ditaja") or contains(text(),"Gesponsert") or contains(text(),"Gesponsord") or contains(text(),"Sponsras") or contains(text(),"Publicidad") or contains(text(),"Sponsoreret") or contains(text(),"Sponsoreeritud") or contains(text(),"Sponset") or contains(text(),"Sponsored") or contains(text(),"Sponsorisé") or contains(text(),"Sponsorizat") or contains(text(),"Sponsorizzato") or contains(text(),"Anzeige") or contains(text(),"Sponsorlu") or contains(text(),"Sponsorowane") or contains(text(),"Реклама") or contains(text(),"ממומן") or contains(text(),"مُموَّلة") or contains(text(),"دارای پشتیبانی مالی") or contains(text(),"سپانسرڈ") or contains(text(),"مُموَّل") or contains(text(),"प्रायोजित") or contains(text(),"সৌজন্যে") or contains(text(),"ได้รับการสนับสนุน") or contains(text(),"内容") or contains(text(),"贊助") or contains(text(),"Sponsoroitu") or contains(text(),"May Sponsor") or contains(text(),"Được tài trợ") or contains(text(),"ಪ್ರಾಯೋಜಿತ") or contains(text(),"स्पॉन्सर्ड") or contains(text(),"広告") or contains(text(),"赞助内容") or contains(text(),"Рэклама") or contains(text(),"Sponzorirano") or contains(text(),"La maalgeliyey") or contains(text(),"Geborg") or contains(text(),"Reklam") or contains(text(),"Plaćeni oglas") or contains(text(),"광고") or contains(text(),"Χορηγούμενη") or contains(text(),"স্পনসর্ড") or contains(text(),"প্রায়োজিত") or contains(text(),"സ്പോൺസർ ചെയ്തത്") or contains(text(),"സ്പോൺസർചെയ്തത്") or contains(text(),"ਸਰਪ੍ਰਸਤੀ ਪ੍ਰਾਪਤ") or contains(text(),"ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(text(),"මුදල් ගෙවා ප්‍රචාරය කරන ලදි") or contains(text(),"විළ]") or contains(text(),"Спонсорирано") or contains(text(),"Спонзорисано") or contains(text(),"ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(text(),"Reklamo") or contains(text(),"Hirdetés") or contains(text(),"Sponsitud") or contains(text(),"Sponzorováno") or contains(text(),"Apmaksāta reklāma") or contains(text(),"Urraithe") or contains(text(),"Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; hide-if-matches-xpath '//div[contains(., "Ad") or contains(., "Patrocinado") or contains(., "Patrocinat") or contains(., "Bersponsor") or contains(., "Commandité") or contains(., "Ditaja") or contains(., "Gesponsert") or contains(., "Gesponsord") or contains(., "Sponsras") or contains(., "Publicidad") or contains(., "Sponsoreret") or contains(., "Sponsoreeritud") or contains(., "Sponset") or contains(., "Sponsored") or contains(., "Sponsorisé") or contains(., "Sponsorizat") or contains(., "Sponsorizzato") or contains(., "Anzeige") or contains(., "Sponsorlu") or contains(., "Sponsorowane") or contains(., "Реклама") or contains(., "ממומן") or contains(., "مُموَّلة") or contains(., "دارای پشتیبانی مالی") or contains(., "سپانسرڈ") or contains(., "مُموَّل") or contains(., "प्रায়োজিত") or contains(., "সৌজন্যে") or contains(., "ได้รับการสนับสนุน") or contains(., "内容") or contains(., "贊助") or contains(., "Sponsoroitu") or contains(., "May Sponsor") or contains(., "Được tài trợ") or contains(., "ಪ್ರಾಯೋಜಿತ") or contains(., "स्पॉन्सर्ड") or contains(., "広告") or contains(., "赞助内容") or contains(., "Рэклама") or contains(., "Sponzorirano") or contains(., "La maalgeliyey") or contains(., "Geborg") or contains(., "Reklam") or contains(., "Plaćeni oglas") or contains(., "광고") or contains(., "Χορηγούμενη") or contains(., "স্পনসর্ড") or contains(., "প্রায়োজিত") or contains(., "സ്പോൺസർ ചെയ്തത്") or contains(., "സ്പോൺസർചെയ്തത്") or contains(., "ਸਰਪ੍ਰਸਤੀ ਪ੍ਰาਪਤ") or contains(., "ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(., "මුදල් ගෙවා ප්රචාරය කරන ลදි") or contains(., "විළ]") or contains(., "Спонсорирано") or contains(., "Спонзорисано") or contains(., "ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(., "Reklamo") or contains(., "Hirdetés") or contains(., "Sponsitud") or contains(., "Sponzorováno") or contains(., "Apmaksāta reklāma") or contains(., "Urraithe") or contains(., "Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; hide-if-matches-xpath './/div[contains(text(),"Ad") or contains(text(),"Patrocinado") or contains(text(),"Patrocinat") or contains(text(),"Bersponsor") or contains(text(),"Commandité") or contains(text(),"Ditaja") or contains(text(),"Gesponsert") or contains(text(),"Gesponsord") or contains(text(),"Sponsras") or contains(text(),"Publicidad") or contains(text(),"Sponsoreret") or contains(text(),"Sponsoreeritud") or contains(text(),"Sponset") or contains(text(),"Sponsored") or contains(text(),"Sponsorisé") or contains(text(),"Sponsorizat") or contains(text(),"Sponsorizzato") or contains(text(),"Anzeige") or contains(text(),"Sponsorlu") or contains(text(),"Sponsorowane") or contains(text(),"Реклама") or contains(text(),"ממומן") or contains(text(),"مُموَّلة") or contains(text(),"دارای پشتیبانی مالی") or contains(text(),"سپانسرڈ") or contains(text(),"مُموَّل") or contains(text(),"प्रायोजित") or contains(text(),"সৌজন্যে") or contains(text(),"ได้รับการสนับสนุน") or contains(text(),"内容") or contains(text(),"贊助") or contains(text(),"Sponsoroitu") or contains(text(),"May Sponsor") or contains(text(),"Được tài trợ") or contains(text(),"ಪ್ರಾಯೋಜಿತ") or contains(text(),"स्पॉन्सर्ड") or contains(text(),"広告") or contains(text(),"赞助内容") or contains(text(),"Рэклама") or contains(text(),"Sponzorirano") or contains(text(),"La maalgeliyey") or contains(text(),"Geborg") or contains(text(),"Reklam") or contains(text(),"Plaćeni oglas") or contains(text(),"광고") or contains(text(),"Χορηγούμενη") or contains(text(),"স্পনসর্ড") or contains(text(),"প্রায়োজিত") or contains(text(),"സ്പോൺസർ ചെയ്തത്") or contains(text(),"സ്പോൺസർചെയ്തത്") or contains(text(),"ਸਰਪ੍ਰਸਤੀ ਪ੍ਰਾਪਤ") or contains(text(),"ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(text(),"මුදල් ගෙවා ප්‍රචාරය කරන ලදි") or contains(text(),"විළ]") or contains(text(),"Спонсорирано") or contains(text(),"Спонзорисано") or contains(text(),"ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(text(),"Reklamo") or contains(text(),"Hirdetés") or contains(text(),"Sponsitud") or contains(text(),"Sponzorováno") or contains(text(),"Apmaksāta reklāma") or contains(text(),"Urraithe") or contains(text(),"Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; hide-if-matches-xpath '//div[contains(., "Ad") or contains(., "Patrocinado") or contains(., "Patrocinat") or contains(., "Bersponsor") or contains(., "Commandité") or contains(., "Ditaja") or contains(., "Gesponsert") or contains(., "Gesponsord") or contains(., "Sponsras") or contains(., "Publicidad") or contains(., "Sponsoreret") or contains(., "Sponsoreeritud") or contains(., "Sponset") or contains(., "Sponsored") or contains(., "Sponsorisé") or contains(., "Sponsorizat") or contains(., "Sponsorizzato") or contains(., "Anzeige") or contains(., "Sponsorlu") or contains(., "Sponsorowane") or contains(., "Реклама") or contains(., "ממומן") or contains(., "مُموَّلة") or contains(., "دارای پشتیبانی مالی") or contains(., "سپانسرڈ") or contains(., "مُموَّل") or contains(., "प्रায়োজিত") or contains(., "সৌজন্যে") or contains(., "ได้รับการสนับสนุน") or contains(., "内容") or contains(., "贊助") or contains(., "Sponsoroitu") or contains(., "May Sponsor") or contains(., "Được tài trợ") or contains(., "ಪ್ರಾಯೋಜಿತ") or contains(., "स्पॉन्सर्ड") or contains(., "広告") or contains(., "赞助内容") or contains(., "Рэклама") or contains(., "Sponzorirano") or contains(., "La maalgeliyey") or contains(., "Geborg") or contains(., "Reklam") or contains(., "Plaćeni oglas") or contains(., "광고") or contains(., "Χορηγούμενη") or contains(., "স্পনসর্ড") or contains(., "প্রায়োজিত") or contains(., "സ്പോൺസർ ചെയ്തത്") or contains(., "സ്പോൺസർചെയ്തത്") or contains(., "ਸਰਪ੍ਰਸਤੀ ਪ੍ਰาਪਤ") or contains(., "ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(., "මුදල් ගෙවා ප්රචාරය කරන ลදි") or contains(., "විළ]") or contains(., "Спонсорирано") or contains(., "Спонзорисано") or contains(., "ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(., "Reklamo") or contains(., "Hirdetés") or contains(., "Sponsitud") or contains(., "Sponzorováno") or contains(., "Apmaksāta reklāma") or contains(., "Urraithe") or contains(., "Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div'; race stop;
+www.facebook.com,web.facebook.com#$#race start; hide-if-matches-xpath '//div[@role="complementary"]//a[@target="_blank"][(not(@attributionsrc) and (contains(concat(" ",@rel," ")," tag") or contains(@rel,"bookmark") or contains(@rel,"search") or contains(@rel,"help") or contains(@rel,"author") or contains(@rel,"prev") or contains(@rel,"next"))) or (@aria-labelledby and (@attributionsrc="blank" or @attributionsrc="unknown")) or (contains(@attributionsrc,"privacy_sandbox") and (contains(@rel,"noopener") or contains(@rel,"nofollow") or contains(@rel,"noreferrer") or contains(@rel,"external")))]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class][1]'; hide-if-matches-xpath '//div[@role="complementary"]//a[not(@attributionsrc)][contains(@rel,"next")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/parent::div[@class]/..'; hide-if-matches-xpath '//div[@role="complementary"]//div[contains(@class,"xwib8y2") and contains(@class,"x1y1aw1k")][.//a[@target="_blank"][contains(@rel,"nofollow") and contains(@rel,"noreferrer") and (contains(@rel,"alternate") or contains(@rel,"license"))]]/parent::div'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[not(@attributionsrc)][contains(@rel,"next")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@rel,"next")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@rel,"noopener")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; hide-if-matches-xpath '//div[@role="complementary"]//following::a[contains(@rel,"no")]/ancestor-or-self::div[contains(@class,"x1n2onr6")][2]/ancestor::div[4]/..'; race stop;
+www.facebook.com,web.facebook.com#$#race start; hide-if-matches-xpath '//div[not(*)][.="Ad" or .="Patrocinado" or .="Patrocinat" or .="Bersponsor" or .="Commandité" or .="Ditaja" or .="Gesponsert" or .="Gesponsord" or .="Sponsras" or .="Publicidad" or .="Sponsoreret" or .="Sponsoreeritud" or .="Sponset" or .="Sponsored" or .="Sponsorisé" or .="Sponsorizat" or .="Sponsorizzato" or .="Anzeige" or .="Sponsorlu" or .="Sponsorowane" or .="Реклама" or .="ממומן" or .="مُموَّلة" or .="دارای پشتیبانی مالی" or .="سپانسرڈ" or .="مُموَّل" or .="प्रायोजित" or .="সৌজন্যে" or .="ได้รับการสนับสนุน" or .="内容" or .="贊助" or .="Sponsoroitu" or .="May Sponsor" or .="Được tài trợ" or .="ಪ್ರಾಯೋಜಿತ" or .="स्पॉन्सर्ड" or .="広告" or .="赞助内容" or .="Рэклама" or .="Sponzorirano" or .="La maalgeliyey" or .="Geborg" or .="Reklam" or .="Plaćeni oglas" or .="광고" or .="Χορηγούμενη" or .="স্পনসর্ড" or .="প্রায়োজিত" or .="സ്പോൺസർ ചെയ്തത്" or .="സ്പോൺസർചെയ്തത്" or .="ਸਰਪ੍ਰਸਤੀ ਪ੍ਰਾਪਤ" or .="ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ" or .="මුදල් ගෙවා ප්‍රචාරය කරන ලදි" or .="විළ]" or .="Спонсорирано" or .="Спонзорисано" or .="ܒܘܕܩܐ ܡܡܘܘܢܐ" or .="Reklamo" or .="Hirdetés" or .="Sponsitud" or .="Sponzorováno" or .="Apmaksāta reklāma" or .="Urraithe" or .="Kostað"]/ancestor::a[@href][@role="link"][@tabindex][1]/parent::div' '//div[@role="main"]'; hide-if-matches-xpath '//div[contains(text(),"Ad") or contains(text(),"Patrocinado") or contains(text(),"Patrocinat") or contains(text(),"Bersponsor") or contains(text(),"Commandité") or contains(text(),"Ditaja") or contains(text(),"Gesponsert") or contains(text(),"Gesponsord") or contains(text(),"Sponsras") or contains(text(),"Publicidad") or contains(text(),"Sponsoreret") or contains(text(),"Sponsoreeritud") or contains(text(),"Sponset") or contains(text(),"Sponsored") or contains(text(),"Sponsorisé") or contains(text(),"Sponsorizat") or contains(text(),"Sponsorizzato") or contains(text(),"Anzeige") or contains(text(),"Sponsorlu") or contains(text(),"Sponsorowane") or contains(text(),"Реклама") or contains(text(),"ממומן") or contains(text(),"مُموَّلة") or contains(text(),"دارای پشتیبانی مالی") or contains(text(),"سپانسرڈ") or contains(text(),"مُموَّل") or contains(text(),"प्रायोजित") or contains(text(),"সৌজন্যে") or contains(text(),"ได้รับการสนับสนุน") or contains(text(),"内容") or contains(text(),"贊助") or contains(text(),"Sponsoroitu") or contains(text(),"May Sponsor") or contains(text(),"Được tài trợ") or contains(text(),"ಪ್ರಾಯೋಜಿತ") or contains(text(),"स्पॉन्सर्ड") or contains(text(),"広告") or contains(text(),"赞助内容") or contains(text(),"Рэклама") or contains(text(),"Sponzorirano") or contains(text(),"La maalgeliyey") or contains(text(),"Geborg") or contains(text(),"Reklam") or contains(text(),"Plaćeni oglas") or contains(text(),"광고") or contains(text(),"Χορηγούμενη") or contains(text(),"স্পনসর্ড") or contains(text(),"প্রায়োজিত") or contains(text(),"സ്പോൺസർ ചെയ്തത്") or contains(text(),"സ്പോൺസർചെയ്തത്") or contains(text(),"ਸਰਪ੍ਰਸਤੀ ਪ੍ਰਾਪਤ") or contains(text(),"ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(text(),"මුදල් ගෙවා ප්‍රචාරය කරන ලදි") or contains(text(),"විළ]") or contains(text(),"Спонсорирано") or contains(text(),"Спонзорисано") or contains(text(),"ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(text(),"Reklamo") or contains(text(),"Hirdetés") or contains(text(),"Sponsitud") or contains(text(),"Sponzorováno") or contains(text(),"Apmaksāta reklāma") or contains(text(),"Urraithe") or contains(text(),"Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; hide-if-matches-xpath '//div[contains(., "Ad") or contains(., "Patrocinado") or contains(., "Patrocinat") or contains(., "Bersponsor") or contains(., "Commandité") or contains(., "Ditaja") or contains(., "Gesponsert") or contains(., "Gesponsord") or contains(., "Sponsras") or contains(., "Publicidad") or contains(., "Sponsoreret") or contains(., "Sponsoreeritud") or contains(., "Sponset") or contains(., "Sponsored") or contains(., "Sponsorisé") or contains(., "Sponsorizat") or contains(., "Sponsorizzato") or contains(., "Anzeige") or contains(., "Sponsorlu") or contains(., "Sponsorowane") or contains(., "Реклама") or contains(., "ממומן") or contains(., "مُموَّلة") or contains(., "دارای پشتیبانی مالی") or contains(., "سپانسرڈ") or contains(., "مُموَّل") or contains(., "प्रায়োজিত") or contains(., "সৌজন্যে") or contains(., "ได้รับการสนับสนุน") or contains(., "内容") or contains(., "贊助") or contains(., "Sponsoroitu") or contains(., "May Sponsor") or contains(., "Được tài trợ") or contains(., "ಪ್ರಾಯೋಜಿತ") or contains(., "स्पॉन्सर्ड") or contains(., "広告") or contains(., "赞助内容") or contains(., "Рэклама") or contains(., "Sponzorirano") or contains(., "La maalgeliyey") or contains(., "Geborg") or contains(., "Reklam") or contains(., "Plaćeni oglas") or contains(., "광고") or contains(., "Χορηγούμενη") or contains(., "স্পনসর্ড") or contains(., "প্রায়োজিত") or contains(., "സ്പോൺസർ ചെയ്തത്") or contains(., "സ്പോൺസർചെയ്തത്") or contains(., "ਸਰਪ੍ਰਸਤੀ ਪ੍ਰาਪਤ") or contains(., "ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(., "මුදල් ගෙවා ප්රචාරය කරන ลදි") or contains(., "විළ]") or contains(., "Спонсорирано") or contains(., "Спонзорисано") or contains(., "ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(., "Reklamo") or contains(., "Hirdetés") or contains(., "Sponsitud") or contains(., "Sponzorováno") or contains(., "Apmaksāta reklāma") or contains(., "Urraithe") or contains(., "Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; hide-if-matches-xpath './/div[contains(text(),"Ad") or contains(text(),"Patrocinado") or contains(text(),"Patrocinat") or contains(text(),"Bersponsor") or contains(text(),"Commandité") or contains(text(),"Ditaja") or contains(text(),"Gesponsert") or contains(text(),"Gesponsord") or contains(text(),"Sponsras") or contains(text(),"Publicidad") or contains(text(),"Sponsoreret") or contains(text(),"Sponsoreeritud") or contains(text(),"Sponset") or contains(text(),"Sponsored") or contains(text(),"Sponsorisé") or contains(text(),"Sponsorizat") or contains(text(),"Sponsorizzato") or contains(text(),"Anzeige") or contains(text(),"Sponsorlu") or contains(text(),"Sponsorowane") or contains(text(),"Реклама") or contains(text(),"ממומן") or contains(text(),"مُموَّلة") or contains(text(),"دارای پشتیبانی مالی") or contains(text(),"سپانسرڈ") or contains(text(),"مُموَّل") or contains(text(),"प्रायोजित") or contains(text(),"সৌজন্যে") or contains(text(),"ได้รับการสนับสนุน") or contains(text(),"内容") or contains(text(),"贊助") or contains(text(),"Sponsoroitu") or contains(text(),"May Sponsor") or contains(text(),"Được tài trợ") or contains(text(),"ಪ್ರಾಯೋಜಿತ") or contains(text(),"स्पॉन्सर्ड") or contains(text(),"広告") or contains(text(),"赞助内容") or contains(text(),"Рэклама") or contains(text(),"Sponzorirano") or contains(text(),"La maalgeliyey") or contains(text(),"Geborg") or contains(text(),"Reklam") or contains(text(),"Plaćeni oglas") or contains(text(),"광고") or contains(text(),"Χορηγούμενη") or contains(text(),"স্পনসর্ড") or contains(text(),"প্রায়োজিত") or contains(text(),"സ്പോൺസർ ചെയ്തത്") or contains(text(),"സ്പോൺസർചെയ്തത്") or contains(text(),"ਸਰਪ੍ਰਸਤੀ ਪ੍ਰਾਪਤ") or contains(text(),"ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(text(),"මුදල් ගෙවා ප්‍රචාරය කරන ලදි") or contains(text(),"විළ]") or contains(text(),"Спонсорирано") or contains(text(),"Спонзорисано") or contains(text(),"ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(text(),"Reklamo") or contains(text(),"Hirdetés") or contains(text(),"Sponsitud") or contains(text(),"Sponzorováno") or contains(text(),"Apmaksāta reklāma") or contains(text(),"Urraithe") or contains(text(),"Kostað")]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; hide-if-matches-xpath '//div[contains(., "Ad") or contains(., "Patrocinado") or contains(., "Patrocinat") or contains(., "Bersponsor") or contains(., "Commandité") or contains(., "Ditaja") or contains(., "Gesponsert") or contains(., "Gesponsord") or contains(., "Sponsras") or contains(., "Publicidad") or contains(., "Sponsoreret") or contains(., "Sponsoreeritud") or contains(., "Sponset") or contains(., "Sponsored") or contains(., "Sponsorisé") or contains(., "Sponsorizat") or contains(., "Sponsorizzato") or contains(., "Anzeige") or contains(., "Sponsorlu") or contains(., "Sponsorowane") or contains(., "Реклама") or contains(., "ממומן") or contains(., "مُموَّلة") or contains(., "دارای پشتیبانی مالی") or contains(., "سپانسرڈ") or contains(., "مُموَّل") or contains(., "प्रায়োজিত") or contains(., "সৌজন্যে") or contains(., "ได้รับการสนับสนุน") or contains(., "内容") or contains(., "贊助") or contains(., "Sponsoroitu") or contains(., "May Sponsor") or contains(., "Được tài trợ") or contains(., "ಪ್ರಾಯೋಜಿತ") or contains(., "स्पॉन्सर्ड") or contains(., "広告") or contains(., "赞助内容") or contains(., "Рэклама") or contains(., "Sponzorirano") or contains(., "La maalgeliyey") or contains(., "Geborg") or contains(., "Reklam") or contains(., "Plaćeni oglas") or contains(., "광고") or contains(., "Χορηγούμενη") or contains(., "স্পনসর্ড") or contains(., "প্রায়োজিত") or contains(., "സ്പോൺസർ ചെയ്തത്") or contains(., "സ്പോൺസർചെയ്തത്") or contains(., "ਸਰਪ੍ਰਸਤੀ ਪ੍ਰาਪਤ") or contains(., "ਸਰਪ੍ਰਸਤੀਪ੍ਰਾਪਤ") or contains(., "මුදල් ගෙවා ප්රචාරය කරන ลදි") or contains(., "විළ]") or contains(., "Спонсорирано") or contains(., "Спонзорисано") or contains(., "ܒܘܕܩܐ ܡܡܘܘܢܐ") or contains(., "Reklamo") or contains(., "Hirdetés") or contains(., "Sponsitud") or contains(., "Sponzorováno") or contains(., "Apmaksāta reklāma") or contains(., "Urraithe") or contains(., "Kostað")][not(ancestor::div[@role="listitem"])]/ancestor::a[@href][@role="link"][@tabindex][1]/ancestor::div[2]/../parent::div' '//div[@role="main"]'; race stop;
 www.facebook.com,web.facebook.com#$#replace-xhr-response '/"(instream_extra_config|instream_video_ad_breaks_comet|post_roll_ad_break)":\{/' '"$1":null,"__x":{'
 www.facebook.com,web.facebook.com#$#replace-xhr-response '/"instream_video_ad_breaks":.[{]/' '"instream_video_ad_breaks":[],"__xb":[{'
 www.facebook.com,web.facebook.com#$#replace-xhr-response '/"node":\{(?:"__typename":"MarketplaceFeedAdStory"[^\\n]+?"sponsored_data":|[^\\n]*?"sponsored_data":\{"__typename":"SponsoredData")[^\\n]+\}(?=,"cursor":)/' '"node":null'
@@ -47676,6 +47684,7 @@ zzzyk.com###Tinfo
 ||3uyo22q87l653qqj4wvi.cfd^
 ||3v7c7y.online^
 ||3vnofjidlv.com^
+||3w27zp7ohnzouxyguckyy.rest^
 ||3wk.cc/images/*.gif
 ||3wn3w3skxpym.round.t3.gg^
 ||3wzq2yxde.com^
@@ -53564,6 +53573,7 @@ zzzyk.com###Tinfo
 ||absorbingband.com^
 ||absorbinginject.com^
 ||absorbingprison.com^
+||absorbsspooksdictum.cfd^
 ||absorptionservant.com^
 ||absorptlogia.qpon^
 ||absscw.vegis.ro^
@@ -55709,6 +55719,7 @@ zzzyk.com###Tinfo
 ||ahm.jiankang123.net^
 ||ahngxh.palladiumhotelgroup.com^
 ||ahnrmb.topvintage.de^
+||ahobsewcjigev.space^
 ||ahort.xyz^
 ||ahp18.site^
 ||ahp19.site^
@@ -59084,6 +59095,7 @@ zzzyk.com###Tinfo
 ||aqfifswfxjscsa.com^
 ||aqftgalqig.com^
 ||aqfxtibru.in^
+||aqgpqtsksxsta.website^
 ||aqgpvllbdjhmk.website^
 ||aqilk66444a.xyz^
 ||aqiongxlma.com^
@@ -62292,6 +62304,7 @@ zzzyk.com###Tinfo
 ||bloomberg.com/8FCGYgk4/init.js
 ||bloomreach.co^
 ||bloomsend.com^
+||bloopsbordel.cfd^
 ||blowenstork.qpon^
 ||blowersdialer.com^
 ||blowingwind.xyz^
@@ -64438,6 +64451,7 @@ zzzyk.com###Tinfo
 ||carlisleit.actonservice.com^
 ||carloforward.com^
 ||carmotquidder.cfd^
+||carnagefezzy.com^
 ||carnations9.com^
 ||carnoc.com/noticejs/
 ||caroda.io^$3p
@@ -64452,6 +64466,7 @@ zzzyk.com###Tinfo
 ||carpiumexopt.com^
 ||carpjknrhkwth.site^
 ||carpoolqueen.com^
+||carreauyajeine.cfd^
 ||carreras.unisabana.edu.co^
 ||carriedamiral.com^
 ||carrowseptets.cyou^
@@ -64574,6 +64589,7 @@ zzzyk.com###Tinfo
 ||cautiousfloor.com^
 ||cautiouslyanalysecrystal.com^
 ||cautommityring.com^
+||cavdiacameistsnapped.cfd^
 ||cavecurtain.com^
 ||cavederasionantired.cfd^
 ||cavernsinaite.com^
@@ -71114,6 +71130,7 @@ zzzyk.com###Tinfo
 ||depzdhamot.com^
 ||deqixs.com/config/
 ||deqixs.com/config/v7.js
+||deqrkaugcpplk.website^
 ||deqwas.net^$third-party
 ||deratfeuded.cyou^
 ||derbypops.com^
@@ -71516,10 +71533,12 @@ zzzyk.com###Tinfo
 ||dianying-1304791696.cos.ap-shanghai.myqcloud.com^
 ||dianyingim.com/statics/recommend/
 ||diaoyu123.com/cpro/show.js
+||diapsidbuchloe.com^
 ||diarrhoeaeaglesunday.com^
 ||diasgajzekz.com^
 ||diaspercrucianshoofly.cyou^
 ||diasyrmunionic.com^
+||diatomsfrisson.cfd^
 ||diazoicmohair.com^
 ||dibaiweiai.com^
 ||diboji.class101.net^
@@ -72076,6 +72095,7 @@ zzzyk.com###Tinfo
 ||djxh1.com^
 ||djxjti.oil-stores.gr^
 ||djxyhp.ashtondrake.com^
+||djxyosopnferfdm.com^
 ||djz9es32qen64.cloudfront.net^
 ||dk-go.experian.com^
 ||dk4ywix.com^
@@ -72325,6 +72345,7 @@ zzzyk.com###Tinfo
 ||dn6rwwtxa647p.cloudfront.net^
 ||dn7u3i0t165w2.cloudfront.net^
 ||dna.uol.com.br^
+||dnaiwexdkemhp.website^
 ||dnasolves.com/static/js/embed.js$domain=websleuths.com
 ||dnavexch.com^
 ||dnceqzz.icu^
@@ -72535,6 +72556,7 @@ zzzyk.com###Tinfo
 ||dornicflor.cyou^
 ||dorsalatake.com^
 ||dosre12.xyz^
+||dossechites.shop^
 ||dostyajna.cfd^
 ||dot.wp.pl^$script
 ||dota2.uuu9.com^$subdocument
@@ -72932,6 +72954,7 @@ zzzyk.com###Tinfo
 ||dsekhn.com^
 ||dseopf.com^
 ||dsetx3.com^
+||dseyzk.com^
 ||dsfe19.madeindesign.com^
 ||dsfjcz.com^
 ||dsfkry.com^
@@ -72941,6 +72964,7 @@ zzzyk.com###Tinfo
 ||dsftcd.com^
 ||dsfvya.com^
 ||dsg.interia.pl^
+||dsgarg.com^
 ||dsgldf.com^
 ||dsgvgw.com^
 ||dsgwoa.com^
@@ -76576,6 +76600,7 @@ zzzyk.com###Tinfo
 ||ezu6rd5.houge.in^
 ||ezuhbd.industrialdiscount.it^
 ||ezvjys.belezanaweb.com.br^
+||ezwaesiygabzn.online^
 ||ezytrack.com^$third-party
 ||ezzwechiiewt.com^
 ||f*.baidu.com/it/u=*,*&fm=$3p,domain=~hao123.com|~haokan.com|~yoojia.com
@@ -76870,6 +76895,7 @@ zzzyk.com###Tinfo
 ||fanza.cc^
 ||fanzhuang.net.cn^$3p
 ||faokwl.sklepogrodniczy.pl^
+||faozkbjgxvdjh.online^
 ||fapality.com/js/initsite.js
 ||fapality.com^$3p
 ||fapcat.com^$3p
@@ -76988,6 +77014,7 @@ zzzyk.com###Tinfo
 ||fbehsapmnsz.com^
 ||fbetlixgee.eu^
 ||fbijrbsgoqyh.com^
+||fbjnxftggjpwa.website^
 ||fbjpji.europcar.es^
 ||fbkxhltufvarpj.com^
 ||fblndqobxs.com^
@@ -77600,6 +77627,7 @@ zzzyk.com###Tinfo
 ||fixuresrethink.cfd^
 ||fiyvmhrvifbepi.com^
 ||fizopp.duluthtrading.com^
+||fizzledesire.com^
 ||fizzyacerbitymellow.com^
 ||fj.sina.com.cn/iframe/63/
 ||fjalsr83a6.com^
@@ -77617,6 +77645,7 @@ zzzyk.com###Tinfo
 ||fjordsand.com^
 ||fjortk.braun-hamburg.com^
 ||fjpopxgyfrlxvc.com^
+||fjpqxokekvgak.website^
 ||fjriahevfgvcko.com^
 ||fjsen.com:81/mysql/count/
 ||fjshxjs.cn^
@@ -77919,6 +77948,7 @@ zzzyk.com###Tinfo
 ||fnmvok.aaaradiatory.cz^
 ||fnoc.cn^
 ||fnoqgg.roninwear.com^
+||fnrilqmawcvmu.site^
 ||fnvma.milanuncios.com^
 ||fnvvtwclgdcqr.online^
 ||fnvxpndhciszp.website^
@@ -78320,6 +78350,7 @@ zzzyk.com###Tinfo
 ||fqcqnb.dwr.com^
 ||fqdpqpwruidrz.store^
 ||fqflsynvp.com^
+||fqgcltsfrjuln.space^
 ||fqhakaihvu.com^
 ||fqhpocbzdeaze.site^
 ||fqk6e78c80.com^
@@ -78507,6 +78538,7 @@ zzzyk.com###Tinfo
 ||fretumlimpsey.com^
 ||freychang.fun^
 ||frgmpqsctzels.site^
+||frhfurcnqpnng.website^
 ||frhi5v6ez1.com^
 ||frhopo.cn^
 ||fridaymarketing.actonservice.com^
@@ -79308,6 +79340,7 @@ zzzyk.com###Tinfo
 ||gawayez.e-postserv.com^
 ||gawkydrupose.cyou^
 ||gawnaze.com^
+||gawneytae.cfd^
 ||gaxyssprvcejy.site^
 ||gay-hotvideo.net^
 ||gay.bingo/agent.php
@@ -81024,6 +81057,7 @@ zzzyk.com###Tinfo
 ||godoxevez.com^
 ||godpvqnszo.com^
 ||godroonrefrig.com^
+||godsakesucraselarked.cfd^
 ||godseedband.com^
 ||goeducklactase.com^
 ||goelismstapler.com^
@@ -81599,6 +81633,7 @@ zzzyk.com###Tinfo
 ||growthmodemarketing.actonservice.com^
 ||growthol22.com^
 ||growthrx.in^$third-party
+||grozetstraint.com^
 ||grrebjfkmoddeh.com^
 ||grrergiol.com^
 ||grrmucosas.com^
@@ -82113,6 +82148,7 @@ zzzyk.com###Tinfo
 ||hacde5.icu^
 ||hacde6.icu^
 ||hackeraa.xyz^
+||hackerycooey.shop^
 ||hackhome.com/js/*top.js
 ||hackhome.com/js/bhref.js
 ||hackhome.com/js/dright.js
@@ -82215,6 +82251,7 @@ zzzyk.com###Tinfo
 ||hangersguids.qpon^
 ||hangmenchichis.cyou^
 ||hangoverknock.com^
+||hanifdocquet.qpon^
 ||hanime1-me.*/herebyad
 ||hanime1-me.top/view_booster.js
 ||hanjutv2020.com/index.php?c=dudu_
@@ -83976,6 +84013,7 @@ zzzyk.com###Tinfo
 ||hvdath.xyz^
 ||hvfojfzh.com^
 ||hvgttaygy.com^
+||hvhpwafhvwrk.com^
 ||hvmdu6macy.com^
 ||hvooyieoei.com^
 ||hvpeme.petedge.com^
@@ -84114,6 +84152,7 @@ zzzyk.com###Tinfo
 ||hz.shouyoutv.com^
 ||hz.youku.com/red/
 ||hzeetn.natalie.mu^
+||hzgh8czw3nfyyb58vzjvkp1ptk1pt.cfd^
 ||hzhabei.cn^
 ||hzhuang.wang^
 ||hzhyhm.com^
@@ -85680,6 +85719,7 @@ zzzyk.com###Tinfo
 ||imtmp.net^
 ||imtwjwoasak.com^$third-party
 ||imuchalo.com^
+||imwwdjmnfcans.space^
 ||imzahrwl.xyz^
 ||in-appadvertising.com^
 ||in-business.vodafone.com^
@@ -85795,6 +85835,7 @@ zzzyk.com###Tinfo
 ||indusacta.com^
 ||industries100.com^
 ||industries78.net^
+||industriesfrominvisible.net^
 ||industriesinbag.net^
 ||industriestoblend.com^
 ||industriestoredundancy.net^
@@ -87145,6 +87186,7 @@ zzzyk.com###Tinfo
 ||iohqwaarinkpi.site^
 ||ioiksw.cn^
 ||ioirszjjxlmdu.space^
+||iojgirgpzkhym.website^
 ||iojnask.com^
 ||iokhsx.unionmonthly.jp^
 ||iokmey.icu^
@@ -87394,6 +87436,7 @@ zzzyk.com###Tinfo
 ||irs01.com^
 ||irs03.com^
 ||irscriptfertile.cfd^
+||irssptjnnupxz.space^
 ||irtdqdjmhzgnl.online^
 ||irtefs.xyz^
 ||irtya.com^
@@ -88119,6 +88162,7 @@ zzzyk.com###Tinfo
 ||jfjle4g5l.com^
 ||jflmhtxvgslfe.space^
 ||jfltzz.riu.com^
+||jfneysdhhisea.website^
 ||jfnkjr.xyz^
 ||jfnnzq.quelle.de^
 ||jfo0.societegenerale.fr^
@@ -88666,6 +88710,7 @@ zzzyk.com###Tinfo
 ||jrmrijv.icu^
 ||jrpkizae.com^
 ||jrq39d1r8.com^
+||jrqfukqx.com^
 ||jrqojtvzuqvhx.online^
 ||jrqzmiipckcvm.website^
 ||jrrkcyqgrdxkf.space^
@@ -89116,6 +89161,7 @@ zzzyk.com###Tinfo
 ||jzgfhr.nordicnest.com^
 ||jzixypd.icu^
 ||jzjxmj.com^
+||jzlqdgvrsyqgz.online^
 ||jzmdfualkoyzn.online^
 ||jzoaoaqbkhpxr.online^
 ||jzoxch.menswearhouse.com^
@@ -89349,6 +89395,7 @@ zzzyk.com###Tinfo
 ||kc30leutua.top^
 ||kc3mmffdbt.com^
 ||kcbchoevit.com^
+||kcbelamyyeti.qpon^
 ||kccdk.com/Content/img/*.gif
 ||kccsrecommend.site/torimochi_log/
 ||kcdnakioe.com^
@@ -90989,6 +91036,7 @@ zzzyk.com###Tinfo
 ||lensdump.com/i/*.gif$badfilter
 ||lentainform.com^$third-party
 ||lentattire.com^
+||lentoscrocuta.shop^
 ||lentspeaking.com^
 ||lenzuhohecujh.site^
 ||leo1.leon-de-bruxelles.fr^
@@ -92659,6 +92707,7 @@ zzzyk.com###Tinfo
 ||localsnaughty.com^
 ||localytics.com^$third-party
 ||locateskill.com^
+||locatiocorms.com^
 ||location.imsmetals.com^
 ||location3.com/analytics/
 ||lockanuranresiled.qpon^
@@ -93330,6 +93379,7 @@ zzzyk.com###Tinfo
 ||lucrinearraign.com^
 ||ludicrousarch.com^
 ||luegnh.sneakercage.gr^
+||luft9h68c4kyv7wjy.rest^
 ||lugansk-info.ru^$third-party
 ||luglgf6r816982rr45f2.cfd^
 ||lugtwzzerj.com^
@@ -95921,6 +95971,7 @@ zzzyk.com###Tinfo
 ||mbainfo.ust.hk^
 ||mbalib.com/common/a_mbalib/
 ||mbbhij.mi-home.pl^
+||mbcgtqxjloqev.space^
 ||mbddip.com^
 ||mbdippex.com^
 ||mbekgac.xyz^
@@ -96527,6 +96578,7 @@ zzzyk.com###Tinfo
 ||menthalegati.shop^
 ||mentimeter.com/performance-metrics
 ||mentionbounceclimate.com^
+||mentioneartabphrygia.cyou^
 ||mentionideablit.com^
 ||mentorsticks.com^
 ||meoqrkio.com^
@@ -100204,6 +100256,7 @@ zzzyk.com###Tinfo
 ||ndenceschemica.org^
 ||ndeooc.bubbleroom.no^
 ||ndfhqtezbkavl.online^
+||ndflvizhicoiu.site^
 ||ndfsl.com^
 ||ndg.io^$third-party
 ||ndgrlo.visiondirect.com.au^
@@ -100770,6 +100823,7 @@ zzzyk.com###Tinfo
 ||nickeldefiancepriest.com^
 ||nickelsligansbernice.qpon^
 ||nickles.de/ivw/
+||nickuntin.shop^
 ||nicoad.nicovideo.jp/*/instream/tracking/
 ||nicolive.cdn.nimg.jp/relive/sp/browser-logs.
 ||nicolive.cdn.nimg.jp/relive/sp/trackingService.
@@ -101733,6 +101787,7 @@ zzzyk.com###Tinfo
 ||o86owcil7c4ppiox.cfd^
 ||o8u3n4q7fe.com^
 ||o911o.com^
+||o99yebioe3z7koxlfmomzjqnxg.cfd^
 ||o9qdqbu6nu.com^
 ||o9tt6h08li.execute-api.eu-west-1.amazonaws.com^
 ||oa-panther.data.aliyun.com^$3p
@@ -101907,6 +101962,7 @@ zzzyk.com###Tinfo
 ||oda.markitondemand.com^
 ||odc.1und1.de^
 ||odc.wunderground.com^
+||odclajjuwo.in^
 ||oddlystudent.com^
 ||oddsserve.com^
 ||odeonssickingbaizing.cfd^
@@ -102028,6 +102084,7 @@ zzzyk.com###Tinfo
 ||ofklefkian.com^
 ||ofkqiy.knowfashionstyle.com^
 ||ofkrabbyr.com^
+||ofltycalhhzvz.online^
 ||ofmxtlbgqp.com^
 ||ofntikrchswfbw.com^
 ||ofoltekbn.com^
@@ -103999,6 +104056,7 @@ zzzyk.com###Tinfo
 ||papawrefits.com^
 ||papelonkokoona.com^
 ||papemz.rcwilley.com^
+||papersbanlieu.qpon^
 ||paphzz.icu^
 ||papi.stylar.ai^
 ||papiosaiid.com^
@@ -104110,6 +104168,7 @@ zzzyk.com###Tinfo
 ||partnersuccess.cisco.com^
 ||partnersuccessmetrics.cisco.com^
 ||partnerwith.us.streetbond.com^
+||partonstaipan.cyou^
 ||partplanes.com^
 ||partridgepuny.com^
 ||parts.akibablog.net^$subdocument
@@ -106563,6 +106622,7 @@ zzzyk.com###Tinfo
 ||prvnizpravy.cz^$removeparam=xid
 ||prx6.destinia.ch^
 ||prxr7mh7g58wkrmbfnv433.rest^
+||prxssfmbsqgyv.online^
 ||prylersteeds.qpon^
 ||przucu.elkjop.no^
 ||ps.ex.co/cookie_sync
@@ -107938,6 +107998,7 @@ zzzyk.com###Tinfo
 ||quillykeened.cyou^
 ||quiltquick.com^
 ||quiltruler.com^
+||quinasdepure.qpon^
 ||quince22.top^
 ||quinceimaging.actonservice.com^
 ||quinincider.qpon^
@@ -108286,6 +108347,7 @@ zzzyk.com###Tinfo
 ||rainbownine.net^$third-party
 ||raindrop.io/pb/api/event
 ||rainexceptionrabbit.com^
+||rainmaker.production-public.tubi.io/*/WEB?app_id=tubitv*&pub_id=*&*vpaid_enabled=
 ||rainpat.com/Content/1360x55/
 ||rainpat.com/Scripts/jquery.SuperSlide.
 ||raintwig.com^
@@ -109067,6 +109129,7 @@ zzzyk.com###Tinfo
 ||renzhen8.cn^
 ||reoahghrlfuy.com^
 ||reopenshelly.cfd^
+||reopenwebfed.shop^
 ||reople.co.kr^
 ||reorganizes64.com^
 ||repantalsedighters.com^
@@ -109977,6 +110040,7 @@ zzzyk.com###Tinfo
 ||rotf.lol^
 ||rotifersalutes.cyou^
 ||rotondasoothegged.cyou^
+||rotshe.cfd^
 ||rottencycle.com^
 ||rottenray.com^
 ||rou.video/_next/static/chunks/pages/fuli-
@@ -111658,6 +111722,7 @@ zzzyk.com###Tinfo
 ||saucewonderdaytime.com^
 ||saulgethuluth.shop^
 ||sausage34.com^
+||sautejitterssissing.cyou^
 ||sautoirterfez.qpon^
 ||sautslowup.com^
 ||save-editor.com/b/in/ad/
@@ -111966,6 +112031,7 @@ zzzyk.com###Tinfo
 ||scout.salesloft.com/r?tid=
 ||scout.us2.salesloft.com^$image
 ||scoutanalytics.net^$third-party
+||scowledlampong.qpon^
 ||scowpoppanasals.com^
 ||scp.deltadentalwa.com^
 ||scptp9.com^
@@ -117786,6 +117852,7 @@ zzzyk.com###Tinfo
 ||socketviking.net^$third-party
 ||sockpacks.com^
 ||sockr.birdie.so/event
+||socksince.com^
 ||socos.gitee.io/ss/poster/
 ||socs.hagerty.com^
 ||socsi.in^$third-party
@@ -117870,6 +117937,7 @@ zzzyk.com###Tinfo
 ||sojson.com/ui/images/upyun
 ||soko.ai^$third-party
 ||sokrati.com^$third-party
+||soksoznleowkf.website^
 ||sokutei.car2828.jp^
 ||sol-data.com^$third-party
 ||sol.tlcgher.com^
@@ -121612,6 +121680,7 @@ zzzyk.com###Tinfo
 ||suncanny.marvelhq.com^
 ||sundaesenvelopolein.cfd^
 ||sundaysky.com^$third-party
+||sundewamated.cyou^
 ||sunflower27.com^
 ||sunflowers66.top^
 ||sunglasse2.top^
@@ -128585,6 +128654,7 @@ zzzyk.com###Tinfo
 ||tubesafari.com/*/new_popunder.js$domain=tubesafari.com
 ||tubeviral.com/Webservices/jsParseLinks.aspx$script,third-party
 ||tubeviral.com/visitScript/$script,third-party
+||tubi.io/api/v*/ad_override?
 ||tubi.io/datascience/logging?
 ||tubifermoneran.shop^
 ||tubitv.com/oz/performance/
@@ -131383,6 +131453,7 @@ zzzyk.com###Tinfo
 ||viglink.com/api/ping$third-party
 ||vigswobchob.com^
 ||vigyn4gpx.com^
+||viharafermata.shop^
 ||vihararayonny.qpon^
 ||vihjaapiqdhcza.com^
 ||vihppjk.cn^
@@ -131789,6 +131860,7 @@ zzzyk.com###Tinfo
 ||volkswagen-italia.it^*/tracking/
 ||vologda-info.ru^$third-party
 ||volume68.top^
+||volumedwidegap.qpon^
 ||volument.com^$third-party
 ||volumntime.com^
 ||volutaeyesscitron.cyou^
@@ -131942,6 +132014,7 @@ zzzyk.com###Tinfo
 ||vskewwuoda.com^
 ||vslfbotg.com^
 ||vslnphbyuqbkz.site^
+||vsorcyifkcbwo.site^
 ||vsping-*.myqcloud.com/ggw/
 ||vsping.com/website/adLinks?
 ||vsping.com/website/ads?
@@ -134204,6 +134277,7 @@ zzzyk.com###Tinfo
 ||wwads.cn^
 ||wwads.cn^$3p
 ||wwavo59q3.com^
+||wwbdxxdybpfpl.site^
 ||wwblbpjyj.com^
 ||wwbsll.nissen.co.jp^
 ||wwcdgvwvl.com^
@@ -135398,6 +135472,7 @@ zzzyk.com###Tinfo
 ||xerunkus.com^
 ||xewihp.bayut.com^
 ||xeynozl.icu^
+||xfbdnfyafbmq.com^
 ||xfdlfj.icu^
 ||xfgctg.com^
 ||xfidfuxidr.in^
@@ -136151,6 +136226,7 @@ zzzyk.com###Tinfo
 ||xukou.net^
 ||xulizui6.com^
 ||xumojgquwd.in^
+||xumxustwahfco.site^
 ||xumzkveupjame.site^
 ||xunlei.com/api/stat/rt/js?
 ||xunsu.cc/js/indexbottom.js
@@ -136373,6 +136449,7 @@ zzzyk.com###Tinfo
 ||y6zqw.boyspornpics.com^
 ||y738.nhregister.com^
 ||y74s.xyz^
+||y7bo6nwk.xyz^
 ||y7pcgacfn.com^
 ||y820.darientimes.com^
 ||y8hxgv9m.kobetsu.co.jp^
@@ -137417,6 +137494,7 @@ zzzyk.com###Tinfo
 ||yxqhuy.icu^
 ||yxqmryq.top^
 ||yxsdgi.bedworld.net^
+||yxsrhegapxajhj.com^
 ||yxtcxizontkmg.online^
 ||yxtmums.com^
 ||yxtxknslyovlgp.com^
