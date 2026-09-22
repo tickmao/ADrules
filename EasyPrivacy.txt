@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202609220205
+! Version: 202609221022
 ! Title: EasyPrivacy
-! Last modified: 22 Sep 2026 02:05 UTC
+! Last modified: 22 Sep 2026 10:22 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 56a0179a806d48e0b6f67356b15b3c577a7851cb
+! Commit: 85ec4888423c3ce224e81d732cdb26bc608f7f94
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -3310,6 +3310,7 @@ _WebVitalsReporter_
 /beacon.krxd.net/*
 /beacon?data=$image
 /beaconimages.netflix.net/*$image
+/bmo.mercari.jp/?s=$image
 /c.vialoops.com/*$image
 /CI0/0$image
 /ck.m.honto.jp/c/*$image
@@ -14205,6 +14206,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||etwun.com:8080/counter.php?
 ||event.tagtoo.co^
 ||experiments.sparanoid.net^
+||fourier.alibaba.com^
 ||fourier.taobao.com^
 ||g.yccdn.com^
 ||gdt.qq.com^
@@ -56818,6 +56820,7 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ! 
 ! ---------- Norwegian ----------
 ! 
+@@/ga-tracking.min.js$script,domain=boots.no|checkout.platekompaniet.no
 @@||cat.telia.no/gtm.js$script,domain=telia.no
 @@||hvemder.no/js/hitcount.min.js$~third-party
 @@||komplett.no/gtm.js$script,~third-party
