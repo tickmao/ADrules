@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202610010251
+! Version: 202610011147
 ! Title: EasyPrivacy
-! Last modified: 01 Oct 2026 02:51 UTC
+! Last modified: 01 Oct 2026 11:47 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a73317b8ce2722b73cb6c7716f08c5b1d9649b93
+! Commit: 6335000d1ce18ed453c8df3acb2a0b5b8a4f265e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -10763,6 +10763,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||api.tally.so/forms/*/events
 ||api.transtore.app/api/v2/storefront/tracking
 ||api.usestoryteller.com/api/app/activity/recordActivity?
+||api.useunloq.com/event_management/
 ||api.visitorapi.com^$third-party
 ||api.wipmania.com^
 ||apibaza.com/pixel/
@@ -15687,7 +15688,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cwt.citywire.info^
 ||cxgpt1.goindigo.in/forward/v2/track
 ||cybernews.com/clientfpid/
-||cybernews.com/fxq4/
 ||d.analyticsmania.com^
 ||d.skk.moe^
 ||d401.dollartree.com^
@@ -56091,6 +56091,7 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 @@||bookmate.com^*/impressions?$~third-party,xmlhttprequest
 @@||bostonglobe.com/login/js/lib/AppMeasurement.js$~third-party
 @@||browser-intake-datadoghq.com^$xmlhttprequest,domain=grubhub.com|mightyape.co.nz
+@@||browser-intake-datadoghq.eu^$xmlhttprequest,domain=sncf-connect.com
 @@||browser.covatic.io/sdk/v1/bauer.js$script,domain=hellorayo.co.uk
 @@||c.lytics.io/api/tag/$script,domain=time.com
 @@||c.paypal.com/da/r/fb.js$script
