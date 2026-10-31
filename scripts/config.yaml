@@ -1,112 +1,280 @@
-rules:
-  # 国际通用规则
-  - name: "EasyList"
-    category: "international"
-    url: "https://easylist.to/easylist/easylist.txt"
+# ADrules 源清单
+#
+# 字段说明：
+#   id            稳定标识，报告与发现脚本用它追踪来源
+#   category      ads | privacy | annoyance | cookie | security | mobile | comprehensive
+#   region        global | cn
+#   kind          original（上游作者自维护）| aggregate（二次聚合）
+#   dimensions    该源实际覆盖的拦截维度，用于冗余检查
+#   filename      写入仓库的文件名，也就是用户订阅的文件
+#   urls          按顺序尝试的下载地址，前一个不可用时自动降级到镜像
+#   optional      true 时下载失败只记录、不让 CI 失败
+
+sources:
+  # ---------- 通用广告 ----------
+  - id: easylist
+    name: "EasyList"
+    category: ads
+    region: global
+    kind: original
+    dimensions: [ads, tracker]
     filename: "Easylist.txt"
-    update_frequency: "4 days"
-    priority: 5
+    urls:
+      - "https://easylist.to/easylist/easylist.txt"
     timeout: 120
-    description: "最主流的国际广告过滤规则"
     homepage: "https://easylist.to/"
     license: "GPL-3.0 / CC BY-SA 3.0"
+    description: "最主流的国际广告过滤规则，事实标准"
 
-  - name: "EasyPrivacy"
-    category: "international"
-    url: "https://easylist.to/easylist/easyprivacy.txt"
-    filename: "EasyPrivacy.txt"
-    update_frequency: "4 days"
-    priority: 5
+  - id: adguard-base
+    name: "AdGuard Base Filter"
+    category: ads
+    region: global
+    kind: original
+    dimensions: [ads, tracker]
+    filename: "AdGuard-Base.txt"
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt"
     timeout: 120
-    description: "隐私保护和反跟踪规则"
-    homepage: "https://easylist.to/"
-    license: "GPL-3.0 / CC BY-SA 3.0"
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    description: "AdGuard 官方基础过滤，已剔除 EasyList 部分以免重复"
 
-  # 中国特化规则
-  - name: "EasyList China"
-    category: "china"
-    url: "https://easylist-downloads.adblockplus.org/easylistchina.txt"
+  - id: peterlowe
+    name: "Peter Lowe's List"
+    category: ads
+    region: global
+    kind: original
+    dimensions: [ads]
+    filename: "PeterLowe-List.txt"
+    urls:
+      - "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=0&mimetype=plaintext"
+    homepage: "https://pgl.yoyo.org/adservers/"
+    license: "Free for non-commercial use"
+    description: "精简的广告与追踪服务器名单，体积小、误杀低"
+
+  # ---------- 中文广告 ----------
+  - id: easylist-china
+    name: "EasyList China"
+    category: ads
+    region: cn
+    kind: original
+    dimensions: [ads]
     filename: "EasyListChina.txt"
-    update_frequency: "4 days"
-    priority: 5
-    description: "EasyList 中国补充规则"
+    urls:
+      - "https://easylist-downloads.adblockplus.org/easylistchina.txt"
     homepage: "https://github.com/easylist/easylistchina/"
     license: "GPL-3.0 / CC BY-SA 3.0"
+    description: "EasyList 的中文站补充规则"
 
-  - name: "anti-AD"
-    category: "china"
-    url: "https://anti-ad.net/easylist.txt"
+  - id: adguard-chinese
+    name: "AdGuard Chinese Filter"
+    category: ads
+    region: cn
+    kind: original
+    dimensions: [ads, annoyance]
+    filename: "AdGuard-Chinese.txt"
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/224.txt"
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    description: "AdGuard 官方中文过滤，与国内社区规则互为补充"
+
+  - id: anti-ad
+    name: "anti-AD"
+    category: ads
+    region: cn
+    kind: original
+    dimensions: [ads, tracker, malware]
     filename: "anti-AD.txt"
-    update_frequency: "1 day"
-    priority: 5
+    urls:
+      - "https://anti-ad.net/easylist.txt"
     timeout: 120
-    description: "国内流行的反广告规则"
-    homepage: "https://anti-ad.net/"
+    homepage: "https://github.com/privacy-protection-tools/anti-AD"
     license: "CC BY-NC-SA 4.0"
+    description: "国内使用最广的反广告域名库"
 
-  - name: "乘风规则"
-    category: "china"
-    url: "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt"
+  - id: adrules
+    name: "AdRules"
+    category: ads
+    region: cn
+    kind: aggregate
+    dimensions: [ads, tracker, malware]
+    filename: "AdRules.txt"
+    urls:
+      - "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt"
+      - "https://cdn.jsdelivr.net/gh/Cats-Team/AdRules@main/adblock.txt"
+    timeout: 120
+    homepage: "https://github.com/Cats-Team/AdRules"
+    license: "0BSD"
+    description: "Cats-Team 维护的中文广告、追踪器与恶意域名综合规则"
+
+  - id: chengfeng
+    name: "乘风广告过滤规则"
+    category: ads
+    region: cn
+    kind: original
+    dimensions: [ads]
     filename: "ChengFeng.txt"
-    update_frequency: "2 days"
-    priority: 4
-    description: "卡饭论坛维护的广告过滤规则"
+    urls:
+      - "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt"
+      - "https://cdn.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/rule.txt"
     homepage: "https://github.com/xinggsf/Adblock-Plus-Rule"
     license: "CC BY-NC-SA 4.0"
+    description: "卡饭论坛维护的视频与页面广告规则，更新较慢但稳定"
 
-  - name: "AdRules"
-    category: "china"
-    url: "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock.txt"
-    filename: "AdRules.txt"
-    update_frequency: "1 day"
-    priority: 5
+  - id: awavenue
+    name: "AWAvenue 秋风广告规则"
+    category: ads
+    region: cn
+    kind: original
+    dimensions: [ads, annoyance, malware, mobile]
+    filename: "AWAvenue-Ads-Rule.txt"
+    urls:
+      - "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Adblock.txt"
+      - "https://cdn.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Adblock.txt"
+    homepage: "https://github.com/TG-Twilight/AWAvenue-Ads-Rule"
+    license: "GPL-3.0"
+    description: "轻量中文规则，主打移动端与 App 内广告，误杀率低"
+
+  # ---------- 隐私与追踪 ----------
+  - id: easyprivacy
+    name: "EasyPrivacy"
+    category: privacy
+    region: global
+    kind: original
+    dimensions: [tracker, privacy]
+    filename: "EasyPrivacy.txt"
+    urls:
+      - "https://easylist.to/easylist/easyprivacy.txt"
     timeout: 120
-    description: "中国地区广告拦截规则，覆盖广告、追踪器、恶意软件"
-    homepage: "https://github.com/Cats-Team/AdRules"
-    license: "WTFPL"
+    homepage: "https://easylist.to/"
+    license: "GPL-3.0 / CC BY-SA 3.0"
+    description: "反跟踪与隐私保护规则的行业基准"
 
-  # 功能性规则
-  - name: "I don't care about cookies"
-    category: "functional"
-    url: "https://www.i-dont-care-about-cookies.eu/abp/"
-    filename: "I-Dont-Care-About-Cookies.txt"
-    update_frequency: "3 days"
-    priority: 4
-    description: "自动处理 Cookie 同意提示"
-    homepage: "https://www.i-dont-care-about-cookies.eu/"
+  - id: ublock-privacy
+    name: "uBlock filters – Privacy"
+    category: privacy
+    region: global
+    kind: original
+    dimensions: [tracker, privacy]
+    filename: "uBlock-Privacy.txt"
+    urls:
+      - "https://ublockorigin.github.io/uAssets/filters/privacy.txt"
+      - "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
+      - "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssets@master/filters/privacy.txt"
+    homepage: "https://github.com/uBlockOrigin/uAssets"
     license: "GPL-3.0"
+    description: "uBlock Origin 官方隐私规则，补充 EasyPrivacy 未覆盖的场景"
 
-  - name: "CJX's Annoyance"
-    category: "functional"
-    url: "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+  # ---------- 页面干扰 ----------
+  - id: cjx-annoyance
+    name: "CJX's Annoyance List"
+    category: annoyance
+    region: cn
+    kind: original
+    dimensions: [annoyance, ads]
     filename: "Cjx-Annoyance.txt"
-    update_frequency: "4 days"
-    priority: 4
-    description: "去除页面干扰元素"
+    urls:
+      - "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+      - "https://cdn.jsdelivr.net/gh/cjx82630/cjxlist@master/cjx-annoyance.txt"
     homepage: "https://github.com/cjx82630/cjxlist"
-    license: "GPL-3.0"
+    license: "LGPL-3.0"
+    description: "中文站点浮层、弹窗与诱导按钮清理"
 
-  # 综合规则
-  - name: "HalfLife"
-    category: "comprehensive"
-    url: "https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt"
+  - id: adguard-annoyances
+    name: "AdGuard Annoyances Filter"
+    category: annoyance
+    region: global
+    kind: original
+    dimensions: [annoyance, cookie]
+    filename: "AdGuard-Annoyances.txt"
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/14.txt"
+    timeout: 120
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    description: "弹窗、订阅提示、社交小组件与 Cookie 横幅的综合清理"
+
+  # ---------- Cookie ----------
+  - id: easylist-cookie
+    name: "EasyList Cookie List"
+    category: cookie
+    region: global
+    kind: original
+    dimensions: [cookie, annoyance]
+    filename: "EasyList-Cookie.txt"
+    urls:
+      - "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt"
+    homepage: "https://github.com/easylist/easylist"
+    license: "GPL-3.0 / CC BY-SA 3.0"
+    description: "自动关闭 Cookie 同意横幅，I don't care about cookies 的活跃替代"
+
+  # ---------- 安全 ----------
+  - id: ublock-badware
+    name: "uBlock filters – Badware risks"
+    category: security
+    region: global
+    kind: original
+    dimensions: [malware]
+    filename: "uBlock-Badware.txt"
+    urls:
+      - "https://ublockorigin.github.io/uAssets/filters/badware.txt"
+      - "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
+      - "https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssets@master/filters/badware.txt"
+    homepage: "https://github.com/uBlockOrigin/uAssets"
+    license: "GPL-3.0"
+    description: "恶意软件与钓鱼站点的风险拦截"
+
+  - id: nocoin
+    name: "NoCoin Filter List"
+    category: security
+    region: global
+    kind: original
+    dimensions: [malware]
+    filename: "NoCoin.txt"
+    urls:
+      - "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+      - "https://cdn.jsdelivr.net/gh/hoshsadiq/adblock-nocoin-list@master/nocoin.txt"
+    homepage: "https://github.com/hoshsadiq/adblock-nocoin-list"
+    license: "MIT"
+    description: "浏览器挖矿脚本拦截，体积只有数十 KB"
+
+  # ---------- 移动端 ----------
+  - id: adguard-mobile
+    name: "AdGuard Mobile Ads Filter"
+    category: mobile
+    region: global
+    kind: original
+    dimensions: [ads, mobile]
+    filename: "AdGuard-Mobile-Ads.txt"
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/11.txt"
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    description: "移动端页面与 App 内嵌广告，适合手机浏览器订阅"
+
+  # ---------- 综合（一条搞定） ----------
+  - id: halflife
+    name: "HalfLife"
+    category: comprehensive
+    region: cn
+    kind: aggregate
+    dimensions: [ads, tracker, annoyance]
     filename: "HalfLife.txt"
-    update_frequency: "1 week"
-    priority: 4
-    description: "综合性广告过滤规则集（移动端优化）"
+    urls:
+      - "https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt"
+      - "https://raw.githubusercontent.com/sbwml/halflife-list/master/ad.txt"
     homepage: "https://github.com/sbwml/halflife-list"
     license: "GPL-3.0"
+    description: "整合乘风、EasyList China、CJX 等规则的移动端综合包"
 
 # 更新策略
+# 每个源都会被轮询，只有内容哈希变化时才写盘提交。
 update_strategy:
-  check_version: true
   verify_format: true
-  min_lines: 100
+  min_lines: 100          # 非注释非空行的下限
   max_size_mb: 50
-
-# GitHub Actions 配置
-github_actions:
-  schedule: "0 */6 * * *"
-  commit_message: "chore: auto-update rules"
-  commit_author: "ADrules Bot"
-  commit_email: "bot@adrules.local"
+  max_shrink_ratio: 0.5   # 新体积 / 旧体积 的下限，低于此值视为截断；0 表示关闭
+  default_timeout: 60     # 单源 timeout 的缺省值
+  retries: 3              # 总尝试次数（含首次）

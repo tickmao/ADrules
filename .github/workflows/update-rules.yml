@@ -5,6 +5,13 @@ on:
     - cron: '0 */6 * * *'  # 每 6 小时运行一次
   workflow_dispatch:        # 支持手动触发
 
+concurrency:
+  group: update-rules
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,13 +30,33 @@ jobs:
           pip install -r scripts/requirements.txt
 
       - name: Update rules
+        id: update
+        continue-on-error: true
         run: |
           python scripts/update.py
 
       - name: Commit changes
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "ADrules Bot"
           git config user.email "bot@adrules.local"
-          git add .
-          git diff --staged --quiet || git commit -m "chore: auto-update rules [skip ci]"
-          git push
+          git add -- '*.txt'
+          if git diff --staged --quiet; then
+            echo "no rule changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: auto-update rules [skip ci]"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then
+              exit 0
+            fi
+            echo "push attempt ${attempt} failed, retrying in 5s"
+            sleep 5
+          done
+          exit 1
+
+      - name: Fail on update errors
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "::error::one or more rule sources failed, see the update log above"
+          exit 1
