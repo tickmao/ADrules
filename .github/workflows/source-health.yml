@@ -1,0 +1,62 @@
+name: Source Health
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'  # 每周一 03:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: source-health
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Probe and score sources
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/discover.py --search --json sources.json
+
+      - name: Upload machine-readable result
+        uses: actions/upload-artifact@v4
+        with:
+          name: sources-json
+          path: sources.json
+          if-no-files-found: ignore
+
+      - name: Commit report
+        run: |
+          git config user.name "ADrules Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/sources-report.md
+          if git diff --staged --quiet; then
+            echo "report unchanged"
+            exit 0
+          fi
+          git commit -m "chore: refresh source health report [skip ci]"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin master && git push; then
+              exit 0
+            fi
+            echo "push attempt ${attempt} failed, retrying in 5s"
+            sleep 5
+          done
+          exit 1

@@ -1,0 +1,275 @@
+# 候选源池
+#
+# 这里记录评估过但暂未纳入 sources 的源，以及纳入与否的理由。
+# scripts/discover.py 会定期重新探测它们：上游复活、体积变化或维护恢复时，
+# 报告会提示是否值得提升为正式源。
+#
+# status: candidate（值得观察）| rejected（已否决，附理由）
+# 评分维度见 docs/sources.md。
+
+candidates:
+  # ---------- DNS / 域名层 ----------
+  - id: adguard-dns
+    name: "AdGuard DNS Filter"
+    status: candidate
+    category: security
+    region: global
+    kind: original
+    dimensions: [ads, tracker, malware]
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/15.txt"
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    note: "官方 DNS 层规则，覆盖 App 内广告；4.5MB，与 ads 类重叠较多，暂列候选"
+
+  - id: hagezi-pro
+    name: "HaGeZi's Pro DNS Blocklist"
+    status: candidate
+    category: security
+    region: global
+    kind: original
+    dimensions: [ads, tracker, malware]
+    urls:
+      - "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"
+    homepage: "https://github.com/hagezi/dns-blocklists"
+    license: "GPL-3.0"
+    note: "社区口碑极好（28k stars），体积 4.5MB；适合 AdGuard Home 用户"
+
+  - id: oisd-big
+    name: "OISD Big"
+    status: candidate
+    category: security
+    region: global
+    kind: aggregate
+    dimensions: [ads, tracker, malware]
+    urls:
+      - "https://big.oisd.nl/domainswild"
+    homepage: "https://oisd.nl/"
+    license: "Free use"
+    note: "以低误杀著称的 DNS 合集；纯域名格式，体积 4.9MB"
+
+  - id: 1hosts-lite
+    name: "1Hosts Lite"
+    status: candidate
+    category: security
+    region: global
+    kind: aggregate
+    dimensions: [ads, tracker]
+    urls:
+      - "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt"
+    homepage: "https://github.com/badmojr/1Hosts"
+    license: "MPL-2.0"
+    note: "移动端与 IoT 场景常用；更新节奏较慢（近 2 个月无提交）"
+
+  - id: hagezi-tif
+    name: "HaGeZi's Threat Intelligence Feeds"
+    status: rejected
+    category: security
+    region: global
+    kind: original
+    dimensions: [malware]
+    urls:
+      - "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt"
+    homepage: "https://github.com/hagezi/dns-blocklists"
+    license: "GPL-3.0"
+    note: "唯一实测体积 36MB，远超本库对单个订阅的体积预算，否决"
+
+  # ---------- 通用广告 ----------
+  - id: ublock-filters
+    name: "uBlock filters"
+    status: candidate
+    category: ads
+    region: global
+    kind: original
+    dimensions: [ads]
+    urls:
+      - "https://ublockorigin.github.io/uAssets/filters/filters.txt"
+      - "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
+    homepage: "https://github.com/uBlockOrigin/uAssets"
+    license: "GPL-3.0"
+    note: "uBO 自有规则，与 EasyList 高度重叠；AdGuard 用户价值更大，暂列候选"
+
+  - id: ublock-quickfixes
+    name: "uBlock filters – Quick fixes"
+    status: rejected
+    category: ads
+    region: global
+    kind: original
+    dimensions: [ads]
+    urls:
+      - "https://ublockorigin.github.io/uAssets/filters/quick-fixes.txt"
+    homepage: "https://github.com/uBlockOrigin/uAssets"
+    license: "GPL-3.0"
+    note: "带过期时间的临时补丁，规则会自然失效，不适合做长期订阅，否决"
+
+  - id: adguard-tracking
+    name: "AdGuard Tracking Protection Filter"
+    status: rejected
+    category: privacy
+    region: global
+    kind: original
+    dimensions: [tracker, privacy]
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/3.txt"
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    note: "实测 13MB / 38 万条规则，与 EasyPrivacy 目的重合但体积代价过高，否决"
+
+  - id: adguard-social
+    name: "AdGuard Social Media Filter"
+    status: rejected
+    category: annoyance
+    region: global
+    kind: original
+    dimensions: [annoyance]
+    urls:
+      - "https://filters.adtidy.org/extension/ublock/filters/4.txt"
+    homepage: "https://github.com/AdguardTeam/AdGuardFilters"
+    license: "GPL-3.0"
+    note: "社交按钮屏蔽，需求窄且与 AdGuard Annoyances 部分重合，否决"
+
+  - id: fanboy-annoyance
+    name: "Fanboy's Annoyance List"
+    status: candidate
+    category: annoyance
+    region: global
+    kind: original
+    dimensions: [annoyance]
+    urls:
+      - "https://secure.fanboy.co.nz/fanboy-annoyance.txt"
+    homepage: "https://easylist.to/"
+    license: "GPL-3.0 / CC BY-SA 3.0"
+    note: "EasyList 体系的干扰清理，与 AdGuard Annoyances 二选一即可"
+
+  # ---------- 聚合 ----------
+  - id: 217heidai-adblockfilters
+    name: "217heidai AdBlock Filters"
+    status: candidate
+    category: comprehensive
+    region: cn
+    kind: aggregate
+    dimensions: [ads, tracker, annoyance]
+    urls:
+      - "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt"
+    homepage: "https://github.com/217heidai/adblockfilters"
+    license: "GPL-3.0"
+    note: "7.7k stars，聚合 anti-AD / EasyList China 等；适合只订阅一条的用户，但与本库已有源大量重叠"
+
+  - id: blueskyxn-adguardhomerules
+    name: "BlueSkyXN AdGuardHomeRules"
+    status: rejected
+    category: comprehensive
+    region: cn
+    kind: aggregate
+    dimensions: [ads]
+    urls:
+      - "https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/main/Renew/anti-ad-easylist.txt"
+    homepage: "https://github.com/BlueSkyXN/AdGuardHomeRules"
+    license: "Unknown"
+    note: "本质是对本库同款上游的再镜像，无新增维度，且近 2 年无提交，否决"
+
+  # ---------- 已失效 / 格式不符 ----------
+  - id: idontcare-cookies
+    name: "I don't care about cookies"
+    status: rejected
+    category: cookie
+    region: global
+    kind: original
+    dimensions: [cookie]
+    urls:
+      - "https://www.i-dont-care-about-cookies.eu/abp/"
+    homepage: "https://www.i-dont-care-about-cookies.eu/"
+    license: "GPL-3.0"
+    note: "自 2023 年起对任何 UA 都返回 403，上游已停止分发 ABP 订阅；改用 EasyList Cookie，仓库中保留旧文件仅为兼容历史订阅"
+
+  - id: adgk-mobile-rules
+    name: "ADgk 手机广告过滤"
+    status: rejected
+    category: mobile
+    region: cn
+    kind: original
+    dimensions: [ads, mobile]
+    urls:
+      - "https://raw.githubusercontent.com/ADgk/ADgk-mobile-rules/main/AdGuard.txt"
+    homepage: "https://github.com/ADgk/ADgk-mobile-rules"
+    license: "Unknown"
+    note: "仓库与订阅地址均已不可达，否决"
+
+  - id: neodevhost
+    name: "NEO DEV HOST"
+    status: rejected
+    category: ads
+    region: cn
+    kind: aggregate
+    dimensions: [ads, tracker]
+    urls:
+      - "https://raw.githubusercontent.com/neodevpro/neodevhost/master/host"
+    homepage: "https://github.com/neodevpro/neodevhost"
+    license: "Unknown"
+    note: "只有 hosts 格式，浏览器订阅无法直接使用，否决"
+
+  - id: google-cn-blocklist
+    name: "Google 中文搜索结果屏蔽"
+    status: rejected
+    category: annoyance
+    region: cn
+    kind: original
+    dimensions: []
+    urls:
+      - "https://raw.githubusercontent.com/cobaltdisco/Google-Chinese-Results-Blocklist/master/uBlock.txt"
+    homepage: "https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist"
+    license: "Unknown"
+    note: "uBlacklist 语法，不是 ABP/uBO 过滤规则，否决"
+
+  # ---------- 自动搜索发现后人工审定的线索 ----------
+  - id: goodbye-ads
+    name: "GOODBYEADS"
+    status: candidate
+    category: comprehensive
+    region: cn
+    kind: original
+    dimensions: [ads, tracker, annoyance]
+    urls:
+      - "https://raw.githubusercontent.com/8680/GOODBYEADS/HEAD/data/rules/adblock.txt"
+    homepage: "https://github.com/8680/GOODBYEADS"
+    license: "MIT"
+    note: "近 2k stars 的中文综合规则，实测 9.4MB；体积偏大，暂列候选"
+
+  - id: uniartisan-privacy
+    name: "uniartisan's Privacy List"
+    status: candidate
+    category: privacy
+    region: cn
+    kind: original
+    dimensions: [tracker, privacy, ads]
+    urls:
+      - "https://raw.githubusercontent.com/zhiyuan1i/adblock_list/HEAD/adblock_privacy.txt"
+    homepage: "https://github.com/zhiyuan1i/adblock_list"
+    license: "GPL-3.0"
+    note: "中文隐私与追踪规则，实测 13MB；可作为 privacy 维度的第三来源，但体积代价高"
+
+  - id: adguard-acceleration
+    name: "Silentely AdBlock-Acceleration"
+    status: rejected
+    category: ads
+    region: cn
+    kind: aggregate
+    dimensions: [ads, tracker]
+    urls:
+      - "https://raw.githubusercontent.com/Silentely/AdBlock-Acceleration/HEAD/AdGuard_Base_Filter.txt"
+    homepage: "https://github.com/Silentely/AdBlock-Acceleration"
+    license: "GPL-3.0"
+    note: "内容为 AdGuard Base 的再分发，与已收录源重复，否决"
+
+  - id: adblock-rule-collection
+    name: "REIJI007 Adblock-Rule-Collection"
+    status: rejected
+    category: comprehensive
+    region: cn
+    kind: aggregate
+    dimensions: [ads, tracker, annoyance]
+    urls:
+      - "https://raw.githubusercontent.com/REIJI007/Adblock-Rule-Collection/HEAD/ADBLOCK_RULE_COLLECTION.txt"
+    homepage: "https://github.com/REIJI007/Adblock-Rule-Collection"
+    license: "NOASSERTION"
+    note: "实测 75MB 的全量聚合，许可证不明确，否决"
