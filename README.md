@@ -1,24 +1,12 @@
 # ADrules
 
-广告过滤规则订阅库。每 6 小时同步上游，当前收录 18 份规则，均保留原作者与许可证。
+广告过滤规则订阅库。每 6 小时同步上游，目前收录 18 份规则，保留原作者与许可证。
 
-规则文件都在仓库根目录，可以直接当订阅地址用；仓库里另有源清单、更新脚本和每周生成的[源健康报告](docs/sources-report.md)。
+规则文件都在仓库根目录，可以直接作为订阅地址使用。
 
 ## 使用方法
 
-订阅地址统一用 jsDelivr 域名（`cdn.jsdelivr.net`），国内网络可以直接访问。如果你在海外或者更在意时效，把链接里的
-
-```
-https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/
-```
-
-换成
-
-```
-https://raw.githubusercontent.com/tickmao/ADrules/master/
-```
-
-即可。jsDelivr 有缓存，新版本最多滞后几小时。
+订阅地址统一用 jsDelivr 域名，国内访问比 `raw.githubusercontent.com` 稳定；如果你在海外或更在意时效，把链接里的 `cdn.jsdelivr.net/gh/tickmao/ADrules@master/` 换成 `raw.githubusercontent.com/tickmao/ADrules/master/` 就是最新内容。jsDelivr 有缓存，新版本最多滞后几小时。
 
 ### uBlock Origin
 
@@ -30,7 +18,7 @@ https://raw.githubusercontent.com/tickmao/ADrules/master/
 
 ### AdGuard Home
 
-「过滤器」→ 「DNS 黑名单」→ 添加订阅地址。本库的规则是 ABP 语法，AdGuard Home 可以直接解析；如果你只需要域名层面的拦截，也可以看候选池里几个纯域名清单。
+「过滤器」→「DNS 黑名单」→ 添加订阅地址。本库规则是 ABP 语法，AdGuard Home 可以直接解析。
 
 ### 手机端
 
@@ -38,7 +26,7 @@ Shadowrocket、Surge、Quantumult X、Loon 之类工具都支持远程规则订�
 
 ## 推荐订阅
 
-不知道订什么就按下面挑一组，链接直接复制。
+按使用场景挑一组即可。
 
 **只订一条**：已经打包好的中文综合规则。
 
@@ -90,7 +78,7 @@ https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/uBlock-Privacy.txt
 
 | 规则 | 订阅链接 | 体积 | 说明 |
 | --- | --- | --- | --- |
-| EasyList | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/Easylist.txt) | 1.9 MB | 国际广告过滤的事实标准 |
+| EasyList | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/Easylist.txt) | 1.9 MB | 国际通用广告规则，覆盖面最广 |
 | AdGuard Base Filter | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/AdGuard-Base.txt) | 4.1 MB | AdGuard 官方基础规则，已剔除 EasyList 部分 |
 | yoyo.org Ad Server List | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/PeterLowe-List.txt) | 69 KB | 极小的服务器名单，低误杀 |
 
@@ -104,7 +92,7 @@ https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/uBlock-Privacy.txt
 | AdRules | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/AdRules.txt) | 5.1 MB | 中文广告、追踪器与恶意域名综合规则 |
 | 乘风广告过滤规则 | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/ChengFeng.txt) | 27 KB | 视频与页面广告规则，上游已长期停更，见下文 |
 | AWAvenue 秋风广告规则 | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/AWAvenue-Ads-Rule.txt) | 23 KB | 轻量，主打移动端与 App 内广告 |
-| HalfLife | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/HalfLife.txt) | 0.55 MB | 整合多个中文规则，一条搞定 |
+| HalfLife | [订阅](https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/HalfLife.txt) | 0.55 MB | 整合乘风、EasyList China、CJX 等规则 |
 
 ### 隐私与追踪
 
@@ -136,16 +124,14 @@ https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/uBlock-Privacy.txt
 
 ## 关于更新
 
-所有规则每 6 小时检查一次，只有内容真的变化才提交，所以 commit 历史本身就是变更记录。
+所有规则每 6 小时检查一次，内容有变化才提交。
 
 ### 停更的源
 
-库里有两类状态不同的规则，订阅前值得分清：
+有两类源的情况和别的不一样：
 
-- **上游停止分发**：比如原来的 `I-Dont-Care-About-Cookies.txt`。上游从 2023 年起对任何请求都返回 403，内容永久冻结。文件保留只为不让老订阅变成 404，实际请改用 `EasyList-Cookie.txt`。
-- **源本身没问题，但长期没更新**：比如乘风广告过滤规则（最后更新 2026-03）。它的规则是人工整理的视频/页面广告清单，长期有效，而且用的人不少，所以继续保留、继续提供订阅。这一类在[源健康报告](docs/sources-report.md)里会明确标成 `stale`，评分也会随之下调，但不会被悄悄删掉。
-
-判断某个源是否还健康，看 `docs/sources-report.md`：里面有每个源的最近更新时间、体积、评分和状态。
+- **上游停止分发**：比如原来的 `I-Dont-Care-About-Cookies.txt`。上游从 2023 年起对任何请求都返回 403，内容不再变化。文件保留是为了让老订阅不变成 404，新订阅请改用 `EasyList-Cookie.txt`。
+- **源本身没问题，但长期没更新**：比如乘风广告过滤规则（最后更新 2026-03）。它是人工整理的视频与页面广告清单，规则长期有效，因此继续提供订阅。这类源在[源健康报告](docs/sources-report.md)里标为 `stale`，评分随之下调。
 
 ## 常见问题
 
@@ -156,50 +142,23 @@ https://cdn.jsdelivr.net/gh/tickmao/ADrules@master/uBlock-Privacy.txt
 仓库每 6 小时更新一次；jsDelivr 有缓存，最迟几小时内生效。想立刻拿到最新版本就用 `raw.githubusercontent.com` 的地址。
 
 **某个网站还有广告怎么办？**
-先换成「想拦得彻底」那组；如果还是不行，开 issue 附网址和截图，我来判断是上游没覆盖还是需要本地自定义规则。
+先换成「想拦得彻底」那组。仍然无效的话，可以到 [Issues](https://github.com/tickmao/ADrules/issues) 反馈，但规则内容来自上游，通常要等上游补充；临时的办法是在 uBlock Origin 里自己给该站点加一条规则。
 
 **订阅链接打不开？**
 先试 jsDelivr。如果 `cdn.jsdelivr.net` 也不通，把它换成 `fastly.jsdelivr.net` 或 `gcore.jsdelivr.net`。
 
 **会不会拖慢浏览器？**
-参考体积列。全部规则合计约 22 MB，uBlock Origin 会把它编译成紧凑结构；内存敏感的设备只订「桌面日常」或「手机端」那一组就够。
+参考体积列，全部规则合计约 22 MB。内存或电量敏感的设备只订「桌面日常」或「手机端」那一组即可。
 
-## 维护
+## 项目说明
 
-### 目录结构
+规则由脚本自动维护：`scripts/config.yaml` 是源清单（含镜像地址），`scripts/update.py` 负责拉取与校验，`scripts/discover.py` 每周探测一次并给每个源打分。评分标准与收录规则写在 [docs/sources.md](docs/sources.md)，新增源的候选记录放在 `scripts/candidates.yaml`。
 
-```
-*.txt                     规则本体，也就是用户订阅的文件
-scripts/config.yaml       源清单：地址、镜像、类别、维度、文件名
-scripts/candidates.yaml   候选与淘汰池，附入选/否决理由
-scripts/update.py         拉取、比对、校验、原子写入
-scripts/discover.py       探测、评分、维度覆盖、发现新源
-docs/sources.md           源选型与评分机制
-docs/sources-report.md    每周自动生成的源健康报告
-```
-
-### 自动化
-
-| Workflow | 频率 | 做什么 |
-| --- | --- | --- |
-| `update-rules.yml` | 每 6 小时 | 拉取全部源，内容变化的写盘并提交；任一源失败则 job 标红 |
-| `source-health.yml` | 每周 | 探测 + 评分 + 更新 `docs/sources-report.md` |
-| `tests.yml` | 每次 push / PR | 跑 118 个离线单测 |
-
-### 加新源
-
-1. 对照 [docs/sources.md](docs/sources.md) 的评分维度，确认它在 A 级以上、且不是已有源的马甲
-2. 在 `scripts/config.yaml` 的 `sources` 下追加一条：`id`、`name`、`filename`、`urls`（含镜像）、`category`、`region`、`kind`、`dimensions` 必填
-3. 跑 `python scripts/update.py --dry-run` 和 `python -m pytest`
-4. 提 PR，说明它补的是哪个维度
-
-暂不收录但有价值的源写进 `scripts/candidates.yaml` 并注明理由，每周报告会持续复查。
-
-### 许可
+## 许可
 
 代码采用 MIT 许可；每条规则分别遵循其上游许可（GPL-3.0、CC BY-SA、CC BY-NC-SA、0BSD 等），详见下方来源列表。商业使用前请确认对应上游条款。
 
-### 规则来源
+## 规则来源
 
 - [EasyList](https://easylist.to/) · GPL-3.0 / CC BY-SA 3.0
 - [AdGuard Filters](https://github.com/AdguardTeam/AdGuardFilters) · GPL-3.0
@@ -214,6 +173,10 @@ docs/sources-report.md    每周自动生成的源健康报告
 - [NoCoin](https://github.com/hoshsadiq/adblock-nocoin-list) · MIT
 - [pgl.yoyo.org](https://pgl.yoyo.org/adservers/) · free for non-commercial use
 
----
+## Author
 
-ADrules © [Tickmao](https://blog.tickmao.com) · Blog [Tickmao](https://blog.tickmao.com) · GitHub [@tickmao](https://github.com/tickmao)
+ADrules by [Tickmao](https://blog.tickmao.com/), Released under the MIT License.
+
+- Blog: [@Tickmao](https://blog.tickmao.com/)
+- GitHub: [@Tickmao](https://github.com/tickmao)
+- Twitter: [@Tickmao](https://twitter.com/tickmao)
