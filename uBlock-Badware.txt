@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Badware risks
-! Last modified: Thu, 05 Nov 2026 13:57:40 +0000
+! Last modified: Fri, 06 Nov 2026 12:35:31 +0000
 ! Expires: 5 days
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc.
 ! The purpose is to at least ensure a user is warned of the risks ahead.
@@ -2843,7 +2843,6 @@ cracksmid.com##div[style=""] > center > center
 ||tennoito.jp^$doc
 ||cla-fando.com^$doc
 ||weclo-offer.online^$doc
-||lovean.jp^$doc
 ||yx5s6.com^$doc
 ||xrfg0dt.com^$doc
 ||pascal2417.com^$doc
@@ -6931,6 +6930,8 @@ top##body > center + .A + .post
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238513
 ||luhxepremiumbags.com^$all
+! https://github.com/AdguardTeam/AdguardFilters/issues/246379
+||luhxetravelbag.co^$all
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34150
 ! https://www.virustotal.com/gui/file/99989e96c1043349a4127d8a2f942bcae693fbaa0b05fc694ee53347d996114b
@@ -7026,3 +7027,8 @@ msm-wroclaw.pl##+js(noeval-if, _0x)
 
 ! https://disconinja.hatenablog.com/entry/2026/11/03/230647
 ||rivo.vin/rivo-stealer/
+
+! https://github.com/uBlockOrigin/uAssets/issues/35202
+! https://www.virustotal.com/gui/file/a216debace43f80a4d28d73c4e1c8b492669f2107c6ebb2eebcfb1ab2b3ec16d
+||wlygrowth.com^$all
+||ludashisafe.com^$all
