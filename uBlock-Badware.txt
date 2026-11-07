@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Badware risks
-! Last modified: Fri, 06 Nov 2026 12:35:31 +0000
+! Last modified: Sat, 07 Nov 2026 12:00:24 +0000
 ! Expires: 5 days
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc.
 ! The purpose is to at least ensure a user is warned of the risks ahead.
@@ -1607,6 +1607,8 @@ cracksmid.com##div[style=""] > center > center
 ||galanzmotzjp.com^$all
 ! https://x.com/masaomi346/status/2117779362707886178
 ||downioads-japan.com^$all
+! https://x.com/masaomi346/status/2118996613377212533
+||cb-customa.com^$all
 
 ! scam sites
 ||webuzz.me^$doc
@@ -3362,6 +3364,9 @@ r2.dev##body > .main-wrapper > .main-content:has(> #checkbox-window.checkbox-win
 
 ! https://ohey.ca/research/clocktail-clickfix-unfilled-command/
 ##body.glue-body > #cf-modal-overlay
+
+! https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-10-31-Romulus-Loader-spread-via-ClickFix-technique.txt
+/^https:\/\/sites\.google\.com\/view\/antibot[0-9]+\b/$doc,match-case
 
 ! !SECTION: ClickFix
 
@@ -5948,6 +5953,9 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 
 ! https://www.reddit.com/r/Scams/comments/1iyqpsn/new_digital_fearscam_unlocked_zoom_phishing/
 ||zoom.us*web.us^$doc
+! https://www.reddit.com/r/Scams/comments/1xogded/job_scam_using_webzoomus/
+||webzoom.us^$all
+||us13webzoom.us^$all
 
 ! https://www.reddit.com/r/phishing/comments/1j2yegj/finally_got_one/
 ||e-zpass.com-$doc
@@ -7032,3 +7040,9 @@ msm-wroclaw.pl##+js(noeval-if, _0x)
 ! https://www.virustotal.com/gui/file/a216debace43f80a4d28d73c4e1c8b492669f2107c6ebb2eebcfb1ab2b3ec16d
 ||wlygrowth.com^$all
 ||ludashisafe.com^$all
+
+! https://www.reddit.com/r/Scams/comments/1xp6ej8/in_beware_of_this_crypto_scam_gtagrokcom/
+||gtagrok.com^$all
+
+! https://www.reddit.com/r/Scams/comments/1xo5pr0/heads_up_fake_aldi_website_phishing_scam_spotted/
+||pondmart.shop^$all
