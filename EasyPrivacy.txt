@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202611101345
+! Version: 202611102227
 ! Title: EasyPrivacy
-! Last modified: 10 Nov 2026 13:45 UTC
+! Last modified: 10 Nov 2026 22:27 UTC
 ! Expires: 4 days (update frequency)
-! Commit: c7a270e91cf0be11c04314119dbbe11e2be38cce
+! Commit: 5be8da831fb131999c11ad6fb20f6cbcebe26a0f
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -408,6 +408,7 @@
 /api/v3/getPageVisits
 /api/v3/trackSegmentEvent
 /api/video/stats/*$xmlhttprequest
+/api/viewcontent.php?
 /api/web/v1/tracker$ping
 /api_adlog.php?
 /api_ip_info.php
@@ -4476,7 +4477,6 @@ omni.soundestlink.com$image
 ||cbtrk.net^$third-party
 ||cccpmo.com^$third-party
 ||ccgateway.net^$third-party
-||ccmbg.com^$third-party
 ||ccscserver.com^$third-party
 ||cdn-net.com^$third-party
 ||cdnlibjs.com^$third-party
@@ -7967,6 +7967,7 @@ omni.soundestlink.com$image
 ||intentlens.com^
 ||internalcondition.com^
 ||internalsink.com^
+||intobuddy.com^
 ||intricateberry.com^
 ||introjava.com^
 ||inventtango.com^
@@ -8077,6 +8078,7 @@ omni.soundestlink.com$image
 ||lilydreamer.com^
 ||limecodesign.com^
 ||limepeal.com^
+||limitowl.com^
 ||linksoutside.com^
 ||linkstable.com^
 ||littlegeese.com^
@@ -8789,6 +8791,7 @@ omni.soundestlink.com$image
 ||screenphotos.com^
 ||scribblestring.com^
 ||scrollservice.com^
+||scrubchi.com^
 ||scrubswim.com^
 ||sealtravels.com^
 ||seamlesssalon.com^
@@ -11049,6 +11052,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||assets.trendii.com/pixel/main.js
 ||assets.yumpu.com/release/*/tracking.js
 ||assistant.watson.appdomain.cloud/analytics/
+||astatic.ccmbg.com/hz.js
 ||asterpix.com/tagcloudview/
 ||async-px-eu.dynamicyield.com^
 ||async-px.dynamicyield.com^
