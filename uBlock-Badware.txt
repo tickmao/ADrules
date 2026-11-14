@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Badware risks
-! Last modified: Sat, 14 Nov 2026 05:14:05 +0000
+! Last modified: Sat, 14 Nov 2026 14:53:53 +0000
 ! Expires: 5 days
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc.
 ! The purpose is to at least ensure a user is warned of the risks ahead.
@@ -3377,6 +3377,13 @@ r2.dev##body > .main-wrapper > .main-content:has(> #checkbox-window.checkbox-win
 ! https://github.com/uBlockOrigin/uAssets/issues/35302
 ||browse-cloud.codes^$all
 ||encodelp.com^$all
+
+! https://socradar.io/blog/xaocmail-clickfix-phantom53-havox-america-asia-europe/
+||securedoc.*.workers.dev^$doc
+##body > #rcOverlay > #rcCard
+
+! https://scanmalware.com/hunts/289
+||microsoft-winupdate.com^$all
 
 ! !SECTION: ClickFix
 
@@ -6826,6 +6833,7 @@ top##body > center + .A + .post
 ||imtolenplex.com^$all
 ||immanitys.com^$all
 ||tagesschau.tech^$doc
+||gmai.com^$all
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235108
 ||shuru-baidu.com.cn^$all
