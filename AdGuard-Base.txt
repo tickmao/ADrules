@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: HTJ/5QIQHlwIRfP8GpOUpg
-! Diff-Path: ../patches/2_without_easylist/2_without_easylist-s-1794741021-3600.patch
+! Checksum: 22oKK6P3BZFWvbKTZQUO9A
+! Diff-Path: ../patches/2_without_easylist/2_without_easylist-s-1794773549-3600.patch
 ! Title: AdGuard Base filter
 ! Description: This filter is necessary for quality ad blocking.
-! Version: 2.5.4.66
-! TimeUpdated: 2026-11-15T11:06:49+00:00
+! Version: 2.5.4.75
+! TimeUpdated: 2026-11-15T20:07:28+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -14145,6 +14145,9 @@ youporn.com##+js(remove-node-text, script, /window\.[\s\S]*?_zone_[\s\S]*?{"zone
 !
 ! NOTE: Regular rules
 !
+! https://community.brave.app/t/ad-blocker-detected-by-the-website/660988
+yupflix.org###hb-wall:style(display: none !important;)
+yupflix.org##body:style(overflow: auto !important;)
 ! checktls.com perform https://www.checktls.com/TestReceiver test for email server configuration
 checktls.com##+js(set-constant, adsbygoogle, {})
 checktls.com##+js(set-constant, google_tag_manager, {})
@@ -41420,6 +41423,8 @@ $image,3p,denyallow=googleapis.com,domain=vipbox1.org
 !
 ! NOTE: Specific rules
 !
+glasgowlive.co.uk##div[class*="aboola"]
+glasgowlive.co.uk##div[data-tmdatatrack="non-content-unit"]
 siteprice.org###header_new2_HeaderAdsense
 siteprice.org##.adCLS
 thetimes.com###react-app > div#sticky-leaderboard-wrapper:has(> div#ad-sticky-leaderboard)
@@ -41728,7 +41733,7 @@ xflms.com##div[data-slot]
 lyricsly.in##.ad-console-box
 lyricsly.in##.sticky-anchor-ad
 ||estaticos01.gays-cruising.es/recursos/tres-doce.js
-yt-shorts-dl.com,porn3dx.com,porner.io,yesporn.io,nexify-zone.com,4khd.com,wallpaperalchemy.com##+js(no-window-open-if, _blank)
+viddown.net,yt-shorts-dl.com,porn3dx.com,porner.io,yesporn.io,nexify-zone.com,4khd.com,wallpaperalchemy.com##+js(no-window-open-if, _blank)
 ||hockeyslovakia.sk/sk/bannerimg/
 fakta.id,datapendidikan.com,urlwebsite.com##div.mx-auto:has(> ins.adsbygoogle)
 mangaball.com##.w-full:has(> div[class] > span.uppercase > span:contains(Advertisement))
