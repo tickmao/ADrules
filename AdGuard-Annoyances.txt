@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7hOugYRMwQpRHgd8pWLKXw
-! Diff-Path: ../patches/14/14-s-1795443186-3600.patch
+! Checksum: MIFc69EMl0IXuBnoBhTXLw
+! Diff-Path: ../patches/14/14-s-1795457586-3600.patch
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.2.87.62
-! TimeUpdated: 2026-11-23T14:09:29+00:00
+! Version: 2.2.87.65
+! TimeUpdated: 2026-11-23T18:10:18+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -36983,6 +36983,7 @@ lastwordonsports.com,barcelonasecreta.com,wiwo.de,rocket-boys.co.jp,autonews.com
 !
 ! SECTION: Subscriptions - Regular rules
 !
+videogameschronicle.com##.vgc-home__top-content-promos
 theatlantic.com##div[data-zephr-outcome-label][data-zephr-sdk-feature-slug]
 laravel-news.com##div[data-article-main-content] > div:has(> form)
 niagarafallsreview.ca##.subscriber-premium > #tncms-region-article_bottom_content:has(>  .tncms-block div.promo-design)
@@ -47980,6 +47981,9 @@ rxgo.com,alfastrah.ru,turkishairlines.com,atmos-tokyo.com,radarbox.com,ciceksepe
 !
 !
 !
+mamari.jp##.p-web-to-app
+baby-calendar.jp##.l-footer-app-parts
+baby-calendar.jp##a[href^="https://baby-calendar.onelink.me/"] > img
 shop.com##aside[data-testid="download-app-prompt"]
 hb-nippon.com##.appPromo
 hb-nippon.com##.side_appBnr
@@ -57533,6 +57537,7 @@ www.kinopoisk.ru##footer > div:has(> div > div[data-testid="kp-ui.amediateka-foo
 !
 ! SECTION: Self-promo - Regular rules
 !
+dlsite.com##.p-headerBannerPc
 ||cxm-api.fifa.com/fifaplusweb/api/popup/
 buzztvdirect.com###bf-sale-strip
 finans.mynet.com##.sidebar-mymani-tools
@@ -62191,6 +62196,8 @@ bunshun.jp##a[href$="?ref=special"]
 ! extension promo on search results
 startpage.com##.widget-install-privacy-protect
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117762
+jbzd.com.pl##+js(set-constant, l_vars.full_screen_ads, [])
+jbzd.com.pl##body > div:not([class], [id]) > .overlay:has(> .fs-image-type > .fs-image > a[href="https://jbzd.com.pl/premium/wybierz"])
 !+ NOT_OPTIMIZED
 m.jbzd.com.pl##body > div > .overlay
 !+ NOT_OPTIMIZED
@@ -65261,6 +65268,7 @@ kpopjjang.com,hinfomax.co.kr,britg.kr,sexpox.com,47news.jp,learn-from-homey.blog
 dora-guide.com,codedosa.com,gradium.co.kr,semesters.in##+js(set-constant, disable_copy, noopFunc)
 dora-guide.com,codedosa.com,gradium.co.kr,semesters.in##+js(set-constant, disable_copy_ie, noopFunc)
 !
+knshow.com##+js(remove-node-text, script, selectstart)
 s.awa.fm##+js(addEventListener-defuser, contextmenu, , elements, #__next)
 templetoons.com##+js(addEventListener-defuser, contextmenu, e.preventDefault)
 divatoon.com,templetoons.com##+js(addEventListener-defuser, contextmenu, [native code])
