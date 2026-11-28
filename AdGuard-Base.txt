@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: eHp4/v2Q7OwQTtzrNwCUkA
-! Diff-Path: ../patches/2_without_easylist/2_without_easylist-s-1795781690-3600.patch
+! Checksum: In4/noSmLxtObtV4GInHOw
+! Diff-Path: ../patches/2_without_easylist/2_without_easylist-s-1795817476-3600.patch
 ! Title: AdGuard Base filter
 ! Description: This filter is necessary for quality ad blocking.
-! Version: 2.5.7.50
-! TimeUpdated: 2026-11-27T12:11:00+00:00
+! Version: 2.5.7.59
+! TimeUpdated: 2026-11-27T22:07:29+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15352,6 +15352,7 @@ youporn.com##+js(remove-node-text, script, /window\.[\s\S]*?_zone_[\s\S]*?{"zone
 !
 ! NOTE: Regular rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/248338
 ! https://github.com/AdguardTeam/AdguardFilters/issues/248303
 hwcooling.net#@#.ad-banner-300x250
 hwcooling.net#@#.advertisement-banner
@@ -15407,7 +15408,6 @@ mlhbd.xyz#@#.ad_box:not(.text-ad)
 mlhbd.xyz#@#.ads-300x250
 mlhbd.xyz#@#.sponsored-ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/246376
-vpnjantit.com##body > div[style^="position: fixed; inset: 0px; width: 100%;"]:has(> div[style] > button[onclick^="window.location.reload"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/246366
 mdiaload.com##+js(abort-on-stack-trace, document.createElement, /eval|aabcBoot/)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/246368
@@ -15470,9 +15470,9 @@ thertstv.com##body:style(overflow: auto !important;)
 thertstv.com##body > div#wrapper:style(filter: none !important; pointer-events: auto !important;)
 thertstv.com##body > div[style*="position: fixed; z-index: 2147483647;"]:style(display: none !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243741
-f4scdn.com##body > .adsbox.pub_300x250[style]:style(display: block !important;)
-f4scdn.com##+js(prevent-fetch, pagead2.googlesyndication.com)
-f4scdn.com##+js(remove-attr, data-block-adblock, .player-wrap[data-block-adblock])
+f4splay.vip,f4scdn.com##body > .adsbox.pub_300x250[style]:style(display: block !important;)
+f4splay.vip,f4scdn.com##+js(prevent-fetch, pagead2.googlesyndication.com)
+f4splay.vip,f4scdn.com##+js(remove-attr, data-block-adblock, .player-wrap[data-block-adblock])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243556
 nosubapp.com##.adblock-gate:style(display: none !important;)
 nosubapp.com##.adblock-locked:style(overflow: auto !important;)
@@ -15582,7 +15582,8 @@ indexsubtitle.cc##body > div#app-runtime-cover
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239762
 adslink.pw##+js(prevent-fetch, adsbygoogle)
 ! AntiAdBlock Core
-fast-down.com,lnbzi.com,lnbzi.com,linegee.net,aii.sh,srnky.com,clksz.com,fcportables.com,intercelestial.com##+js(set-constant, navigator.webdriver, true)
+fast-down.com,lnbzi.com,linegee.net,aii.sh,srnky.com,clksz.com,fcportables.com,intercelestial.com##+js(set-constant, navigator.webdriver, true)
+/^https:\/\/intercelestial\.com\/[a-z0-9]{10,14}\/[a-z0-9._-]+\.js(\?.*)?$/$script,domain=intercelestial.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239240
 pitube.net##+js(addEventListener-defuser, DOMContentLoaded, detectAdBlock)
 pitube.net#@#.ad-unit:not(.textads)
@@ -24359,6 +24360,7 @@ auto.am##.azd-top
 ##.ainsyndication
 az##.makerekframe
 !
+||globalpromo.az/placements.js$domain=baku.ws
 ||day.az/ads/
 news.day.az##div[id^="DAY_Slot_"]
 news.day.az##.banner-wrapper
@@ -38037,6 +38039,7 @@ kat.*,kickass.*,kickass2.*,kickasstorrents.*,kat2.*,kattracker.*,thekat.*,thekic
 ! vidara, often changed
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244659
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243741
+! https://github.com/AdguardTeam/AdguardFilters/issues/248114
 ! Workaround for MV3 extension when scriptlet is injected too late
 ! https://github.com/AdguardTeam/AdguardFilters/issues/242899
 ! https://github.com/AdguardTeam/AdguardFilters/issues/242900
@@ -42723,6 +42726,13 @@ $image,3p,denyallow=googleapis.com,domain=vipbox1.org
 !
 ! NOTE: Specific rules
 !
+luciferdonghua.in###sidebar > .widget_text > .custom-html-widget
+functioncube.com##tbody > tr > td > div[style]:has(> script + ins.adsbygoogle)
+sheepesports.com##a[href="https://polymarket.com"]
+sheepesports.com##a[href="https://www.michelin.com/en/media/magazine/michelin-video-game-rocket-league"]
+gamerant.com##.gr-ig-offer
+epicroms.net##+js(remove-node-text, script, /\(\)\;void window\;/)
+epicroms.net##center > button.file-download-btnn
 finance.yahoo.com##.dock-item.dock-top-insert
 ||smailpro.com/img/smailpro.com/banners/
 smailpro.com##div[data-partner]
@@ -43245,8 +43255,8 @@ gptcleanuptools.com##body > div.backdrop-blur.fixed:has(ins.adsbygoogle)
 dmagazine.com##.c-advertisement-native
 dmagazine.com##.c-featured-post-feed__latest-slide--partner
 dmagazine.com##.c-section__stories > .c-section__story:has(>.c-advertisement-native)
-f4scdn.com##+js(no-window-open-if, _blank)
-f4scdn.com##+js(json-prune, $.[?(@.urls && @.vast)].*)
+f4splay.vip,f4scdn.com##+js(no-window-open-if, _blank)
+f4splay.vip,f4scdn.com##+js(json-prune, $.[?(@.urls && @.vast)].*)
 empireonline.com##div[class^="advertWrapper-"]
 mumsnet.com##div[id^="side-rail-"]
 mumsnet.com##aside:has(> div[id^="feedAd"])
@@ -43741,7 +43751,6 @@ deepai.org##div[data-adtype]
 petersenshunting.com##.adpos_rightD
 speedof.me##.intro-ad-footer
 ||speedof.me/api/uc.php
-speedof.me##.api-ad-footer
 cine.su##+js(json-prune, $..children.*[?(@.id=="ad-network-boot")].dangerouslySetInnerHTML.__html)
 pornditt.com##.top_nav_menu
 startpage.com###main > div[data-bvs][data-identifier]
@@ -65085,7 +65094,7 @@ insideevs.com,motor1.com##.outstream_partner
 !+ NOT_OPTIMIZED
 goal.com##.fco-sticky-wrapper__wrapper
 !+ NOT_OPTIMIZED
-outsideonline.com##.prestitial-ad
+backpacker.com,outsideonline.com##.prestitial-ad
 !+ NOT_OPTIMIZED
 comix.*,comix.ws,animekai.*,animekai.la,animekai.gs,animekai.fo,animekai.fi,comix.to,anikai.to##body > a[target="_blank"][style^="position:"][style*="z-index:"]
 !+ NOT_OPTIMIZED
